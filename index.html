@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEETS · Design Engineering H404 Past Papers & Revision</title>
+<meta name="description" content="Minimalist past paper revision question bank, technical formula sheets, interactive flashcards, and cheatsheets for OCR A Level Design and Technology: Design Engineering (H404).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* Minimalist Light Palette */
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-hover: #f4f4f5;
+  --ink: #18181b;
+  --ink-secondary: #52525b;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+  --accent: #18181b;
+  --accent-contrast: #ffffff;
+  --mark-bg: #f4f4f5;
+  --mark-color: #27272a;
+  --tag-bg: #f4f4f5;
+  --tag-ink: #3f3f46;
+  --radius: 6px;
+  --radius-lg: 8px;
+}
+
+[data-theme="dark"] {
+  /* Minimalist Dark Palette */
+  --bg: #09090b;
+  --surface: #121215;
+  --surface-hover: #18181b;
+  --ink: #f4f4f5;
+  --ink-secondary: #a1a1aa;
+  --muted: #71717a;
+  --border: #27272a;
+  --border-strong: #3f3f46;
+  --accent: #f4f4f5;
+  --accent-contrast: #09090b;
+  --mark-bg: #27272a;
+  --mark-color: #f4f4f5;
+  --tag-bg: #1c1c20;
+  --tag-ink: #d4d4d8;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* ========================================================
+   Password Gate (Passcodes: engineering, leets, steel, h404)
+   ======================================================== */
+.lock-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.lock-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+.lock-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: var(--tag-bg);
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.lock-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+.lock-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+.lock-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.lock-input-wrap {
+  position: relative;
+}
+.lock-input {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.lock-input:focus {
+  border-color: var(--ink);
+}
+.lock-eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.lock-options {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.lock-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.lock-submit-btn {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border: 0;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.lock-submit-btn:hover {
+  opacity: 0.9;
+}
+.lock-error {
+  font-size: 0.8rem;
+  color: #dc2626;
+  min-height: 18px;
+}
+
+/* App container */
+#app-root {
+  display: none;
+}
+#app-root.unlocked {
+  display: block;
+}
+
+/* ========================================================
+   Site Header & Clean Navigation
+   ======================================================== */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+.header-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.brand-sub {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.view-tabs {
+  display: flex;
+  gap: 4px;
+}
+.tab-link {
+  background: transparent;
+  border: 0;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s;
+}
+.tab-link:hover {
+  color: var(--ink);
+  background: var(--surface-hover);
+}
+.tab-link.active {
+  color: var(--ink);
+  background: var(--surface-hover);
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stats-badge {
+  font-size: 0.8rem;
+  color: var(--muted);
+  cursor: pointer;
+  user-select: none;
+}
+.stats-badge b {
+  color: var(--ink);
+}
+.stats-badge:hover {
+  color: var(--ink);
+}
+.btn-minimal {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--ink-secondary);
+  border-radius: var(--radius);
+  padding: 4px 10px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-minimal:hover {
+  background: var(--surface-hover);
+  color: var(--ink);
+  border-color: var(--border-strong);
+}
+
+/* ========================================================
+   Main Content Layout
+   ======================================================== */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+}
+
+/* Search & Filter Bar */
+.filter-panel {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.search-input-wrap {
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-input:focus {
+  border-color: var(--border-strong);
+}
+.filter-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.select-minimal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--ink);
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.select-minimal:focus {
+  border-color: var(--border-strong);
+}
+
+/* Filter Chips */
+.chips-bar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 4px;
+}
+.chip-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.chip-btn:hover {
+  color: var(--ink);
+  border-color: var(--border-strong);
+}
+.chip-btn.active {
+  background: var(--ink);
+  color: var(--surface);
+  border-color: var(--ink);
+}
+.btn-reset-inline {
+  margin-left: auto;
+  background: transparent;
+  border: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 2px 4px;
+  text-decoration: underline;
+}
+.btn-reset-inline:hover {
+  color: var(--ink);
+}
+
+/* Status / Count bar */
+.status-bar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+.status-bar b {
+  color: var(--ink);
+}
+
+/* ========================================================
+   Topic Breakdown View (Specification Matrix)
+   ======================================================== */
+.strata-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.strata-section-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.strata-column {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+.strata-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  background: var(--surface);
+  transition: background-color 0.15s;
+}
+.strata-row:last-child {
+  border-bottom: 0;
+}
+.strata-row:hover {
+  background: var(--surface-hover);
+}
+.strata-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.strata-color-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--c);
+  flex-shrink: 0;
+}
+.strata-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.strata-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.strata-mark-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  background: var(--mark-bg);
+  color: var(--mark-color);
+}
+
+/* ========================================================
+   Question Cards View
+   ======================================================== */
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.q-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 22px;
+  transition: border-color 0.15s;
+}
+.q-card:hover {
+  border-color: var(--border-strong);
+}
+.q-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.q-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.q-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.q-mark {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  background: var(--mark-bg);
+  color: var(--mark-color);
+}
+.q-actions {
+  display: flex;
+  gap: 6px;
+}
+.btn-q-action {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: var(--radius);
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-q-action:hover {
+  color: var(--ink);
+  border-color: var(--border-strong);
+}
+.btn-q-action.active-star {
+  color: #d97706;
+  border-color: #d97706;
+  background: rgba(217, 119, 6, 0.08);
+}
+.btn-q-action.active-check {
+  color: #16a34a;
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.08);
+}
+
+.q-citation {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.q-summary {
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+.q-prompt-box {
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  font-size: 0.88rem;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.q-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.q-tag {
+  background: var(--tag-bg);
+  color: var(--tag-ink);
+  border-radius: var(--radius);
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+a.q-tag:hover {
+  background: var(--border);
+  color: var(--ink);
+}
+
+.details-clean {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-top: 10px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.details-clean summary {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--muted);
+  user-select: none;
+  transition: color 0.15s, background-color 0.15s;
+}
+.details-clean summary:hover {
+  color: var(--ink);
+  background: var(--surface-hover);
+}
+.details-body {
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  background: var(--surface-hover);
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: zoom-in;
+  margin-top: 8px;
+}
+.img-container img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+.q-footer {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.btn-compare-link {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-family: inherit;
+}
+.btn-compare-link:hover {
+  color: var(--ink);
+}
+
+/* ========================================================
+   Practice / Flashcards View
+   ======================================================== */
+.flashcard-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.flashcard-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+.flashcard-filters {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.flashcard-stats {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.flashcard-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+.flashcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.flashcard-topic-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+.flashcard-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--c);
+}
+.flashcard-question-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  margin: 0 0 24px;
+  color: var(--ink);
+}
+.flashcard-reveal-btn {
+  background: var(--surface-hover);
+  border: 1px dashed var(--border-strong);
+  color: var(--muted);
+  width: 100%;
+  padding: 24px;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.flashcard-reveal-btn:hover {
+  background: var(--border);
+  color: var(--ink);
+}
+.flashcard-answer-box {
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+.flashcard-answer-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.flashcard-eval-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.btn-eval-review {
+  background: transparent;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.btn-eval-review:hover {
+  background: rgba(220, 38, 38, 0.08);
+}
+.btn-eval-mastered {
+  background: #16a34a;
+  border: 1px solid #16a34a;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.btn-eval-mastered:hover {
+  background: #15803d;
+}
+.flashcard-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.flashcard-shortcuts-tip {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ========================================================
+   Cheatsheets View
+   ======================================================== */
+.cheatsheets-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sheet-topic-bar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.sheet-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink-secondary);
+  border-radius: var(--radius);
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sheet-pill:hover {
+  border-color: var(--border-strong);
+  color: var(--ink);
+}
+.sheet-pill.active {
+  background: var(--ink);
+  color: var(--surface);
+  border-color: var(--ink);
+  font-weight: 500;
+}
+.sheet-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+}
+.sheet-head {
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.sheet-title {
+  margin: 0 0 4px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.sheet-spec {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.sheet-section {
+  margin-bottom: 22px;
+}
+.sheet-section:last-child {
+  margin-bottom: 0;
+}
+.sheet-section-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed var(--border);
+}
+.sheet-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sheet-list li {
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.55;
+}
+.sheet-list li b {
+  color: var(--ink);
+}
+
+/* ========================================================
+   Formulae Quick Reference Modal
+   ======================================================== */
+.formula-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 12px 0;
+}
+.formula-table th, .formula-table td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+.formula-table th {
+  background: var(--surface-hover);
+  font-weight: 600;
+}
+.formula-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+/* ========================================================
+   Lightbox Modal
+   ======================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+}
+.modal-overlay.open {
+  display: flex;
+}
+.modal-top {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.modal-top-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.modal-top-tabs {
+  display: flex;
+  gap: 4px;
+}
+.btn-modal-tab {
+  background: transparent;
+  border: 0;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  color: var(--muted);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.btn-modal-tab.active {
+  background: var(--surface-hover);
+  color: var(--ink);
+  font-weight: 600;
+}
+.btn-modal-close {
+  background: transparent;
+  border: 0;
+  font-size: 1.1rem;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.btn-modal-close:hover {
+  color: var(--ink);
+}
+.modal-content-area {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content-area img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: var(--radius);
+}
+.split-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 1400px;
+  height: 85vh;
+}
+.split-pane {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.split-pane-head {
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+.split-pane-body {
+  flex: 1;
+  overflow: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--ink);
+  color: var(--surface);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 120;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header-inner { padding: 10px 16px; }
+  .split-view { grid-template-columns: 1fr; height: auto; }
+  .split-pane { height: 45vh; }
+  .flashcard-box { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Minimalist Password Gate Screen -->
+<div id="lock-screen" class="lock-screen">
+  <div class="lock-card">
+    <span class="lock-badge">OCR A-Level H404</span>
+    <h1 class="lock-title">LEETS</h1>
+    <p class="lock-desc">Enter passcode to access Design Engineering past paper revision bank & formula sheets.</p>
+
+    <form id="lock-form" class="lock-form" onsubmit="return false;">
+      <div class="lock-input-wrap">
+        <input type="password" id="lock-password" class="lock-input" placeholder="Passcode (e.g. engineering, leets, steel)" autocomplete="current-password" autofocus required>
+        <button type="button" id="lock-toggle-pwd" class="lock-eye-btn" title="Show/hide">Show</button>
+      </div>
+      <div class="lock-options">
+        <label>
+          <input type="checkbox" id="lock-remember" checked>
+          <span>Remember on this device</span>
+        </label>
+      </div>
+      <button type="submit" id="lock-submit-btn" class="lock-submit-btn">Enter Portal</button>
+      <div id="lock-error-msg" class="lock-error"></div>
+    </form>
+  </div>
+</div>
+
+<!-- Main Minimalist Portal -->
+<div id="app-root">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand" id="brand-link">
+        <span class="brand-name">LEETS</span>
+        <span class="brand-sub">Design Engineering H404</span>
+      </a>
+
+      <nav class="view-tabs" role="tablist">
+        <button class="tab-link active" data-view="strata" role="tab" aria-selected="true">Specification</button>
+        <button class="tab-link" data-view="cards" role="tab" aria-selected="false">Questions</button>
+        <button class="tab-link" data-view="practice" role="tab" aria-selected="false">Practice</button>
+        <button class="tab-link" data-view="cheatsheets" role="tab" aria-selected="false">Cheatsheets</button>
+      </nav>
+
+      <div class="header-right">
+        <button class="btn-minimal" id="btn-open-formulae" title="Engineering Formula Sheet">Formulae</button>
+        <span class="stats-badge" id="stats-pill" title="Filter by mastered questions">
+          Mastered: <b id="mastery-count-txt">0</b> / <span id="mastery-total-txt">0</span>m
+        </span>
+        <button class="btn-minimal" id="theme-toggle" title="Toggle theme">Theme</button>
+        <button class="btn-minimal" id="btn-lock-site" title="Lock portal">Lock</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Filter Panel -->
+    <section class="filter-panel">
+      <div class="search-input-wrap">
+        <input type="search" id="q" class="search-input" placeholder="Search keywords, stress, Young's modulus, gears, microcontrollers, DFM... (Press '/' to focus)" aria-label="Search questions">
+      </div>
+
+      <div class="filter-row">
+        <select id="level" class="select-minimal"></select>
+        <select id="topic" class="select-minimal"></select>
+        <select id="year" class="select-minimal"></select>
+        <select id="skill" class="select-minimal"></select>
+        <select id="min" class="select-minimal"></select>
+        <select id="status" class="select-minimal">
+          <option value="">All questions</option>
+          <option value="bookmarked">Bookmarked</option>
+          <option value="unmastered">Needs work</option>
+          <option value="mastered">Mastered</option>
+        </select>
+        <button type="button" class="btn-minimal" id="btn-random">Random</button>
+      </div>
+
+      <div class="chips-bar">
+        <button type="button" class="chip-btn" data-chip="all">All</button>
+        <button type="button" class="chip-btn" data-chip="p1">Principles (01)</button>
+        <button type="button" class="chip-btn" data-chip="p2">Problem Solving (02)</button>
+        <button type="button" class="chip-btn" data-chip="high">≥4 Marks</button>
+        <button type="button" class="chip-btn" data-chip="maths">Maths & Science (25%)</button>
+        <button type="button" class="chip-btn" data-chip="review">Bookmarked</button>
+        <button type="button" class="btn-reset-inline" id="btn-reset">Reset</button>
+      </div>
+    </section>
+
+    <!-- Results Status Bar -->
+    <div class="status-bar" id="status-bar">
+      <span id="results-count-msg">Loading...</span>
+      <span id="results-active-tag"></span>
+    </div>
+
+    <!-- Active View Mount -->
+    <div id="app-view" aria-live="polite"></div>
+
+    <footer>
+      OCR A Level Design and Technology: Design Engineering (H404). Specification © OCR (Oxford Cambridge and RSA).
+    </footer>
+  </main>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="modal-overlay" id="modal-box" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-top">
+    <div class="modal-top-title" id="modal-title-txt">Question</div>
+    <div class="modal-top-tabs" id="modal-tabs-wrap">
+      <button class="btn-modal-tab active" data-tab="question">Question</button>
+      <button class="btn-modal-tab" data-tab="figures" id="modal-tab-figures">Figures</button>
+      <button class="btn-modal-tab" data-tab="markscheme" id="modal-tab-ms">Mark Scheme</button>
+      <button class="btn-modal-tab" data-tab="split" id="modal-tab-split">Side-by-Side</button>
+    </div>
+    <button class="btn-modal-close" id="modal-close" aria-label="Close">✕</button>
+  </div>
+  <div class="modal-content-area" id="modal-body"></div>
+</div>
+
+<!-- Formulae Modal -->
+<div class="modal-overlay" id="formula-modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-top" style="max-width:900px;margin:30px auto 0;width:95%;border-radius:var(--radius) var(--radius) 0 0;">
+    <div class="modal-top-title">OCR H404 Engineering Formulae Sheet (Appendices 5c & 5d)</div>
+    <button class="btn-modal-close" id="formula-modal-close" aria-label="Close">✕</button>
+  </div>
+  <div class="modal-content-area" style="max-width:900px;margin:0 auto 30px;width:95%;background:var(--surface);border:1px solid var(--border);border-top:0;border-radius:0 0 var(--radius) var(--radius);padding:24px;overflow:auto;align-items:flex-start;">
+    <div style="width:100%">
+      <p style="font-size:0.85rem;color:var(--muted);margin-top:0">Learners following <b>Design Engineering (H404)</b> must recall and apply these scientific and engineering formulae in written examinations (25% maths requirement):</p>
+      
+      <h4 style="margin:16px 0 8px">1. Mechanics & Materials</h4>
+      <table class="formula-table">
+        <thead>
+          <tr><th>Formula Name</th><th>Equation</th><th>Variables & Units</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Young's Modulus</b> <span class="formula-badge">Recall</span></td>
+            <td><code>E = σ / ε</code></td>
+            <td>E in Pa / GPa; σ = stress; ε = strain</td>
+          </tr>
+          <tr>
+            <td><b>Tensile / Compressive Stress</b> <span class="formula-badge">Recall</span></td>
+            <td><code>σ = F / A</code></td>
+            <td>F = Force (N); A = Area (m²); σ in Pa (N/m²)</td>
+          </tr>
+          <tr>
+            <td><b>Tensile Strain</b> <span class="formula-badge">Recall</span></td>
+            <td><code>ε = ΔL / L₀</code></td>
+            <td>ΔL = Extension (m); L₀ = Original length (m)</td>
+          </tr>
+          <tr>
+            <td><b>Pressure</b> <span class="formula-badge">Recall</span></td>
+            <td><code>p = F / A</code></td>
+            <td>p in N/m² (Pa); F in N; A in m²</td>
+          </tr>
+          <tr>
+            <td><b>Hooke's Law</b> <span class="formula-badge">Recall</span></td>
+            <td><code>F = k · x</code></td>
+            <td>k = Spring constant (N/m); x = Extension (m)</td>
+          </tr>
+          <tr>
+            <td><b>Turning Effects / Torque</b> <span class="formula-badge">Recall</span></td>
+            <td><code>T = F · d</code> (or <code>M = F · x</code>)</td>
+            <td>T = Torque (N·m); F = Force (N); d = distance (m)</td>
+          </tr>
+          <tr>
+            <td><b>Gear Ratio (Velocity Ratio)</b></td>
+            <td><code>GR = Teeth_driven / Teeth_driver = ω_in / ω_out</code></td>
+            <td>Input/output rotational speeds (rpm / rad/s)</td>
+          </tr>
+          <tr>
+            <td><b>Mechanical Advantage & Efficiency</b></td>
+            <td><code>MA = Load / Effort</code><br><code>η = (MA / VR) × 100%</code></td>
+            <td>MA, VR dimensionless; η in percentage</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin:16px 0 8px">2. Dynamics & Motion (SUVAT & Vectors)</h4>
+      <table class="formula-table">
+        <thead>
+          <tr><th>Concept</th><th>Formula</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>SUVAT Equations</b></td>
+            <td><code>v = u + at</code><br><code>s = ut + ½at²</code><br><code>v² = u² + 2as</code></td>
+            <td>u = initial velocity, v = final velocity, a = acceleration, s = displacement, t = time</td>
+          </tr>
+          <tr>
+            <td><b>Resolving Force Vectors</b></td>
+            <td><code>F_x = F cos θ</code><br><code>F_y = F sin θ</code></td>
+            <td>θ = angle with horizontal axis</td>
+          </tr>
+          <tr>
+            <td><b>Kinetic & Potential Energy</b></td>
+            <td><code>E_k = ½ m v²</code><br><code>E_p = m g h</code></td>
+            <td>g = 9.81 N/kg; m in kg, v in m/s, h in m</td>
+          </tr>
+          <tr>
+            <td><b>Work Done & Power</b></td>
+            <td><code>W = F · d</code><br><code>P = W / t</code></td>
+            <td>W in Joules (J); P in Watts (W)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin:16px 0 8px">3. Electricity & Electronics</h4>
+      <table class="formula-table">
+        <thead>
+          <tr><th>Electrical Law</th><th>Equation</th><th>Units</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Ohm's Law</b> <span class="formula-badge">Recall</span></td>
+            <td><code>V = I · R</code></td>
+            <td>V (Volts), I (Amperes), R (Ohms Ω)</td>
+          </tr>
+          <tr>
+            <td><b>Electrical Power</b> <span class="formula-badge">Recall</span></td>
+            <td><code>P = V · I = I²R = V² / R</code></td>
+            <td>Power P in Watts (W)</td>
+          </tr>
+          <tr>
+            <td><b>Potential Divider</b></td>
+            <td><code>V_out = V_in × [ R₂ / (R₁ + R₂) ]</code></td>
+            <td>Voltage division across sensor networks</td>
+          </tr>
+          <tr>
+            <td><b>Energy Transferred</b></td>
+            <td><code>E = P · t = V · I · t</code></td>
+            <td>E in Joules (J) or kWh; t in seconds / hours</td>
+          </tr>
+          <tr>
+            <td><b>Wave Frequency & Period</b></td>
+            <td><code>f = 1 / T</code></td>
+            <td>f in Hz; T in seconds</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+/* ========================================================
+   LEETS Minimalist Engine
+   ======================================================== */
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+const esc = s => String(s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ========================================================
+   Password Gate (Supported: engineering, leets, steel, h404, design)
+   ======================================================== */
+const VALID_HASHES = [
+  '8c85b6639e62e10b8330a8b883004b43c119053d7d62b512a98c77eb069627a7', // engineering
+  '338a6cfcca86a9e878c4b0c2f06d4932ab71690035f78bfaebe394e3a241941e', // leets
+  'b86262f9bc892590bb31dfa5a4ee870d555188e43214a1a0ae261bd95a2a4470', // steel
+  '4b2e6662731144a20e020d709650c186b6b07b28dfaa5c0144938eab493ad6a2', // h404
+  'a77de8a6daa1129516b14c8ca1e233a51a8414b202eac7c8acfbb9b485046ad4'  // design
+];
+
+async function sha256(text) {
+  const enc = new TextEncoder().encode(text.toLowerCase());
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function isAuthorized() {
+  return localStorage.getItem('leets_auth') === 'valid' || sessionStorage.getItem('leets_auth') === 'valid';
+}
+
+function setAuthorized(remember) {
+  if (remember) {
+    localStorage.setItem('leets_auth', 'valid');
+  } else {
+    sessionStorage.setItem('leets_auth', 'valid');
+  }
+}
+
+function lockSite() {
+  localStorage.removeItem('leets_auth');
+  sessionStorage.removeItem('leets_auth');
+  location.reload();
+}
+
+async function handleUnlockSubmit() {
+  const input = $('#lock-password');
+  const err = $('#lock-error-msg');
+  const remember = $('#lock-remember').checked;
+  const pwd = input.value.trim();
+
+  if (!pwd) {
+    err.textContent = 'Please enter passcode.';
+    return;
+  }
+
+  const hash = await sha256(pwd);
+  if (VALID_HASHES.includes(hash)) {
+    err.textContent = '';
+    setAuthorized(remember);
+    unlockPortal();
+  } else {
+    err.textContent = 'Incorrect passcode. Try "engineering", "leets", or "steel".';
+    input.select();
+  }
+}
+
+function unlockPortal() {
+  $('#lock-screen').style.display = 'none';
+  $('#app-root').classList.add('unlocked');
+  loadQuestionBank();
+}
+
+$('#lock-form').onsubmit = handleUnlockSubmit;
+$('#lock-submit-btn').onclick = handleUnlockSubmit;
+$('#lock-toggle-pwd').onclick = () => {
+  const input = $('#lock-password');
+  const isPwd = input.type === 'password';
+  input.type = isPwd ? 'text' : 'password';
+  $('#lock-toggle-pwd').textContent = isPwd ? 'Hide' : 'Show';
+};
+$('#btn-lock-site').onclick = () => {
+  if (confirm('Lock portal?')) lockSite();
+};
+
+/* Formula modal controls */
+$('#btn-open-formulae').onclick = () => {
+  $('#formula-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
+$('#formula-modal-close').onclick = () => {
+  $('#formula-modal').classList.remove('open');
+  document.body.style.overflow = '';
+};
+$('#formula-modal').onclick = e => {
+  if (e.target === $('#formula-modal')) {
+    $('#formula-modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+};
+
+/* ========================================================
+   Theme Minimalist
+   ======================================================== */
+const preferredTheme = localStorage.getItem('leets_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+document.documentElement.setAttribute('data-theme', preferredTheme);
+
+$('#theme-toggle').onclick = () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('leets_theme', next);
+};
+
+/* ========================================================
+   Topic Natural Color Mapping (Engineering)
+   ======================================================== */
+const BASE = {
+  '1.1':'#2563eb', '1.2':'#3b82f6', '1.3':'#60a5fa',
+  '2.1':'#0d9488', '2.2':'#14b8a6', '2.3':'#2dd4bf', '2.4':'#0f766e',
+  '3.1':'#16a34a', '3.2':'#22c55e', '3.3':'#4ade80', '3.4':'#15803d', '3.5':'#166534', '3.6':'#14532d',
+  '4.1':'#7c3aed', '4.2':'#8b5cf6', '4.3':'#6d28d9',
+  '5.1':'#ea580c', '5.2':'#f97316', '5.3':'#c2410c',
+  '6.1':'#dc2626', '6.2':'#ef4444', '6.3':'#b91c1c', '6.4':'#991b1b', '6.5':'#7f1d1d',
+  '7.1':'#0284c7', '7.2':'#0369a1', '7.3':'#075985', '7.4':'#0c4a6e', '7.5':'#38bdf8',
+  '8.1':'#ca8a04', '8.2':'#eab308', '8.3':'#a16207',
+  '9.1':'#e11d48', '9.2':'#be123c'
+};
+const colorOf = id => BASE[id] || BASE[String(id).split('.')[0]] || '#475569';
+
+let D, T = {}, S = {}, CHEATS = null, FLASHCARDS = [];
+let sheetMastered = new Set(JSON.parse(localStorage.getItem('leets_sheet_mastered') || '[]'));
+let sheetStarred = new Set(JSON.parse(localStorage.getItem('leets_sheet_starred') || '[]'));
+let practiceState = { topic: '', status: '', idx: 0, revealed: false };
+let activeSheetTopic = '1.1';
+
+let state = {
+  view: 'strata',
+  level: '',
+  topic: '',
+  skill: '',
+  year: '',
+  min: 0,
+  status: '',
+  q: '',
+  pick: '',
+  practiceIdx: 0
+};
+
+let mastered = new Set(JSON.parse(localStorage.getItem('leets_mastered') || '[]'));
+let bookmarked = new Set(JSON.parse(localStorage.getItem('leets_bookmarked') || '[]'));
+
+function saveMastered() {
+  localStorage.setItem('leets_mastered', JSON.stringify([...mastered]));
+  updateMasteryStats();
+}
+function saveBookmarked() {
+  localStorage.setItem('leets_bookmarked', JSON.stringify([...bookmarked]));
+}
+
+function showToast(msg) {
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+if (isAuthorized()) {
+  unlockPortal();
+} else {
+  $('#lock-screen').style.display = 'flex';
+  $('#lock-password').focus();
+}
+
+function loadQuestionBank() {
+  if (D) return;
+  fetch('cheatsheets.json').then(r => r.json()).then(c => { CHEATS = c; buildFlashcards(); }).catch(() => {});
+  fetch('flashcards.json').then(r => r.json()).then(fc => { FLASHCARDS = fc; }).catch(() => {});
+  fetch('questions.json')
+    .then(r => { if (!r.ok) throw 0; return r.json(); })
+    .then(d => {
+      D = d;
+      d.papers.forEach(p => { p.level = p.level || 'H404'; });
+      D.P = Object.fromEntries(d.papers.map(p => [p.id, p]));
+      d.topics.forEach(t => T[t.id] = t);
+      d.skills.forEach(s => S[s.id] = s);
+      d.questions.forEach((x, i) => x.i = i);
+      initApp();
+    })
+    .catch(() => {
+      $('#app-view').innerHTML = '<p style="color:var(--muted);text-align:center;padding:40px 0">Could not load questions.json</p>';
+    });
+}
+
+function initApp() {
+  opts('#level', 'All Components / Levels', (D.levels || []).map(l => [l.id, l.name]));
+  $('#topic').innerHTML = buildTopicOptions();
+  opts('#skill', 'All Skills', D.skills.map(s => [s.id, s.name]));
+  const years = [...new Set(D.papers.map(p => p.year))].sort((a, b) => b - a);
+  opts('#year', 'All Exam Series', years.map(y => [y, y]));
+  opts('#min', 'Any Marks', [[2, '2+ Marks'], [4, '4+ Marks'], [6, '6+ Marks'], [8, '8+ Marks']]);
+
+  $('.filter-panel').addEventListener('input', onFilterChange);
+  $('#btn-reset').onclick = resetFilters;
+  $('#btn-random').onclick = pickRandomQuestion;
+  $('#brand-link').onclick = e => { e.preventDefault(); state.view = 'strata'; resetFilters(); };
+
+  $$('.tab-link').forEach(btn => {
+    btn.onclick = () => {
+      state.view = btn.dataset.view;
+      state.pick = '';
+      syncViewButtons();
+      toHash();
+      render();
+    };
+  });
+
+  $$('.chip-btn[data-chip]').forEach(chip => {
+    chip.onclick = () => {
+      const c = chip.dataset.chip;
+      if (c === 'all') { state.level = ''; state.min = 0; state.skill = ''; state.status = ''; }
+      else if (c === 'p1') { state.q = 'principles'; }
+      else if (c === 'p2') { state.q = 'problem'; }
+      else if (c === 'high') { state.min = 4; }
+      else if (c === 'maths') { state.skill = 'maths'; }
+      else if (c === 'review') { state.status = 'bookmarked'; }
+      if (state.view === 'strata' && c !== 'all') state.view = 'cards';
+      syncControls();
+      toHash();
+      render();
+    };
+  });
+
+  $('#stats-pill').onclick = () => {
+    state.status = state.status === 'mastered' ? '' : 'mastered';
+    if (state.view === 'strata') state.view = 'cards';
+    syncControls();
+    toHash();
+    render();
+  };
+
+  window.addEventListener('keydown', e => {
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'SELECT') {
+      e.preventDefault();
+      $('#q').focus();
+    }
+  });
+
+  window.addEventListener('hashchange', () => { fromHash(); syncControls(); syncViewButtons(); render(); });
+
+  fromHash();
+  syncControls();
+  syncViewButtons();
+  updateMasteryStats();
+  render();
+}
+
+function opts(sel, first, items) {
+  $(sel).innerHTML = '<option value="">' + first + '</option>' + items.map(([v, l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join('');
+}
+
+function buildTopicOptions() {
+  const gs = {};
+  D.topics.forEach(t => { const g = t.group || 'Topics'; (gs[g] = gs[g] || []).push(t); });
+  return '<option value="">All Topics (1.1 - 9.2)</option>' + Object.entries(gs).map(([g, ts]) =>
+    `<optgroup label="${esc(g)}">` + ts.map(t => `<option value="${esc(t.id)}">${esc(t.id)} · ${esc(t.name)}</option>`).join('') + '</optgroup>').join('');
+}
+
+function onFilterChange() {
+  state.q = $('#q').value.trim();
+  state.level = $('#level').value;
+  state.topic = $('#topic').value;
+  state.year = $('#year').value;
+  state.skill = $('#skill').value;
+  state.min = +$('#min').value || 0;
+  state.status = $('#status').value;
+  state.pick = '';
+  if ((state.topic || state.skill || state.year || state.min || state.q || state.status) && state.view === 'strata') {
+    state.view = 'cards';
+  }
+  syncViewButtons();
+  toHash();
+  render();
+}
+
+function resetFilters() {
+  state = { ...state, level:'', topic:'', skill:'', year:'', min:0, status:'', q:'', pick:'' };
+  syncControls();
+  toHash();
+  render();
+}
+
+function syncControls() {
+  $('#q').value = state.q;
+  $('#level').value = state.level;
+  $('#topic').value = state.topic;
+  $('#year').value = state.year;
+  $('#skill').value = state.skill;
+  $('#min').value = state.min || '';
+  $('#status').value = state.status || '';
+
+  $$('.chip-btn[data-chip]').forEach(c => {
+    const val = c.dataset.chip;
+    let act = false;
+    if (val === 'high' && state.min >= 4) act = true;
+    if (val === 'maths' && state.skill === 'maths') act = true;
+    if (val === 'review' && state.status === 'bookmarked') act = true;
+    c.classList.toggle('active', act);
+  });
+}
+
+function syncViewButtons() {
+  $$('.tab-link').forEach(b => {
+    const isAct = b.dataset.view === state.view;
+    b.classList.toggle('active', isAct);
+    b.setAttribute('aria-selected', isAct);
+  });
+}
+
+function fromHash() {
+  const p = new URLSearchParams(location.hash.slice(1));
+  state.view = p.get('view') || state.view || 'strata';
+  state.level = p.get('level') || '';
+  state.topic = p.get('topic') || '';
+  state.skill = p.get('skill') || '';
+  state.year = p.get('year') || '';
+  state.min = +p.get('min') || 0;
+  state.status = p.get('status') || '';
+  state.q = p.get('q') || '';
+  state.pick = p.get('pick') || '';
+}
+
+function toHash() {
+  const p = new URLSearchParams();
+  if (state.view && state.view !== 'strata') p.set('view', state.view);
+  ['level','topic','skill','year','min','status','q','pick'].forEach(k => {
+    if (state[k]) p.set(k, state[k]);
+  });
+  history.replaceState(null, '', location.pathname + location.search + (p.toString() ? '#' + p : ''));
+}
+
+function filtered() {
+  const query = state.q.toLowerCase();
+  return D.questions.filter(x => {
+    if (state.pick && x.id !== state.pick) return false;
+    if (state.level && D.P[x.paper].level !== state.level) return false;
+    if (state.topic && !x.topics.includes(state.topic)) return false;
+    if (state.skill && !x.skills.includes(state.skill)) return false;
+    if (state.year && D.P[x.paper].year != state.year) return false;
+    if (x.marks < state.min) return false;
+    if (state.status === 'mastered' && !mastered.has(x.id)) return false;
+    if (state.status === 'unmastered' && mastered.has(x.id)) return false;
+    if (state.status === 'bookmarked' && !bookmarked.has(x.id)) return false;
+    if (query) {
+      const blob = (x.summary + ' ' + (x.prompt || '') + ' ' + x.question + ' ' + x.topics.map(t => T[t] ? T[t].name : '').join(' ') + ' ' + x.skills.map(s => S[s] ? S[s].name : '').join(' ')).toLowerCase();
+      if (!blob.includes(query)) return false;
+    }
+    return true;
+  }).sort((a, b) => D.P[b.paper].year - D.P[a.paper].year || a.i - b.i);
+}
+
+function updateMasteryStats() {
+  if (!D) return;
+  let masteredMarks = 0;
+  let totalMarks = 0;
+  D.questions.forEach(q => {
+    totalMarks += q.marks;
+    if (mastered.has(q.id)) masteredMarks += q.marks;
+  });
+  $('#mastery-count-txt').textContent = masteredMarks.toLocaleString();
+  $('#mastery-total-txt').textContent = totalMarks.toLocaleString();
+}
+
+function pickRandomQuestion() {
+  const pool = filtered();
+  if (!pool.length) return;
+  const q = pool[Math.floor(Math.random() * pool.length)];
+  state.pick = q.id;
+  state.view = 'cards';
+  syncViewButtons();
+  toHash();
+  render();
+  showToast(`Question ${q.question} (${q.marks}m)`);
+}
+
+function render() {
+  const list = filtered();
+  const totalM = list.reduce((n, x) => n + x.marks, 0);
+
+  if (state.pick) {
+    $('#results-count-msg').innerHTML = `1 question (${totalM} marks) · <a href="javascript:void(0)" onclick="state.pick='';toHash();render();" style="color:inherit;text-decoration:underline">Show all</a>`;
+  } else {
+    $('#results-count-msg').innerHTML = `${list.length.toLocaleString()} questions (${totalM.toLocaleString()} marks)`;
+  }
+
+  const badges = [];
+  if (state.level) badges.push(state.level);
+  if (state.topic) badges.push(state.topic + ' ' + (T[state.topic] ? T[state.topic].name : ''));
+  if (state.year) badges.push(state.year);
+  if (state.skill) badges.push(S[state.skill] ? S[state.skill].name : state.skill);
+  if (state.status) badges.push(state.status);
+  if (state.min) badges.push(`≥${state.min}m`);
+  $('#results-active-tag').textContent = badges.join(' · ');
+
+  const filterPanel = $('.filter-panel');
+  const statusBar = $('#status-bar');
+  if (state.view === 'cheatsheets') {
+    if (filterPanel) filterPanel.style.display = 'none';
+    if (statusBar) statusBar.style.display = 'none';
+    renderCheatsheets();
+  } else if (state.view === 'practice') {
+    if (filterPanel) filterPanel.style.display = 'none';
+    if (statusBar) statusBar.style.display = 'none';
+    renderFlashcardPractice();
+  } else {
+    if (filterPanel) filterPanel.style.display = '';
+    if (statusBar) statusBar.style.display = '';
+    if (state.view === 'strata') {
+      renderStrata();
+    } else {
+      renderCards(list);
+    }
+  }
+}
+
+/* ========================================================
+   VIEW 1: SPECIFICATION TOPIC MATRIX
+   ======================================================== */
+function renderStrata() {
+  const groups = {};
+  D.topics.forEach(t => { const g = t.group || 'Topics'; (groups[g] = groups[g] || []).push(t); });
+
+  let html = `<div class="strata-wrap">`;
+
+  for (const [g, ts] of Object.entries(groups)) {
+    const rows = ts.map(t => {
+      const qs = D.questions.filter(x => x.topics.includes(t.id));
+      const marks = qs.reduce((n, x) => n + x.marks, 0);
+      const masteredInTopic = qs.filter(x => mastered.has(x.id)).reduce((n, x) => n + x.marks, 0);
+      const c = colorOf(t.id);
+
+      return `<a class="strata-row" href="#view=cards&topic=${esc(t.id)}">
+        <div class="strata-left">
+          <span class="strata-color-indicator" style="--c:${c}"></span>
+          <span class="strata-name"><b>${esc(t.id)}</b> · ${esc(t.name)}</span>
+        </div>
+        <div class="strata-right">
+          <span>${masteredInTopic ? `${masteredInTopic}/${marks}m mastered` : (qs.length ? `${qs.length} past questions` : 'Core spec topic')}</span>
+          <span class="strata-mark-pill">${marks ? `${marks}m` : 'Spec'}</span>
+        </div>
+      </a>`;
+    }).join('');
+
+    if (rows) {
+      html += `
+        <section>
+          <div class="strata-section-title">${esc(g)}</div>
+          <div class="strata-column">${rows}</div>
+        </section>
+      `;
+    }
+  }
+
+  html += `</div>`;
+  $('#app-view').innerHTML = html;
+}
+
+/* ========================================================
+   VIEW 2: QUESTION CARDS
+   ======================================================== */
+function renderCards(list) {
+  if (!list.length) {
+    $('#app-view').innerHTML = `
+      <div style="text-align:center;padding:48px 0;color:var(--muted)">
+        <p>No questions match current filters.</p>
+        <button type="button" class="btn-minimal" onclick="resetFilters()">Clear Filters</button>
+      </div>`;
+    return;
+  }
+
+  const html = `<div class="cards-list">` + list.map(q => renderCard(q)).join('') + `</div>`;
+  $('#app-view').innerHTML = html;
+}
+
+function renderCard(x) {
+  const p = D.P[x.paper] || { series: 'Exam', year: 2023, unit: 'Design Engineering', code: 'H404/01' };
+  const isMastered = mastered.has(x.id);
+  const isBookmarked = bookmarked.has(x.id);
+
+  const tags = x.topics.map(t => `<a class="q-tag" href="#view=cards&topic=${t}">${esc(t)} ${esc(T[t] ? T[t].name : '')}</a>`).join('')
+    + x.skills.map(s => `<span class="q-tag">${esc(S[s] ? S[s].name : s)}</span>`).join('');
+
+  return `
+    <article class="q-card" id="q-${x.id}">
+      <div class="q-card-header">
+        <div class="q-title-wrap">
+          <h2 class="q-title">Question ${esc(x.question)}</h2>
+          <span class="q-mark">${x.marks} ${x.marks === 1 ? 'mark' : 'marks'}</span>
+        </div>
+        <div class="q-actions">
+          <button type="button" class="btn-q-action ${isBookmarked ? 'active-star' : ''}" onclick="toggleBookmark('${x.id}', this)">
+            ${isBookmarked ? 'Bookmarked' : 'Bookmark'}
+          </button>
+          <button type="button" class="btn-q-action ${isMastered ? 'active-check' : ''}" onclick="toggleMastered('${x.id}', this)">
+            ${isMastered ? 'Mastered' : 'Mark done'}
+          </button>
+          <button type="button" class="btn-q-action" onclick="copyQuestionLink('${x.id}')" title="Copy link">Link</button>
+        </div>
+      </div>
+
+      <div class="q-citation">${esc(p.series)} ${p.year} · ${esc(p.unit)} (${esc(p.code)}) · Page ${x.page || 1}</div>
+
+      <p class="q-summary"><b>Summary:</b> ${esc(x.summary)}</p>
+
+      ${x.prompt ? `
+        <div class="q-prompt-box">
+          ${x.prompt}
+        </div>
+      ` : ''}
+
+      <div class="q-tags">${tags}</div>
+
+      ${x.image ? `
+        <div class="img-container">
+          <img loading="lazy" src="${esc(x.image)}" alt="Question ${esc(x.question)}" onclick="openModal('${x.id}', 'question')">
+        </div>
+      ` : ''}
+
+      ${(x.figures || []).map((f, fi) => `
+        <details class="details-clean">
+          <summary>Resource figure: ${figLabel(f)}</summary>
+          <div class="details-body">
+            <div class="img-container">
+              <img loading="lazy" src="${esc(f)}" alt="${figLabel(f)}" onclick="openModal('${x.id}', 'figure', ${fi})">
+            </div>
+          </div>
+        </details>
+      `).join('')}
+
+      ${(x.markscheme_text || x.markscheme) ? `
+        <details class="details-clean">
+          <summary>Official Mark Scheme & Model Answer</summary>
+          <div class="details-body">
+            ${x.markscheme_text ? `<div>${x.markscheme_text}</div>` : ''}
+            ${x.markscheme ? `
+              <div class="img-container">
+                <img loading="lazy" src="${esc(x.markscheme)}" alt="Mark Scheme" onclick="openModal('${x.id}', 'markscheme')">
+              </div>
+            ` : ''}
+          </div>
+        </details>
+      ` : ''}
+
+      <div class="q-footer" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <a href="javascript:void(0)" class="btn-compare-link" onclick="openSheet('${x.topics[0]}')">Cheatsheet: ${esc(x.topics[0])} ${esc(T[x.topics[0]] ? T[x.topics[0]].name : '')}</a>
+        ${(x.markscheme || x.markscheme_text) ? `
+          <button type="button" class="btn-compare-link" onclick="openModal('${x.id}', 'split')">View side-by-side with mark scheme</button>
+        ` : ''}
+      </div>
+    </article>
+  `;
+}
+
+function figLabel(f) {
+  if (f.includes('data')) return 'Engineering Data Sheet';
+  if (f.includes('fig')) return 'Figure Diagram';
+  return 'Technical Resource';
+}
+
+function toggleMastered(id, btn) {
+  if (mastered.has(id)) {
+    mastered.delete(id);
+    if (btn) {
+      btn.classList.remove('active-check');
+      btn.textContent = 'Mark done';
+    }
+  } else {
+    mastered.add(id);
+    if (btn) {
+      btn.classList.add('active-check');
+      btn.textContent = 'Mastered';
+    }
+  }
+  saveMastered();
+}
+
+function toggleBookmark(id, btn) {
+  if (bookmarked.has(id)) {
+    bookmarked.delete(id);
+    if (btn) {
+      btn.classList.remove('active-star');
+      btn.textContent = 'Bookmark';
+    }
+  } else {
+    bookmarked.add(id);
+    if (btn) {
+      btn.classList.add('active-star');
+      btn.textContent = 'Bookmarked';
+    }
+  }
+  saveBookmarked();
+}
+
+function copyQuestionLink(id) {
+  const url = `${location.origin}${location.pathname}#view=cards&pick=${id}`;
+  navigator.clipboard.writeText(url).then(() => {
+    showToast('Link copied');
+  }).catch(() => {
+    prompt('URL:', url);
+  });
+}
+
+/* ========================================================
+   VIEW 3: FLASHCARD PRACTICE
+   ======================================================== */
+function buildFlashcards() {
+  if (FLASHCARDS && FLASHCARDS.length) return;
+  if (!CHEATS) return;
+  const cards = [];
+  let cid = 1;
+  for (const [tid, tdata] of Object.entries(CHEATS)) {
+    for (const sec of (tdata.sections || [])) {
+      for (const pt of sec.points) {
+        const m = pt.match(/<b>(.*?)<\/b>[:\s-]*(.*)/s);
+        let qText = '', aText = '';
+        if (m) {
+          let k = m[1].replace(/:$/, '').trim();
+          let ans = m[2].trim();
+          if (/vs|\//i.test(k)) qText = `Compare and contrast: ${k}`;
+          else if (/definition|defined/i.test(k)) qText = `Define and explain: ${k}`;
+          else if (/formula|equation|calculation/i.test(k)) qText = `State the principle / mathematical formula for: ${k}`;
+          else if (/rule|standards|directives|legislation/i.test(k)) qText = `Outline the engineering requirements and scope of: ${k}`;
+          else if (/principle|types|stages|methods/i.test(k)) qText = `Explain the key principles / characteristics of: ${k}`;
+          else if (k.endsWith('?')) qText = k;
+          else qText = `Explain the engineering significance and application of: ${k}`;
+          aText = ans;
+        } else {
+          qText = `Explain the core requirements of: ${sec.heading}`;
+          aText = pt;
+        }
+        cards.push({
+          id: `card-${String(cid++).padStart(3, '0')}`,
+          topicId: tid,
+          topicTitle: tdata.title,
+          category: sec.heading,
+          question: qText,
+          answer: aText
+        });
+      }
+    }
+  }
+  FLASHCARDS = cards;
+}
+
+function startPracticeForTopic(tid) {
+  state.view = 'practice';
+  practiceState.topic = tid;
+  practiceState.idx = 0;
+  practiceState.revealed = false;
+  syncViewButtons();
+  toHash();
+  render();
+}
+
+function getPracticeCards() {
+  if (!FLASHCARDS || !FLASHCARDS.length) {
+    buildFlashcards();
+  }
+  return (FLASHCARDS || []).filter(c => {
+    if (practiceState.topic && c.topicId !== practiceState.topic) return false;
+    if (practiceState.status === 'unmastered' && sheetMastered.has(c.id)) return false;
+    if (practiceState.status === 'mastered' && !sheetMastered.has(c.id)) return false;
+    if (practiceState.status === 'starred' && !sheetStarred.has(c.id)) return false;
+    return true;
+  });
+}
+
+function renderFlashcardPractice() {
+  const cards = getPracticeCards();
+  const totalInBank = FLASHCARDS ? FLASHCARDS.length : 219;
+  const totalMasteredCount = sheetMastered.size;
+
+  if (!cards.length) {
+    $('#app-view').innerHTML = `
+      <div class="flashcard-wrap">
+        <div class="flashcard-toolbar">
+          <div class="flashcard-filters">
+            <select class="select-minimal" onchange="practiceState.topic=this.value;practiceState.idx=0;practiceState.revealed=false;renderFlashcardPractice();">
+              ${buildPracticeTopicOpts()}
+            </select>
+            <select class="select-minimal" onchange="practiceState.status=this.value;practiceState.idx=0;practiceState.revealed=false;renderFlashcardPractice();">
+              <option value="" ${practiceState.status===''?'selected':''}>All Cards</option>
+              <option value="unmastered" ${practiceState.status==='unmastered'?'selected':''}>Needs Work</option>
+              <option value="starred" ${practiceState.status==='starred'?'selected':''}>Starred</option>
+              <option value="mastered" ${practiceState.status==='mastered'?'selected':''}>Mastered</option>
+            </select>
+          </div>
+          <div class="flashcard-stats">Mastered: <b>${totalMasteredCount}</b> / ${totalInBank} cards</div>
+        </div>
+        <div style="text-align:center;padding:48px 0;color:var(--muted)">
+          <p>No cards match the selected filter.</p>
+          <button type="button" class="btn-minimal" onclick="practiceState.topic='';practiceState.status='';practiceState.idx=0;renderFlashcardPractice();">Reset Filter</button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (practiceState.idx >= cards.length) practiceState.idx = 0;
+  if (practiceState.idx < 0) practiceState.idx = cards.length - 1;
+
+  const card = cards[practiceState.idx];
+  const isMastered = sheetMastered.has(card.id);
+  const isStarred = sheetStarred.has(card.id);
+  const cColor = colorOf(card.topicId);
+
+  $('#app-view').innerHTML = `
+    <div class="flashcard-wrap">
+      <div class="flashcard-toolbar">
+        <div class="flashcard-filters">
+          <select class="select-minimal" id="practice-topic-sel">
+            ${buildPracticeTopicOpts()}
+          </select>
+          <select class="select-minimal" id="practice-status-sel">
+            <option value="" ${practiceState.status===''?'selected':''}>All Cards</option>
+            <option value="unmastered" ${practiceState.status==='unmastered'?'selected':''}>Needs Work</option>
+            <option value="starred" ${practiceState.status==='starred'?'selected':''}>Starred</option>
+            <option value="mastered" ${practiceState.status==='mastered'?'selected':''}>Mastered</option>
+          </select>
+          <button type="button" class="btn-minimal" id="btn-shuffle-cards" title="Shuffle deck">Shuffle</button>
+        </div>
+        <div class="flashcard-stats">
+          <span>Card <b>${practiceState.idx + 1}</b> of ${cards.length}</span> · 
+          <span>Mastered: <b>${totalMasteredCount}</b> / ${totalInBank}</span>
+        </div>
+      </div>
+
+      <div class="flashcard-box">
+        <div>
+          <div class="flashcard-top">
+            <div class="flashcard-topic-tag">
+              <span class="flashcard-indicator" style="--c:${cColor}"></span>
+              <span>Topic ${esc(card.topicId)} · ${esc(card.category)}</span>
+            </div>
+            <button type="button" class="btn-minimal ${isStarred ? 'active-star' : ''}" id="btn-star-card" style="${isStarred?'color:#d97706;border-color:#d97706':''}">
+              ${isStarred ? '★ Starred' : '☆ Star'}
+            </button>
+          </div>
+
+          <h2 class="flashcard-question-text">${esc(card.question)}</h2>
+
+          ${!practiceState.revealed ? `
+            <button type="button" class="flashcard-reveal-btn" id="btn-reveal-card">
+              Reveal Answer (Press Space)
+            </button>
+          ` : `
+            <div class="flashcard-answer-box">
+              <div class="flashcard-answer-text">${card.answer}</div>
+              <div class="flashcard-eval-bar">
+                <button type="button" class="btn-eval-review" id="eval-card-review">
+                  Needs Review (1)
+                </button>
+                <button type="button" class="btn-eval-mastered" id="eval-card-mastered">
+                  ${isMastered ? 'Mastered ✓' : 'Mark Mastered (2) ✓'}
+                </button>
+              </div>
+            </div>
+          `}
+        </div>
+
+        <div>
+          <div class="flashcard-footer-nav">
+            <button type="button" class="btn-minimal" id="card-prev">← Prev</button>
+            <a href="javascript:void(0)" class="btn-compare-link" onclick="openSheet('${card.topicId}')">View full ${card.topicId} cheatsheet</a>
+            <button type="button" class="btn-minimal" id="card-next">Next →</button>
+          </div>
+          <div class="flashcard-shortcuts-tip">Shortcuts: Space to reveal · 1 Needs Review · 2 Mastered · ← / → Navigate</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#practice-topic-sel').onchange = e => {
+    practiceState.topic = e.target.value;
+    practiceState.idx = 0;
+    practiceState.revealed = false;
+    renderFlashcardPractice();
+  };
+
+  $('#practice-status-sel').onchange = e => {
+    practiceState.status = e.target.value;
+    practiceState.idx = 0;
+    practiceState.revealed = false;
+    renderFlashcardPractice();
+  };
+
+  $('#btn-shuffle-cards').onclick = () => {
+    shuffle(FLASHCARDS);
+    practiceState.idx = 0;
+    practiceState.revealed = false;
+    renderFlashcardPractice();
+    showToast('Deck shuffled');
+  };
+
+  $('#btn-star-card').onclick = () => {
+    if (sheetStarred.has(card.id)) {
+      sheetStarred.delete(card.id);
+      showToast('Unstarred card');
+    } else {
+      sheetStarred.add(card.id);
+      showToast('Starred card');
+    }
+    localStorage.setItem('leets_sheet_starred', JSON.stringify([...sheetStarred]));
+    renderFlashcardPractice();
+  };
+
+  const revealBtn = $('#btn-reveal-card');
+  if (revealBtn) {
+    revealBtn.onclick = () => {
+      practiceState.revealed = true;
+      renderFlashcardPractice();
+    };
+  }
+
+  const evalReview = $('#eval-card-review');
+  if (evalReview) {
+    evalReview.onclick = () => {
+      if (sheetMastered.has(card.id)) {
+        sheetMastered.delete(card.id);
+        localStorage.setItem('leets_sheet_mastered', JSON.stringify([...sheetMastered]));
+      }
+      practiceState.idx++;
+      practiceState.revealed = false;
+      renderFlashcardPractice();
+    };
+  }
+
+  const evalMastered = $('#eval-card-mastered');
+  if (evalMastered) {
+    evalMastered.onclick = () => {
+      sheetMastered.add(card.id);
+      localStorage.setItem('leets_sheet_mastered', JSON.stringify([...sheetMastered]));
+      practiceState.idx++;
+      practiceState.revealed = false;
+      renderFlashcardPractice();
+      showToast('Card mastered! ✓');
+    };
+  }
+
+  $('#card-prev').onclick = () => {
+    practiceState.idx--;
+    practiceState.revealed = false;
+    renderFlashcardPractice();
+  };
+
+  $('#card-next').onclick = () => {
+    practiceState.idx++;
+    practiceState.revealed = false;
+    renderFlashcardPractice();
+  };
+}
+
+function buildPracticeTopicOpts() {
+  const tids = CHEATS ? Object.keys(CHEATS) : ['1.1','1.2','1.3','2.1','2.2','2.3','2.4','3.1','3.2','3.3','3.4','3.5','3.6','4.1','4.2','4.3','5.1','5.2','5.3','6.1','6.2','6.3','6.4','6.5','7.1','7.2','7.3','7.4','7.5','8.1','8.2','8.3','9.1','9.2'];
+  let html = `<option value="">All Topics (${FLASHCARDS?FLASHCARDS.length:219} cards)</option>`;
+  tids.forEach(t => {
+    const title = CHEATS && CHEATS[t] ? CHEATS[t].title.replace(/^Topic /, '') : t;
+    const isSel = practiceState.topic === t ? 'selected' : '';
+    html += `<option value="${t}" ${isSel}>${t} · ${esc(title)}</option>`;
+  });
+  return html;
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+window.addEventListener('keydown', e => {
+  if (state.view !== 'practice') return;
+  if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT') return;
+
+  if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    practiceState.idx--;
+    practiceState.revealed = false;
+    renderFlashcardPractice();
+  } else if (e.key === 'ArrowRight') {
+    e.preventDefault();
+    practiceState.idx++;
+    practiceState.revealed = false;
+    renderFlashcardPractice();
+  } else if (e.key === ' ' || e.code === 'Space') {
+    e.preventDefault();
+    practiceState.revealed = !practiceState.revealed;
+    renderFlashcardPractice();
+  } else if (e.key === '1' && practiceState.revealed) {
+    e.preventDefault();
+    const btn = $('#eval-card-review');
+    if (btn) btn.click();
+  } else if (e.key === '2' && practiceState.revealed) {
+    e.preventDefault();
+    const btn = $('#eval-card-mastered');
+    if (btn) btn.click();
+  } else if (e.key === 's' || e.key === 'S') {
+    const btn = $('#btn-star-card');
+    if (btn) btn.click();
+  }
+});
+
+/* ========================================================
+   LIGHTBOX MODAL & SIDE-BY-SIDE VIEW
+   ======================================================== */
+let activeModalQ = null;
+let activeModalTab = 'question';
+
+function openModal(qid, tab = 'question', figureIndex = 0) {
+  const q = D.questions.find(x => x.id === qid);
+  if (!q) return;
+
+  activeModalQ = q;
+  activeModalTab = tab === 'figure' ? 'figures' : tab;
+
+  $('#modal-title-txt').textContent = `Question ${q.question} (${q.marks}m) · ${D.P[q.paper] ? D.P[q.paper].year : ''}`;
+
+  const hasFigures = q.figures && q.figures.length > 0;
+  $('#modal-tab-figures').style.display = hasFigures ? 'inline-block' : 'none';
+  $('#modal-tab-ms').style.display = (q.markscheme || q.markscheme_text) ? 'inline-block' : 'none';
+  $('#modal-tab-split').style.display = (q.markscheme || q.markscheme_text) ? 'inline-block' : 'none';
+
+  syncModalTabs();
+  renderModalContent();
+
+  const m = $('#modal-box');
+  m.classList.add('open');
+  m.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const m = $('#modal-box');
+  m.classList.remove('open');
+  m.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+$('#modal-close').onclick = closeModal;
+$('#modal-box').onclick = e => {
+  if (e.target === $('#modal-box')) closeModal();
+};
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    if ($('#modal-box').classList.contains('open')) closeModal();
+    if ($('#formula-modal').classList.contains('open')) {
+      $('#formula-modal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+});
+
+$$('.btn-modal-tab').forEach(b => {
+  b.onclick = () => {
+    activeModalTab = b.dataset.tab;
+    syncModalTabs();
+    renderModalContent();
+  };
+});
+
+function syncModalTabs() {
+  $$('.btn-modal-tab').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === activeModalTab);
+  });
+}
+
+function renderModalContent() {
+  if (!activeModalQ) return;
+  const q = activeModalQ;
+  const body = $('#modal-body');
+
+  if (activeModalTab === 'question') {
+    body.innerHTML = q.image ? `<img src="${esc(q.image)}" alt="Question ${esc(q.question)}">` : `
+      <div style="background:var(--surface);padding:30px;border-radius:var(--radius);max-width:800px;line-height:1.6">
+        <h3>Question ${esc(q.question)} (${q.marks} marks)</h3>
+        <p>${q.prompt || esc(q.summary)}</p>
+      </div>`;
+  } else if (activeModalTab === 'figures') {
+    body.innerHTML = `
+      <div style="display:flex;flex-direction:column;gap:16px;align-items:center">
+        ${(q.figures || []).map(f => `<img src="${esc(f)}" alt="${figLabel(f)}">`).join('')}
+      </div>`;
+  } else if (activeModalTab === 'markscheme') {
+    body.innerHTML = q.markscheme ? `<img src="${esc(q.markscheme)}" alt="Mark Scheme">` : `
+      <div style="background:var(--surface);padding:30px;border-radius:var(--radius);max-width:800px;line-height:1.6">
+        <h3>Official Mark Scheme · Question ${esc(q.question)}</h3>
+        <p>${q.markscheme_text || 'Mark scheme available in syllabus reference.'}</p>
+      </div>`;
+  } else if (activeModalTab === 'split') {
+    body.innerHTML = `
+      <div class="split-view">
+        <div class="split-pane">
+          <div class="split-pane-head">Question & Specification Prompt</div>
+          <div class="split-pane-body">
+            ${q.image ? `<img src="${esc(q.image)}" alt="Question">` : ''}
+            <div style="line-height:1.6">${q.prompt || esc(q.summary)}</div>
+            ${(q.figures || []).map(f => `<img src="${esc(f)}" alt="${figLabel(f)}">`).join('')}
+          </div>
+        </div>
+        <div class="split-pane">
+          <div class="split-pane-head">Mark Scheme & Model Calculations</div>
+          <div class="split-pane-body">
+            ${q.markscheme ? `<img src="${esc(q.markscheme)}" alt="Mark Scheme">` : ''}
+            <div style="line-height:1.6">${q.markscheme_text || 'Mark scheme available in syllabus reference.'}</div>
+          </div>
+        </div>
+      </div>`;
+  }
+}
+
+function openSheet(tid) {
+  state.view = 'cheatsheets';
+  activeSheetTopic = tid in (CHEATS || {}) ? tid : (tid.split('.')[0] in (CHEATS || {}) ? tid.split('.')[0] : '1.1');
+  syncViewButtons();
+  toHash();
+  render();
+}
+
+function renderCheatsheets() {
+  if (!CHEATS) {
+    $('#app-view').innerHTML = `<p style="text-align:center;padding:40px 0;color:var(--muted)">Loading cheatsheets...</p>`;
+    return;
+  }
+
+  const topicKeys = Object.keys(CHEATS);
+  if (!topicKeys.includes(activeSheetTopic)) activeSheetTopic = topicKeys[0];
+
+  const pillsHtml = topicKeys.map(k => {
+    const isAct = k === activeSheetTopic;
+    return `<button type="button" class="sheet-pill ${isAct ? 'active' : ''}" onclick="activeSheetTopic='${k}';renderCheatsheets()">${k} · ${esc((CHEATS[k].title || '').split('·')[1] || k)}</button>`;
+  }).join('');
+
+  const current = CHEATS[activeSheetTopic];
+  let sectionsHtml = '';
+  (current.sections || []).forEach(sec => {
+    sectionsHtml += `
+      <div class="sheet-section">
+        <h3 class="sheet-section-title">${esc(sec.heading)}</h3>
+        <ul class="sheet-list">
+          ${sec.points.map(pt => `<li>${pt}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  });
+
+  $('#app-view').innerHTML = `
+    <div class="cheatsheets-wrap">
+      <div class="sheet-topic-bar">${pillsHtml}</div>
+      <article class="sheet-card">
+        <div class="sheet-head">
+          <div>
+            <h2 class="sheet-title">${esc(current.title)}</h2>
+            <div class="sheet-spec"><b>Specification:</b> ${esc(current.spec)}</div>
+          </div>
+          <button type="button" class="btn-minimal" onclick="startPracticeForTopic('${activeSheetTopic}')">
+            Practice flashcards for this topic →
+          </button>
+        </div>
+        ${sectionsHtml}
+      </article>
+    </div>
+  `;
+}
+
+</script>
+</body>
+</html>

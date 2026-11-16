@@ -1,0 +1,1754 @@
+﻿[
+    {
+        "id":  "card-001",
+        "topicId":  "1.1",
+        "topicTitle":  "Topic 1.1 · Contexts for Design Solutions",
+        "category":  "Context Dependency \u0026 Operating Surroundings",
+        "question":  "Explain the engineering significance and application of: Context dependency",
+        "answer":  "All design practice is context dependent. An engineered solution cannot be validated in isolation; it must satisfy the precise physical, social, and operational conditions of its intended deployment."
+    },
+    {
+        "id":  "card-002",
+        "topicId":  "1.1",
+        "topicTitle":  "Topic 1.1 · Contexts for Design Solutions",
+        "category":  "Context Dependency \u0026 Operating Surroundings",
+        "question":  "Explain the engineering significance and application of: Environmental and surroundings analysis",
+        "answer":  "Investigating extreme ambient temperatures, humidity, UV radiation exposure, vibration spectra, airborne particulate ingress (IP rating), chemical exposure, and installation envelope."
+    },
+    {
+        "id":  "card-003",
+        "topicId":  "1.1",
+        "topicTitle":  "Topic 1.1 · Contexts for Design Solutions",
+        "category":  "Context Dependency \u0026 Operating Surroundings",
+        "question":  "Explain the engineering significance and application of: Economic and market constraints",
+        "answer":  "Analysing purchasing power of target demographics, competitor unit pricing benchmarks, target BOM (Bill of Materials) cost ceilings, and commercial return on investment (ROI)."
+    },
+    {
+        "id":  "card-004",
+        "topicId":  "1.1",
+        "topicTitle":  "Topic 1.1 · Contexts for Design Solutions",
+        "category":  "Context Dependency \u0026 Operating Surroundings",
+        "question":  "Explain the engineering significance and application of: Product opportunities",
+        "answer":  "Identifying market gaps, underserved user niches, regulatory shifts (e.g. decarbonisation mandates), or technological readiness improvements that enable novel solutions."
+    },
+    {
+        "id":  "card-005",
+        "topicId":  "1.1",
+        "topicTitle":  "Topic 1.1 · Contexts for Design Solutions",
+        "category":  "Primary Users \u0026 Stakeholder Ecosystem",
+        "question":  "Explain the engineering significance and application of: Primary user",
+        "answer":  "The direct operator interacting with the product\u0027s controls and user interface on a routine operational basis."
+    },
+    {
+        "id":  "card-006",
+        "topicId":  "1.1",
+        "topicTitle":  "Topic 1.1 · Contexts for Design Solutions",
+        "category":  "Primary Users \u0026 Stakeholder Ecosystem",
+        "question":  "Explain the engineering significance and application of: Wider stakeholders",
+        "answer":  "Maintenance technicians, installation teams, safety certifiers, logistics handlers, and recycling facilities whose operational requirements shape product architecture."
+    },
+    {
+        "id":  "card-007",
+        "topicId":  "1.1",
+        "topicTitle":  "Topic 1.1 · Contexts for Design Solutions",
+        "category":  "Primary Users \u0026 Stakeholder Ecosystem",
+        "question":  "Explain the engineering significance and application of: Contextual inquiry",
+        "answer":  "Direct ethnographic observation and semi-structured interviews in the real operational environment to reveal tacit needs that users rarely express in surveys."
+    },
+    {
+        "id":  "card-008",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "User-Centred Design (UCD) \u0026 Investigation Methods",
+        "question":  "Explain the engineering significance and application of: User-Centred Design (UCD)",
+        "answer":  "An iterative design philosophy (ISO 9241-210) placing the explicit needs, cognitive capabilities, and physical ergonomics of end-users at every development phase."
+    },
+    {
+        "id":  "card-009",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "User-Centred Design (UCD) \u0026 Investigation Methods",
+        "question":  "Explain the engineering significance and application of: SWOT analysis",
+        "answer":  "Systematic matrix mapping internal Strengths and Weaknesses against external Opportunities and Threats to guide strategic design engineering decisions."
+    },
+    {
+        "id":  "card-010",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "User-Centred Design (UCD) \u0026 Investigation Methods",
+        "question":  "Explain the engineering significance and application of: Focus groups \u0026 qualitative observation",
+        "answer":  "Structured interactive sessions evaluating concept prototypes, aesthetic styling, tactile switch resistance, and feedback clarity."
+    },
+    {
+        "id":  "card-011",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "User-Centred Design (UCD) \u0026 Investigation Methods",
+        "question":  "Explain the engineering significance and application of: Market research \u0026 gap analysis",
+        "answer":  "Quantitative demographic surveys, TAM/SAM/SOM market sizing, and identifying price-performance voids in current competitor product lines."
+    },
+    {
+        "id":  "card-012",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "Enterprise \u0026 Routes to Innovation",
+        "question":  "Explain the engineering significance and application of: Entrepreneurship",
+        "answer":  "The commercial initiative and risk management required to translate technical inventions into viable market solutions."
+    },
+    {
+        "id":  "card-013",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "Enterprise \u0026 Routes to Innovation",
+        "question":  "Explain the engineering significance and application of: Commercial partnerships \u0026 licensing",
+        "answer":  "Teaming with established Tier-1 manufacturers or licensing patented IP for royalties to leverage existing supply chains and global distribution."
+    },
+    {
+        "id":  "card-014",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "Enterprise \u0026 Routes to Innovation",
+        "question":  "Explain the engineering significance and application of: Venture capital \u0026 angel investment",
+        "answer":  "Early-stage equity funding to finance high capital expenditure tooling (e.g. injection moulds, stamping dies) and CE/UKCA regulatory compliance testing."
+    },
+    {
+        "id":  "card-015",
+        "topicId":  "1.2",
+        "topicTitle":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+        "category":  "Enterprise \u0026 Routes to Innovation",
+        "question":  "Explain the engineering significance and application of: Crowdfunding models",
+        "answer":  "Pre-sales platforms (e.g. Kickstarter) used to validate consumer demand, establish early product evangelists, and fund initial production runs without diluting equity."
+    },
+    {
+        "id":  "card-016",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Anthropometrics \u0026 Percentile Design Rules",
+        "question":  "Explain the engineering significance and application of: Anthropometry",
+        "answer":  "The measurement of physical dimensions, reach boundaries, biomechanical leverage, and strength capacities of human populations."
+    },
+    {
+        "id":  "card-017",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Anthropometrics \u0026 Percentile Design Rules",
+        "question":  "Explain the engineering significance and application of: 5th to 95th percentile envelope",
+        "answer":  "Standard engineering rule to accommodate at least 90% of the target user population."
+    },
+    {
+        "id":  "card-018",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Anthropometrics \u0026 Percentile Design Rules",
+        "question":  "Explain the engineering significance and application of: Reach dimensions (5th percentile)",
+        "answer":  "Operational reach, button distances, and shelf heights must be accessible to smaller users; designed according to the \u003cb\u003e5th percentile female\u003c/b\u003e data."
+    },
+    {
+        "id":  "card-019",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Anthropometrics \u0026 Percentile Design Rules",
+        "question":  "Explain the engineering significance and application of: Clearance dimensions (95th percentile)",
+        "answer":  "Hand clearance, legroom, door apertures, and handle openings must fit larger users; designed according to the \u003cb\u003e95th percentile male\u003c/b\u003e data."
+    },
+    {
+        "id":  "card-020",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Anthropometrics \u0026 Percentile Design Rules",
+        "question":  "Explain the engineering significance and application of: Design for adjustability",
+        "answer":  "Incorporating mechanical sliders, telescopic linkages, or height adjustment mechanisms to comfortably span across the entire 5th to 95th percentile spectrum."
+    },
+    {
+        "id":  "card-021",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Ergonomics \u0026 Human-Machine Interfaces (HMI)",
+        "question":  "Explain the engineering significance and application of: Physical ergonomics",
+        "answer":  "Optimising grip diameters (power grip 30–45 mm; precision grip 8–15 mm), reducing repetitive strain injury (RSI) risks, and maintaining neutral wrist postures."
+    },
+    {
+        "id":  "card-022",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Ergonomics \u0026 Human-Machine Interfaces (HMI)",
+        "question":  "Explain the engineering significance and application of: Cognitive ergonomics",
+        "answer":  "Minimising mental workload, preventing control confusion, intuitive layout mapping (e.g. clockwise rotation increases output), and sensory confirmation feedback within 100ms."
+    },
+    {
+        "id":  "card-023",
+        "topicId":  "1.3",
+        "topicTitle":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+        "category":  "Ergonomics \u0026 Human-Machine Interfaces (HMI)",
+        "question":  "Explain the engineering significance and application of: Inclusive design",
+        "answer":  "Creating accessible products that accommodate individuals with varying physical, sensory, or cognitive capabilities without requiring stigmatising adaptations (BS 8300 / Equality Act 2010)."
+    },
+    {
+        "id":  "card-024",
+        "topicId":  "2.1",
+        "topicTitle":  "Topic 2.1 · Product Analysis \u0026 Evaluation",
+        "category":  "Systematic Product Disassembly \u0026 Reverse Engineering",
+        "question":  "Explain the engineering significance and application of: Product disassembly",
+        "answer":  "Methodical physical teardown of existing market products to analyse component count, mechanical sub-systems, fastening choices, and manufacturing workflows."
+    },
+    {
+        "id":  "card-025",
+        "topicId":  "2.1",
+        "topicTitle":  "Topic 2.1 · Product Analysis \u0026 Evaluation",
+        "category":  "Systematic Product Disassembly \u0026 Reverse Engineering",
+        "question":  "Explain the engineering significance and application of: ACCESS FM evaluation",
+        "answer":  "Aesthetics, Cost, Customer, Environment, Size, Safety, Function, Material. Standard evaluative framework for rigorous product deconstruction."
+    },
+    {
+        "id":  "card-026",
+        "topicId":  "2.1",
+        "topicTitle":  "Topic 2.1 · Product Analysis \u0026 Evaluation",
+        "category":  "Systematic Product Disassembly \u0026 Reverse Engineering",
+        "question":  "Explain the engineering significance and application of: Bill of Materials (BOM) analysis",
+        "answer":  "Cataloguing each discrete part, material type, net weight, standard fastener specifications (e.g. DIN 912 screws), and estimated unit production costs."
+    },
+    {
+        "id":  "card-027",
+        "topicId":  "2.1",
+        "topicTitle":  "Topic 2.1 · Product Analysis \u0026 Evaluation",
+        "category":  "Fitness for Purpose \u0026 Benchmarking",
+        "question":  "Explain the engineering significance and application of: Fitness for purpose",
+        "answer":  "Objective engineering verification that a product meets all functional, environmental, and lifespan criteria specified in its design brief under operational duty cycles."
+    },
+    {
+        "id":  "card-028",
+        "topicId":  "2.1",
+        "topicTitle":  "Topic 2.1 · Product Analysis \u0026 Evaluation",
+        "category":  "Fitness for Purpose \u0026 Benchmarking",
+        "question":  "Explain the engineering significance and application of: Branding and aesthetic identity",
+        "answer":  "Evaluating surface finishes, colourways, haptics, and brand coherence that drive consumer quality perception."
+    },
+    {
+        "id":  "card-029",
+        "topicId":  "2.1",
+        "topicTitle":  "Topic 2.1 · Product Analysis \u0026 Evaluation",
+        "category":  "Fitness for Purpose \u0026 Benchmarking",
+        "question":  "Explain the engineering significance and application of: Enhancement opportunities",
+        "answer":  "Identifying structural fatigue vulnerabilities, excessive thermal buildup, redundant parts, or difficult assembly operations ripe for value-engineering redesign."
+    },
+    {
+        "id":  "card-030",
+        "topicId":  "2.2",
+        "topicTitle":  "Topic 2.2 · Technological Developments \u0026 Innovation",
+        "category":  "Innovation Types \u0026 Technology Lifecycles",
+        "question":  "Explain the engineering significance and application of: Incremental innovation",
+        "answer":  "Successive, low-risk refinements to existing products (e.g. shaving 5% component weight, increasing battery energy density by 3%, firmware updates)."
+    },
+    {
+        "id":  "card-031",
+        "topicId":  "2.2",
+        "topicTitle":  "Topic 2.2 · Technological Developments \u0026 Innovation",
+        "category":  "Innovation Types \u0026 Technology Lifecycles",
+        "question":  "Compare and contrast: Disruptive / Blue sky innovation",
+        "answer":  "Radically novel technology that displaces entrenched markets or creates entirely new industries (e.g. solid-state batteries, generative AI-driven design, electric vehicle skateboards)."
+    },
+    {
+        "id":  "card-032",
+        "topicId":  "2.2",
+        "topicTitle":  "Topic 2.2 · Technological Developments \u0026 Innovation",
+        "category":  "Innovation Types \u0026 Technology Lifecycles",
+        "question":  "Explain the engineering significance and application of: Technology Readiness Levels (TRL)",
+        "answer":  "NASA/EU scale from TRL 1 (basic principles observed) to TRL 9 (proven in full operational commercial environment)."
+    },
+    {
+        "id":  "card-033",
+        "topicId":  "2.2",
+        "topicTitle":  "Topic 2.2 · Technological Developments \u0026 Innovation",
+        "category":  "Emerging Engineering Technologies",
+        "question":  "Explain the engineering significance and application of: Additive metal manufacturing (DMLS)",
+        "answer":  "Direct Metal Laser Sintering enabling complex generative internal cooling channels impossible via subtractive milling."
+    },
+    {
+        "id":  "card-034",
+        "topicId":  "2.2",
+        "topicTitle":  "Topic 2.2 · Technological Developments \u0026 Innovation",
+        "category":  "Emerging Engineering Technologies",
+        "question":  "Explain the engineering significance and application of: Internet of Things (IoT) edge computing",
+        "answer":  "Integrating low-power sensors and microcontrollers with cloud connectivity for real-time predictive maintenance telemetry."
+    },
+    {
+        "id":  "card-035",
+        "topicId":  "2.2",
+        "topicTitle":  "Topic 2.2 · Technological Developments \u0026 Innovation",
+        "category":  "Emerging Engineering Technologies",
+        "question":  "Explain the engineering significance and application of: Advanced composites \u0026 meta-materials",
+        "answer":  "Tailored carbon-nanotube matrices and auxetic structures exhibiting negative Poisson\u0027s ratio for ultra-high impact absorption."
+    },
+    {
+        "id":  "card-036",
+        "topicId":  "2.3",
+        "topicTitle":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+        "category":  "Major Design \u0026 Engineering Movements",
+        "question":  "Explain the engineering significance and application of: Arts \u0026 Crafts (1880–1920)",
+        "answer":  "William Morris; emphasis on handcrafted integrity, honest use of natural materials, and moral rejection of dehumanising industrial mass manufacture."
+    },
+    {
+        "id":  "card-037",
+        "topicId":  "2.3",
+        "topicTitle":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+        "category":  "Major Design \u0026 Engineering Movements",
+        "question":  "Explain the engineering significance and application of: Bauhaus (1919–1933)",
+        "answer":  "Walter Gropius; \u0027Form follows function\u0027, bridging art with industrial manufacturing, geometric purity, tubular steel, glass, and modular architecture."
+    },
+    {
+        "id":  "card-038",
+        "topicId":  "2.3",
+        "topicTitle":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+        "category":  "Major Design \u0026 Engineering Movements",
+        "question":  "Explain the engineering significance and application of: Modernism \u0026 International Style",
+        "answer":  "Mies van der Rohe (\u0027Less is more\u0027); structural steel, reinforced concrete, clean unadorned surfaces, standardization."
+    },
+    {
+        "id":  "card-039",
+        "topicId":  "2.3",
+        "topicTitle":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+        "category":  "Major Design \u0026 Engineering Movements",
+        "question":  "Explain the engineering significance and application of: Memphis Group (1981–1988)",
+        "answer":  "Ettore Sottsass; colourful rebellion against cold functionalism, combining geometric whimsy, patterned laminates, and provocative postmodern aesthetics."
+    },
+    {
+        "id":  "card-040",
+        "topicId":  "2.3",
+        "topicTitle":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+        "category":  "Influential Design Engineers \u0026 Philosophy",
+        "question":  "Explain the engineering significance and application of: Dieter Rams",
+        "answer":  "Chief design officer at Braun; \u0027Good design is as little design as possible\u0027. Established the iconic 10 Principles of Good Design emphasizing utility, honesty, unobtrusiveness, and longevity."
+    },
+    {
+        "id":  "card-041",
+        "topicId":  "2.3",
+        "topicTitle":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+        "category":  "Influential Design Engineers \u0026 Philosophy",
+        "question":  "Explain the engineering significance and application of: Sir James Dyson",
+        "answer":  "Cyclonic air separation technology; executed 5,127 functional prototypes to eliminate vacuum bags, embodying persistence through empirical test rigs."
+    },
+    {
+        "id":  "card-042",
+        "topicId":  "2.3",
+        "topicTitle":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+        "category":  "Influential Design Engineers \u0026 Philosophy",
+        "question":  "Explain the engineering significance and application of: Isambard Kingdom Brunel",
+        "answer":  "Victorian engineering giant; pioneered screw-propelled iron steamships (SS Great Britain) and audacious suspension bridges, calculating structural limits with innovative ironwork."
+    },
+    {
+        "id":  "card-043",
+        "topicId":  "2.4",
+        "topicTitle":  "Topic 2.4 · Product Lifecycles \u0026 Marketing Models",
+        "category":  "Product Life Cycle (PLC) Dynamics",
+        "question":  "Explain the engineering significance and application of: Introduction phase",
+        "answer":  "High development \u0026 tooling cost amortization, low sales volume, negative cash flow; requires targeted marketing to innovators."
+    },
+    {
+        "id":  "card-044",
+        "topicId":  "2.4",
+        "topicTitle":  "Topic 2.4 · Product Lifecycles \u0026 Marketing Models",
+        "category":  "Product Life Cycle (PLC) Dynamics",
+        "question":  "Explain the engineering significance and application of: Growth phase",
+        "answer":  "Rapid market adoption, unit production costs drop via manufacturing economies of scale, distribution channels expand."
+    },
+    {
+        "id":  "card-045",
+        "topicId":  "2.4",
+        "topicTitle":  "Topic 2.4 · Product Lifecycles \u0026 Marketing Models",
+        "category":  "Product Life Cycle (PLC) Dynamics",
+        "question":  "Explain the engineering significance and application of: Maturity phase",
+        "answer":  "Peak sales, market saturation, intense competitor price pressure; cash generation peaks and funds subsequent R\u0026D pipelines."
+    },
+    {
+        "id":  "card-046",
+        "topicId":  "2.4",
+        "topicTitle":  "Topic 2.4 · Product Lifecycles \u0026 Marketing Models",
+        "category":  "Product Life Cycle (PLC) Dynamics",
+        "question":  "Explain the engineering significance and application of: Decline phase",
+        "answer":  "Falling sales due to technological obsolescence or shifting consumer habits; leads to product discontinuation or harvest strategy."
+    },
+    {
+        "id":  "card-047",
+        "topicId":  "2.4",
+        "topicTitle":  "Topic 2.4 · Product Lifecycles \u0026 Marketing Models",
+        "category":  "Extension Strategies \u0026 Digital Models",
+        "question":  "Explain the engineering significance and application of: Lifecycle extension strategies",
+        "answer":  "Re-engineering aesthetic facelifts, software feature upgrades, entering emerging geographic markets, or re-targeting alternative commercial applications."
+    },
+    {
+        "id":  "card-048",
+        "topicId":  "2.4",
+        "topicTitle":  "Topic 2.4 · Product Lifecycles \u0026 Marketing Models",
+        "category":  "Extension Strategies \u0026 Digital Models",
+        "question":  "Explain the engineering significance and application of: Direct-to-Consumer (D2C) \u0026 viral models",
+        "answer":  "Bypassing traditional retail margins through digital channels, influencer unboxings, and community crowdfunding feedback."
+    },
+    {
+        "id":  "card-049",
+        "topicId":  "3.1",
+        "topicTitle":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+        "category":  "Life Cycle Assessment (LCA) \u0026 Environmental Footprint",
+        "question":  "Explain the engineering significance and application of: Life Cycle Assessment (LCA)",
+        "answer":  "Standardized ISO 14040 methodology evaluating total environmental impact across 5 phases: 1. Raw Material Extraction -\u003e 2. Material Processing -\u003e 3. Manufacture -\u003e 4. Operational Use -\u003e 5. End of Life (EOL)."
+    },
+    {
+        "id":  "card-050",
+        "topicId":  "3.1",
+        "topicTitle":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+        "category":  "Life Cycle Assessment (LCA) \u0026 Environmental Footprint",
+        "question":  "Explain the engineering significance and application of: Embodied energy",
+        "answer":  "The cumulative non-renewable primary energy consumed from mining and refining raw materials to finished assembly."
+    },
+    {
+        "id":  "card-051",
+        "topicId":  "3.1",
+        "topicTitle":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+        "category":  "Life Cycle Assessment (LCA) \u0026 Environmental Footprint",
+        "question":  "Explain the engineering significance and application of: Carbon footprint",
+        "answer":  "Total equivalent carbon dioxide ($) emissions generated across the entire product lifecycle."
+    },
+    {
+        "id":  "card-052",
+        "topicId":  "3.1",
+        "topicTitle":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+        "category":  "Life Cycle Assessment (LCA) \u0026 Environmental Footprint",
+        "question":  "Explain the engineering significance and application of: Circular economy",
+        "answer":  "Regenerative industrial framework replacing linear \u0027take-make-dispose\u0027 with closed-loop biological and technical nutrient loops (Ellen MacArthur Foundation)."
+    },
+    {
+        "id":  "card-053",
+        "topicId":  "3.1",
+        "topicTitle":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+        "category":  "Planned Obsolescence \u0026 Statutory Directives",
+        "question":  "Explain the key principles / characteristics of: Planned obsolescence types",
+        "answer":  "Technological (incompatible communication ports/software), functional (glued-in batteries, artificial component wear limits), and psychological (stylistic dating)."
+    },
+    {
+        "id":  "card-054",
+        "topicId":  "3.1",
+        "topicTitle":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+        "category":  "Planned Obsolescence \u0026 Statutory Directives",
+        "question":  "Explain the engineering significance and application of: RoHS Directive",
+        "answer":  "Restriction of Hazardous Substances; strictly restricts hazardous materials in electronic products (Lead Pb, Mercury Hg, Cadmium Cd, Hexavalent Chromium Cr(VI), PBB, PBDE)."
+    },
+    {
+        "id":  "card-055",
+        "topicId":  "3.1",
+        "topicTitle":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+        "category":  "Planned Obsolescence \u0026 Statutory Directives",
+        "question":  "Explain the engineering significance and application of: WEEE Directive",
+        "answer":  "Waste Electrical and Electronic Equipment; legally mandates OEM take-back, treatment, and recycling of post-consumer electronic waste."
+    },
+    {
+        "id":  "card-056",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Design for Manufacture and Assembly (DFMA)",
+        "question":  "Explain the engineering significance and application of: Part count minimisation",
+        "answer":  "Integrating multiple functional features (e.g. snap fits, bearing mounts, wire clips) into unified injection mouldings or die castings."
+    },
+    {
+        "id":  "card-057",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Design for Manufacture and Assembly (DFMA)",
+        "question":  "Explain the engineering significance and application of: Poka-Yoke (Mistake proofing)",
+        "answer":  "Asymmetric locator pins, keyed plugs, and polarized connectors making incorrect manual assembly physically impossible."
+    },
+    {
+        "id":  "card-058",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Design for Manufacture and Assembly (DFMA)",
+        "question":  "Explain the engineering significance and application of: Top-down unidirectional assembly",
+        "answer":  "Designing parts to stack vertically in the Z-axis, eliminating tool reorientation and accelerating robotic assembly."
+    },
+    {
+        "id":  "card-059",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Design for Manufacture and Assembly (DFMA)",
+        "question":  "Explain the engineering significance and application of: Standardisation",
+        "answer":  "Restricting hardware to single screw sizes (e.g. M3 Torx throughout), eliminating tool changes during workshop and factory assembly."
+    },
+    {
+        "id":  "card-060",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Design for Manufacture and Assembly (DFMA)",
+        "question":  "Explain the engineering significance and application of: Design for Disassembly (DFD)",
+        "answer":  "Using threaded or snap fasteners rather than irreversible chemical adhesives or sonic welds to facilitate maintenance and component recycling."
+    },
+    {
+        "id":  "card-061",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Ethical Trade \u0026 Sustainable Materials",
+        "question":  "Explain the engineering significance and application of: Ethical Trading Initiative (ETI)",
+        "answer":  "Global code requiring fair living wages, freely chosen employment, safe working conditions, reasonable hours, and zero child labour in supply chains."
+    },
+    {
+        "id":  "card-062",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Ethical Trade \u0026 Sustainable Materials",
+        "question":  "Explain the engineering significance and application of: Eco-materials",
+        "answer":  "Certified sustainable timber (FSC/PEFC), bio-based resins, recycled rPET/rHDPE polymers, and solvent-free waterborne powder coatings."
+    },
+    {
+        "id":  "card-063",
+        "topicId":  "3.2",
+        "topicTitle":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+        "category":  "Ethical Trade \u0026 Sustainable Materials",
+        "question":  "Explain the engineering significance and application of: Upcycling",
+        "answer":  "Repurposing manufacturing scrap or discarded products into higher-value engineered products without energy-intensive melting or re-refining."
+    },
+    {
+        "id":  "card-064",
+        "topicId":  "3.3",
+        "topicTitle":  "Topic 3.3 · Optimum Material Use \u0026 Stock Forms",
+        "category":  "Nesting, Tessellation \u0026 Scrap Minimisation",
+        "question":  "Explain the engineering significance and application of: 2D Nesting algorithms",
+        "answer":  "CAD/CAM software mathematically optimizing part orientation and layout on standard sheet stock to maximize material yield."
+    },
+    {
+        "id":  "card-065",
+        "topicId":  "3.3",
+        "topicTitle":  "Topic 3.3 · Optimum Material Use \u0026 Stock Forms",
+        "category":  "Nesting, Tessellation \u0026 Scrap Minimisation",
+        "question":  "Explain the engineering significance and application of: Tessellation",
+        "answer":  "Geometrically interlocking identical profiles with common cutting edges, eliminating skeleton scrap and reducing laser/plasma cutting distance."
+    },
+    {
+        "id":  "card-066",
+        "topicId":  "3.3",
+        "topicTitle":  "Topic 3.3 · Optimum Material Use \u0026 Stock Forms",
+        "category":  "Nesting, Tessellation \u0026 Scrap Minimisation",
+        "question":  "State the principle / mathematical formula for: Scrap percentage formula",
+        "answer":  "$\\\\text{Scrap \\\\%} = \\\\frac{\\\\text{Total Raw Stock Area} - \\\\text{Total Useful Part Area}}{\\\\text{Total Raw Stock Area}} \\\\times 100\\\\%$."
+    },
+    {
+        "id":  "card-067",
+        "topicId":  "3.3",
+        "topicTitle":  "Topic 3.3 · Optimum Material Use \u0026 Stock Forms",
+        "category":  "Standard Commercial Stock Forms",
+        "question":  "Explain the engineering significance and application of: Stock forms",
+        "answer":  "Round bar, square bar, hexagonal bar, angle (L-section), channel (U-section), box section (SHS/RHS), I-beam, flat bar, tube, sheet and plate."
+    },
+    {
+        "id":  "card-068",
+        "topicId":  "3.3",
+        "topicTitle":  "Topic 3.3 · Optimum Material Use \u0026 Stock Forms",
+        "category":  "Standard Commercial Stock Forms",
+        "question":  "Explain the engineering significance and application of: Cost advantages of standard stock",
+        "answer":  "Eliminates bespoke extrusion die setup costs, ensures immediate off-the-shelf availability, and guarantees certified mechanical properties."
+    },
+    {
+        "id":  "card-069",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Freight Logistics \u0026 Packaging Engineering",
+        "question":  "Explain the engineering significance and application of: Volumetric cargo efficiency",
+        "answer":  "Sizing primary and secondary packaging to interlock without overhang on standard EUR pallets (1200 × 800 mm) or ISO containers (20ft / 40ft)."
+    },
+    {
+        "id":  "card-070",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Freight Logistics \u0026 Packaging Engineering",
+        "question":  "Explain the engineering significance and application of: Transport modes \u0026 emissions",
+        "answer":  "Maritime shipping (lowest $ per tonne-km) vs rail, road freight, and air freight (highest carbon emissions and cost per kg)."
+    },
+    {
+        "id":  "card-071",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Freight Logistics \u0026 Packaging Engineering",
+        "question":  "Explain the engineering significance and application of: Sustainable packaging",
+        "answer":  "Corrugated single/double wall board (high compressive crush strength, biodegradable) replacing expanded polystyrene (EPS) with moulded pulp or mushroom mycelium."
+    },
+    {
+        "id":  "card-072",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Intellectual Property (IP) Law",
+        "question":  "Explain the engineering significance and application of: Patents",
+        "answer":  "Grants up to \u003cb\u003e20 years\u003c/b\u003e legal monopoly over novel technical inventions, mechanical movements, or industrial processes. Must possess novelty, inventive step, and industrial applicability."
+    },
+    {
+        "id":  "card-073",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Intellectual Property (IP) Law",
+        "question":  "Explain the engineering significance and application of: Registered Designs",
+        "answer":  "Protects aesthetic visual appearance, shape, contours, and decorative ornamentation for up to \u003cb\u003e25 years\u003c/b\u003e (renewed every 5 years)."
+    },
+    {
+        "id":  "card-074",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Intellectual Property (IP) Law",
+        "question":  "Explain the engineering significance and application of: Trademarks",
+        "answer":  "Protects distinctive brand names, logos, symbols, and slogans indefinitely, subject to 10-year renewal fees."
+    },
+    {
+        "id":  "card-075",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Intellectual Property (IP) Law",
+        "question":  "Explain the engineering significance and application of: Copyright",
+        "answer":  "Automatic legal protection for original technical drawings, schematics, source code, and user manuals (author\u0027s life + 70 years)."
+    },
+    {
+        "id":  "card-076",
+        "topicId":  "3.4",
+        "topicTitle":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+        "category":  "Intellectual Property (IP) Law",
+        "question":  "Explain the engineering significance and application of: Unregistered Design Rights",
+        "answer":  "Protects 3D functional shape automatically in the UK for 10 years from first commercial sale (or 15 years from creation)."
+    },
+    {
+        "id":  "card-077",
+        "topicId":  "3.5",
+        "topicTitle":  "Topic 3.5 · Energy Sources, Storage \u0026 Efficiency",
+        "category":  "Energy Storage Technologies",
+        "question":  "Explain the engineering significance and application of: Lithium-ion (NMC)",
+        "answer":  "High specific energy density (~250 Wh/kg), nominal 3.7V per cell, high energy-to-weight; requires Battery Management System (BMS) for thermal runaway prevention."
+    },
+    {
+        "id":  "card-078",
+        "topicId":  "3.5",
+        "topicTitle":  "Topic 3.5 · Energy Sources, Storage \u0026 Efficiency",
+        "category":  "Energy Storage Technologies",
+        "question":  "Compare and contrast: Lithium Iron Phosphate (LiFePO4 / LFP)",
+        "answer":  "Extremely stable chemistry, high thermal runaway ceiling, \u003e3000 charge cycles, 3.2V nominal; ideal for stationary energy and robust EVs."
+    },
+    {
+        "id":  "card-079",
+        "topicId":  "3.5",
+        "topicTitle":  "Topic 3.5 · Energy Sources, Storage \u0026 Efficiency",
+        "category":  "Energy Storage Technologies",
+        "question":  "Explain the engineering significance and application of: Supercapacitors",
+        "answer":  "Electrostatic double-layer storage; ultra-rapid charge/discharge, virtually unlimited cycle life, low specific energy; handles regenerative braking burst loads."
+    },
+    {
+        "id":  "card-080",
+        "topicId":  "3.5",
+        "topicTitle":  "Topic 3.5 · Energy Sources, Storage \u0026 Efficiency",
+        "category":  "Energy Transmission \u0026 Efficiency",
+        "question":  "State the principle / mathematical formula for: Energy efficiency formula",
+        "answer":  "$\\\\text{Efficiency } \\\\eta = \\\\frac{\\\\text{Useful Output Power / Energy}}{\\\\text{Total Input Power / Energy}} \\\\times 100\\\\%$."
+    },
+    {
+        "id":  "card-081",
+        "topicId":  "3.5",
+        "topicTitle":  "Topic 3.5 · Energy Sources, Storage \u0026 Efficiency",
+        "category":  "Energy Transmission \u0026 Efficiency",
+        "question":  "Explain the engineering significance and application of: I^2R transmission loss",
+        "answer":  "Electrical conductor resistive power loss scales with the square of current ({loss} = I^2 R$). High-voltage transmission reduces current and cuts transmission heat losses."
+    },
+    {
+        "id":  "card-082",
+        "topicId":  "3.5",
+        "topicTitle":  "Topic 3.5 · Energy Sources, Storage \u0026 Efficiency",
+        "category":  "Energy Transmission \u0026 Efficiency",
+        "question":  "Explain the engineering significance and application of: Energy harvesting",
+        "answer":  "Piezoelectric vibration harvesting, Peltier-Seebeck thermoelectric generators, and micro photovoltaic cells powering autonomous low-energy IoT nodes."
+    },
+    {
+        "id":  "card-083",
+        "topicId":  "3.6",
+        "topicTitle":  "Topic 3.6 · Cross-Disciplinary STEM in Engineering",
+        "category":  "STEM Integration \u0026 Datasheet Analysis",
+        "question":  "Explain the engineering significance and application of: Applied mathematics in engineering",
+        "answer":  "Trigonometric vector resolution for truss analysis, calculus for dynamic rate of change, and statistics for manufacturing quality control."
+    },
+    {
+        "id":  "card-084",
+        "topicId":  "3.6",
+        "topicTitle":  "Topic 3.6 · Cross-Disciplinary STEM in Engineering",
+        "category":  "STEM Integration \u0026 Datasheet Analysis",
+        "question":  "Explain the key principles / characteristics of: Physics principles",
+        "answer":  "Conservation of energy, Newton\u0027s laws of motion, Faraday\u0027s law of induction, thermodynamics of heat transfer (conduction, convection, radiation)."
+    },
+    {
+        "id":  "card-085",
+        "topicId":  "3.6",
+        "topicTitle":  "Topic 3.6 · Cross-Disciplinary STEM in Engineering",
+        "category":  "STEM Integration \u0026 Datasheet Analysis",
+        "question":  "Explain the engineering significance and application of: Interpreting technical datasheets",
+        "answer":  "Deriving maximum continuous drain current ($), thermal junction-to-ambient resistance ($\\\\theta_{JA}$), and stress-strain curves to ensure components operate within their Safe Operating Area (SOA)."
+    },
+    {
+        "id":  "card-086",
+        "topicId":  "4.1",
+        "topicTitle":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+        "category":  "BS 8888 Engineering Drawing Standards",
+        "question":  "Explain the engineering significance and application of: Third Angle Orthographic Projection",
+        "answer":  "Universal standard engineering drawing layout: Plan view positioned directly above Front elevation; End elevation positioned on the side viewed."
+    },
+    {
+        "id":  "card-087",
+        "topicId":  "4.1",
+        "topicTitle":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+        "category":  "BS 8888 Engineering Drawing Standards",
+        "question":  "Explain the engineering significance and application of: Line conventions (BS 8888)",
+        "answer":  "Continuous thick (visible edges), Continuous thin (dimension, leader, and projection lines), Dashed thin (hidden details), Chain thin (centre lines, axes of symmetry)."
+    },
+    {
+        "id":  "card-088",
+        "topicId":  "4.1",
+        "topicTitle":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+        "category":  "BS 8888 Engineering Drawing Standards",
+        "question":  "Explain the engineering significance and application of: Sectional views",
+        "answer":  "Hatched at 45° to reveal interior bores and chambers. Standard rule: webs, ribs, shafts, bolts, nuts, and pins are \u003cb\u003enever hatched\u003c/b\u003e in longitudinal section."
+    },
+    {
+        "id":  "card-089",
+        "topicId":  "4.1",
+        "topicTitle":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+        "category":  "BS 8888 Engineering Drawing Standards",
+        "question":  "Explain the engineering significance and application of: Dimensioning conventions",
+        "answer":  "Dimensions placed above horizontal dimension lines or to the left of vertical lines; arrowheads sharp and filled; leader lines never crossing dimension lines."
+    },
+    {
+        "id":  "card-090",
+        "topicId":  "4.1",
+        "topicTitle":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+        "category":  "System Visualisations \u0026 Schematic Diagrams",
+        "question":  "Explain the engineering significance and application of: System block diagrams",
+        "answer":  "High-level signal flow decomposition: Input Sensor -\u003e Conditioning Circuit -\u003e Microcontroller Process -\u003e Driver Stage -\u003e Mechanical Actuator."
+    },
+    {
+        "id":  "card-091",
+        "topicId":  "4.1",
+        "topicTitle":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+        "category":  "System Visualisations \u0026 Schematic Diagrams",
+        "question":  "Explain the engineering significance and application of: Circuit schematics",
+        "answer":  "Standardized electronic component symbols (resistors, NPN/MOSFET transistors, diodes, capacitors) showing logical electrical connectivity."
+    },
+    {
+        "id":  "card-092",
+        "topicId":  "4.1",
+        "topicTitle":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+        "category":  "System Visualisations \u0026 Schematic Diagrams",
+        "question":  "Explain the engineering significance and application of: Flowcharts",
+        "answer":  "Program logic flow; Terminals (oval), Operations/Processes (rectangle), Input/Output (parallelogram), Decisions/Conditionals (diamond)."
+    },
+    {
+        "id":  "card-093",
+        "topicId":  "4.2",
+        "topicTitle":  "Topic 4.2 · Digital Engineering Tools (CAD, CAE, FEA)",
+        "category":  "Parametric CAD \u0026 Assembly Modeling",
+        "question":  "Explain the engineering significance and application of: Parametric solid modelling",
+        "answer":  "Feature-based tree modeling (Extrude, Revolve, Sweep, Loft, Cut, Fillet) where dimensions drive geometry; altering a root sketch dynamically propagates across drawings and assemblies."
+    },
+    {
+        "id":  "card-094",
+        "topicId":  "4.2",
+        "topicTitle":  "Topic 4.2 · Digital Engineering Tools (CAD, CAE, FEA)",
+        "category":  "Parametric CAD \u0026 Assembly Modeling",
+        "question":  "Explain the engineering significance and application of: Kinematic assembly mates",
+        "answer":  "Coincident, concentric, parallel, tangent, and gear mechanical mates allowing digital verification of range of motion and collision detection."
+    },
+    {
+        "id":  "card-095",
+        "topicId":  "4.2",
+        "topicTitle":  "Topic 4.2 · Digital Engineering Tools (CAD, CAE, FEA)",
+        "category":  "Parametric CAD \u0026 Assembly Modeling",
+        "question":  "Explain the engineering significance and application of: DFM digital validation",
+        "answer":  "Draft angle inspection to ensure plastic injection mould release; wall thickness analysis to eliminate sink marks and internal voids."
+    },
+    {
+        "id":  "card-096",
+        "topicId":  "4.2",
+        "topicTitle":  "Topic 4.2 · Digital Engineering Tools (CAD, CAE, FEA)",
+        "category":  "CAE, Finite Element Analysis (FEA) \u0026 Simulation",
+        "question":  "Explain the engineering significance and application of: Finite Element Analysis (FEA)",
+        "answer":  "Discretising continuous solid models into a mesh of finite elements (tetrahedral/hexahedral) to calculate displacement and von Mises stress tensors under mechanical loads."
+    },
+    {
+        "id":  "card-097",
+        "topicId":  "4.2",
+        "topicTitle":  "Topic 4.2 · Digital Engineering Tools (CAD, CAE, FEA)",
+        "category":  "CAE, Finite Element Analysis (FEA) \u0026 Simulation",
+        "question":  "Explain the engineering significance and application of: Stress concentration factors ($)",
+        "answer":  "Detecting severe stress concentrations at sharp internal corners, keyways, and bolt holes; mitigated by adding generous transition fillets."
+    },
+    {
+        "id":  "card-098",
+        "topicId":  "4.2",
+        "topicTitle":  "Topic 4.2 · Digital Engineering Tools (CAD, CAE, FEA)",
+        "category":  "CAE, Finite Element Analysis (FEA) \u0026 Simulation",
+        "question":  "Explain the engineering significance and application of: Computational Fluid Dynamics (CFD)",
+        "answer":  "Simulating airflow velocity vectors, boundary layer separation, aerodynamic drag ($), and thermal convective heat dissipation across heatsinks."
+    },
+    {
+        "id":  "card-099",
+        "topicId":  "4.3",
+        "topicTitle":  "Topic 4.3 · Systems Thinking \u0026 Project Management",
+        "category":  "Systems Thinking \u0026 Sub-System Design",
+        "question":  "Explain the engineering significance and application of: Systems thinking",
+        "answer":  "Holistic analysis focusing on interrelationships and feedback loops between constituent mechanical, electronic, and software sub-assemblies."
+    },
+    {
+        "id":  "card-100",
+        "topicId":  "4.3",
+        "topicTitle":  "Topic 4.3 · Systems Thinking \u0026 Project Management",
+        "category":  "Systems Thinking \u0026 Sub-System Design",
+        "question":  "Explain the engineering significance and application of: Three engineering sub-tasks",
+        "answer":  "1. \u003cb\u003eUser-Interface Design\u003c/b\u003e (tactile feel, display ergonomics), 2. \u003cb\u003eData Design\u003c/b\u003e (signal protocols, memory budgets, bus bandwidth), 3. \u003cb\u003eProcess Design\u003c/b\u003e (state machines, loop timings)."
+    },
+    {
+        "id":  "card-101",
+        "topicId":  "4.3",
+        "topicTitle":  "Topic 4.3 · Systems Thinking \u0026 Project Management",
+        "category":  "Systems Thinking \u0026 Sub-System Design",
+        "question":  "Compare and contrast: Closed-loop vs open-loop",
+        "answer":  "Open-loop performs actions blindly without monitoring output (e.g. basic timer switch); closed-loop measures output via sensors and feeds back error signal to dynamically adjust actuators."
+    },
+    {
+        "id":  "card-102",
+        "topicId":  "4.3",
+        "topicTitle":  "Topic 4.3 · Systems Thinking \u0026 Project Management",
+        "category":  "Project Management \u0026 Quality Frameworks",
+        "question":  "Explain the engineering significance and application of: Critical Path Analysis (CPA)",
+        "answer":  "Network diagram calculation of Earliest Start Time (EST) and Latest Finish Time (LFT). The \u003cb\u003eCritical Path\u003c/b\u003e is the sequence of dependent activities with zero float; any delay on this path delays the final delivery date."
+    },
+    {
+        "id":  "card-103",
+        "topicId":  "4.3",
+        "topicTitle":  "Topic 4.3 · Systems Thinking \u0026 Project Management",
+        "category":  "Project Management \u0026 Quality Frameworks",
+        "question":  "Explain the engineering significance and application of: Agile \u0026 Scrum",
+        "answer":  "Flexible development methodology organizing engineering teams into short 2–4 week sprints, daily stand-up meetings, and continuous prototype testing with stakeholders."
+    },
+    {
+        "id":  "card-104",
+        "topicId":  "4.3",
+        "topicTitle":  "Topic 4.3 · Systems Thinking \u0026 Project Management",
+        "category":  "Project Management \u0026 Quality Frameworks",
+        "question":  "Explain the engineering significance and application of: Six Sigma (DMAIC)",
+        "answer":  "Define, Measure, Analyse, Improve, Control. Statistical management methodology striving for fewer than 3.4 defective parts per million opportunities (.99966\\\\%$ yield)."
+    },
+    {
+        "id":  "card-105",
+        "topicId":  "5.1",
+        "topicTitle":  "Topic 5.1 · Factors Influencing Material Selection",
+        "category":  "Engineering Material Selection Factors",
+        "question":  "Explain the engineering significance and application of: Functional requirements",
+        "answer":  "Mechanical load capacity, fatigue strength, operating temperature envelope, thermal expansion coefficient (CTE), corrosion resistance, electrical conductivity or dielectric breakdown."
+    },
+    {
+        "id":  "card-106",
+        "topicId":  "5.1",
+        "topicTitle":  "Topic 5.1 · Factors Influencing Material Selection",
+        "category":  "Engineering Material Selection Factors",
+        "question":  "Explain the engineering significance and application of: Economic viability",
+        "answer":  "Balancing raw material cost per kg against machining speed, tooling amortisation, and scrap rate. (e.g. Aluminium costs more than steel per kg but machines 3x faster, reducing labour cost)."
+    },
+    {
+        "id":  "card-107",
+        "topicId":  "5.1",
+        "topicTitle":  "Topic 5.1 · Factors Influencing Material Selection",
+        "category":  "Engineering Material Selection Factors",
+        "question":  "Explain the engineering significance and application of: Ashby charts",
+        "answer":  "Material selection charts plotting property trade-offs (e.g. Young\u0027s Modulus vs Density /\\\\rho$, or Strength vs Cost $\\\\sigma/\\\\text{Cost}$) to identify optimal material candidates for minimum weight beams."
+    },
+    {
+        "id":  "card-108",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Metals \u0026 Engineering Alloys",
+        "question":  "Explain the engineering significance and application of: Mild Steel",
+        "answer":  "Ferrous; 0.15–0.30% Carbon. Ductile, highly weldable, tough; structural beams, car chassis, universal steel sections."
+    },
+    {
+        "id":  "card-109",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Metals \u0026 Engineering Alloys",
+        "question":  "Compare and contrast: High Carbon Steel / Tool Steel",
+        "answer":  "Ferrous; 0.60–1.40% Carbon. Very hard, can be hardened and tempered; cutting blades, drill bits, stamping dies."
+    },
+    {
+        "id":  "card-110",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Metals \u0026 Engineering Alloys",
+        "question":  "Explain the engineering significance and application of: Cast Iron",
+        "answer":  "Ferrous; 2.0–4.0% Carbon. High compressive strength, brittle, superb vibration dampening; machine beds, engine blocks."
+    },
+    {
+        "id":  "card-111",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Metals \u0026 Engineering Alloys",
+        "question":  "Explain the engineering significance and application of: Aluminium",
+        "answer":  "Non-ferrous; low density ($\\\\rho \\\\approx 2700 \\\\text{ kg/m}^3$), natural oxide passivation layer resists corrosion, high thermal/electrical conductivity; aircraft skins, heatsinks."
+    },
+    {
+        "id":  "card-112",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Metals \u0026 Engineering Alloys",
+        "question":  "Explain the engineering significance and application of: Brass",
+        "answer":  "Copper-Zinc alloy (typically 70/30 or 60/40); low friction coefficient, acoustic resonance, corrosion resistant; valves, bearings, electrical pin connectors."
+    },
+    {
+        "id":  "card-113",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Polymers (Thermosoftening \u0026 Thermosetting)",
+        "question":  "Explain the engineering significance and application of: ABS (Acrylonitrile Butadiene Styrene)",
+        "answer":  "Thermosoftening; copolymer combining chemical resistance (A), impact toughness (B), and structural rigidity (S); injection-moulded tool housings, 3D printing, consumer electronics."
+    },
+    {
+        "id":  "card-114",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Polymers (Thermosoftening \u0026 Thermosetting)",
+        "question":  "Explain the engineering significance and application of: HIPS (High Impact Polystyrene)",
+        "answer":  "Thermosoftening; lightweight, rigid, easily thermoformed and vacuum formed; internal refrigerator liners, packaging."
+    },
+    {
+        "id":  "card-115",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Polymers (Thermosoftening \u0026 Thermosetting)",
+        "question":  "Explain the engineering significance and application of: Polypropylene (PP)",
+        "answer":  "Thermosoftening; exceptional fatigue resistance to repeated flexing; integral living hinges, chemical containers."
+    },
+    {
+        "id":  "card-116",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Polymers (Thermosoftening \u0026 Thermosetting)",
+        "question":  "Explain the engineering significance and application of: Epoxy Resin",
+        "answer":  "Thermosetting; highly crosslinked polymer matrix, exceptional adhesive strength, chemical resistance, electrical insulator; composite matrix (CFRP), PCB FR4 substrate."
+    },
+    {
+        "id":  "card-117",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Polymers (Thermosoftening \u0026 Thermosetting)",
+        "question":  "Explain the engineering significance and application of: Polyester Resin",
+        "answer":  "Thermosetting; cured with MEKP catalyst; matrix for Glass-Reinforced Plastic (GRP), boat hulls, fairings."
+    },
+    {
+        "id":  "card-118",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Composites, Smart \u0026 Modern Materials",
+        "question":  "Explain the engineering significance and application of: CFRP (Carbon Fibre Reinforced Polymer)",
+        "answer":  "Continuous high-tensile carbon fibres embedded in rigid epoxy resin matrix; exceptional strength-to-weight ratio and stiffness; aerospace spars, Formula 1 chassis."
+    },
+    {
+        "id":  "card-119",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Composites, Smart \u0026 Modern Materials",
+        "question":  "Explain the engineering significance and application of: GRP (Glass Reinforced Plastic)",
+        "answer":  "Woven or chopped glass fibres in polyester/epoxy matrix; lightweight, non-conductive, corrosion resistant; architectural cladding, marine hulls."
+    },
+    {
+        "id":  "card-120",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Composites, Smart \u0026 Modern Materials",
+        "question":  "Explain the engineering significance and application of: Shape Memory Alloys (SMA - Nitinol)",
+        "answer":  "Nickel-Titanium alloy that returns to a memorized shape upon heating past its martensite-to-austenite transition temperature; medical arterial stents, robotic micro-actuators."
+    },
+    {
+        "id":  "card-121",
+        "topicId":  "5.2",
+        "topicTitle":  "Topic 5.2 · Engineering Materials Classification",
+        "category":  "Composites, Smart \u0026 Modern Materials",
+        "question":  "Explain the engineering significance and application of: Modern Super-alloys \u0026 Graphene",
+        "answer":  "Inconel (nickel-chromium superalloy maintaining extreme strength at \u003e1000°C in jet turbine blades); Graphene (single 2D layer of carbon atoms arranged in hexagonal lattice, tensile strength \u003e130 GPa, ballistic thermal conductivity)."
+    },
+    {
+        "id":  "card-122",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Mechanical Properties Definitions",
+        "question":  "Explain the engineering significance and application of: Tensile Strength (UTS)",
+        "answer":  "Maximum tensile stress a material withstands before necking and fracture occur ($\\\\sigma_u = F_{max}/A_0$)."
+    },
+    {
+        "id":  "card-123",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Mechanical Properties Definitions",
+        "question":  "Explain the engineering significance and application of: Hardness",
+        "answer":  "Resistance of a material\u0027s surface to mechanical penetration, abrasion, scratching, and indentation."
+    },
+    {
+        "id":  "card-124",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Mechanical Properties Definitions",
+        "question":  "Explain the engineering significance and application of: Toughness",
+        "answer":  "Ability of a material to absorb kinetic impact energy without catastrophic brittle fracture (total area under stress-strain curve)."
+    },
+    {
+        "id":  "card-125",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Mechanical Properties Definitions",
+        "question":  "Explain the engineering significance and application of: Ductility",
+        "answer":  "Capacity of a material to undergo extensive plastic deformation in tension (drawn into wire) without rupture."
+    },
+    {
+        "id":  "card-126",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Mechanical Properties Definitions",
+        "question":  "Explain the engineering significance and application of: Malleability",
+        "answer":  "Capacity of a material to deform plastically under compressive force (hammering, rolling into sheets) without cracking."
+    },
+    {
+        "id":  "card-127",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Mechanical Properties Definitions",
+        "question":  "Explain the engineering significance and application of: Stiffness",
+        "answer":  "Ability to resist elastic deflection under applied load, measured by Young\u0027s Modulus ( = \\\\sigma / \\\\epsilon$)."
+    },
+    {
+        "id":  "card-128",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Standardised Mechanical Testing",
+        "question":  "Explain the engineering significance and application of: Tensile testing (Tensometer)",
+        "answer":  "Pulling a standard dogbone test piece at constant strain rate to record force-extension data and calculate $\\\\sigma$, $\\\\epsilon$, $, yield point, and UTS."
+    },
+    {
+        "id":  "card-129",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Standardised Mechanical Testing",
+        "question":  "Explain the key principles / characteristics of: Hardness testing methods",
+        "answer":  "Rockwell (measures depth of indentation under major load using diamond cone), Vickers (diamond pyramid leaving square indent measured microscopically), Brinell (hardened steel ball indent)."
+    },
+    {
+        "id":  "card-130",
+        "topicId":  "5.3",
+        "topicTitle":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+        "category":  "Standardised Mechanical Testing",
+        "question":  "Explain the engineering significance and application of: Impact testing (Charpy \u0026 Izod)",
+        "answer":  "Standard notched specimen struck by a swinging pendulum; potential energy absorbed during fracture measured in Joules on calibrated scale."
+    },
+    {
+        "id":  "card-131",
+        "topicId":  "6.1",
+        "topicTitle":  "Topic 6.1 · Structural Integrity \u0026 Triangulation",
+        "category":  "Structural Reinforcement \u0026 Rigidity",
+        "question":  "Explain the key principles / characteristics of: Triangulation principle",
+        "answer":  "Triangles cannot be distorted without physically changing the length of one of their member struts; transforms complex bending forces into pure axial tension or compression."
+    },
+    {
+        "id":  "card-132",
+        "topicId":  "6.1",
+        "topicTitle":  "Topic 6.1 · Structural Integrity \u0026 Triangulation",
+        "category":  "Structural Reinforcement \u0026 Rigidity",
+        "question":  "Explain the engineering significance and application of: Structural ribs and web stiffeners",
+        "answer":  "Thin perpendicular ribs integrated into injection mouldings and castings multiply the second moment of area ($) and section modulus ($), increasing bending stiffness by up to 10x with minimal material addition."
+    },
+    {
+        "id":  "card-133",
+        "topicId":  "6.1",
+        "topicTitle":  "Topic 6.1 · Structural Integrity \u0026 Triangulation",
+        "category":  "Structural Reinforcement \u0026 Rigidity",
+        "question":  "Explain the engineering significance and application of: Gusset plates",
+        "answer":  "Welded or bolted triangular reinforcement plates securing column-to-beam joints to disperse concentrated bending moments over broader weld perimeters."
+    },
+    {
+        "id":  "card-134",
+        "topicId":  "6.1",
+        "topicTitle":  "Topic 6.1 · Structural Integrity \u0026 Triangulation",
+        "category":  "Structural Reinforcement \u0026 Rigidity",
+        "question":  "Compare and contrast: Monocoque vs space-frame",
+        "answer":  "Monocoque relies on a continuous structural skin (stressed skin) to absorb dynamic torsional and shear loads (e.g. aircraft fuselages); space-frame utilizes a three-dimensional triangulated skeletal truss."
+    },
+    {
+        "id":  "card-135",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Kinematics \u0026 Motion Conversion",
+        "question":  "Explain the engineering significance and application of: Four motion regimes",
+        "answer":  "Rotary (continuous 360° circular), Linear (continuous straight-line single direction), Reciprocating (repetitive back-and-forth linear), Oscillating (repetitive back-and-forth arc around fixed pivot)."
+    },
+    {
+        "id":  "card-136",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Kinematics \u0026 Motion Conversion",
+        "question":  "Explain the engineering significance and application of: Rack and pinion",
+        "answer":  "Transforms rotary motion into precise linear motion (or vice-versa; CNC machine beds, automotive steering racks)."
+    },
+    {
+        "id":  "card-137",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Kinematics \u0026 Motion Conversion",
+        "question":  "Explain the engineering significance and application of: Cams and followers",
+        "answer":  "Shaped cam plate (eccentric, pear, snail) rotates to impart programmed displacement to follower (knife-edge, roller, flat-faced); characterized by Dwell, Rise, and Fall phases."
+    },
+    {
+        "id":  "card-138",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Kinematics \u0026 Motion Conversion",
+        "question":  "Explain the engineering significance and application of: Mechanical linkages",
+        "answer":  "Bell crank (redirects linear force through 90° angle), Four-bar linkage (crank-rocker, double-crank), Pantograph (parallel motion scaling)."
+    },
+    {
+        "id":  "card-139",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Gear Calculations \u0026 Mechanical Advantage",
+        "question":  "Compare and contrast: Gear Ratio / Velocity Ratio",
+        "answer":  "$\\\\text{GR} = \\\\frac{\\\\text{Teeth on Driven (Output)}}{\\\\text{Teeth on Driver (Input)}} = \\\\frac{\\\\omega_{in}}{\\\\omega_{out}} = \\\\frac{N_{in}}{N_{out}}$."
+    },
+    {
+        "id":  "card-140",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Gear Calculations \u0026 Mechanical Advantage",
+        "question":  "Explain the engineering significance and application of: Compound gear train",
+        "answer":  "Intermediate shafts bearing two rigidly keyed gears; total ratio is the product of individual gear stages: $\\\\text{GR}_{total} = \\\\text{GR}_1 \\\\times \\\\text{GR}_2 \\\\times \\\\dots$"
+    },
+    {
+        "id":  "card-141",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Gear Calculations \u0026 Mechanical Advantage",
+        "question":  "Explain the engineering significance and application of: Worm and worm wheel",
+        "answer":  "Achieves huge single-stage reduction (e.g. 50:1) with non-intersecting shafts at 90°; inherently self-locking, preventing output back-driving."
+    },
+    {
+        "id":  "card-142",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Gear Calculations \u0026 Mechanical Advantage",
+        "question":  "Explain the engineering significance and application of: Epicyclic (Planetary) gearing",
+        "answer":  "Coaxial high-torque system comprising Sun gear, Planet gears on a Planet Carrier, and Annulus (ring gear); compact form factor for automatic transmissions."
+    },
+    {
+        "id":  "card-143",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Gear Calculations \u0026 Mechanical Advantage",
+        "question":  "Explain the engineering significance and application of: Mechanical Advantage (MA)",
+        "answer":  "$\\\\text{MA} = \\\\frac{\\\\text{Load (Output Force)}}{\\\\text{Effort (Input Force)}}$."
+    },
+    {
+        "id":  "card-144",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Gear Calculations \u0026 Mechanical Advantage",
+        "question":  "Explain the engineering significance and application of: Velocity Ratio (VR)",
+        "answer":  "$\\\\text{VR} = \\\\frac{\\\\text{Distance moved by Effort}}{\\\\text{Distance moved by Load}}$."
+    },
+    {
+        "id":  "card-145",
+        "topicId":  "6.2",
+        "topicTitle":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+        "category":  "Gear Calculations \u0026 Mechanical Advantage",
+        "question":  "Explain the engineering significance and application of: Efficiency",
+        "answer":  "$\\\\text{Efficiency } \\\\eta = \\\\frac{\\\\text{MA}}{\\\\text{VR}} \\\\times 100\\\\%$. Due to friction and inertia, $\\\\text{MA} \u003c \\\\text{VR}$ and $\\\\eta \u003c 100\\\\%$."
+    },
+    {
+        "id":  "card-146",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "Stress, Strain \u0026 Elasticity Formulae (Recall Required)",
+        "question":  "Compare and contrast: Tensile / Compressive Stress ($\\\\sigma$)",
+        "answer":  "$\\\\sigma = \\\\frac{F}{A}$ where $ is applied force in Newtons (N) and $ is original cross-sectional area in $\\\\text{m}^2$. Unit: Pascals ($\\\\text{Pa} = \\\\text{N/m}^2$,  \\\\text{ MPa} = 1 \\\\text{ N/mm}^2$)."
+    },
+    {
+        "id":  "card-147",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "Stress, Strain \u0026 Elasticity Formulae (Recall Required)",
+        "question":  "Explain the engineering significance and application of: Tensile Strain ($\\\\epsilon$)",
+        "answer":  "$\\\\epsilon = \\\\frac{\\\\Delta L}{L_0}$ where $\\\\Delta L$ is change in length (extension) and $ is original length. Dimensionless ratio (often expressed as a percentage)."
+    },
+    {
+        "id":  "card-148",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "Stress, Strain \u0026 Elasticity Formulae (Recall Required)",
+        "question":  "Explain the engineering significance and application of: Young\u0027s Modulus of Elasticity ($)",
+        "answer":  "= \\\\frac{\\\\text{Stress}}{\\\\text{Strain}} = \\\\frac{\\\\sigma}{\\\\epsilon} = \\\\frac{F \\\\cdot L_0}{A \\\\cdot \\\\Delta L}$. Unit: $\\\\text{Pa}$ or $\\\\text{GPa}$ ( \\\\text{ GPa} = 10^9 \\\\text{ Pa}$). Constant gradient of linear elastic region of stress-strain curve."
+    },
+    {
+        "id":  "card-149",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "Stress, Strain \u0026 Elasticity Formulae (Recall Required)",
+        "question":  "Explain the engineering significance and application of: Hooke\u0027s Law",
+        "answer":  "= k \\\\cdot \\\\Delta x$ where $ is spring constant / stiffness in $\\\\text{N/m}$ and $\\\\Delta x$ is extension in metres."
+    },
+    {
+        "id":  "card-150",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "Stress, Strain \u0026 Elasticity Formulae (Recall Required)",
+        "question":  "Explain the engineering significance and application of: Torque (Turning moment)",
+        "answer":  "$\\\\text{Torque } T = F \\\\cdot d$ where $ is applied perpendicular force and $ is radial distance to pivot. Unit: $\\\\text{N}\\\\cdot\\\\text{m}$."
+    },
+    {
+        "id":  "card-151",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "SUVAT Equations \u0026 Modes of Mechanical Failure",
+        "question":  "State the principle / mathematical formula for: SUVAT Equations of Motion",
+        "answer":  "= u + at$;  = ut + \\\\frac{1}{2}at^2$; ^2 = u^2 + 2as$;  = \\\\frac{(u + v)t}{2}$."
+    },
+    {
+        "id":  "card-152",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "SUVAT Equations \u0026 Modes of Mechanical Failure",
+        "question":  "Explain the engineering significance and application of: Resolving Force Vectors",
+        "answer":  "Horizontal component  = F \\\\cos\\\\theta$; Vertical component  = F \\\\sin\\\\theta$."
+    },
+    {
+        "id":  "card-153",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "SUVAT Equations \u0026 Modes of Mechanical Failure",
+        "question":  "Explain the engineering significance and application of: Factor of Safety (FoS)",
+        "answer":  "$\\\\text{FoS} = \\\\frac{\\\\text{Yield Strength or UTS}}{\\\\text{Allowable Working Stress}}$. Ensures structural integrity under unexpected peak overloads."
+    },
+    {
+        "id":  "card-154",
+        "topicId":  "6.3",
+        "topicTitle":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+        "category":  "SUVAT Equations \u0026 Modes of Mechanical Failure",
+        "question":  "Explain the engineering significance and application of: Modes of failure",
+        "answer":  "Elastic buckling (Euler buckling in slender compression struts), fatigue failure (cyclic alternating stress causing microscopic crack propagation), creep (gradual deformation under constant load at elevated temperatures)."
+    },
+    {
+        "id":  "card-155",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Ohm\u0027s Law, Power \u0026 Potential Dividers",
+        "question":  "Explain the engineering significance and application of: Ohm\u0027s Law",
+        "answer":  "= I \\\\cdot R$; Potential difference (Volts) = Current (Amperes) × Resistance (Ohms)."
+    },
+    {
+        "id":  "card-156",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Ohm\u0027s Law, Power \u0026 Potential Dividers",
+        "question":  "Explain the engineering significance and application of: Electrical Power",
+        "answer":  "= V \\\\cdot I = I^2 R = \\\\frac{V^2}{R}$ [Watts, W]."
+    },
+    {
+        "id":  "card-157",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Ohm\u0027s Law, Power \u0026 Potential Dividers",
+        "question":  "State the principle / mathematical formula for: Potential Divider Equation",
+        "answer":  "{out} = V_{in} \\\\cdot \\\\frac{R_2}{R_1 + R_2}$. Fundamental circuit to convert sensor resistance changes into readable voltage signals."
+    },
+    {
+        "id":  "card-158",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Ohm\u0027s Law, Power \u0026 Potential Dividers",
+        "question":  "Outline the engineering requirements and scope of: Resistor network rules",
+        "answer":  "Series:  = R_1 + R_2 + \\\\dots$; Parallel: $\\\\frac{1}{R_T} = \\\\frac{1}{R_1} + \\\\frac{1}{R_2} + \\\\dots$"
+    },
+    {
+        "id":  "card-159",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Sensors, Semiconductor Switching \u0026 Actuators",
+        "question":  "Explain the engineering significance and application of: Sensors",
+        "answer":  "LDR (light-dependent resistor; resistance falls with light intensity), NTC Thermistor (negative temperature coefficient; resistance drops as temperature rises), Piezoelectric sensor, Hall effect (magnetic proximity)."
+    },
+    {
+        "id":  "card-160",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Sensors, Semiconductor Switching \u0026 Actuators",
+        "question":  "Explain the engineering significance and application of: MOSFET as high-current electronic switch",
+        "answer":  "N-channel MOSFET turns fully ON when Gate-Source voltage exceeds threshold ({GS} \u003e V_{th}$). Minimal gate current; ultra-low {DS(on)}$ eliminates resistive heat losses in motor control."
+    },
+    {
+        "id":  "card-161",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Sensors, Semiconductor Switching \u0026 Actuators",
+        "question":  "Explain the engineering significance and application of: Flyback protection diode",
+        "answer":  "Placed in reverse parallel across inductive loads (motors, solenoids, relays) to clamp dangerous back-EMF voltage spikes generated during switch-off."
+    },
+    {
+        "id":  "card-162",
+        "topicId":  "6.4",
+        "topicTitle":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+        "category":  "Sensors, Semiconductor Switching \u0026 Actuators",
+        "question":  "Explain the engineering significance and application of: Actuators",
+        "answer":  "Brushed DC motors (continuous rotary motion, speed controlled by PWM), Servo motors (closed-loop angular positioning 0–180°), Stepper motors (discrete digital step angles for CNC positioning)."
+    },
+    {
+        "id":  "card-163",
+        "topicId":  "6.5",
+        "topicTitle":  "Topic 6.5 · Microcontrollers \u0026 Programmable Systems",
+        "category":  "Microcontrollers \u0026 Signal Conditioning",
+        "question":  "Explain the engineering significance and application of: Microcontroller architecture",
+        "answer":  "Integrated IC housing CPU, Flash ROM (program memory), RAM (volatile variables), EEPROM, Timers, ADC, and GPIO pins (e.g. PIC, ATmega, ARM Cortex)."
+    },
+    {
+        "id":  "card-164",
+        "topicId":  "6.5",
+        "topicTitle":  "Topic 6.5 · Microcontrollers \u0026 Programmable Systems",
+        "category":  "Microcontrollers \u0026 Signal Conditioning",
+        "question":  "Explain the engineering significance and application of: Analogue-to-Digital Conversion (ADC)",
+        "answer":  "Samples continuous analogue input voltages (0–5V) into discrete digital integers. A 10-bit ADC provides ^{10} = 1024$ quantization levels ( \\\\to 1023$); voltage step size $= \\\\frac{5\\\\text{V}}{1023} \\\\approx 4.88\\\\text{ mV}$."
+    },
+    {
+        "id":  "card-165",
+        "topicId":  "6.5",
+        "topicTitle":  "Topic 6.5 · Microcontrollers \u0026 Programmable Systems",
+        "category":  "Microcontrollers \u0026 Signal Conditioning",
+        "question":  "Explain the engineering significance and application of: Pulse Width Modulation (PWM)",
+        "answer":  "Varying the ratio of on-time to off-time in a high-frequency square wave (Duty Cycle $\\\\% = \\\\frac{t_{on}}{t_{period}} \\\\times 100\\\\%$) to smoothly vary average power delivery to DC motors and heaters."
+    },
+    {
+        "id":  "card-166",
+        "topicId":  "6.5",
+        "topicTitle":  "Topic 6.5 · Microcontrollers \u0026 Programmable Systems",
+        "category":  "Control Logic \u0026 Closed-Loop Feedback",
+        "question":  "Explain the engineering significance and application of: Closed-loop feedback control",
+        "answer":  "Continuously measures system output via sensors, subtracts output from desired target setpoint to derive error ( = \\\\text{Setpoint} - \\\\text{Sensor Feedback}$), and applies correction."
+    },
+    {
+        "id":  "card-167",
+        "topicId":  "6.5",
+        "topicTitle":  "Topic 6.5 · Microcontrollers \u0026 Programmable Systems",
+        "category":  "Control Logic \u0026 Closed-Loop Feedback",
+        "question":  "Explain the engineering significance and application of: PID controller components",
+        "answer":  "Proportional (responds to current error magnitude), Integral (accumulates historical steady-state error), Derivative (anticipates future error rate of change)."
+    },
+    {
+        "id":  "card-168",
+        "topicId":  "6.5",
+        "topicTitle":  "Topic 6.5 · Microcontrollers \u0026 Programmable Systems",
+        "category":  "Control Logic \u0026 Closed-Loop Feedback",
+        "question":  "Explain the engineering significance and application of: Flowchart programming conventions",
+        "answer":  "Explicit decision diamonds checking sensor threshold limits, branch logic, loops, and digital pin writes."
+    },
+    {
+        "id":  "card-169",
+        "topicId":  "7.1",
+        "topicTitle":  "Topic 7.1 · Iterative Models \u0026 Rapid Prototyping",
+        "category":  "Iterative Physical \u0026 Digital Modelling",
+        "question":  "Explain the engineering significance and application of: Low-fidelity sketch modelling",
+        "answer":  "Rapid construction using corrugated cardboard, Styrofoam, and wire to test volumetric proportions, visual ergonomics, and spatial clearance in hours."
+    },
+    {
+        "id":  "card-170",
+        "topicId":  "7.1",
+        "topicTitle":  "Topic 7.1 · Iterative Models \u0026 Rapid Prototyping",
+        "category":  "Iterative Physical \u0026 Digital Modelling",
+        "question":  "Compare and contrast: Functional test rigs (breadboard / bread-rig)",
+        "answer":  "Building isolated sub-system test benches (e.g. laser-cut acrylic gearboxes with microcontrollers) to validate physical kinematic forces before tooling."
+    },
+    {
+        "id":  "card-171",
+        "topicId":  "7.1",
+        "topicTitle":  "Topic 7.1 · Iterative Models \u0026 Rapid Prototyping",
+        "category":  "Iterative Physical \u0026 Digital Modelling",
+        "question":  "Compare and contrast: Additive rapid prototyping (FDM / SLA)",
+        "answer":  "Fused Deposition Modelling (FDM) extrudes molten thermoplastic filaments (PLA, ABS, PETG) layer-by-layer; Stereolithography (SLA) cures liquid photopolymer resin with UV lasers for ultra-smooth optical precision."
+    },
+    {
+        "id":  "card-172",
+        "topicId":  "7.2",
+        "topicTitle":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+        "category":  "Subtractive Machining (Wasting)",
+        "question":  "Explain the engineering significance and application of: Centre lathe operations",
+        "answer":  "Cylindrical turning: facing off datum ends, parallel turning, taper turning, boring, knurling, and parting off. Work held in 3-jaw self-centring chuck or between centres."
+    },
+    {
+        "id":  "card-173",
+        "topicId":  "7.2",
+        "topicTitle":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+        "category":  "Subtractive Machining (Wasting)",
+        "question":  "Explain the engineering significance and application of: Vertical milling machine",
+        "answer":  "Multi-tooth rotating cutter traversing workpiece in X, Y, and Z axes to create flat faces, steps, slots, pockets, and keyways."
+    },
+    {
+        "id":  "card-174",
+        "topicId":  "7.2",
+        "topicTitle":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+        "category":  "Subtractive Machining (Wasting)",
+        "question":  "Explain the engineering significance and application of: Drilling \u0026 reaming",
+        "answer":  "Twist drill generates rough hole; machine reamer achieves exact dimensional diameter and mirror surface finish within ISO tolerance limits."
+    },
+    {
+        "id":  "card-175",
+        "topicId":  "7.2",
+        "topicTitle":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+        "category":  "Fabrication, Joining \u0026 Reforming",
+        "question":  "Explain the engineering significance and application of: Welding",
+        "answer":  "Parent metals melted and fused with filler material. MIG (Metal Inert Gas; wire feed, argon shielding, fast structural steel); TIG (Tungsten Inert Gas; tungsten electrode, highest aesthetic quality on aluminium/stainless steel)."
+    },
+    {
+        "id":  "card-176",
+        "topicId":  "7.2",
+        "topicTitle":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+        "category":  "Fabrication, Joining \u0026 Reforming",
+        "question":  "Explain the engineering significance and application of: Brazing \u0026 Soldering",
+        "answer":  "Non-ferrous filler metal melted below parent metal melting points ($\u003e450°\\\\text{C}$ for brazing; $\u003c450°\\\\text{C}$ for electrical lead-free soldering)."
+    },
+    {
+        "id":  "card-177",
+        "topicId":  "7.2",
+        "topicTitle":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+        "category":  "Fabrication, Joining \u0026 Reforming",
+        "question":  "Explain the engineering significance and application of: Mechanical fasteners \u0026 locking",
+        "answer":  "ISO metric bolts (M3, M4, M5); Nyloc locking nuts and Belleville disc springs prevent fastener loosening under vibration."
+    },
+    {
+        "id":  "card-178",
+        "topicId":  "7.2",
+        "topicTitle":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+        "category":  "Fabrication, Joining \u0026 Reforming",
+        "question":  "Explain the engineering significance and application of: Sheet metal folding",
+        "answer":  "Sheet metal folded along bend lines using workshop box-and-pan folder, accounting for bend allowance and neutral axis K-factor."
+    },
+    {
+        "id":  "card-179",
+        "topicId":  "7.3",
+        "topicTitle":  "Topic 7.3 · Industrial Commercial Manufacture \u0026 SMT",
+        "category":  "Commercial Polymer Moulding Methods",
+        "question":  "Explain the engineering significance and application of: Injection moulding",
+        "answer":  "Molten polymer forced under extreme hydraulic pressure (up to 1500 bar) into hardened tool steel mould cavities. High tool cost (£15k–£100k+), ultra-fast cycle times (10–30s), complex geometries, integrated snap fits."
+    },
+    {
+        "id":  "card-180",
+        "topicId":  "7.3",
+        "topicTitle":  "Topic 7.3 · Industrial Commercial Manufacture \u0026 SMT",
+        "category":  "Commercial Polymer Moulding Methods",
+        "question":  "Explain the engineering significance and application of: Blow moulding",
+        "answer":  "Molten hollow plastic parison extruded, clamped in mould, and inflated with compressed air; produces seamless bottles, containers, and fuel tanks."
+    },
+    {
+        "id":  "card-181",
+        "topicId":  "7.3",
+        "topicTitle":  "Topic 7.3 · Industrial Commercial Manufacture \u0026 SMT",
+        "category":  "Commercial Polymer Moulding Methods",
+        "question":  "Explain the engineering significance and application of: Compression moulding",
+        "answer":  "Preheated thermosetting charge placed into open heated cavity, closed under hydraulic pressure; produces heat-resistant electrical plugs and melamine tableware."
+    },
+    {
+        "id":  "card-182",
+        "topicId":  "7.3",
+        "topicTitle":  "Topic 7.3 · Industrial Commercial Manufacture \u0026 SMT",
+        "category":  "Industrial Metal Casting \u0026 Electronics SMT Assembly",
+        "question":  "Explain the engineering significance and application of: High pressure die casting",
+        "answer":  "Molten aluminium or zinc alloy injected under high pressure into permanent steel dies; excellent surface finish, thin walls, tight dimensional tolerances."
+    },
+    {
+        "id":  "card-183",
+        "topicId":  "7.3",
+        "topicTitle":  "Topic 7.3 · Industrial Commercial Manufacture \u0026 SMT",
+        "category":  "Industrial Metal Casting \u0026 Electronics SMT Assembly",
+        "question":  "Explain the engineering significance and application of: Sand casting",
+        "answer":  "Molten metal poured into temporary sand moulds formed around patterns; low tooling cost, ideal for large engine blocks and low volume castings."
+    },
+    {
+        "id":  "card-184",
+        "topicId":  "7.3",
+        "topicTitle":  "Topic 7.3 · Industrial Commercial Manufacture \u0026 SMT",
+        "category":  "Industrial Metal Casting \u0026 Electronics SMT Assembly",
+        "question":  "Explain the engineering significance and application of: Surface Mount Technology (SMT) Assembly",
+        "answer":  "1. Laser-cut stainless steel stencil applies solder paste onto PCB surface pads, 2. High-speed pick-and-place robot places surface-mount components, 3. Multi-zone reflow oven melts solder paste at ~217°C to form robust solder joints."
+    },
+    {
+        "id":  "card-185",
+        "topicId":  "7.4",
+        "topicTitle":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+        "category":  "Scales of Manufacturing Production",
+        "question":  "Compare and contrast: One-off / bespoke production",
+        "answer":  "Highly customized single units manufactured by skilled artisans or specialist machinists; flexible, high unit cost, minimal tooling."
+    },
+    {
+        "id":  "card-186",
+        "topicId":  "7.4",
+        "topicTitle":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+        "category":  "Scales of Manufacturing Production",
+        "question":  "Explain the engineering significance and application of: Batch production",
+        "answer":  "Pre-determined batch sizes using flexible machine setups and interchangeable jigs/fixtures; balances setup downtime against warehouse storage inventory."
+    },
+    {
+        "id":  "card-187",
+        "topicId":  "7.4",
+        "topicTitle":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+        "category":  "Scales of Manufacturing Production",
+        "question":  "Compare and contrast: Mass / High-volume production",
+        "answer":  "Dedicated automated assembly lines producing millions of standardized identical products; ultra-low unit cost, immense capital investment in dedicated tooling."
+    },
+    {
+        "id":  "card-188",
+        "topicId":  "7.4",
+        "topicTitle":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+        "category":  "Scales of Manufacturing Production",
+        "question":  "Explain the engineering significance and application of: Continuous flow production",
+        "answer":  "24/7 automated continuous processing of bulk materials (oil refining, steel blast furnaces, petrochemicals)."
+    },
+    {
+        "id":  "card-189",
+        "topicId":  "7.4",
+        "topicTitle":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+        "category":  "Lean Manufacturing \u0026 Just-In-Time (JIT)",
+        "question":  "Explain the engineering significance and application of: Lean manufacturing",
+        "answer":  "Systematic elimination of the 7 wastes (TIMWOOD): Transport, Inventory, Motion, Waiting, Overproduction, Over-processing, Defects."
+    },
+    {
+        "id":  "card-190",
+        "topicId":  "7.4",
+        "topicTitle":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+        "category":  "Lean Manufacturing \u0026 Just-In-Time (JIT)",
+        "question":  "Explain the engineering significance and application of: Just-In-Time (JIT)",
+        "answer":  "Components and raw stock arrive at assembly lines exactly as needed; eliminates buffer warehouse inventory and minimizes tied-up working capital."
+    },
+    {
+        "id":  "card-191",
+        "topicId":  "7.4",
+        "topicTitle":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+        "category":  "Lean Manufacturing \u0026 Just-In-Time (JIT)",
+        "question":  "Explain the engineering significance and application of: Cellular manufacturing",
+        "answer":  "U-shaped workstations manned by cross-trained technicians, minimizing part transport distance and optimizing operator workflow balance."
+    },
+    {
+        "id":  "card-192",
+        "topicId":  "7.5",
+        "topicTitle":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+        "category":  "QC vs QA \u0026 Total Quality Management",
+        "question":  "Explain the engineering significance and application of: Quality Control (QC)",
+        "answer":  "Reactive inspection of physical parts against engineering drawings and tolerances during and after production; defective items are rejected or reworked."
+    },
+    {
+        "id":  "card-193",
+        "topicId":  "7.5",
+        "topicTitle":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+        "category":  "QC vs QA \u0026 Total Quality Management",
+        "question":  "Explain the engineering significance and application of: Quality Assurance (QA)",
+        "answer":  "Proactive systemic management of processes, machine calibrations, and operator procedures to ensure defects cannot arise in the first place."
+    },
+    {
+        "id":  "card-194",
+        "topicId":  "7.5",
+        "topicTitle":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+        "category":  "QC vs QA \u0026 Total Quality Management",
+        "question":  "Explain the engineering significance and application of: Total Quality Management (TQM)",
+        "answer":  "Company-wide culture of continuous incremental improvement (Kaizen) where every employee is accountable for product excellence."
+    },
+    {
+        "id":  "card-195",
+        "topicId":  "7.5",
+        "topicTitle":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+        "category":  "QC vs QA \u0026 Total Quality Management",
+        "question":  "Explain the engineering significance and application of: Statistical Process Control (SPC)",
+        "answer":  "Control charts plotting critical part dimensions in real time; warns when tooling wear causes dimensions to drift before parts fall out of tolerance."
+    },
+    {
+        "id":  "card-196",
+        "topicId":  "7.5",
+        "topicTitle":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+        "category":  "Certification \u0026 Statutory Standards",
+        "question":  "Explain the engineering significance and application of: ISO 9001",
+        "answer":  "International benchmark for Quality Management Systems; establishes documented procedures, calibrated inspection tooling, and regular audits."
+    },
+    {
+        "id":  "card-197",
+        "topicId":  "7.5",
+        "topicTitle":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+        "category":  "Certification \u0026 Statutory Standards",
+        "question":  "Explain the engineering significance and application of: BSI Kitemark",
+        "answer":  "Prestigious third-party certification from the British Standards Institution confirming independent testing and ongoing factory compliance."
+    },
+    {
+        "id":  "card-198",
+        "topicId":  "7.5",
+        "topicTitle":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+        "category":  "Certification \u0026 Statutory Standards",
+        "question":  "Explain the engineering significance and application of: CE and UKCA marking",
+        "answer":  "Mandatory conformity assessment marking declaring product adherence to all applicable safety, electromagnetic compatibility (EMC), and low-voltage directives."
+    },
+    {
+        "id":  "card-199",
+        "topicId":  "8.1",
+        "topicTitle":  "Topic 8.1 · Stakeholder Evaluation \u0026 Usability Testing",
+        "category":  "Usability Trials \u0026 Stakeholder Verification",
+        "question":  "Explain the engineering significance and application of: Structured usability trials",
+        "answer":  "Placing functional prototypes into the hands of target end-users to measure task completion duration, error frequency, and cognitive confusion."
+    },
+    {
+        "id":  "card-200",
+        "topicId":  "8.1",
+        "topicTitle":  "Topic 8.1 · Stakeholder Evaluation \u0026 Usability Testing",
+        "category":  "Usability Trials \u0026 Stakeholder Verification",
+        "question":  "Compare and contrast: Quantitative vs Qualitative data",
+        "answer":  "Quantitative metrics (seconds to complete action, clamping force applied in N, battery life in hours) vs qualitative observations (user comfort comments, intuitive grip feel)."
+    },
+    {
+        "id":  "card-201",
+        "topicId":  "8.1",
+        "topicTitle":  "Topic 8.1 · Stakeholder Evaluation \u0026 Usability Testing",
+        "category":  "Usability Trials \u0026 Stakeholder Verification",
+        "question":  "Explain the engineering significance and application of: Specification verification matrix",
+        "answer":  "Methodical check verifying every measurable requirement in the engineering technical specification against empirical prototype performance data."
+    },
+    {
+        "id":  "card-202",
+        "topicId":  "8.2",
+        "topicTitle":  "Topic 8.2 · Technical Testing \u0026 Physical Validation",
+        "category":  "Destructive vs Non-Destructive Testing (NDT)",
+        "question":  "Explain the engineering significance and application of: Destructive testing",
+        "answer":  "Applying physical loads until catastrophic component failure occurs to determine ultimate mechanical limits: UTS tensile pull tests, burst pressure tests, drop impact tests."
+    },
+    {
+        "id":  "card-203",
+        "topicId":  "8.2",
+        "topicTitle":  "Topic 8.2 · Technical Testing \u0026 Physical Validation",
+        "category":  "Destructive vs Non-Destructive Testing (NDT)",
+        "question":  "Explain the engineering significance and application of: Dye Penetrant Inspection (DPI)",
+        "answer":  "NDT technique where fluorescent/red dye penetrates surface micro-cracks; developer draws dye out to highlight surface defects under white/UV light."
+    },
+    {
+        "id":  "card-204",
+        "topicId":  "8.2",
+        "topicTitle":  "Topic 8.2 · Technical Testing \u0026 Physical Validation",
+        "category":  "Destructive vs Non-Destructive Testing (NDT)",
+        "question":  "Explain the engineering significance and application of: Ultrasonic Testing (UT)",
+        "answer":  "High-frequency acoustic sound waves transmitted into solid components; reflected echo pulses detect internal sub-surface voids, inclusions, and delaminations."
+    },
+    {
+        "id":  "card-205",
+        "topicId":  "8.2",
+        "topicTitle":  "Topic 8.2 · Technical Testing \u0026 Physical Validation",
+        "category":  "Destructive vs Non-Destructive Testing (NDT)",
+        "question":  "Explain the engineering significance and application of: X-Ray Radiography",
+        "answer":  "Penetrating ionizing radiation creates radiographic film images showing internal porosity in critical structural castings and welds."
+    },
+    {
+        "id":  "card-206",
+        "topicId":  "8.3",
+        "topicTitle":  "Topic 8.3 · Commercial Feasibility \u0026 Cost Viability",
+        "category":  "Unit Cost Calculation \u0026 Breakeven Analysis",
+        "question":  "State the principle / mathematical formula for: Unit Manufacturing Cost Formula",
+        "answer":  "$\\\\text{Unit Cost} = \\\\text{Direct Materials} + \\\\text{Direct Labour} + \\\\text{Overhead} + \\\\frac{\\\\text{Tooling \\\\\u0026 Development Cost}}{\\\\text{Total Production Volume}}$."
+    },
+    {
+        "id":  "card-207",
+        "topicId":  "8.3",
+        "topicTitle":  "Topic 8.3 · Commercial Feasibility \u0026 Cost Viability",
+        "category":  "Unit Cost Calculation \u0026 Breakeven Analysis",
+        "question":  "Explain the engineering significance and application of: Tooling amortisation",
+        "answer":  "Distributing high upfront tooling costs (e.g. £50,000 for press dies) across unit volume; over 500,000 units tooling cost is £0.10/unit, while over 5,000 units it is £10.00/unit."
+    },
+    {
+        "id":  "card-208",
+        "topicId":  "8.3",
+        "topicTitle":  "Topic 8.3 · Commercial Feasibility \u0026 Cost Viability",
+        "category":  "Unit Cost Calculation \u0026 Breakeven Analysis",
+        "question":  "Explain the engineering significance and application of: Breakeven Point (BEP)",
+        "answer":  "$\\\\text{BEP (units)} = \\\\frac{\\\\text{Total Fixed Costs}}{\\\\text{Selling Price per Unit} - \\\\text{Variable Cost per Unit}}$."
+    },
+    {
+        "id":  "card-209",
+        "topicId":  "8.3",
+        "topicTitle":  "Topic 8.3 · Commercial Feasibility \u0026 Cost Viability",
+        "category":  "Unit Cost Calculation \u0026 Breakeven Analysis",
+        "question":  "Explain the engineering significance and application of: Contribution Margin",
+        "answer":  "$\\\\text{Selling Price} - \\\\text{Variable Cost per Unit}$. The surplus generated per unit sold that contributes to paying off fixed overheads and generating net profit."
+    },
+    {
+        "id":  "card-210",
+        "topicId":  "9.1",
+        "topicTitle":  "Topic 9.1 · Workshop Safe Practices \u0026 Risk Assessments",
+        "category":  "Risk Assessment \u0026 Hazard Control",
+        "question":  "Compare and contrast: Hazard vs Risk",
+        "answer":  "A \u003cb\u003ehazard\u003c/b\u003e is anything with intrinsic potential to cause harm (e.g. rotating lathe spindle, toxic solvent). A \u003cb\u003erisk\u003c/b\u003e is the evaluated probability that harm occurs multiplied by its severity."
+    },
+    {
+        "id":  "card-211",
+        "topicId":  "9.1",
+        "topicTitle":  "Topic 9.1 · Workshop Safe Practices \u0026 Risk Assessments",
+        "category":  "Risk Assessment \u0026 Hazard Control",
+        "question":  "State the principle / mathematical formula for: Risk Rating Formula",
+        "answer":  "$\\\\text{Risk Score} = \\\\text{Likelihood (1–5)} \\\\times \\\\text{Severity (1–5)}$. High scores require immediate implementation of higher-level engineering controls."
+    },
+    {
+        "id":  "card-212",
+        "topicId":  "9.1",
+        "topicTitle":  "Topic 9.1 · Workshop Safe Practices \u0026 Risk Assessments",
+        "category":  "Risk Assessment \u0026 Hazard Control",
+        "question":  "Explain the engineering significance and application of: Hierarchy of Hazard Controls",
+        "answer":  "1. \u003cb\u003eElimination\u003c/b\u003e (physically remove hazard), 2. \u003cb\u003eSubstitution\u003c/b\u003e (replace hazard with safer material), 3. \u003cb\u003eEngineering Controls\u003c/b\u003e (interlocked guards, LEV local exhaust ventilation), 4. \u003cb\u003eAdministrative Controls\u003c/b\u003e (Standard Operating Procedures SOP, training, signage), 5. \u003cb\u003ePPE\u003c/b\u003e (Personal Protective Equipment as last line of defence)."
+    },
+    {
+        "id":  "card-213",
+        "topicId":  "9.1",
+        "topicTitle":  "Topic 9.1 · Workshop Safe Practices \u0026 Risk Assessments",
+        "category":  "Machinery Safety \u0026 Interlocking",
+        "question":  "Explain the engineering significance and application of: Machine guarding",
+        "answer":  "Fixed guards preventing operator reach into entrapment pinch points; interlocked physical guards that immediately break the electrical control circuit and brake the drive spindle when opened."
+    },
+    {
+        "id":  "card-214",
+        "topicId":  "9.1",
+        "topicTitle":  "Topic 9.1 · Workshop Safe Practices \u0026 Risk Assessments",
+        "category":  "Machinery Safety \u0026 Interlocking",
+        "question":  "Explain the engineering significance and application of: Emergency stop circuits (E-Stop)",
+        "answer":  "Latching mushroom-head push buttons wired into hardwired safety relays; must fail-safe to a de-energized state and require manual reset before machine restarts."
+    },
+    {
+        "id":  "card-215",
+        "topicId":  "9.2",
+        "topicTitle":  "Topic 9.2 · Health \u0026 Safety Legislation (HASAW, COSHH)",
+        "category":  "Statutory Health \u0026 Safety Legislation",
+        "question":  "Explain the engineering significance and application of: Health and Safety at Work Act (HASAW) 1974",
+        "answer":  "Foundational UK statute placing a non-delegable legal duty on employers to ensure the health, safety, and welfare of employees and the public \u0027so far as is reasonably practicable\u0027. Employees must take reasonable care of themselves and cooperate with safety protocols."
+    },
+    {
+        "id":  "card-216",
+        "topicId":  "9.2",
+        "topicTitle":  "Topic 9.2 · Health \u0026 Safety Legislation (HASAW, COSHH)",
+        "category":  "Statutory Health \u0026 Safety Legislation",
+        "question":  "Explain the engineering significance and application of: COSHH Regulations 2002",
+        "answer":  "Control of Substances Hazardous to Health; legally mandates comprehensive risk assessments, proper chemical storage in flame-proof bunded cabinets, Safety Data Sheets (SDS), and Local Exhaust Ventilation (LEV) testing for hazardous dusts, cutting fluids, and resin vapours."
+    },
+    {
+        "id":  "card-217",
+        "topicId":  "9.2",
+        "topicTitle":  "Topic 9.2 · Health \u0026 Safety Legislation (HASAW, COSHH)",
+        "category":  "Statutory Health \u0026 Safety Legislation",
+        "question":  "Explain the engineering significance and application of: PPE at Work Regulations 1992",
+        "answer":  "Mandates that employers must supply suitable, CE/UKCA-certified PPE (impact safety glasses EN 166, ear defenders EN 352, dust respirators, steel toe-cap footwear) free of charge wherever risks cannot be adequately controlled by engineering means."
+    },
+    {
+        "id":  "card-218",
+        "topicId":  "9.2",
+        "topicTitle":  "Topic 9.2 · Health \u0026 Safety Legislation (HASAW, COSHH)",
+        "category":  "Product Safety Regulations \u0026 Consumer Warranties",
+        "question":  "Explain the engineering significance and application of: General Product Safety Regulations (GPSR)",
+        "answer":  "Prohibits placing any product on consumer markets that poses foreseeable safety hazards under reasonable usage or misuse."
+    },
+    {
+        "id":  "card-219",
+        "topicId":  "9.2",
+        "topicTitle":  "Topic 9.2 · Health \u0026 Safety Legislation (HASAW, COSHH)",
+        "category":  "Product Safety Regulations \u0026 Consumer Warranties",
+        "question":  "Explain the engineering significance and application of: Consumer Rights Act 2015",
+        "answer":  "Requires all engineered products sold to consumers to be of satisfactory quality, fit for purpose, and match manufacturer descriptions; backed by mandatory warranty redress."
+    }
+]

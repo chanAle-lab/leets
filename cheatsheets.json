@@ -1,0 +1,769 @@
+﻿{
+    "1.1":  {
+                "title":  "Topic 1.1 · Contexts for Design Solutions",
+                "group":  "1. Identifying Requirements",
+                "spec":  "Exploring contexts: environmental \u0026 surroundings, user requirements, economic \u0026 market considerations, product opportunities",
+                "sections":  [
+                                 {
+                                     "heading":  "Context Dependency \u0026 Operating Surroundings",
+                                     "points":  [
+                                                    "\u003cb\u003eContext dependency:\u003c/b\u003e All design practice is context dependent. An engineered solution cannot be validated in isolation; it must satisfy the precise physical, social, and operational conditions of its intended deployment.",
+                                                    "\u003cb\u003eEnvironmental and surroundings analysis:\u003c/b\u003e Investigating extreme ambient temperatures, humidity, UV radiation exposure, vibration spectra, airborne particulate ingress (IP rating), chemical exposure, and installation envelope.",
+                                                    "\u003cb\u003eEconomic and market constraints:\u003c/b\u003e Analysing purchasing power of target demographics, competitor unit pricing benchmarks, target BOM (Bill of Materials) cost ceilings, and commercial return on investment (ROI).",
+                                                    "\u003cb\u003eProduct opportunities:\u003c/b\u003e Identifying market gaps, underserved user niches, regulatory shifts (e.g. decarbonisation mandates), or technological readiness improvements that enable novel solutions."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Primary Users \u0026 Stakeholder Ecosystem",
+                                     "points":  [
+                                                    "\u003cb\u003ePrimary user:\u003c/b\u003e The direct operator interacting with the product\u0027s controls and user interface on a routine operational basis.",
+                                                    "\u003cb\u003eWider stakeholders:\u003c/b\u003e Maintenance technicians, installation teams, safety certifiers, logistics handlers, and recycling facilities whose operational requirements shape product architecture.",
+                                                    "\u003cb\u003eContextual inquiry:\u003c/b\u003e Direct ethnographic observation and semi-structured interviews in the real operational environment to reveal tacit needs that users rarely express in surveys."
+                                                ]
+                                 }
+                             ]
+            },
+    "1.2":  {
+                "title":  "Topic 1.2 · Stakeholder Analysis \u0026 Enterprise",
+                "group":  "1. Identifying Requirements",
+                "spec":  "Stakeholder analysis, User-Centred Design (UCD), SWOT analysis, focus groups, market research, enterprise and routes to innovation",
+                "sections":  [
+                                 {
+                                     "heading":  "User-Centred Design (UCD) \u0026 Investigation Methods",
+                                     "points":  [
+                                                    "\u003cb\u003eUser-Centred Design (UCD):\u003c/b\u003e An iterative design philosophy (ISO 9241-210) placing the explicit needs, cognitive capabilities, and physical ergonomics of end-users at every development phase.",
+                                                    "\u003cb\u003eSWOT analysis:\u003c/b\u003e Systematic matrix mapping internal Strengths and Weaknesses against external Opportunities and Threats to guide strategic design engineering decisions.",
+                                                    "\u003cb\u003eFocus groups \u0026 qualitative observation:\u003c/b\u003e Structured interactive sessions evaluating concept prototypes, aesthetic styling, tactile switch resistance, and feedback clarity.",
+                                                    "\u003cb\u003eMarket research \u0026 gap analysis:\u003c/b\u003e Quantitative demographic surveys, TAM/SAM/SOM market sizing, and identifying price-performance voids in current competitor product lines."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Enterprise \u0026 Routes to Innovation",
+                                     "points":  [
+                                                    "\u003cb\u003eEntrepreneurship:\u003c/b\u003e The commercial initiative and risk management required to translate technical inventions into viable market solutions.",
+                                                    "\u003cb\u003eCommercial partnerships \u0026 licensing:\u003c/b\u003e Teaming with established Tier-1 manufacturers or licensing patented IP for royalties to leverage existing supply chains and global distribution.",
+                                                    "\u003cb\u003eVenture capital \u0026 angel investment:\u003c/b\u003e Early-stage equity funding to finance high capital expenditure tooling (e.g. injection moulds, stamping dies) and CE/UKCA regulatory compliance testing.",
+                                                    "\u003cb\u003eCrowdfunding models:\u003c/b\u003e Pre-sales platforms (e.g. Kickstarter) used to validate consumer demand, establish early product evangelists, and fund initial production runs without diluting equity."
+                                                ]
+                                 }
+                             ]
+            },
+    "1.3":  {
+                "title":  "Topic 1.3 · Usability, Inclusivity \u0026 Ergonomics",
+                "group":  "1. Identifying Requirements",
+                "spec":  "Usability analysis, inclusive design, anthropometric data (5th, 50th, 95th percentiles), user comfort, control layouts, UI design",
+                "sections":  [
+                                 {
+                                     "heading":  "Anthropometrics \u0026 Percentile Design Rules",
+                                     "points":  [
+                                                    "\u003cb\u003eAnthropometry:\u003c/b\u003e The measurement of physical dimensions, reach boundaries, biomechanical leverage, and strength capacities of human populations.",
+                                                    "\u003cb\u003e5th to 95th percentile envelope:\u003c/b\u003e Standard engineering rule to accommodate at least 90% of the target user population.",
+                                                    "\u003cb\u003eReach dimensions (5th percentile):\u003c/b\u003e Operational reach, button distances, and shelf heights must be accessible to smaller users; designed according to the \u003cb\u003e5th percentile female\u003c/b\u003e data.",
+                                                    "\u003cb\u003eClearance dimensions (95th percentile):\u003c/b\u003e Hand clearance, legroom, door apertures, and handle openings must fit larger users; designed according to the \u003cb\u003e95th percentile male\u003c/b\u003e data.",
+                                                    "\u003cb\u003eDesign for adjustability:\u003c/b\u003e Incorporating mechanical sliders, telescopic linkages, or height adjustment mechanisms to comfortably span across the entire 5th to 95th percentile spectrum."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Ergonomics \u0026 Human-Machine Interfaces (HMI)",
+                                     "points":  [
+                                                    "\u003cb\u003ePhysical ergonomics:\u003c/b\u003e Optimising grip diameters (power grip 30–45 mm; precision grip 8–15 mm), reducing repetitive strain injury (RSI) risks, and maintaining neutral wrist postures.",
+                                                    "\u003cb\u003eCognitive ergonomics:\u003c/b\u003e Minimising mental workload, preventing control confusion, intuitive layout mapping (e.g. clockwise rotation increases output), and sensory confirmation feedback within 100ms.",
+                                                    "\u003cb\u003eInclusive design:\u003c/b\u003e Creating accessible products that accommodate individuals with varying physical, sensory, or cognitive capabilities without requiring stigmatising adaptations (BS 8300 / Equality Act 2010)."
+                                                ]
+                                 }
+                             ]
+            },
+    "2.1":  {
+                "title":  "Topic 2.1 · Product Analysis \u0026 Evaluation",
+                "group":  "2. Existing Products \u0026 Practice",
+                "spec":  "Product analysis, disassembly, ACCESS FM, materials, construction methods, functionality, ergonomics, branding \u0026 commercial viability",
+                "sections":  [
+                                 {
+                                     "heading":  "Systematic Product Disassembly \u0026 Reverse Engineering",
+                                     "points":  [
+                                                    "\u003cb\u003eProduct disassembly:\u003c/b\u003e Methodical physical teardown of existing market products to analyse component count, mechanical sub-systems, fastening choices, and manufacturing workflows.",
+                                                    "\u003cb\u003eACCESS FM evaluation:\u003c/b\u003e Aesthetics, Cost, Customer, Environment, Size, Safety, Function, Material. Standard evaluative framework for rigorous product deconstruction.",
+                                                    "\u003cb\u003eBill of Materials (BOM) analysis:\u003c/b\u003e Cataloguing each discrete part, material type, net weight, standard fastener specifications (e.g. DIN 912 screws), and estimated unit production costs."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Fitness for Purpose \u0026 Benchmarking",
+                                     "points":  [
+                                                    "\u003cb\u003eFitness for purpose:\u003c/b\u003e Objective engineering verification that a product meets all functional, environmental, and lifespan criteria specified in its design brief under operational duty cycles.",
+                                                    "\u003cb\u003eBranding and aesthetic identity:\u003c/b\u003e Evaluating surface finishes, colourways, haptics, and brand coherence that drive consumer quality perception.",
+                                                    "\u003cb\u003eEnhancement opportunities:\u003c/b\u003e Identifying structural fatigue vulnerabilities, excessive thermal buildup, redundant parts, or difficult assembly operations ripe for value-engineering redesign."
+                                                ]
+                                 }
+                             ]
+            },
+    "2.2":  {
+                "title":  "Topic 2.2 · Technological Developments \u0026 Innovation",
+                "group":  "2. Existing Products \u0026 Practice",
+                "spec":  "Emerging technologies, blue sky innovation vs incremental innovation, disruptive technologies, smart systems, Industry 4.0",
+                "sections":  [
+                                 {
+                                     "heading":  "Innovation Types \u0026 Technology Lifecycles",
+                                     "points":  [
+                                                    "\u003cb\u003eIncremental innovation:\u003c/b\u003e Successive, low-risk refinements to existing products (e.g. shaving 5% component weight, increasing battery energy density by 3%, firmware updates).",
+                                                    "\u003cb\u003eDisruptive / Blue sky innovation:\u003c/b\u003e Radically novel technology that displaces entrenched markets or creates entirely new industries (e.g. solid-state batteries, generative AI-driven design, electric vehicle skateboards).",
+                                                    "\u003cb\u003eTechnology Readiness Levels (TRL):\u003c/b\u003e NASA/EU scale from TRL 1 (basic principles observed) to TRL 9 (proven in full operational commercial environment)."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Emerging Engineering Technologies",
+                                     "points":  [
+                                                    "\u003cb\u003eAdditive metal manufacturing (DMLS):\u003c/b\u003e Direct Metal Laser Sintering enabling complex generative internal cooling channels impossible via subtractive milling.",
+                                                    "\u003cb\u003eInternet of Things (IoT) edge computing:\u003c/b\u003e Integrating low-power sensors and microcontrollers with cloud connectivity for real-time predictive maintenance telemetry.",
+                                                    "\u003cb\u003eAdvanced composites \u0026 meta-materials:\u003c/b\u003e Tailored carbon-nanotube matrices and auxetic structures exhibiting negative Poisson\u0027s ratio for ultra-high impact absorption."
+                                                ]
+                                 }
+                             ]
+            },
+    "2.3":  {
+                "title":  "Topic 2.3 · Historical Movements \u0026 Influential Engineers",
+                "group":  "2. Existing Products \u0026 Practice",
+                "spec":  "Design movements (Arts \u0026 Crafts, Bauhaus, Modernism, Postmodernism/Memphis), influential figures (Rams, Dyson, Brunel), social \u0026 environmental legacy",
+                "sections":  [
+                                 {
+                                     "heading":  "Major Design \u0026 Engineering Movements",
+                                     "points":  [
+                                                    "\u003cb\u003eArts \u0026 Crafts (1880–1920):\u003c/b\u003e William Morris; emphasis on handcrafted integrity, honest use of natural materials, and moral rejection of dehumanising industrial mass manufacture.",
+                                                    "\u003cb\u003eBauhaus (1919–1933):\u003c/b\u003e Walter Gropius; \u0027Form follows function\u0027, bridging art with industrial manufacturing, geometric purity, tubular steel, glass, and modular architecture.",
+                                                    "\u003cb\u003eModernism \u0026 International Style:\u003c/b\u003e Mies van der Rohe (\u0027Less is more\u0027); structural steel, reinforced concrete, clean unadorned surfaces, standardization.",
+                                                    "\u003cb\u003eMemphis Group (1981–1988):\u003c/b\u003e Ettore Sottsass; colourful rebellion against cold functionalism, combining geometric whimsy, patterned laminates, and provocative postmodern aesthetics."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Influential Design Engineers \u0026 Philosophy",
+                                     "points":  [
+                                                    "\u003cb\u003eDieter Rams:\u003c/b\u003e Chief design officer at Braun; \u0027Good design is as little design as possible\u0027. Established the iconic 10 Principles of Good Design emphasizing utility, honesty, unobtrusiveness, and longevity.",
+                                                    "\u003cb\u003eSir James Dyson:\u003c/b\u003e Cyclonic air separation technology; executed 5,127 functional prototypes to eliminate vacuum bags, embodying persistence through empirical test rigs.",
+                                                    "\u003cb\u003eIsambard Kingdom Brunel:\u003c/b\u003e Victorian engineering giant; pioneered screw-propelled iron steamships (SS Great Britain) and audacious suspension bridges, calculating structural limits with innovative ironwork."
+                                                ]
+                                 }
+                             ]
+            },
+    "2.4":  {
+                "title":  "Topic 2.4 · Product Lifecycles \u0026 Marketing Models",
+                "group":  "2. Existing Products \u0026 Practice",
+                "spec":  "Product life cycle stages (introduction, growth, maturity, decline), lifecycle extension strategies, digital marketing \u0026 social media models",
+                "sections":  [
+                                 {
+                                     "heading":  "Product Life Cycle (PLC) Dynamics",
+                                     "points":  [
+                                                    "\u003cb\u003eIntroduction phase:\u003c/b\u003e High development \u0026 tooling cost amortization, low sales volume, negative cash flow; requires targeted marketing to innovators.",
+                                                    "\u003cb\u003eGrowth phase:\u003c/b\u003e Rapid market adoption, unit production costs drop via manufacturing economies of scale, distribution channels expand.",
+                                                    "\u003cb\u003eMaturity phase:\u003c/b\u003e Peak sales, market saturation, intense competitor price pressure; cash generation peaks and funds subsequent R\u0026D pipelines.",
+                                                    "\u003cb\u003eDecline phase:\u003c/b\u003e Falling sales due to technological obsolescence or shifting consumer habits; leads to product discontinuation or harvest strategy."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Extension Strategies \u0026 Digital Models",
+                                     "points":  [
+                                                    "\u003cb\u003eLifecycle extension strategies:\u003c/b\u003e Re-engineering aesthetic facelifts, software feature upgrades, entering emerging geographic markets, or re-targeting alternative commercial applications.",
+                                                    "\u003cb\u003eDirect-to-Consumer (D2C) \u0026 viral models:\u003c/b\u003e Bypassing traditional retail margins through digital channels, influencer unboxings, and community crowdfunding feedback."
+                                                ]
+                                 }
+                             ]
+            },
+    "3.1":  {
+                "title":  "Topic 3.1 · Social, Moral, Ethical \u0026 Environmental Factors",
+                "group":  "3. Implications of Wider Issues",
+                "spec":  "Life Cycle Assessment (LCA), carbon footprint, resource depletion, planned obsolescence, consumer buying trends, RoHS \u0026 WEEE directives",
+                "sections":  [
+                                 {
+                                     "heading":  "Life Cycle Assessment (LCA) \u0026 Environmental Footprint",
+                                     "points":  [
+                                                    "\u003cb\u003eLife Cycle Assessment (LCA):\u003c/b\u003e Standardized ISO 14040 methodology evaluating total environmental impact across 5 phases: 1. Raw Material Extraction -\u003e 2. Material Processing -\u003e 3. Manufacture -\u003e 4. Operational Use -\u003e 5. End of Life (EOL).",
+                                                    "\u003cb\u003eEmbodied energy:\u003c/b\u003e The cumulative non-renewable primary energy consumed from mining and refining raw materials to finished assembly.",
+                                                    "\u003cb\u003eCarbon footprint:\u003c/b\u003e Total equivalent carbon dioxide ($) emissions generated across the entire product lifecycle.",
+                                                    "\u003cb\u003eCircular economy:\u003c/b\u003e Regenerative industrial framework replacing linear \u0027take-make-dispose\u0027 with closed-loop biological and technical nutrient loops (Ellen MacArthur Foundation)."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Planned Obsolescence \u0026 Statutory Directives",
+                                     "points":  [
+                                                    "\u003cb\u003ePlanned obsolescence types:\u003c/b\u003e Technological (incompatible communication ports/software), functional (glued-in batteries, artificial component wear limits), and psychological (stylistic dating).",
+                                                    "\u003cb\u003eRoHS Directive:\u003c/b\u003e Restriction of Hazardous Substances; strictly restricts hazardous materials in electronic products (Lead Pb, Mercury Hg, Cadmium Cd, Hexavalent Chromium Cr(VI), PBB, PBDE).",
+                                                    "\u003cb\u003eWEEE Directive:\u003c/b\u003e Waste Electrical and Electronic Equipment; legally mandates OEM take-back, treatment, and recycling of post-consumer electronic waste."
+                                                ]
+                                 }
+                             ]
+            },
+    "3.2":  {
+                "title":  "Topic 3.2 · Design for Manufacture (DFM) \u0026 Sustainability",
+                "group":  "3. Implications of Wider Issues",
+                "spec":  "DFM principles, part count reduction, modularity, repairability, Ethical Trading Initiative (ETI), eco-materials, upcycling",
+                "sections":  [
+                                 {
+                                     "heading":  "Design for Manufacture and Assembly (DFMA)",
+                                     "points":  [
+                                                    "\u003cb\u003ePart count minimisation:\u003c/b\u003e Integrating multiple functional features (e.g. snap fits, bearing mounts, wire clips) into unified injection mouldings or die castings.",
+                                                    "\u003cb\u003ePoka-Yoke (Mistake proofing):\u003c/b\u003e Asymmetric locator pins, keyed plugs, and polarized connectors making incorrect manual assembly physically impossible.",
+                                                    "\u003cb\u003eTop-down unidirectional assembly:\u003c/b\u003e Designing parts to stack vertically in the Z-axis, eliminating tool reorientation and accelerating robotic assembly.",
+                                                    "\u003cb\u003eStandardisation:\u003c/b\u003e Restricting hardware to single screw sizes (e.g. M3 Torx throughout), eliminating tool changes during workshop and factory assembly.",
+                                                    "\u003cb\u003eDesign for Disassembly (DFD):\u003c/b\u003e Using threaded or snap fasteners rather than irreversible chemical adhesives or sonic welds to facilitate maintenance and component recycling."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Ethical Trade \u0026 Sustainable Materials",
+                                     "points":  [
+                                                    "\u003cb\u003eEthical Trading Initiative (ETI):\u003c/b\u003e Global code requiring fair living wages, freely chosen employment, safe working conditions, reasonable hours, and zero child labour in supply chains.",
+                                                    "\u003cb\u003eEco-materials:\u003c/b\u003e Certified sustainable timber (FSC/PEFC), bio-based resins, recycled rPET/rHDPE polymers, and solvent-free waterborne powder coatings.",
+                                                    "\u003cb\u003eUpcycling:\u003c/b\u003e Repurposing manufacturing scrap or discarded products into higher-value engineered products without energy-intensive melting or re-refining."
+                                                ]
+                                 }
+                             ]
+            },
+    "3.3":  {
+                "title":  "Topic 3.3 · Optimum Material Use \u0026 Stock Forms",
+                "group":  "3. Implications of Wider Issues",
+                "spec":  "Material optimization, 2D nesting \u0026 tessellation, standard stock forms, raw material costing, scrap reduction",
+                "sections":  [
+                                 {
+                                     "heading":  "Nesting, Tessellation \u0026 Scrap Minimisation",
+                                     "points":  [
+                                                    "\u003cb\u003e2D Nesting algorithms:\u003c/b\u003e CAD/CAM software mathematically optimizing part orientation and layout on standard sheet stock to maximize material yield.",
+                                                    "\u003cb\u003eTessellation:\u003c/b\u003e Geometrically interlocking identical profiles with common cutting edges, eliminating skeleton scrap and reducing laser/plasma cutting distance.",
+                                                    "\u003cb\u003eScrap percentage formula:\u003c/b\u003e $\\\\text{Scrap \\\\%} = \\\\frac{\\\\text{Total Raw Stock Area} - \\\\text{Total Useful Part Area}}{\\\\text{Total Raw Stock Area}} \\\\times 100\\\\%$."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Standard Commercial Stock Forms",
+                                     "points":  [
+                                                    "\u003cb\u003eStock forms:\u003c/b\u003e Round bar, square bar, hexagonal bar, angle (L-section), channel (U-section), box section (SHS/RHS), I-beam, flat bar, tube, sheet and plate.",
+                                                    "\u003cb\u003eCost advantages of standard stock:\u003c/b\u003e Eliminates bespoke extrusion die setup costs, ensures immediate off-the-shelf availability, and guarantees certified mechanical properties."
+                                                ]
+                                 }
+                             ]
+            },
+    "3.4":  {
+                "title":  "Topic 3.4 · Distribution Logistics \u0026 Intellectual Property",
+                "group":  "3. Implications of Wider Issues",
+                "spec":  "Distribution logistics, packaging optimization, Intellectual Property: patents, registered designs, trademarks, copyright, design rights",
+                "sections":  [
+                                 {
+                                     "heading":  "Freight Logistics \u0026 Packaging Engineering",
+                                     "points":  [
+                                                    "\u003cb\u003eVolumetric cargo efficiency:\u003c/b\u003e Sizing primary and secondary packaging to interlock without overhang on standard EUR pallets (1200 × 800 mm) or ISO containers (20ft / 40ft).",
+                                                    "\u003cb\u003eTransport modes \u0026 emissions:\u003c/b\u003e Maritime shipping (lowest $ per tonne-km) vs rail, road freight, and air freight (highest carbon emissions and cost per kg).",
+                                                    "\u003cb\u003eSustainable packaging:\u003c/b\u003e Corrugated single/double wall board (high compressive crush strength, biodegradable) replacing expanded polystyrene (EPS) with moulded pulp or mushroom mycelium."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Intellectual Property (IP) Law",
+                                     "points":  [
+                                                    "\u003cb\u003ePatents:\u003c/b\u003e Grants up to \u003cb\u003e20 years\u003c/b\u003e legal monopoly over novel technical inventions, mechanical movements, or industrial processes. Must possess novelty, inventive step, and industrial applicability.",
+                                                    "\u003cb\u003eRegistered Designs:\u003c/b\u003e Protects aesthetic visual appearance, shape, contours, and decorative ornamentation for up to \u003cb\u003e25 years\u003c/b\u003e (renewed every 5 years).",
+                                                    "\u003cb\u003eTrademarks:\u003c/b\u003e Protects distinctive brand names, logos, symbols, and slogans indefinitely, subject to 10-year renewal fees.",
+                                                    "\u003cb\u003eCopyright:\u003c/b\u003e Automatic legal protection for original technical drawings, schematics, source code, and user manuals (author\u0027s life + 70 years).",
+                                                    "\u003cb\u003eUnregistered Design Rights:\u003c/b\u003e Protects 3D functional shape automatically in the UK for 10 years from first commercial sale (or 15 years from creation)."
+                                                ]
+                                 }
+                             ]
+            },
+    "3.5":  {
+                "title":  "Topic 3.5 · Energy Sources, Storage \u0026 Efficiency",
+                "group":  "3. Implications of Wider Issues",
+                "spec":  "Primary energy sources, battery chemistries (Li-ion, LiFePO4, NiMH), supercapacitors, power transmission, efficiency calculations",
+                "sections":  [
+                                 {
+                                     "heading":  "Energy Storage Technologies",
+                                     "points":  [
+                                                    "\u003cb\u003eLithium-ion (NMC):\u003c/b\u003e High specific energy density (~250 Wh/kg), nominal 3.7V per cell, high energy-to-weight; requires Battery Management System (BMS) for thermal runaway prevention.",
+                                                    "\u003cb\u003eLithium Iron Phosphate (LiFePO4 / LFP):\u003c/b\u003e Extremely stable chemistry, high thermal runaway ceiling, \u003e3000 charge cycles, 3.2V nominal; ideal for stationary energy and robust EVs.",
+                                                    "\u003cb\u003eSupercapacitors:\u003c/b\u003e Electrostatic double-layer storage; ultra-rapid charge/discharge, virtually unlimited cycle life, low specific energy; handles regenerative braking burst loads."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Energy Transmission \u0026 Efficiency",
+                                     "points":  [
+                                                    "\u003cb\u003eEnergy efficiency formula:\u003c/b\u003e $\\\\text{Efficiency } \\\\eta = \\\\frac{\\\\text{Useful Output Power / Energy}}{\\\\text{Total Input Power / Energy}} \\\\times 100\\\\%$.",
+                                                    "\u003cb\u003eI^2R transmission loss:\u003c/b\u003e Electrical conductor resistive power loss scales with the square of current ({loss} = I^2 R$). High-voltage transmission reduces current and cuts transmission heat losses.",
+                                                    "\u003cb\u003eEnergy harvesting:\u003c/b\u003e Piezoelectric vibration harvesting, Peltier-Seebeck thermoelectric generators, and micro photovoltaic cells powering autonomous low-energy IoT nodes."
+                                                ]
+                                 }
+                             ]
+            },
+    "3.6":  {
+                "title":  "Topic 3.6 · Cross-Disciplinary STEM in Engineering",
+                "group":  "3. Implications of Wider Issues",
+                "spec":  "Applying mathematics, physics, and materials science to engineering decisions, interpreting technical datasheets and curves",
+                "sections":  [
+                                 {
+                                     "heading":  "STEM Integration \u0026 Datasheet Analysis",
+                                     "points":  [
+                                                    "\u003cb\u003eApplied mathematics in engineering:\u003c/b\u003e Trigonometric vector resolution for truss analysis, calculus for dynamic rate of change, and statistics for manufacturing quality control.",
+                                                    "\u003cb\u003ePhysics principles:\u003c/b\u003e Conservation of energy, Newton\u0027s laws of motion, Faraday\u0027s law of induction, thermodynamics of heat transfer (conduction, convection, radiation).",
+                                                    "\u003cb\u003eInterpreting technical datasheets:\u003c/b\u003e Deriving maximum continuous drain current ($), thermal junction-to-ambient resistance ($\\\\theta_{JA}$), and stress-strain curves to ensure components operate within their Safe Operating Area (SOA)."
+                                                ]
+                                 }
+                             ]
+            },
+    "4.1":  {
+                "title":  "Topic 4.1 · 2D \u0026 3D Sketching, Drawing \u0026 Modelling",
+                "group":  "4. Design Thinking \u0026 Communication",
+                "spec":  "Sketching, 3rd angle orthographic projection (BS 8888), section views, isometric, circuit \u0026 system block diagrams, flowcharts",
+                "sections":  [
+                                 {
+                                     "heading":  "BS 8888 Engineering Drawing Standards",
+                                     "points":  [
+                                                    "\u003cb\u003eThird Angle Orthographic Projection:\u003c/b\u003e Universal standard engineering drawing layout: Plan view positioned directly above Front elevation; End elevation positioned on the side viewed.",
+                                                    "\u003cb\u003eLine conventions (BS 8888):\u003c/b\u003e Continuous thick (visible edges), Continuous thin (dimension, leader, and projection lines), Dashed thin (hidden details), Chain thin (centre lines, axes of symmetry).",
+                                                    "\u003cb\u003eSectional views:\u003c/b\u003e Hatched at 45° to reveal interior bores and chambers. Standard rule: webs, ribs, shafts, bolts, nuts, and pins are \u003cb\u003enever hatched\u003c/b\u003e in longitudinal section.",
+                                                    "\u003cb\u003eDimensioning conventions:\u003c/b\u003e Dimensions placed above horizontal dimension lines or to the left of vertical lines; arrowheads sharp and filled; leader lines never crossing dimension lines."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "System Visualisations \u0026 Schematic Diagrams",
+                                     "points":  [
+                                                    "\u003cb\u003eSystem block diagrams:\u003c/b\u003e High-level signal flow decomposition: Input Sensor -\u003e Conditioning Circuit -\u003e Microcontroller Process -\u003e Driver Stage -\u003e Mechanical Actuator.",
+                                                    "\u003cb\u003eCircuit schematics:\u003c/b\u003e Standardized electronic component symbols (resistors, NPN/MOSFET transistors, diodes, capacitors) showing logical electrical connectivity.",
+                                                    "\u003cb\u003eFlowcharts:\u003c/b\u003e Program logic flow; Terminals (oval), Operations/Processes (rectangle), Input/Output (parallelogram), Decisions/Conditionals (diamond)."
+                                                ]
+                                 }
+                             ]
+            },
+    "4.2":  {
+                "title":  "Topic 4.2 · Digital Engineering Tools (CAD, CAE, FEA)",
+                "group":  "4. Design Thinking \u0026 Communication",
+                "spec":  "Parametric 3D CAD solid modelling, assembly mates, CAE simulation, Finite Element Analysis (FEA), CFD, digital twins",
+                "sections":  [
+                                 {
+                                     "heading":  "Parametric CAD \u0026 Assembly Modeling",
+                                     "points":  [
+                                                    "\u003cb\u003eParametric solid modelling:\u003c/b\u003e Feature-based tree modeling (Extrude, Revolve, Sweep, Loft, Cut, Fillet) where dimensions drive geometry; altering a root sketch dynamically propagates across drawings and assemblies.",
+                                                    "\u003cb\u003eKinematic assembly mates:\u003c/b\u003e Coincident, concentric, parallel, tangent, and gear mechanical mates allowing digital verification of range of motion and collision detection.",
+                                                    "\u003cb\u003eDFM digital validation:\u003c/b\u003e Draft angle inspection to ensure plastic injection mould release; wall thickness analysis to eliminate sink marks and internal voids."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "CAE, Finite Element Analysis (FEA) \u0026 Simulation",
+                                     "points":  [
+                                                    "\u003cb\u003eFinite Element Analysis (FEA):\u003c/b\u003e Discretising continuous solid models into a mesh of finite elements (tetrahedral/hexahedral) to calculate displacement and von Mises stress tensors under mechanical loads.",
+                                                    "\u003cb\u003eStress concentration factors ($):\u003c/b\u003e Detecting severe stress concentrations at sharp internal corners, keyways, and bolt holes; mitigated by adding generous transition fillets.",
+                                                    "\u003cb\u003eComputational Fluid Dynamics (CFD):\u003c/b\u003e Simulating airflow velocity vectors, boundary layer separation, aerodynamic drag ($), and thermal convective heat dissipation across heatsinks."
+                                                ]
+                                 }
+                             ]
+            },
+    "4.3":  {
+                "title":  "Topic 4.3 · Systems Thinking \u0026 Project Management",
+                "group":  "4. Design Thinking \u0026 Communication",
+                "spec":  "Systems thinking, iterative loop (explore-create-evaluate), UI/Data/Process design, Critical Path Analysis (CPA), Agile/Scrum, Six Sigma",
+                "sections":  [
+                                 {
+                                     "heading":  "Systems Thinking \u0026 Sub-System Design",
+                                     "points":  [
+                                                    "\u003cb\u003eSystems thinking:\u003c/b\u003e Holistic analysis focusing on interrelationships and feedback loops between constituent mechanical, electronic, and software sub-assemblies.",
+                                                    "\u003cb\u003eThree engineering sub-tasks:\u003c/b\u003e 1. \u003cb\u003eUser-Interface Design\u003c/b\u003e (tactile feel, display ergonomics), 2. \u003cb\u003eData Design\u003c/b\u003e (signal protocols, memory budgets, bus bandwidth), 3. \u003cb\u003eProcess Design\u003c/b\u003e (state machines, loop timings).",
+                                                    "\u003cb\u003eClosed-loop vs open-loop:\u003c/b\u003e Open-loop performs actions blindly without monitoring output (e.g. basic timer switch); closed-loop measures output via sensors and feeds back error signal to dynamically adjust actuators."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Project Management \u0026 Quality Frameworks",
+                                     "points":  [
+                                                    "\u003cb\u003eCritical Path Analysis (CPA):\u003c/b\u003e Network diagram calculation of Earliest Start Time (EST) and Latest Finish Time (LFT). The \u003cb\u003eCritical Path\u003c/b\u003e is the sequence of dependent activities with zero float; any delay on this path delays the final delivery date.",
+                                                    "\u003cb\u003eAgile \u0026 Scrum:\u003c/b\u003e Flexible development methodology organizing engineering teams into short 2–4 week sprints, daily stand-up meetings, and continuous prototype testing with stakeholders.",
+                                                    "\u003cb\u003eSix Sigma (DMAIC):\u003c/b\u003e Define, Measure, Analyse, Improve, Control. Statistical management methodology striving for fewer than 3.4 defective parts per million opportunities (.99966\\\\%$ yield)."
+                                                ]
+                                 }
+                             ]
+            },
+    "5.1":  {
+                "title":  "Topic 5.1 · Factors Influencing Material Selection",
+                "group":  "5. Material \u0026 Component Considerations",
+                "spec":  "Selection criteria: functional performance, mechanical properties, cost, availability, machinability, environmental \u0026 ethical footprint",
+                "sections":  [
+                                 {
+                                     "heading":  "Engineering Material Selection Factors",
+                                     "points":  [
+                                                    "\u003cb\u003eFunctional requirements:\u003c/b\u003e Mechanical load capacity, fatigue strength, operating temperature envelope, thermal expansion coefficient (CTE), corrosion resistance, electrical conductivity or dielectric breakdown.",
+                                                    "\u003cb\u003eEconomic viability:\u003c/b\u003e Balancing raw material cost per kg against machining speed, tooling amortisation, and scrap rate. (e.g. Aluminium costs more than steel per kg but machines 3x faster, reducing labour cost).",
+                                                    "\u003cb\u003eAshby charts:\u003c/b\u003e Material selection charts plotting property trade-offs (e.g. Young\u0027s Modulus vs Density /\\\\rho$, or Strength vs Cost $\\\\sigma/\\\\text{Cost}$) to identify optimal material candidates for minimum weight beams."
+                                                ]
+                                 }
+                             ]
+            },
+    "5.2":  {
+                "title":  "Topic 5.2 · Engineering Materials Classification",
+                "group":  "5. Material \u0026 Component Considerations",
+                "spec":  "Ferrous, non-ferrous, alloys, thermosoftening \u0026 thermosetting polymers, timber \u0026 boards, geotextiles, composites, smart \u0026 modern materials",
+                "sections":  [
+                                 {
+                                     "heading":  "Metals \u0026 Engineering Alloys",
+                                     "points":  [
+                                                    "\u003cb\u003eMild Steel:\u003c/b\u003e Ferrous; 0.15–0.30% Carbon. Ductile, highly weldable, tough; structural beams, car chassis, universal steel sections.",
+                                                    "\u003cb\u003eHigh Carbon Steel / Tool Steel:\u003c/b\u003e Ferrous; 0.60–1.40% Carbon. Very hard, can be hardened and tempered; cutting blades, drill bits, stamping dies.",
+                                                    "\u003cb\u003eCast Iron:\u003c/b\u003e Ferrous; 2.0–4.0% Carbon. High compressive strength, brittle, superb vibration dampening; machine beds, engine blocks.",
+                                                    "\u003cb\u003eAluminium:\u003c/b\u003e Non-ferrous; low density ($\\\\rho \\\\approx 2700 \\\\text{ kg/m}^3$), natural oxide passivation layer resists corrosion, high thermal/electrical conductivity; aircraft skins, heatsinks.",
+                                                    "\u003cb\u003eBrass:\u003c/b\u003e Copper-Zinc alloy (typically 70/30 or 60/40); low friction coefficient, acoustic resonance, corrosion resistant; valves, bearings, electrical pin connectors."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Polymers (Thermosoftening \u0026 Thermosetting)",
+                                     "points":  [
+                                                    "\u003cb\u003eABS (Acrylonitrile Butadiene Styrene):\u003c/b\u003e Thermosoftening; copolymer combining chemical resistance (A), impact toughness (B), and structural rigidity (S); injection-moulded tool housings, 3D printing, consumer electronics.",
+                                                    "\u003cb\u003eHIPS (High Impact Polystyrene):\u003c/b\u003e Thermosoftening; lightweight, rigid, easily thermoformed and vacuum formed; internal refrigerator liners, packaging.",
+                                                    "\u003cb\u003ePolypropylene (PP):\u003c/b\u003e Thermosoftening; exceptional fatigue resistance to repeated flexing; integral living hinges, chemical containers.",
+                                                    "\u003cb\u003eEpoxy Resin:\u003c/b\u003e Thermosetting; highly crosslinked polymer matrix, exceptional adhesive strength, chemical resistance, electrical insulator; composite matrix (CFRP), PCB FR4 substrate.",
+                                                    "\u003cb\u003ePolyester Resin:\u003c/b\u003e Thermosetting; cured with MEKP catalyst; matrix for Glass-Reinforced Plastic (GRP), boat hulls, fairings."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Composites, Smart \u0026 Modern Materials",
+                                     "points":  [
+                                                    "\u003cb\u003eCFRP (Carbon Fibre Reinforced Polymer):\u003c/b\u003e Continuous high-tensile carbon fibres embedded in rigid epoxy resin matrix; exceptional strength-to-weight ratio and stiffness; aerospace spars, Formula 1 chassis.",
+                                                    "\u003cb\u003eGRP (Glass Reinforced Plastic):\u003c/b\u003e Woven or chopped glass fibres in polyester/epoxy matrix; lightweight, non-conductive, corrosion resistant; architectural cladding, marine hulls.",
+                                                    "\u003cb\u003eShape Memory Alloys (SMA - Nitinol):\u003c/b\u003e Nickel-Titanium alloy that returns to a memorized shape upon heating past its martensite-to-austenite transition temperature; medical arterial stents, robotic micro-actuators.",
+                                                    "\u003cb\u003eModern Super-alloys \u0026 Graphene:\u003c/b\u003e Inconel (nickel-chromium superalloy maintaining extreme strength at \u003e1000°C in jet turbine blades); Graphene (single 2D layer of carbon atoms arranged in hexagonal lattice, tensile strength \u003e130 GPa, ballistic thermal conductivity)."
+                                                ]
+                                 }
+                             ]
+            },
+    "5.3":  {
+                "title":  "Topic 5.3 · Material Properties \u0026 Mechanical Testing",
+                "group":  "5. Material \u0026 Component Considerations",
+                "spec":  "Tensile strength, hardness, toughness, ductility, malleability, stiffness, thermal/electrical conductivity, standardized testing methods",
+                "sections":  [
+                                 {
+                                     "heading":  "Mechanical Properties Definitions",
+                                     "points":  [
+                                                    "\u003cb\u003eTensile Strength (UTS):\u003c/b\u003e Maximum tensile stress a material withstands before necking and fracture occur ($\\\\sigma_u = F_{max}/A_0$).",
+                                                    "\u003cb\u003eHardness:\u003c/b\u003e Resistance of a material\u0027s surface to mechanical penetration, abrasion, scratching, and indentation.",
+                                                    "\u003cb\u003eToughness:\u003c/b\u003e Ability of a material to absorb kinetic impact energy without catastrophic brittle fracture (total area under stress-strain curve).",
+                                                    "\u003cb\u003eDuctility:\u003c/b\u003e Capacity of a material to undergo extensive plastic deformation in tension (drawn into wire) without rupture.",
+                                                    "\u003cb\u003eMalleability:\u003c/b\u003e Capacity of a material to deform plastically under compressive force (hammering, rolling into sheets) without cracking.",
+                                                    "\u003cb\u003eStiffness:\u003c/b\u003e Ability to resist elastic deflection under applied load, measured by Young\u0027s Modulus ( = \\\\sigma / \\\\epsilon$)."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Standardised Mechanical Testing",
+                                     "points":  [
+                                                    "\u003cb\u003eTensile testing (Tensometer):\u003c/b\u003e Pulling a standard dogbone test piece at constant strain rate to record force-extension data and calculate $\\\\sigma$, $\\\\epsilon$, $, yield point, and UTS.",
+                                                    "\u003cb\u003eHardness testing methods:\u003c/b\u003e Rockwell (measures depth of indentation under major load using diamond cone), Vickers (diamond pyramid leaving square indent measured microscopically), Brinell (hardened steel ball indent).",
+                                                    "\u003cb\u003eImpact testing (Charpy \u0026 Izod):\u003c/b\u003e Standard notched specimen struck by a swinging pendulum; potential energy absorbed during fracture measured in Joules on calibrated scale."
+                                                ]
+                                 }
+                             ]
+            },
+    "6.1":  {
+                "title":  "Topic 6.1 · Structural Integrity \u0026 Triangulation",
+                "group":  "6. Technical Understanding",
+                "spec":  "Structural reinforcement, triangulation, gusset plates, ribbing, load paths, second moment of area, monocoque vs space-frame",
+                "sections":  [
+                                 {
+                                     "heading":  "Structural Reinforcement \u0026 Rigidity",
+                                     "points":  [
+                                                    "\u003cb\u003eTriangulation principle:\u003c/b\u003e Triangles cannot be distorted without physically changing the length of one of their member struts; transforms complex bending forces into pure axial tension or compression.",
+                                                    "\u003cb\u003eStructural ribs and web stiffeners:\u003c/b\u003e Thin perpendicular ribs integrated into injection mouldings and castings multiply the second moment of area ($) and section modulus ($), increasing bending stiffness by up to 10x with minimal material addition.",
+                                                    "\u003cb\u003eGusset plates:\u003c/b\u003e Welded or bolted triangular reinforcement plates securing column-to-beam joints to disperse concentrated bending moments over broader weld perimeters.",
+                                                    "\u003cb\u003eMonocoque vs space-frame:\u003c/b\u003e Monocoque relies on a continuous structural skin (stressed skin) to absorb dynamic torsional and shear loads (e.g. aircraft fuselages); space-frame utilizes a three-dimensional triangulated skeletal truss."
+                                                ]
+                                 }
+                             ]
+            },
+    "6.2":  {
+                "title":  "Topic 6.2 · Mechanisms, Motion \u0026 Mechanical Systems",
+                "group":  "6. Technical Understanding",
+                "spec":  "Types of motion, gear trains (compound, worm, epicyclic), cams \u0026 followers, linkages, screws, pulleys, MA, VR, efficiency",
+                "sections":  [
+                                 {
+                                     "heading":  "Kinematics \u0026 Motion Conversion",
+                                     "points":  [
+                                                    "\u003cb\u003eFour motion regimes:\u003c/b\u003e Rotary (continuous 360° circular), Linear (continuous straight-line single direction), Reciprocating (repetitive back-and-forth linear), Oscillating (repetitive back-and-forth arc around fixed pivot).",
+                                                    "\u003cb\u003eRack and pinion:\u003c/b\u003e Transforms rotary motion into precise linear motion (or vice-versa; CNC machine beds, automotive steering racks).",
+                                                    "\u003cb\u003eCams and followers:\u003c/b\u003e Shaped cam plate (eccentric, pear, snail) rotates to impart programmed displacement to follower (knife-edge, roller, flat-faced); characterized by Dwell, Rise, and Fall phases.",
+                                                    "\u003cb\u003eMechanical linkages:\u003c/b\u003e Bell crank (redirects linear force through 90° angle), Four-bar linkage (crank-rocker, double-crank), Pantograph (parallel motion scaling)."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Gear Calculations \u0026 Mechanical Advantage",
+                                     "points":  [
+                                                    "\u003cb\u003eGear Ratio / Velocity Ratio:\u003c/b\u003e $\\\\text{GR} = \\\\frac{\\\\text{Teeth on Driven (Output)}}{\\\\text{Teeth on Driver (Input)}} = \\\\frac{\\\\omega_{in}}{\\\\omega_{out}} = \\\\frac{N_{in}}{N_{out}}$.",
+                                                    "\u003cb\u003eCompound gear train:\u003c/b\u003e Intermediate shafts bearing two rigidly keyed gears; total ratio is the product of individual gear stages: $\\\\text{GR}_{total} = \\\\text{GR}_1 \\\\times \\\\text{GR}_2 \\\\times \\\\dots$",
+                                                    "\u003cb\u003eWorm and worm wheel:\u003c/b\u003e Achieves huge single-stage reduction (e.g. 50:1) with non-intersecting shafts at 90°; inherently self-locking, preventing output back-driving.",
+                                                    "\u003cb\u003eEpicyclic (Planetary) gearing:\u003c/b\u003e Coaxial high-torque system comprising Sun gear, Planet gears on a Planet Carrier, and Annulus (ring gear); compact form factor for automatic transmissions.",
+                                                    "\u003cb\u003eMechanical Advantage (MA):\u003c/b\u003e $\\\\text{MA} = \\\\frac{\\\\text{Load (Output Force)}}{\\\\text{Effort (Input Force)}}$.",
+                                                    "\u003cb\u003eVelocity Ratio (VR):\u003c/b\u003e $\\\\text{VR} = \\\\frac{\\\\text{Distance moved by Effort}}{\\\\text{Distance moved by Load}}$.",
+                                                    "\u003cb\u003eEfficiency:\u003c/b\u003e $\\\\text{Efficiency } \\\\eta = \\\\frac{\\\\text{MA}}{\\\\text{VR}} \\\\times 100\\\\%$. Due to friction and inertia, $\\\\text{MA} \u003c \\\\text{VR}$ and $\\\\eta \u003c 100\\\\%$."
+                                                ]
+                                 }
+                             ]
+            },
+    "6.3":  {
+                "title":  "Topic 6.3 · Forces, Stress, Strain \u0026 Elasticity",
+                "group":  "6. Technical Understanding",
+                "spec":  "Static \u0026 dynamic forces, stress (F/A), strain (ΔL/L), Young\u0027s Modulus (E), Hooke\u0027s Law (F=kx), torque, SUVAT, modes of failure",
+                "sections":  [
+                                 {
+                                     "heading":  "Stress, Strain \u0026 Elasticity Formulae (Recall Required)",
+                                     "points":  [
+                                                    "\u003cb\u003eTensile / Compressive Stress ($\\\\sigma$):\u003c/b\u003e $\\\\sigma = \\\\frac{F}{A}$ where $ is applied force in Newtons (N) and $ is original cross-sectional area in $\\\\text{m}^2$. Unit: Pascals ($\\\\text{Pa} = \\\\text{N/m}^2$,  \\\\text{ MPa} = 1 \\\\text{ N/mm}^2$).",
+                                                    "\u003cb\u003eTensile Strain ($\\\\epsilon$):\u003c/b\u003e $\\\\epsilon = \\\\frac{\\\\Delta L}{L_0}$ where $\\\\Delta L$ is change in length (extension) and $ is original length. Dimensionless ratio (often expressed as a percentage).",
+                                                    "\u003cb\u003eYoung\u0027s Modulus of Elasticity ($):\u003c/b\u003e  = \\\\frac{\\\\text{Stress}}{\\\\text{Strain}} = \\\\frac{\\\\sigma}{\\\\epsilon} = \\\\frac{F \\\\cdot L_0}{A \\\\cdot \\\\Delta L}$. Unit: $\\\\text{Pa}$ or $\\\\text{GPa}$ ( \\\\text{ GPa} = 10^9 \\\\text{ Pa}$). Constant gradient of linear elastic region of stress-strain curve.",
+                                                    "\u003cb\u003eHooke\u0027s Law:\u003c/b\u003e  = k \\\\cdot \\\\Delta x$ where $ is spring constant / stiffness in $\\\\text{N/m}$ and $\\\\Delta x$ is extension in metres.",
+                                                    "\u003cb\u003eTorque (Turning moment):\u003c/b\u003e $\\\\text{Torque } T = F \\\\cdot d$ where $ is applied perpendicular force and $ is radial distance to pivot. Unit: $\\\\text{N}\\\\cdot\\\\text{m}$."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "SUVAT Equations \u0026 Modes of Mechanical Failure",
+                                     "points":  [
+                                                    "\u003cb\u003eSUVAT Equations of Motion:\u003c/b\u003e  = u + at$;  = ut + \\\\frac{1}{2}at^2$; ^2 = u^2 + 2as$;  = \\\\frac{(u + v)t}{2}$.",
+                                                    "\u003cb\u003eResolving Force Vectors:\u003c/b\u003e Horizontal component  = F \\\\cos\\\\theta$; Vertical component  = F \\\\sin\\\\theta$.",
+                                                    "\u003cb\u003eFactor of Safety (FoS):\u003c/b\u003e $\\\\text{FoS} = \\\\frac{\\\\text{Yield Strength or UTS}}{\\\\text{Allowable Working Stress}}$. Ensures structural integrity under unexpected peak overloads.",
+                                                    "\u003cb\u003eModes of failure:\u003c/b\u003e Elastic buckling (Euler buckling in slender compression struts), fatigue failure (cyclic alternating stress causing microscopic crack propagation), creep (gradual deformation under constant load at elevated temperatures)."
+                                                ]
+                                 }
+                             ]
+            },
+    "6.4":  {
+                "title":  "Topic 6.4 · Electronic Systems, Sensors \u0026 Actuators",
+                "group":  "6. Technical Understanding",
+                "spec":  "Ohm\u0027s law, electrical power, potential dividers, passive components, sensors, MOSFET switching, flyback diodes, wireless protocols",
+                "sections":  [
+                                 {
+                                     "heading":  "Ohm\u0027s Law, Power \u0026 Potential Dividers",
+                                     "points":  [
+                                                    "\u003cb\u003eOhm\u0027s Law:\u003c/b\u003e  = I \\\\cdot R$; Potential difference (Volts) = Current (Amperes) × Resistance (Ohms).",
+                                                    "\u003cb\u003eElectrical Power:\u003c/b\u003e  = V \\\\cdot I = I^2 R = \\\\frac{V^2}{R}$ [Watts, W].",
+                                                    "\u003cb\u003ePotential Divider Equation:\u003c/b\u003e {out} = V_{in} \\\\cdot \\\\frac{R_2}{R_1 + R_2}$. Fundamental circuit to convert sensor resistance changes into readable voltage signals.",
+                                                    "\u003cb\u003eResistor network rules:\u003c/b\u003e Series:  = R_1 + R_2 + \\\\dots$; Parallel: $\\\\frac{1}{R_T} = \\\\frac{1}{R_1} + \\\\frac{1}{R_2} + \\\\dots$"
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Sensors, Semiconductor Switching \u0026 Actuators",
+                                     "points":  [
+                                                    "\u003cb\u003eSensors:\u003c/b\u003e LDR (light-dependent resistor; resistance falls with light intensity), NTC Thermistor (negative temperature coefficient; resistance drops as temperature rises), Piezoelectric sensor, Hall effect (magnetic proximity).",
+                                                    "\u003cb\u003eMOSFET as high-current electronic switch:\u003c/b\u003e N-channel MOSFET turns fully ON when Gate-Source voltage exceeds threshold ({GS} \u003e V_{th}$). Minimal gate current; ultra-low {DS(on)}$ eliminates resistive heat losses in motor control.",
+                                                    "\u003cb\u003eFlyback protection diode:\u003c/b\u003e Placed in reverse parallel across inductive loads (motors, solenoids, relays) to clamp dangerous back-EMF voltage spikes generated during switch-off.",
+                                                    "\u003cb\u003eActuators:\u003c/b\u003e Brushed DC motors (continuous rotary motion, speed controlled by PWM), Servo motors (closed-loop angular positioning 0–180°), Stepper motors (discrete digital step angles for CNC positioning)."
+                                                ]
+                                 }
+                             ]
+            },
+    "6.5":  {
+                "title":  "Topic 6.5 · Microcontrollers \u0026 Programmable Systems",
+                "group":  "6. Technical Understanding",
+                "spec":  "Microcontroller architecture, ADC conversion, PWM duty cycle, embedded coding, flowcharts, closed-loop PID control",
+                "sections":  [
+                                 {
+                                     "heading":  "Microcontrollers \u0026 Signal Conditioning",
+                                     "points":  [
+                                                    "\u003cb\u003eMicrocontroller architecture:\u003c/b\u003e Integrated IC housing CPU, Flash ROM (program memory), RAM (volatile variables), EEPROM, Timers, ADC, and GPIO pins (e.g. PIC, ATmega, ARM Cortex).",
+                                                    "\u003cb\u003eAnalogue-to-Digital Conversion (ADC):\u003c/b\u003e Samples continuous analogue input voltages (0–5V) into discrete digital integers. A 10-bit ADC provides ^{10} = 1024$ quantization levels ( \\\\to 1023$); voltage step size $= \\\\frac{5\\\\text{V}}{1023} \\\\approx 4.88\\\\text{ mV}$.",
+                                                    "\u003cb\u003ePulse Width Modulation (PWM):\u003c/b\u003e Varying the ratio of on-time to off-time in a high-frequency square wave (Duty Cycle $\\\\% = \\\\frac{t_{on}}{t_{period}} \\\\times 100\\\\%$) to smoothly vary average power delivery to DC motors and heaters."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Control Logic \u0026 Closed-Loop Feedback",
+                                     "points":  [
+                                                    "\u003cb\u003eClosed-loop feedback control:\u003c/b\u003e Continuously measures system output via sensors, subtracts output from desired target setpoint to derive error ( = \\\\text{Setpoint} - \\\\text{Sensor Feedback}$), and applies correction.",
+                                                    "\u003cb\u003ePID controller components:\u003c/b\u003e Proportional (responds to current error magnitude), Integral (accumulates historical steady-state error), Derivative (anticipates future error rate of change).",
+                                                    "\u003cb\u003eFlowchart programming conventions:\u003c/b\u003e Explicit decision diamonds checking sensor threshold limits, branch logic, loops, and digital pin writes."
+                                                ]
+                                 }
+                             ]
+            },
+    "7.1":  {
+                "title":  "Topic 7.1 · Iterative Models \u0026 Rapid Prototyping",
+                "group":  "7. Manufacturing Processes \u0026 Techniques",
+                "spec":  "Iterative prototyping, low-fidelity sketch models, test rigs, 3D printing (FDM, SLA), laser cutting, virtual simulation",
+                "sections":  [
+                                 {
+                                     "heading":  "Iterative Physical \u0026 Digital Modelling",
+                                     "points":  [
+                                                    "\u003cb\u003eLow-fidelity sketch modelling:\u003c/b\u003e Rapid construction using corrugated cardboard, Styrofoam, and wire to test volumetric proportions, visual ergonomics, and spatial clearance in hours.",
+                                                    "\u003cb\u003eFunctional test rigs (breadboard / bread-rig):\u003c/b\u003e Building isolated sub-system test benches (e.g. laser-cut acrylic gearboxes with microcontrollers) to validate physical kinematic forces before tooling.",
+                                                    "\u003cb\u003eAdditive rapid prototyping (FDM / SLA):\u003c/b\u003e Fused Deposition Modelling (FDM) extrudes molten thermoplastic filaments (PLA, ABS, PETG) layer-by-layer; Stereolithography (SLA) cures liquid photopolymer resin with UV lasers for ultra-smooth optical precision."
+                                                ]
+                                 }
+                             ]
+            },
+    "7.2":  {
+                "title":  "Topic 7.2 · Workshop Tools, Machining \u0026 Fabrication",
+                "group":  "7. Manufacturing Processes \u0026 Techniques",
+                "spec":  "Wasting (lathe turning, milling, drilling), joining (welding, brazing, soldering, fasteners), reforming (bending, vacuum forming), tolerances",
+                "sections":  [
+                                 {
+                                     "heading":  "Subtractive Machining (Wasting)",
+                                     "points":  [
+                                                    "\u003cb\u003eCentre lathe operations:\u003c/b\u003e Cylindrical turning: facing off datum ends, parallel turning, taper turning, boring, knurling, and parting off. Work held in 3-jaw self-centring chuck or between centres.",
+                                                    "\u003cb\u003eVertical milling machine:\u003c/b\u003e Multi-tooth rotating cutter traversing workpiece in X, Y, and Z axes to create flat faces, steps, slots, pockets, and keyways.",
+                                                    "\u003cb\u003eDrilling \u0026 reaming:\u003c/b\u003e Twist drill generates rough hole; machine reamer achieves exact dimensional diameter and mirror surface finish within ISO tolerance limits."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Fabrication, Joining \u0026 Reforming",
+                                     "points":  [
+                                                    "\u003cb\u003eWelding:\u003c/b\u003e Parent metals melted and fused with filler material. MIG (Metal Inert Gas; wire feed, argon shielding, fast structural steel); TIG (Tungsten Inert Gas; tungsten electrode, highest aesthetic quality on aluminium/stainless steel).",
+                                                    "\u003cb\u003eBrazing \u0026 Soldering:\u003c/b\u003e Non-ferrous filler metal melted below parent metal melting points ($\u003e450°\\\\text{C}$ for brazing; $\u003c450°\\\\text{C}$ for electrical lead-free soldering).",
+                                                    "\u003cb\u003eMechanical fasteners \u0026 locking:\u003c/b\u003e ISO metric bolts (M3, M4, M5); Nyloc locking nuts and Belleville disc springs prevent fastener loosening under vibration.",
+                                                    "\u003cb\u003eSheet metal folding:\u003c/b\u003e Sheet metal folded along bend lines using workshop box-and-pan folder, accounting for bend allowance and neutral axis K-factor."
+                                                ]
+                                 }
+                             ]
+            },
+    "7.3":  {
+                "title":  "Topic 7.3 · Industrial Commercial Manufacture \u0026 SMT",
+                "group":  "7. Manufacturing Processes \u0026 Techniques",
+                "spec":  "Commercial polymer moulding (injection, blow, compression, thermoforming), metal casting (sand, die), stamping, SMT assembly",
+                "sections":  [
+                                 {
+                                     "heading":  "Commercial Polymer Moulding Methods",
+                                     "points":  [
+                                                    "\u003cb\u003eInjection moulding:\u003c/b\u003e Molten polymer forced under extreme hydraulic pressure (up to 1500 bar) into hardened tool steel mould cavities. High tool cost (£15k–£100k+), ultra-fast cycle times (10–30s), complex geometries, integrated snap fits.",
+                                                    "\u003cb\u003eBlow moulding:\u003c/b\u003e Molten hollow plastic parison extruded, clamped in mould, and inflated with compressed air; produces seamless bottles, containers, and fuel tanks.",
+                                                    "\u003cb\u003eCompression moulding:\u003c/b\u003e Preheated thermosetting charge placed into open heated cavity, closed under hydraulic pressure; produces heat-resistant electrical plugs and melamine tableware."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Industrial Metal Casting \u0026 Electronics SMT Assembly",
+                                     "points":  [
+                                                    "\u003cb\u003eHigh pressure die casting:\u003c/b\u003e Molten aluminium or zinc alloy injected under high pressure into permanent steel dies; excellent surface finish, thin walls, tight dimensional tolerances.",
+                                                    "\u003cb\u003eSand casting:\u003c/b\u003e Molten metal poured into temporary sand moulds formed around patterns; low tooling cost, ideal for large engine blocks and low volume castings.",
+                                                    "\u003cb\u003eSurface Mount Technology (SMT) Assembly:\u003c/b\u003e 1. Laser-cut stainless steel stencil applies solder paste onto PCB surface pads, 2. High-speed pick-and-place robot places surface-mount components, 3. Multi-zone reflow oven melts solder paste at ~217°C to form robust solder joints."
+                                                ]
+                                 }
+                             ]
+            },
+    "7.4":  {
+                "title":  "Topic 7.4 · Scales of Production \u0026 Lean / JIT",
+                "group":  "7. Manufacturing Processes \u0026 Techniques",
+                "spec":  "Production scales (one-off, batch, mass, continuous), cellular manufacturing, Lean manufacturing (7 wastes), Just-in-Time (JIT)",
+                "sections":  [
+                                 {
+                                     "heading":  "Scales of Manufacturing Production",
+                                     "points":  [
+                                                    "\u003cb\u003eOne-off / bespoke production:\u003c/b\u003e Highly customized single units manufactured by skilled artisans or specialist machinists; flexible, high unit cost, minimal tooling.",
+                                                    "\u003cb\u003eBatch production:\u003c/b\u003e Pre-determined batch sizes using flexible machine setups and interchangeable jigs/fixtures; balances setup downtime against warehouse storage inventory.",
+                                                    "\u003cb\u003eMass / High-volume production:\u003c/b\u003e Dedicated automated assembly lines producing millions of standardized identical products; ultra-low unit cost, immense capital investment in dedicated tooling.",
+                                                    "\u003cb\u003eContinuous flow production:\u003c/b\u003e 24/7 automated continuous processing of bulk materials (oil refining, steel blast furnaces, petrochemicals)."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Lean Manufacturing \u0026 Just-In-Time (JIT)",
+                                     "points":  [
+                                                    "\u003cb\u003eLean manufacturing:\u003c/b\u003e Systematic elimination of the 7 wastes (TIMWOOD): Transport, Inventory, Motion, Waiting, Overproduction, Over-processing, Defects.",
+                                                    "\u003cb\u003eJust-In-Time (JIT):\u003c/b\u003e Components and raw stock arrive at assembly lines exactly as needed; eliminates buffer warehouse inventory and minimizes tied-up working capital.",
+                                                    "\u003cb\u003eCellular manufacturing:\u003c/b\u003e U-shaped workstations manned by cross-trained technicians, minimizing part transport distance and optimizing operator workflow balance."
+                                                ]
+                                 }
+                             ]
+            },
+    "7.5":  {
+                "title":  "Topic 7.5 · Quality Control, QA, TQM \u0026 Standards",
+                "group":  "7. Manufacturing Processes \u0026 Techniques",
+                "spec":  "Quality Control (QC), Quality Assurance (QA), Total Quality Management (TQM), ISO 9001, BSI Kitemark, CE / UKCA compliance",
+                "sections":  [
+                                 {
+                                     "heading":  "QC vs QA \u0026 Total Quality Management",
+                                     "points":  [
+                                                    "\u003cb\u003eQuality Control (QC):\u003c/b\u003e Reactive inspection of physical parts against engineering drawings and tolerances during and after production; defective items are rejected or reworked.",
+                                                    "\u003cb\u003eQuality Assurance (QA):\u003c/b\u003e Proactive systemic management of processes, machine calibrations, and operator procedures to ensure defects cannot arise in the first place.",
+                                                    "\u003cb\u003eTotal Quality Management (TQM):\u003c/b\u003e Company-wide culture of continuous incremental improvement (Kaizen) where every employee is accountable for product excellence.",
+                                                    "\u003cb\u003eStatistical Process Control (SPC):\u003c/b\u003e Control charts plotting critical part dimensions in real time; warns when tooling wear causes dimensions to drift before parts fall out of tolerance."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Certification \u0026 Statutory Standards",
+                                     "points":  [
+                                                    "\u003cb\u003eISO 9001:\u003c/b\u003e International benchmark for Quality Management Systems; establishes documented procedures, calibrated inspection tooling, and regular audits.",
+                                                    "\u003cb\u003eBSI Kitemark:\u003c/b\u003e Prestigious third-party certification from the British Standards Institution confirming independent testing and ongoing factory compliance.",
+                                                    "\u003cb\u003eCE and UKCA marking:\u003c/b\u003e Mandatory conformity assessment marking declaring product adherence to all applicable safety, electromagnetic compatibility (EMC), and low-voltage directives."
+                                                ]
+                                 }
+                             ]
+            },
+    "8.1":  {
+                "title":  "Topic 8.1 · Stakeholder Evaluation \u0026 Usability Testing",
+                "group":  "8. Viability of Design Solutions",
+                "spec":  "Usability trials, quantitative metrics, stakeholder feedback, accessibility compliance, testing against design specification",
+                "sections":  [
+                                 {
+                                     "heading":  "Usability Trials \u0026 Stakeholder Verification",
+                                     "points":  [
+                                                    "\u003cb\u003eStructured usability trials:\u003c/b\u003e Placing functional prototypes into the hands of target end-users to measure task completion duration, error frequency, and cognitive confusion.",
+                                                    "\u003cb\u003eQuantitative vs Qualitative data:\u003c/b\u003e Quantitative metrics (seconds to complete action, clamping force applied in N, battery life in hours) vs qualitative observations (user comfort comments, intuitive grip feel).",
+                                                    "\u003cb\u003eSpecification verification matrix:\u003c/b\u003e Methodical check verifying every measurable requirement in the engineering technical specification against empirical prototype performance data."
+                                                ]
+                                 }
+                             ]
+            },
+    "8.2":  {
+                "title":  "Topic 8.2 · Technical Testing \u0026 Physical Validation",
+                "group":  "8. Viability of Design Solutions",
+                "spec":  "Destructive testing, Non-Destructive Testing (NDT: dye penetrant, ultrasonic, X-ray), environmental stress screening, FEA validation",
+                "sections":  [
+                                 {
+                                     "heading":  "Destructive vs Non-Destructive Testing (NDT)",
+                                     "points":  [
+                                                    "\u003cb\u003eDestructive testing:\u003c/b\u003e Applying physical loads until catastrophic component failure occurs to determine ultimate mechanical limits: UTS tensile pull tests, burst pressure tests, drop impact tests.",
+                                                    "\u003cb\u003eDye Penetrant Inspection (DPI):\u003c/b\u003e NDT technique where fluorescent/red dye penetrates surface micro-cracks; developer draws dye out to highlight surface defects under white/UV light.",
+                                                    "\u003cb\u003eUltrasonic Testing (UT):\u003c/b\u003e High-frequency acoustic sound waves transmitted into solid components; reflected echo pulses detect internal sub-surface voids, inclusions, and delaminations.",
+                                                    "\u003cb\u003eX-Ray Radiography:\u003c/b\u003e Penetrating ionizing radiation creates radiographic film images showing internal porosity in critical structural castings and welds."
+                                                ]
+                                 }
+                             ]
+            },
+    "8.3":  {
+                "title":  "Topic 8.3 · Commercial Feasibility \u0026 Cost Viability",
+                "group":  "8. Viability of Design Solutions",
+                "spec":  "Unit manufacturing cost calculation, tooling amortization, breakeven analysis, contribution margin, commercial risk analysis",
+                "sections":  [
+                                 {
+                                     "heading":  "Unit Cost Calculation \u0026 Breakeven Analysis",
+                                     "points":  [
+                                                    "\u003cb\u003eUnit Manufacturing Cost Formula:\u003c/b\u003e $\\\\text{Unit Cost} = \\\\text{Direct Materials} + \\\\text{Direct Labour} + \\\\text{Overhead} + \\\\frac{\\\\text{Tooling \\\\\u0026 Development Cost}}{\\\\text{Total Production Volume}}$.",
+                                                    "\u003cb\u003eTooling amortisation:\u003c/b\u003e Distributing high upfront tooling costs (e.g. £50,000 for press dies) across unit volume; over 500,000 units tooling cost is £0.10/unit, while over 5,000 units it is £10.00/unit.",
+                                                    "\u003cb\u003eBreakeven Point (BEP):\u003c/b\u003e $\\\\text{BEP (units)} = \\\\frac{\\\\text{Total Fixed Costs}}{\\\\text{Selling Price per Unit} - \\\\text{Variable Cost per Unit}}$.",
+                                                    "\u003cb\u003eContribution Margin:\u003c/b\u003e $\\\\text{Selling Price} - \\\\text{Variable Cost per Unit}$. The surplus generated per unit sold that contributes to paying off fixed overheads and generating net profit."
+                                                ]
+                                 }
+                             ]
+            },
+    "9.1":  {
+                "title":  "Topic 9.1 · Workshop Safe Practices \u0026 Risk Assessments",
+                "group":  "9. Health \u0026 Safety",
+                "spec":  "Risk assessment matrix (likelihood × severity), hazard identification, hierarchy of control, machine interlocks, emergency stops",
+                "sections":  [
+                                 {
+                                     "heading":  "Risk Assessment \u0026 Hazard Control",
+                                     "points":  [
+                                                    "\u003cb\u003eHazard vs Risk:\u003c/b\u003e A \u003cb\u003ehazard\u003c/b\u003e is anything with intrinsic potential to cause harm (e.g. rotating lathe spindle, toxic solvent). A \u003cb\u003erisk\u003c/b\u003e is the evaluated probability that harm occurs multiplied by its severity.",
+                                                    "\u003cb\u003eRisk Rating Formula:\u003c/b\u003e $\\\\text{Risk Score} = \\\\text{Likelihood (1–5)} \\\\times \\\\text{Severity (1–5)}$. High scores require immediate implementation of higher-level engineering controls.",
+                                                    "\u003cb\u003eHierarchy of Hazard Controls:\u003c/b\u003e 1. \u003cb\u003eElimination\u003c/b\u003e (physically remove hazard), 2. \u003cb\u003eSubstitution\u003c/b\u003e (replace hazard with safer material), 3. \u003cb\u003eEngineering Controls\u003c/b\u003e (interlocked guards, LEV local exhaust ventilation), 4. \u003cb\u003eAdministrative Controls\u003c/b\u003e (Standard Operating Procedures SOP, training, signage), 5. \u003cb\u003ePPE\u003c/b\u003e (Personal Protective Equipment as last line of defence)."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Machinery Safety \u0026 Interlocking",
+                                     "points":  [
+                                                    "\u003cb\u003eMachine guarding:\u003c/b\u003e Fixed guards preventing operator reach into entrapment pinch points; interlocked physical guards that immediately break the electrical control circuit and brake the drive spindle when opened.",
+                                                    "\u003cb\u003eEmergency stop circuits (E-Stop):\u003c/b\u003e Latching mushroom-head push buttons wired into hardwired safety relays; must fail-safe to a de-energized state and require manual reset before machine restarts."
+                                                ]
+                                 }
+                             ]
+            },
+    "9.2":  {
+                "title":  "Topic 9.2 · Health \u0026 Safety Legislation (HASAW, COSHH)",
+                "group":  "9. Health \u0026 Safety",
+                "spec":  "Health and Safety at Work Act 1974, COSHH 2002 regulations, PPE Regulations 1992, CE/UKCA marking, product liability \u0026 warranties",
+                "sections":  [
+                                 {
+                                     "heading":  "Statutory Health \u0026 Safety Legislation",
+                                     "points":  [
+                                                    "\u003cb\u003eHealth and Safety at Work Act (HASAW) 1974:\u003c/b\u003e Foundational UK statute placing a non-delegable legal duty on employers to ensure the health, safety, and welfare of employees and the public \u0027so far as is reasonably practicable\u0027. Employees must take reasonable care of themselves and cooperate with safety protocols.",
+                                                    "\u003cb\u003eCOSHH Regulations 2002:\u003c/b\u003e Control of Substances Hazardous to Health; legally mandates comprehensive risk assessments, proper chemical storage in flame-proof bunded cabinets, Safety Data Sheets (SDS), and Local Exhaust Ventilation (LEV) testing for hazardous dusts, cutting fluids, and resin vapours.",
+                                                    "\u003cb\u003ePPE at Work Regulations 1992:\u003c/b\u003e Mandates that employers must supply suitable, CE/UKCA-certified PPE (impact safety glasses EN 166, ear defenders EN 352, dust respirators, steel toe-cap footwear) free of charge wherever risks cannot be adequately controlled by engineering means."
+                                                ]
+                                 },
+                                 {
+                                     "heading":  "Product Safety Regulations \u0026 Consumer Warranties",
+                                     "points":  [
+                                                    "\u003cb\u003eGeneral Product Safety Regulations (GPSR):\u003c/b\u003e Prohibits placing any product on consumer markets that poses foreseeable safety hazards under reasonable usage or misuse.",
+                                                    "\u003cb\u003eConsumer Rights Act 2015:\u003c/b\u003e Requires all engineered products sold to consumers to be of satisfactory quality, fit for purpose, and match manufacturer descriptions; backed by mandatory warranty redress."
+                                                ]
+                                 }
+                             ]
+            }
+}

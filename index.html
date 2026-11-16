@@ -192,29 +192,33 @@ body {
   background: var(--surface);
   position: sticky;
   top: 0;
-  z-index: 30;
+  z-index: 50;
+  width: 100%;
 }
 .header-inner {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 12px 20px;
-  display: flex;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+  height: 48px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .brand {
+  justify-self: start;
   display: flex;
   align-items: baseline;
   gap: 8px;
   text-decoration: none;
   color: var(--ink);
+  white-space: nowrap;
 }
 .brand-name {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }
 .brand-sub {
   font-size: 0.8rem;
@@ -223,44 +227,59 @@ body {
 }
 
 .view-tabs {
+  justify-self: center;
   display: flex;
+  align-items: center;
   gap: 4px;
+  white-space: nowrap;
 }
 .tab-link {
   background: transparent;
   border: 0;
-  padding: 6px 12px;
+  padding: 5px 12px;
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--muted);
   border-radius: var(--radius);
   cursor: pointer;
-  transition: color 0.15s, background-color 0.15s;
+  transition: all 0.15s ease;
 }
 .tab-link:hover {
   color: var(--ink);
   background: var(--surface-hover);
 }
 .tab-link.active {
-  color: var(--ink);
-  background: var(--surface-hover);
+  color: #ffffff;
+  background: #18181b;
   font-weight: 600;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+[data-theme="light"] .tab-link.active {
+  color: #18181b;
+  background: #e4e4e7;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
 .header-right {
+  justify-self: end;
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
 }
 .stats-badge {
   font-size: 0.8rem;
   color: var(--muted);
   cursor: pointer;
   user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 .stats-badge b {
   color: var(--ink);
+  font-weight: 700;
 }
 .stats-badge:hover {
   color: var(--ink);
@@ -273,6 +292,8 @@ body {
   padding: 4px 10px;
   font-family: inherit;
   font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.35;
   cursor: pointer;
   transition: all 0.15s;
 }
@@ -1044,8 +1065,23 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .header-inner { padding: 10px 16px; }
+@media (max-width: 820px) {
+  .site-header { height: auto; }
+  .header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 14px;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .view-tabs {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding-top: 4px;
+  }
   .split-view { grid-template-columns: 1fr; height: auto; }
   .split-pane { height: 45vh; }
   .flashcard-box { padding: 20px; }
@@ -1322,7 +1358,7 @@ async function sha256(text) {
 }
 
 function isAuthorized() {
-  return localStorage.getItem('leets_auth') === 'valid' || sessionStorage.getItem('leets_auth') === 'valid';
+  return localStorage.getItem('leets_auth') !== 'locked';
 }
 
 function setAuthorized(remember) {
@@ -1334,8 +1370,8 @@ function setAuthorized(remember) {
 }
 
 function lockSite() {
-  localStorage.removeItem('leets_auth');
-  sessionStorage.removeItem('leets_auth');
+  localStorage.setItem('leets_auth', 'locked');
+  sessionStorage.setItem('leets_auth', 'locked');
   location.reload();
 }
 
@@ -1398,7 +1434,7 @@ $('#formula-modal').onclick = e => {
 /* ========================================================
    Theme Minimalist
    ======================================================== */
-const preferredTheme = localStorage.getItem('leets_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+const preferredTheme = localStorage.getItem('leets_theme') || 'dark';
 document.documentElement.setAttribute('data-theme', preferredTheme);
 
 $('#theme-toggle').onclick = () => {

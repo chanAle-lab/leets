@@ -69,10 +69,11 @@ Every question in `questions.json` adheres to the clean visual format:
 
 ## 4. Current Repository Ingestion Status
 
+* **2020 Autumn H404/01** (Principles): 23 questions · **80 / 80 marks** · Verified ✓
 * **2019 Summer H404/01** (Principles): 25 questions · **80 / 80 marks** · Verified ✓
 * **2019 Summer H404/02** (Problem Solving): 6 questions · **70 / 70 marks** · Verified ✓
 * **2019 Summer H004/01** (AS Principles): 23 questions · **90 / 90 marks** · Verified ✓
 * **2018 Practice Set 1 H404/01** (Principles): 25 questions · **80 / 80 marks** · Verified ✓
 * **2018 Practice Set 1 H404/02** (Problem Solving): 7 questions · **70 / 70 marks** · Verified ✓
-* **Total Questions in Database:** **98**
-* **Total Curriculum Marks:** **477 marks**
+* **Total Questions in Database:** **120**
+* **Total Curriculum Marks:** **550 marks**

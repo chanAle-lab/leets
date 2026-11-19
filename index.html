@@ -198,21 +198,22 @@ body {
 .header-inner {
   width: 100%;
   max-width: 100%;
-  padding: 0 16px;
+  padding: 0 14px;
   height: 48px;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  gap: 12px;
 }
 .brand {
-  justify-self: start;
   display: flex;
   align-items: baseline;
   gap: 8px;
   text-decoration: none;
   color: var(--ink);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .brand-name {
   font-size: 1rem;
@@ -221,24 +222,24 @@ body {
   color: var(--ink);
 }
 .brand-sub {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 500;
   color: var(--muted);
 }
 
 .view-tabs {
-  justify-self: center;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .tab-link {
   background: transparent;
   border: 0;
-  padding: 5px 12px;
+  padding: 5px 10px;
   font-family: inherit;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--muted);
   border-radius: var(--radius);
@@ -262,11 +263,11 @@ body {
 }
 
 .header-right {
-  justify-self: end;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .stats-badge {
   font-size: 0.8rem;
@@ -640,9 +641,10 @@ a.q-tag:hover {
   margin-top: 8px;
 }
 .img-container img {
+  width: 100%;
   max-width: 100%;
-  max-height: 400px;
-  object-fit: contain;
+  height: auto;
+  display: block;
 }
 .q-footer {
   margin-top: 14px;
@@ -1065,6 +1067,12 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 1080px) {
+  .brand-sub { display: none; }
+  .tab-link { padding: 4px 8px; font-size: 0.78rem; }
+  .header-right { gap: 6px; }
+}
+
 @media (max-width: 820px) {
   .site-header { height: auto; }
   .header-inner {
@@ -1203,7 +1211,7 @@ footer {
   gap: 6px;
 }
 .teacher-card-features li::before {
-  content: "â€¢";
+  content: "•";
   color: var(--ink);
   font-weight: bold;
 }
@@ -2112,6 +2120,7 @@ footer {
         <button class="tab-link" data-view="cards" role="tab" aria-selected="false">Questions</button>
         <button class="tab-link" data-view="practice" role="tab" aria-selected="false">Practice</button>
         <button class="tab-link" data-view="cheatsheets" role="tab" aria-selected="false">Cheatsheets</button>
+        <button class="tab-link" data-view="teachers" role="tab" aria-selected="false">Teacher's Hub</button>
       </nav>
 
       <div class="header-right">
@@ -2561,7 +2570,8 @@ function loadQuestionBank() {
       d.questions.forEach((x, i) => x.i = i);
       initApp();
     })
-    .catch(() => {
+    .catch((err) => {
+      console.error('Error in loadQuestionBank / initApp:', err);
       $('#app-view').innerHTML = '<p style="color:var(--muted);text-align:center;padding:40px 0">Could not load questions.json</p>';
     });
 }
@@ -2693,8 +2703,13 @@ function syncViewButtons() {
 
 function fromHash() {
   const p = new URLSearchParams(location.hash.slice(1));
-  state.view = p.get('view') || state.view || 'strata';
-  state.teacherTab = p.get('tab') || state.teacherTab || 'hub';
+  const rawView = p.get('view');
+  if (rawView) {
+    state.view = rawView;
+  } else if (!location.hash || location.hash === '#' || location.hash === '') {
+    state.view = 'strata';
+  }
+  state.teacherTab = p.get('tab') || 'hub';
   state.level = p.get('level') || '';
   state.topic = p.get('topic') || '';
   state.skill = p.get('skill') || '';
@@ -2716,23 +2731,23 @@ function toHash() {
 }
 
 function filtered() {
-  const query = state.q.toLowerCase();
+  const query = (state.q || '').toLowerCase();
   return D.questions.filter(x => {
     if (state.pick && x.id !== state.pick) return false;
-    if (state.level && D.P[x.paper].level !== state.level) return false;
-    if (state.topic && !x.topics.includes(state.topic)) return false;
-    if (state.skill && !x.skills.includes(state.skill)) return false;
-    if (state.year && D.P[x.paper].year != state.year) return false;
+    if (state.level && D.P[x.paper] && D.P[x.paper].level !== state.level) return false;
+    if (state.topic && !(x.topics || []).includes(state.topic)) return false;
+    if (state.skill && !(x.skills || []).includes(state.skill)) return false;
+    if (state.year && D.P[x.paper] && D.P[x.paper].year != state.year) return false;
     if (x.marks < state.min) return false;
     if (state.status === 'mastered' && !mastered.has(x.id)) return false;
     if (state.status === 'unmastered' && mastered.has(x.id)) return false;
     if (state.status === 'bookmarked' && !bookmarked.has(x.id)) return false;
     if (query) {
-      const blob = (x.summary + ' ' + (x.prompt || '') + ' ' + x.question + ' ' + x.topics.map(t => T[t] ? T[t].name : '').join(' ') + ' ' + x.skills.map(s => S[s] ? S[s].name : '').join(' ')).toLowerCase();
+      const blob = ((x.summary || '') + ' ' + (x.prompt || '') + ' ' + (x.question || '') + ' ' + (x.topics || []).map(t => T[t] ? T[t].name : '').join(' ') + ' ' + (x.skills || []).map(s => S[s] ? S[s].name : '').join(' ')).toLowerCase();
       if (!blob.includes(query)) return false;
     }
     return true;
-  }).sort((a, b) => D.P[b.paper].year - D.P[a.paper].year || a.i - b.i);
+  }).sort((a, b) => ((D.P[b.paper] && D.P[b.paper].year) || 0) - ((D.P[a.paper] && D.P[a.paper].year) || 0) || (a.i || 0) - (b.i || 0));
 }
 
 function updateMasteryStats() {
@@ -3083,8 +3098,8 @@ function renderCard(x) {
   const isBookmarked = bookmarked.has(x.id);
   const isSelected = selectedQuestions.has(x.id);
 
-  const tags = x.topics.map(t => `<a class="q-tag" href="#view=cards&topic=${t}">${esc(t)} ${esc(T[t] ? T[t].name : '')}</a>`).join('')
-    + x.skills.map(s => `<span class="q-tag">${esc(S[s] ? S[s].name : s)}</span>`).join('');
+  const tags = (x.topics || []).map(t => `<a class="q-tag" href="#view=cards&topic=${t}">${esc(t)} ${esc(T[t] ? T[t].name : '')}</a>`).join('')
+    + (x.skills || []).map(s => `<span class="q-tag">${esc(S[s] ? S[s].name : s)}</span>`).join('');
 
   return `
     <article class="q-card ${isSelected ? 'is-selected' : ''}" id="q-${x.id}">
@@ -5002,6 +5017,9 @@ function renderGeollionGenerator() {
 function renderGeollionSetup() {
   const html = `
     <div class="teacher-hub-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+        <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
+      </div>
       <nav class="teacher-nav">
         <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
         <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
@@ -5637,6 +5655,9 @@ function renderQuizSetup() {
 
   const html = `
     <div class="teacher-hub-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+        <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
+      </div>
       <nav class="teacher-nav">
         <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
         <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
@@ -6151,6 +6172,9 @@ function renderWorksheetGenerator() {
 
   const html = `
     <div class="teacher-hub-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+        <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
+      </div>
       <nav class="teacher-nav">
         <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
         <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>

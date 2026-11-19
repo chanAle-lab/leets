@@ -63,7 +63,7 @@ body {
 }
 
 /* ========================================================
-   Password Gate (Passcodes: engineering, leets, steel, h404)
+   Password Gate (Passcode: engineering)
    ======================================================== */
 .lock-screen {
   position: fixed;
@@ -2083,7 +2083,7 @@ footer {
 
     <form id="lock-form" class="lock-form" onsubmit="return false;">
       <div class="lock-input-wrap">
-        <input type="password" id="lock-password" class="lock-input" placeholder="Passcode (e.g. engineering, leets, steel)" autocomplete="current-password" autofocus required>
+        <input type="password" id="lock-password" class="lock-input" placeholder="Passcode" autocomplete="current-password" autofocus required>
         <button type="button" id="lock-toggle-pwd" class="lock-eye-btn" title="Show/hide">Show</button>
       </div>
       <div class="lock-options">
@@ -2326,14 +2326,10 @@ const $$ = s => document.querySelectorAll(s);
 const esc = s => String(s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ========================================================
-   Password Gate (Supported: engineering, leets, steel, h404, design)
+   Password Gate (Supported: engineering)
    ======================================================== */
 const VALID_HASHES = [
-  '8c85b6639e62e10b8330a8b883004b43c119053d7d62b512a98c77eb069627a7', // engineering
-  '338a6cfcca86a9e878c4b0c2f06d4932ab71690035f78bfaebe394e3a241941e', // leets
-  'b86262f9bc892590bb31dfa5a4ee870d555188e43214a1a0ae261bd95a2a4470', // steel
-  '4b2e6662731144a20e020d709650c186b6b07b28dfaa5c0144938eab493ad6a2', // h404
-  'a77de8a6daa1129516b14c8ca1e233a51a8414b202eac7c8acfbb9b485046ad4'  // design
+  '8c85b6639e62e10b8330a8b883004b43c119053d7d62b512a98c77eb069627a7' // engineering
 ];
 
 async function sha256(text) {
@@ -2343,7 +2339,7 @@ async function sha256(text) {
 }
 
 function isAuthorized() {
-  return localStorage.getItem('leets_auth') !== 'locked';
+  return localStorage.getItem('leets_auth') === 'valid' || sessionStorage.getItem('leets_auth') === 'valid';
 }
 
 function setAuthorized(remember) {
@@ -2355,31 +2351,46 @@ function setAuthorized(remember) {
 }
 
 function lockSite() {
-  localStorage.setItem('leets_auth', 'locked');
-  sessionStorage.setItem('leets_auth', 'locked');
+  localStorage.removeItem('leets_auth');
+  sessionStorage.removeItem('leets_auth');
   location.reload();
 }
 
-async function handleUnlockSubmit() {
+async function handleUnlockSubmit(e) {
+  if (e && typeof e.preventDefault === 'function') {
+    e.preventDefault();
+  }
   const input = $('#lock-password');
   const err = $('#lock-error-msg');
-  const remember = $('#lock-remember').checked;
-  const pwd = input.value.trim();
+  const remember = $('#lock-remember') ? $('#lock-remember').checked : true;
+  const rawPwd = (input ? input.value : '').trim();
+  const pwdLower = rawPwd.toLowerCase();
 
-  if (!pwd) {
-    err.textContent = 'Please enter passcode.';
-    return;
+  if (!rawPwd) {
+    if (err) err.textContent = 'Please enter passcode.';
+    return false;
   }
 
-  const hash = await sha256(pwd);
-  if (VALID_HASHES.includes(hash)) {
-    err.textContent = '';
+  // Allow case-insensitive "engineering" or exact SHA-256 hash match
+  let isValid = (pwdLower === 'engineering');
+  if (!isValid) {
+    try {
+      const hash = await sha256(pwdLower);
+      if (VALID_HASHES.includes(hash)) {
+        isValid = true;
+      }
+    } catch (ex) {}
+  }
+
+  if (isValid) {
+    if (err) err.textContent = '';
     setAuthorized(remember);
     unlockPortal();
   } else {
-    err.textContent = 'Incorrect passcode. Try "engineering", "leets", or "steel".';
-    input.select();
+    if (err) err.textContent = 'Incorrect passcode.';
+    if (input) input.select();
   }
+  return false;
 }
 
 function unlockPortal() {

@@ -255,24 +255,6 @@
       "series": "Summer"
     },
     {
-      "id": "2021-autumn-02",
-      "code": "H404/02",
-      "unit": "Problem Solving in Design Engineering",
-      "year": 2021,
-      "level": "H404",
-      "totalMarks": 70,
-      "series": "Autumn"
-    },
-    {
-      "id": "2021-autumn-01",
-      "code": "H404/01",
-      "unit": "Principles of Design Engineering",
-      "year": 2021,
-      "level": "H404",
-      "totalMarks": 80,
-      "series": "Autumn"
-    },
-    {
       "id": "2020-autumn-02",
       "code": "H404/02",
       "unit": "Problem Solving in Design Engineering",
@@ -352,6 +334,24 @@
       "level": "H404",
       "totalMarks": 80,
       "series": "Practice Set 1"
+    },
+    {
+      "id": "2021-autumn-01",
+      "code": "H404/01",
+      "unit": "Principles of Design Engineering",
+      "year": 2021,
+      "level": "H404",
+      "totalMarks": 80,
+      "series": "Autumn"
+    },
+    {
+      "id": "2021-autumn-02",
+      "code": "H404/02",
+      "unit": "Problem Solving in Design Engineering",
+      "year": 2021,
+      "level": "H404",
+      "totalMarks": 70,
+      "series": "Autumn"
     }
   ],
   "questions": [
@@ -512,40 +512,6 @@
       "summary": "Apply COSHH regulations and the Hierarchy of Control to mitigate hazards during carbon fibre lay-up and trimming.",
       "markscheme_text": "<b>(a) COSHH Hazards:</b><br>• Chemical sensitization and skin dermatitis caused by direct contact with unreacted liquid epoxy resin or amine hardeners (1 mark).<br>• Inhalation of microscopic airborne carbon fibre dust particulates during dry bandsaw trimming, causing respiratory irritation and potential lung tissue scarring (1 mark).<br><br><b>(b) Hierarchy of Control Application:</b><br>• <b>Engineering Controls (Priority):</b> Install Local Exhaust Ventilation (LEV) capture hoods and HEPA downdraft extraction tables directly at the bandsaw trimming station; conduct resin mixing in a dedicated fume extraction enclosure (2 marks).<br>• <b>Administrative Controls:</b> Implement standard operating procedures (SOP), restrict workshop access, and provide COSHH safety training (1 mark).<br>• <b>PPE as last line of defence:</b> Nitrile chemical-resistant gloves, eye goggles, and FFP3 particulate respirator. PPE is the lowest tier because it relies on correct fit, user compliance, and does not remove the hazard from the shared room environment (1 mark).",
       "prompt": "During the prototyping of a carbon fibre reinforced polymer (CFRP) chassis, a technician is required to mix epoxy resin with amine hardener, vacuum bag the laminate, and trim the cured edges using a diamond-grit bandsaw.<br><br><b>(a)</b> Identify two distinct health hazards under the COSHH 2002 regulations associated with this process. [2]<br><b>(b)</b> Explain how the Hierarchy of Control should be applied to protect technicians, explaining why PPE is considered the last line of defence. [4]"
-    },
-    {
-      "marks": 6,
-      "skills": [
-        "technical",
-        "practical"
-      ],
-      "id": "2021-h404-01-q1",
-      "paper": "2021-autumn-01",
-      "topics": [
-        "8.2"
-      ],
-      "question": "1",
-      "page": 4,
-      "summary": "Compare Ultrasonic Testing (UT) and Dye Penetrant Inspection (DPI) for verifying critical welded joints.",
-      "markscheme_text": "<b>Dye Penetrant Inspection (DPI):</b><br>• Principle: Clean surface, spray fluorescent/red penetrating dye which draws into cracks by capillary action. Wipe off surface dye, spray chalk developer to draw out entrapped dye (1.5 marks).<br>• Pros/Cons: Very cheap, fast, portable, easy to interpret; BUT only detects cracks that are <b>open to the external surface</b>; completely blind to internal weld porosity or sub-surface cracks (1.5 marks).<br><br><b>Ultrasonic Testing (UT):</b><br>• Principle: High-frequency piezoelectric transducer transmits ultrasound pulses (2–10 MHz) into steel. Sound reflects from back wall and internal defects; reflected signal pulse travel time reveals depth and defect size on oscilloscope (1.5 marks).<br>• Pros/Cons: Detects internal flaws, inclusions, lack of root fusion deep inside the weld; non-hazardous; BUT requires skilled calibrated operator, acoustic couplant gel, and difficult on thin complex curved tubular joints (1.5 marks).",
-      "prompt": "A welded tubular roll-cage for a high-performance off-road buggy must be verified for structural integrity prior to competition.<br><br>Compare the principles, advantages, and limitations of <b>Dye Penetrant Inspection (DPI)</b> and <b>Ultrasonic Testing (UT)</b> for detecting welding defects in this tubular structure. [6]"
-    },
-    {
-      "marks": 6,
-      "skills": [
-        "maths",
-        "technical"
-      ],
-      "id": "2021-h404-01-q2",
-      "paper": "2021-autumn-01",
-      "topics": [
-        "3.3"
-      ],
-      "question": "2",
-      "page": 6,
-      "summary": "Calculate laser-cut sheet metal yield, kerf scrap, and raw material utilization efficiency.",
-      "markscheme_text": "<b>(a) Area of Equilateral Triangle:</b><br>Height h = s × sin(60°) = 120 × 0.8660 = 103.92 mm (1 mark)<br>Area = 0.5 × base × height = 0.5 × 120 × 103.92 = <b>6,235.4 mm²</b> (1 mark)<br><br><b>(b) Scrap Steel Calculation:</b><br>Total sheet area = 2000 mm × 1000 mm = 2,000,000 mm² = 2.00 m² (1 mark)<br>With 82% packing yield, useful metal = 2.00 × 0.82 = 1.64 m² (1 mark)<br>Scrap metal area = 2.00 m² - 1.64 m² = <b>0.36 m²</b> (1 mark)<br>Percentage material waste = (0.36 / 2.00) × 100% = <b>18.0% scrap</b> (1 mark)",
-      "prompt": "A batch of 400 equilateral triangular steel brackets (side length s = 120 mm) is to be laser cut from standard sheet steel measuring 2000 mm × 1000 mm.<br><br><b>(a)</b> Calculate the surface area of a single equilateral triangular bracket in mm². [2]<br><b>(b)</b> The designer uses a tessellated layout that achieves a packing density of 82% of the sheet area.<br>Calculate the total area of scrap steel produced in m² and the percentage material waste. [4]"
     },
     {
       "id": "2018-practice-01-q1a",
@@ -3138,6 +3104,775 @@
       "image": "img/2020-autumn-02/q5.jpg",
       "markscheme": "img/2020-autumn-02/ms-5.jpg",
       "markscheme_text": "<b>Level 4 (10–12):</b> Comprehensive discussion of advantages during development and introduction, directly linked to the bike rack. <b>Level 3 (7–9):</b> Good. <b>Level 2 (4–6):</b> Sufficient. <b>Level 1 (1–3):</b> Limited. No credit for listing tools without linking to advantages and the roof rack.<br><br><b>Development:</b><br>• Stakeholder research – online questionnaires, video-conference focus groups, spreadsheets, social media and online groups (wider reach, lower cost, easy collation).<br>• CAD concepts – quick, high-quality representations, easy modification before prototyping.<br>• Photo-realistic renders – communicate the concept to investors and prototype builders.<br>• CAE – stress analysis of components and simulation of the pneumatic system; right material without over-engineering.<br>• Modelling of the roof attachment system to fit many car types before physical prototyping.<br>• CAM – fast transfer to manufacture, consistent quality (e.g. welding).<br>• Communication – sharing files between teams/international manufacturers, faster turnaround.<br><br><b>Introduction to market:</b> social-media advertising to cycling communities; graphics packages for presentations, posters and adverts."
+    },
+    {
+      "id": "2021-autumn-01-q1ai",
+      "paper": "2021-autumn-01",
+      "question": "1(a)(i)",
+      "marks": 2,
+      "page": 2,
+      "topics": [
+        "1.1"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Identify two ways in which the electric screwdriver has been designed to be an inclusive and easy-to-use product.",
+      "prompt": "Designers often aim to make their products inclusive so that they are easy-to-use by a wide range of users.<br><br>Identify <b>two</b> ways in which the electric screwdriver in Fig. 1.1 has been designed to be an inclusive and easy-to-use product. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-1-1.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1ai.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1ai.jpg",
+      "markscheme_text": "<b>1 mark per valid design feature (max 2 marks):</b><br>• The product can be used in either the left or right hand (ambidextrous design).<br>• The product has the bare minimum controls (just on/off trigger and reverse switch).<br>• No language barriers as controls are intuitive without complex visible text labelling.<br>• Intuitive operation requiring no instruction manual.<br>• Ergonomically contoured handle designed to fit comfortably in one hand with soft grip.<br>• Illumination light helps users with impaired or non-perfect eyesight in dark work spaces."
+    },
+    {
+      "id": "2021-autumn-01-q1aii",
+      "paper": "2021-autumn-01",
+      "question": "1(a)(ii)",
+      "marks": 2,
+      "page": 3,
+      "topics": [
+        "5.1"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate the average time in seconds to manufacture one electric screwdriver given 1,000,000 units per year.",
+      "prompt": "One million electric screwdrivers are manufactured every year using a high-volume production process.<br><br>The production runs continually for 365 days per year.<br><br>Calculate the average time in seconds to manufacture <b>one</b> electric screwdriver. Give your answer to <b>2 decimal places</b>. Show your working. [2]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q1aii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1aii.jpg",
+      "markscheme_text": "<b>Method & Calculation (2 marks):</b><br>1. Calculate seconds in one year: $365 \\times 24 \\times 60 \\times 60 = 31\\,536\\,000\\text{ s}$ [1 mark]<br>2. Calculate time per unit: $\\frac{31\\,536\\,000}{1\\,000\\,000} = \\mathbf{31.54\\text{ seconds}}$ (to 2 d.p.) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q1bi",
+      "paper": "2021-autumn-01",
+      "question": "1(b)(i)",
+      "marks": 4,
+      "page": 4,
+      "topics": [
+        "6.1"
+      ],
+      "skills": [
+        "technical"
+      ],
+      "summary": "Explain two reasons why the designer chose to use an epicyclic gearbox in the electric screwdriver.",
+      "prompt": "The specification for the electric screwdriver is given in Table 1.2. The electric screwdriver uses an epicyclic gear system.<br><br>Explain <b>two</b> reasons why the designer chose to use an epicyclic gearbox in this product. [4]",
+      "figures": [
+        "img/2021-autumn-01/table-1-2.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1bi.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1bi.jpg",
+      "markscheme_text": "<b>Up to 2 marks per explained reason (max 4 marks):</b><br>• <b>Torque multiplication:</b> A gearbox is needed to increase torque output because raw high-speed motor torque is very small.<br>• <b>Co-linear shafts:</b> Epicyclic gearboxes have inline (co-linear) input and output shafts, enabling a slim, cylindrical screwdriver casing.<br>• <b>High torque capacity:</b> Load is distributed across multiple planet gears sharing the mesh, allowing compact gears to transmit high torque (4.5 Nm).<br>• <b>Compact volume:</b> High gear reduction in a small physical envelope allows a lightweight handheld tool."
+    },
+    {
+      "id": "2021-autumn-01-q1bii",
+      "paper": "2021-autumn-01",
+      "question": "1(b)(ii)",
+      "marks": 3,
+      "page": 4,
+      "topics": [
+        "6.1"
+      ],
+      "skills": [
+        "maths",
+        "technical"
+      ],
+      "summary": "Calculate the rotational speed of the motor in rpm for a two-stage 7:1 epicyclic gearbox with 215 rpm output.",
+      "prompt": "The epicyclic gearbox in the electric screwdriver consists of two identical stages. Each stage has a gear ratio of 7:1.<br><br>Use the information in Table 1.2 to calculate the rotational speed of the motor in the electric screwdriver. Give your answer in rpm and show your working. [3]",
+      "figures": [
+        "img/2021-autumn-01/table-1-2.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1bii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1bii.jpg",
+      "markscheme_text": "<b>Calculation Steps (3 marks):</b><br>1. Total compound gear ratio: $GR = 7 \\times 7 = 49:1$ [1 mark]<br>2. Recall formula: $\\text{Input Speed} = GR \\times \\text{Output Speed}$ [1 mark]<br>3. Calculate motor speed: $\\text{Motor Speed} = 49 \\times 215 = \\mathbf{10\\,535\\text{ rpm}}$ [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q1ci",
+      "paper": "2021-autumn-01",
+      "question": "1(c)(i)",
+      "marks": 1,
+      "page": 5,
+      "topics": [
+        "6.3"
+      ],
+      "skills": [
+        "technical",
+        "maths"
+      ],
+      "summary": "Use the graph in Fig. 1.3 to identify motor current when torque load is 0.04 Nm.",
+      "prompt": "Use Fig. 1.3 to identify the current of the motor when the load on the motor is 0.04 Nm. [1]",
+      "figures": [
+        "img/2021-autumn-01/fig-1-3.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1ci.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1ci.jpg",
+      "markscheme_text": "• Read from graph at $0.04\\text{ Nm}$: $\\mathbf{1.25\\text{ A}}$ (allow 1.20 to 1.30 A) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q1cii",
+      "paper": "2021-autumn-01",
+      "question": "1(c)(ii)",
+      "marks": 2,
+      "page": 6,
+      "topics": [
+        "6.3"
+      ],
+      "skills": [
+        "maths",
+        "technical"
+      ],
+      "summary": "Calculate the voltage across the 0.1 ohm sense resistor when motor current is 2.5 A.",
+      "prompt": "Calculate the voltage across the 0.1 Ω resistor when the motor current is 2.5 A. Show your working. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-1-4.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1cii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1cii.jpg",
+      "markscheme_text": "<b>Ohm's Law Calculation (2 marks):</b><br>1. Recall formula: $V = I \\times R$ [1 mark]<br>2. Calculation: $V = 2.5\\text{ A} \\times 0.1\\,\\Omega = \\mathbf{0.25\\text{ V}}$ [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q1ciii",
+      "paper": "2021-autumn-01",
+      "question": "1(c)(iii)",
+      "marks": 2,
+      "page": 6,
+      "topics": [
+        "6.3"
+      ],
+      "skills": [
+        "technical"
+      ],
+      "summary": "Explain one reason why a capacitor is used in electronic systems.",
+      "prompt": "Component c in Fig. 1.4 is a capacitor.<br><br>Explain <b>one</b> reason why a capacitor is used in electronic systems. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-1-4.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1ciii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1ciii.jpg",
+      "markscheme_text": "<b>1 mark for function, 1 mark for explanation/effect (max 2 marks):</b><br>• <b>DC blocking / AC coupling:</b> Blocks direct current while allowing AC or signal pulses to pass.<br>• <b>Smoothing / Filtering:</b> Filters out unwanted high-frequency electrical noise and motor brush spikes from the signal line.<br>• <b>Decoupling / Supply stabilization:</b> Stores charge and discharges rapidly to stabilise power supply lines and prevent transient voltage drops during motor turn-on."
+    },
+    {
+      "id": "2021-autumn-01-q1civ",
+      "paper": "2021-autumn-01",
+      "question": "1(c)(iv)",
+      "marks": 2,
+      "page": 7,
+      "topics": [
+        "6.3"
+      ],
+      "skills": [
+        "technical"
+      ],
+      "summary": "Describe the effect the amplifier with voltage gain of 4 will have on the voltage signal.",
+      "prompt": "The output voltage signal from the circuit in Fig. 1.4 is fed into an amplifier subsystem with a voltage gain of 4.<br><br>Describe the effect the amplifier will have on the voltage signal. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-1-4.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1civ.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1civ.jpg",
+      "markscheme_text": "• 1st mark: The amplifier will increase / magnify the amplitude of the voltage signal [1 mark]<br>• 2nd mark: The voltage signal will be multiplied by a factor of 4 (e.g. $0.25\\text{ V} \\to 1.0\\text{ V}$) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q1d",
+      "paper": "2021-autumn-01",
+      "question": "1(d)",
+      "marks": 6,
+      "page": 8,
+      "topics": [
+        "1.2",
+        "4.2"
+      ],
+      "skills": [
+        "practical",
+        "design"
+      ],
+      "summary": "Annotated sketches and notes showing how a non-functional 3D block model of the cordless screwdriver could be made.",
+      "prompt": "During the development of an electric screwdriver, 3D block models would be made to test ergonomic factors and to communicate ideas with stakeholders.<br><br>Use annotated sketches and/or notes to show how a non-functional model of an electric screwdriver, such as the type shown in Fig. 1.1, could be made.<br><br>Identify any relevant equipment, materials and processes. [6]",
+      "figures": [
+        "img/2021-autumn-01/fig-1-1.jpg",
+        "img/2021-autumn-01/ms-1d-diagram.jpg"
+      ],
+      "image": "img/2021-autumn-01/q1d.jpg",
+      "markscheme": "img/2021-autumn-01/ms-1d.jpg",
+      "markscheme_text": "<b>Level 3 (5–6 marks):</b> Good detail of end-to-end process using technical terms, relevant equipment, and materials. Clear annotated sketches.<br><b>Level 2 (3–4 marks):</b> Sound detail with some technical terms and relevant stages.<br><b>Level 1 (1–2 marks):</b> Basic/limited.<br><br><b>Indicative Content:</b><br>• <b>Materials:</b> High-density modelling foam (styrofoam/polyurethane), MDF, clay, 3D printing filament (PLA/ABS), primer, filler, spray paint.<br>• <b>Equipment:</b> Hot-wire cutter, coping/bandsaw, rasps, files, glasspaper/sandpaper, CAD software, 3D printer or CNC router, spray booth.<br>• <b>Process:</b> Rough outline cut using hot wire/bandsaw; hand-sculpted with files and rasps to ergonomic profile; surfaces filled and fine-sanded; primed and spray painted to represent actual materials and textured over-moulding."
+    },
+    {
+      "id": "2021-autumn-01-q2ai",
+      "paper": "2021-autumn-01",
+      "question": "2(a)(i)",
+      "marks": 2,
+      "page": 9,
+      "topics": [
+        "4.2",
+        "5.2"
+      ],
+      "skills": [
+        "maths",
+        "practical"
+      ],
+      "summary": "Convert 1/4 inch to mm and identify the most suitable drill bit from 3 mm to 8 mm.",
+      "prompt": "A metal part is being manufactured using an old working drawing which has measurements in inches. A hole is required with a diameter of ¼ inch.<br><br>The drill bits available are: 3 mm, 4 mm, 5 mm, 6 mm, 7 mm, 8 mm.<br><br>(i) Assuming 1 inch = 25.4 mm, identify the drill bit that will drill a hole closest to the required size. Show your working. [2]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q2ai.jpg",
+      "markscheme": "img/2021-autumn-01/ms-2ai.jpg",
+      "markscheme_text": "• Convert $\\frac{1}{4}$ inch: $0.25 \\times 25.4 = \\mathbf{6.35\\text{ mm}}$ [1 mark]<br>• Closest drill bit: $\\mathbf{6\\text{ mm}}$ (difference is 0.35 mm vs 0.65 mm for 7 mm) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q2aii",
+      "paper": "2021-autumn-01",
+      "question": "2(a)(ii)",
+      "marks": 3,
+      "page": 9,
+      "topics": [
+        "5.2"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Determine whether the 6 mm drill bit is within the +/- 5% tolerance for a 1/4 inch hole.",
+      "prompt": "The tolerance for the ¼ inch hole is ± 5%.<br><br>Determine whether the drill bit you specified in part (a)(i) would produce a hole that is within this tolerance. State Yes or No. Show your working. [3]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q2aii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-2aii.jpg",
+      "markscheme_text": "<b>Tolerance Evaluation (3 marks):</b><br>1. Lower tolerance limit calculation: $95\\%$ of nominal $= 0.95 \\times 6.35 = 6.0325\\text{ mm}$ (or $6.35 - 0.3175 = 6.0325\\text{ mm}$) [2 marks]<br>2. Evaluation & conclusion: Since $6.0\\text{ mm} < 6.0325\\text{ mm}$, it is below the lower limit. The answer is **No** [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q2bi",
+      "paper": "2021-autumn-01",
+      "question": "2(b)(i)",
+      "marks": 1,
+      "page": 10,
+      "topics": [
+        "5.2"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate the probability of a gear being faulty in a batch of 5000 with 80 faulty.",
+      "prompt": "A polymer moulding manufacturer produced a batch of 5000 gears. Each gear was inspected and 80 gears were found to be faulty.<br><br>Calculate the probability of a gear being faulty in the batch. [1]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q2bi.jpg",
+      "markscheme": "img/2021-autumn-01/ms-2bi.jpg",
+      "markscheme_text": "• Probability: $P = \\frac{80}{5000} = \\mathbf{0.016}$ (do not accept percentage or fraction) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q2bii",
+      "paper": "2021-autumn-01",
+      "question": "2(b)(ii)",
+      "marks": 2,
+      "page": 10,
+      "topics": [
+        "5.2"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate the minimum number of gears that should be inspected to find one faulty gear.",
+      "prompt": "Use your answer to part (b)(i) to calculate the minimum number of gears which should be inspected if the probability of a faulty gear remains the same. Show your working. [2]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q2bii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-2bii.jpg",
+      "markscheme_text": "• Number of gears: $\\frac{1}{P} = \\frac{1}{0.016} = 62.5$ [1 mark]<br>• Rounded up to whole integer: $\\mathbf{63\\text{ gears}}$ [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q2ci",
+      "paper": "2021-autumn-01",
+      "question": "2(c)(i)",
+      "marks": 3,
+      "page": 10,
+      "topics": [
+        "6.2"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate the height h of the zip-line end point given a 2.8 m start, 30 m run, and 2.5 degree slope.",
+      "prompt": "Fig. 2.1 shows the basic design for a zip-line for a children’s play park.<br><br>Calculate the height h in m. Give your answer to <b>1 decimal place</b> and show your working. Assume that the zip-line does not sag. [3]",
+      "figures": [
+        "img/2021-autumn-01/fig-2-1.jpg"
+      ],
+      "image": "img/2021-autumn-01/q2ci.jpg",
+      "markscheme": "img/2021-autumn-01/ms-2ci.jpg",
+      "markscheme_text": "<b>Trigonometric Calculation (3 marks):</b><br>1. Drop in height $y$: $\\tan(2.5^\\circ) = \\frac{y}{30}$ [1 mark]<br>2. Calculate $y$: $y = 30 \\times \\tan(2.5^\\circ) \\approx 1.3099\\text{ m}$ [1 mark]<br>3. Calculate final height $h$: $h = 2.8 - 1.3099 = 1.4901\\text{ m} \\approx \\mathbf{1.5\\text{ m}}$ [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q2cii",
+      "paper": "2021-autumn-01",
+      "question": "2(c)(ii)",
+      "marks": 4,
+      "page": 11,
+      "topics": [
+        "6.2"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate distance d at the zip-line support pole using the sine rule.",
+      "prompt": "Fig. 2.2 shows construction details of the start point for the zip-line.<br><br>Calculate the distance d in m. Give your answer to <b>2 decimal places</b> and show your working. [4]",
+      "figures": [
+        "img/2021-autumn-01/fig-2-2.jpg"
+      ],
+      "image": "img/2021-autumn-01/q2cii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-2cii.jpg",
+      "markscheme_text": "<b>Sine Rule Steps (4 marks):</b><br>1. Find third angle at apex: $A = 180^\\circ - 66^\\circ - 69^\\circ = 45^\\circ$ [1 mark]<br>2. Apply sine rule: $\\frac{d}{\\sin(66^\\circ)} = \\frac{3}{\\sin(45^\\circ)}$ [1 mark]<br>3. Rearrange: $d = \\frac{3 \\times \\sin(66^\\circ)}{\\sin(45^\\circ)}$ [1 mark]<br>4. Calculate: $d = \\frac{3 \\times 0.9135}{0.7071} = \\mathbf{3.88\\text{ m}}$ (to 2 d.p.) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q2ciii",
+      "paper": "2021-autumn-01",
+      "question": "2(c)(iii)",
+      "marks": 4,
+      "page": 12,
+      "topics": [
+        "5.2"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate the probability of zip-line failure over a 25-year period (300 days/year, 1 in 25000 daily failure chance).",
+      "prompt": "A risk assessment is carried out on the zip-line for the children’s play park. The assessment suggests there is a 1 in 25 000 chance of failure each day it is used.<br><br>Calculate the probability of failure over a 25-year period if the zip-line is used for 300 days per year.<br><br>Give your answer as a <b>percentage</b> and show your working. [4]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q2ciii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-2ciii.jpg",
+      "markscheme_text": "<b>Cumulative Probability Calculation (4 marks):</b><br>1. Daily probability of zero failure: $P(\\text{no failure}) = 1 - \\frac{1}{25\\,000} = 0.99996$ [1 mark]<br>2. Total days of use: $n = 300 \\times 25 = 7500\\text{ days}$ [1 mark]<br>3. Probability of zero failure over 25 years: $(0.99996)^{7500} \\approx 0.7408$ (or $0.74$) [1 mark]<br>4. Probability of at least one failure: $1 - 0.74 = 0.26 = \\mathbf{26\\%}$ (allow 25.9% to 26%) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q3ai",
+      "paper": "2021-autumn-01",
+      "question": "3(a)(i)",
+      "marks": 2,
+      "page": 13,
+      "topics": [
+        "1.1",
+        "2.2"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Identify two design features of the LED bulb influenced by the style and function of the incandescent bulb.",
+      "prompt": "In the 1980s, electric lighting was mainly provided by incandescent light bulbs. Incandescent light bulbs have now generally been replaced by light emitting diode (LED) light bulbs.<br><br>Identify <b>two</b> design features of the LED light bulb which have been influenced by the style and function of the incandescent light bulb. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-3-1.jpg"
+      ],
+      "image": "img/2021-autumn-01/q3ai.jpg",
+      "markscheme": "img/2021-autumn-01/ms-3ai.jpg",
+      "markscheme_text": "<b>1 mark per identified feature (max 2 marks):</b><br>• Same screw fitting / bayonet cap base (e.g. E27 Edison screw) for backward compatibility with existing domestic lamp holders.<br>• Similar physical dimensions and pear/globe bulb profile.<br>• Equivalent light output luminosity (800 lumens vs 820 lumens) to replace 60 W bulbs without modifying ambient light levels.<br>• Omni-directional light distribution diffuser dome mimicking transparent glass globe."
+    },
+    {
+      "id": "2021-autumn-01-q3aii",
+      "paper": "2021-autumn-01",
+      "question": "3(a)(ii)*",
+      "marks": 8,
+      "page": 14,
+      "topics": [
+        "2.1",
+        "2.2",
+        "5.1"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Discuss the impact of changing from incandescent to LED light bulbs on industry, user lifestyle, and the environment.",
+      "prompt": "In 2009 the European Union (EU) began to ban the sale of incandescent light bulbs, forcing consumers to change to LED light bulbs.<br><br>Discuss the impact of changing from incandescent light bulbs to LED light bulbs.<br><br>In your answer you <b>must</b> refer to the impact on:<br>• industry<br>• the lifestyle of users<br>• the environment. [*8]",
+      "figures": [
+        "img/2021-autumn-01/fig-3-1.jpg"
+      ],
+      "image": "img/2021-autumn-01/q3aii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-3aii.jpg",
+      "markscheme_text": "<b>Level 3 (6–8 marks):</b> Thorough discussion covering all 3 contexts (industry, user lifestyle, environment) with clear logical reasoning and substantiated examples.<br><b>Level 2 (3–5 marks):</b> Sound discussion covering at least 2 contexts.<br><b>Level 1 (1–2 marks):</b> Basic descriptive comments.<br><br><b>Indicative Content:</b><br>• <b>Industry:</b> Massive capital retooling from simple glass blowing and filament winding to automated surface-mount PCB assembly, semiconductor fabrication, and heatsink casting; retraining workforce; supply chain shifts towards electronic driver components.<br>• <b>User Lifestyle:</b> Vastly reduced frequency of bulb replacement due to 25,000-hour lifespan vs 1,200 hours; lower electricity bills (9 W vs 60 W saves >80% energy); smart lighting integration (colour tuning, mobile app dimming, IoT home automation).<br>• <b>Environment:</b> Drastic reduction in electricity generation demands cuts fossil fuel combustion and greenhouse gas emissions; however, disposal of LED circuitry involves electronic waste (WEEE) containing complex silicon, driver ICs, and aluminium heatsinks, requiring specialist recycling compared to inert tungsten."
+    },
+    {
+      "id": "2021-autumn-01-q3b",
+      "paper": "2021-autumn-01",
+      "question": "3(b)",
+      "marks": 4,
+      "page": 15,
+      "topics": [
+        "5.1"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Describe two methods used by manufacturers to create more demand and maintain longer product popularity across the lifecycle.",
+      "prompt": "The marketing lifecycle of a successful product can be divided into initial demand, growth in popularity and decline over time.<br><br>Describe <b>two</b> methods used by manufacturers to create more demand and maintain a longer product popularity. [4]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q3b.jpg",
+      "markscheme": "img/2021-autumn-01/ms-3b.jpg",
+      "markscheme_text": "<b>Up to 2 marks per method (max 4 marks):</b><br>• <b>Incremental innovation & feature updates:</b> Regularly releasing updated versions with improved features, software updates, or new colourways/aesthetic trims to stimulate repeat purchases.<br>• <b>Celebrity endorsement & promotional marketing:</b> High-profile advertising campaigns, social media influencer partnerships, and viral marketing to boost brand awareness.<br>• <b>Product extensions & accessories:</b> Releasing complementary add-ons, attachments, or modular upgrades that extend usability.<br>• <b>Repositioning & re-branding:</b> Refreshing packaging, logos, and target demographics to enter new market segments."
+    },
+    {
+      "id": "2021-autumn-01-q4a",
+      "paper": "2021-autumn-01",
+      "question": "4(a)",
+      "marks": 2,
+      "page": 16,
+      "topics": [
+        "3.1",
+        "4.1"
+      ],
+      "skills": [
+        "technical"
+      ],
+      "summary": "Identify two properties of thermo softening polymers which make them suitable for parts in an electrically powered cool box.",
+      "prompt": "The electrically powered cool box shown in Fig. 4.1 is manufactured from multiple materials. Several different thermo softening polymers and several different metals are used.<br><br>Identify <b>two</b> properties of thermo softening polymers which make them suitable for the manufacture of parts in an electrically powered cool box. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-4-1.jpg"
+      ],
+      "image": "img/2021-autumn-01/q4a.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4a.jpg",
+      "markscheme_text": "<b>1 mark per qualified property (max 2 marks):</b><br>• <b>Low thermal conductivity:</b> Insulates internal compartment against ambient heat transfer.<br>• <b>High impact resistance (toughness):</b> Withstands knocks, drops, and rough handling during portable outdoor transit.<br>• <b>Thermo-plasticity:</b> Softens when heated allowing complex ergonomic shapes, ribs, and double-wall casings to be injection moulded or blow moulded.<br>• <b>Corrosion resistance:</b> Impermeable to moisture and food spills, easy to wipe clean and hygienic.<br>• <b>High strength-to-weight ratio:</b> Keeps the portable unit light enough to carry when loaded."
+    },
+    {
+      "id": "2021-autumn-01-q4bi",
+      "paper": "2021-autumn-01",
+      "question": "4(b)(i)",
+      "marks": 1,
+      "page": 16,
+      "topics": [
+        "3.1"
+      ],
+      "skills": [
+        "technical"
+      ],
+      "summary": "Identify one part in an electrically powered cool box that would be made from metal.",
+      "prompt": "Identify <b>one</b> part in an electrically powered cool box that would be made from metal. [1]",
+      "figures": [
+        "img/2021-autumn-01/fig-4-1.jpg"
+      ],
+      "image": "img/2021-autumn-01/q4bi.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4bi.jpg",
+      "markscheme_text": "• Any valid metal component: Peltier heatsink, fan motor shaft/windings, electrical wiring, fasteners/screws, handle pivot pins, PCB copper tracks. [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q4bii",
+      "paper": "2021-autumn-01",
+      "question": "4(b)(ii)",
+      "marks": 2,
+      "page": 16,
+      "topics": [
+        "3.1"
+      ],
+      "skills": [
+        "technical"
+      ],
+      "summary": "State a metal used to manufacture the chosen cool box part and a property that makes it suitable.",
+      "prompt": "State a metal that would be used to manufacture the part of the electrically powered cool box you have identified in part (b)(i). State a property of this metal that would make it suitable for use. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-4-1.jpg"
+      ],
+      "image": "img/2021-autumn-01/q4bii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4bii.jpg",
+      "markscheme_text": "• 1 mark for appropriate metal, 1 mark for matching property:<br>  - Heatsink: <b>Aluminium</b> → high thermal conductivity to dissipate heat rapidly from Peltier element.<br>  - Wires / PCB: <b>Copper</b> → high electrical conductivity.<br>  - Fasteners / Screws: <b>Steel / Stainless steel</b> → high tensile shear strength and thread hardness."
+    },
+    {
+      "id": "2021-autumn-01-q4c",
+      "paper": "2021-autumn-01",
+      "question": "4(c)",
+      "marks": 4,
+      "page": 17,
+      "topics": [
+        "2.1",
+        "5.1"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Describe two ways a manufacturer can ensure the cool box is successfully recovered and processed under EOL legislation.",
+      "prompt": "End of life (EOL) legislation requires producers to be responsible for their products when they become waste.<br><br>Describe <b>two</b> ways in which a manufacturer can try to ensure that products, such as the electrically powered cool box, can be successfully recovered and effectively processed when they reach the end of their life. [4]",
+      "figures": [],
+      "image": "img/2021-autumn-01/q4c.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4c.jpg",
+      "markscheme_text": "<b>Up to 2 marks per described method (max 4 marks):</b><br>• <b>Design for Disassembly (DfD):</b> Using snap fits, accessible screws, and modular sub-assemblies so polymers, electronics, and metals can be quickly separated without cutting or destruction.<br>• <b>Material marking & labelling:</b> Moulding standard ISO polymer identification codes (e.g. SPI resin codes >PP<, >ABS<) on plastic shells to facilitate sorting at recycling centres.<br>• <b>Product take-back & trade-in schemes:</b> Providing prepaid return postage or discounts on new models when consumers return old units to certified recovery centres."
+    },
+    {
+      "id": "2021-autumn-01-q4di",
+      "paper": "2021-autumn-01",
+      "question": "4(d)(i)",
+      "marks": 4,
+      "page": 18,
+      "topics": [
+        "1.1",
+        "3.1",
+        "6.2"
+      ],
+      "skills": [
+        "technical",
+        "design"
+      ],
+      "summary": "Describe how the performance of the polymer handle is enhanced by the visible design features in Fig. 4.2.",
+      "prompt": "A photograph of the polymer handle of the electrically powered cool box is shown in Fig. 4.2.<br><br>The performance of the handle is enhanced by the design features visible in Fig. 4.2.<br><br>Describe how the performance of the handle is enhanced by its design. [4]",
+      "figures": [
+        "img/2021-autumn-01/fig-4-2.jpg"
+      ],
+      "image": "img/2021-autumn-01/q4di.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4di.jpg",
+      "markscheme_text": "<b>Up to 4 marks for justified design features:</b><br>• <b>Truss / Cross-rib webbing:</b> Internal diagonal triangulation significantly increases bending stiffness (second moment of area) while minimizing polymer wall thickness and mass.<br>• <b>Material optimization & sink prevention:</b> Ribbed web prevents sink marks during injection moulding and cuts raw material volume, reducing cost and weight.<br>• <b>Flared ergonomic grip section:</b> Wider central span distributes carrying pressure across the palm to lower contact stress.<br>• <b>Textured grip:</b> Web openings and textured finish improve tactile grip friction even when carrying with wet hands."
+    },
+    {
+      "id": "2021-autumn-01-q4dii",
+      "paper": "2021-autumn-01",
+      "question": "4(d)(ii)",
+      "marks": 2,
+      "page": 18,
+      "topics": [
+        "6.2"
+      ],
+      "skills": [
+        "technical"
+      ],
+      "summary": "Sketch a diagram showing the likely mode of failure of the overloaded handle, marking the acting forces.",
+      "prompt": "The handle is likely to break if the electrically powered cool box is carried when it is overloaded.<br><br>Sketch a diagram to show the likely mode of failure of the handle. Mark the forces acting on the handle. [2]",
+      "figures": [
+        "img/2021-autumn-01/fig-4-2.jpg",
+        "img/2021-autumn-01/ms-4dii-diagram.jpg"
+      ],
+      "image": "img/2021-autumn-01/q4dii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4dii.jpg",
+      "markscheme_text": "• 1 mark for sketch showing valid failure mode (tensile failure at central underside or shear fracture at hinge pivot brackets).<br>• 1 mark for clearly indicating opposing forces (upward lift force at centre and downward weight forces from cool box body at both ends)."
+    },
+    {
+      "id": "2021-autumn-01-q4ei",
+      "paper": "2021-autumn-01",
+      "question": "4(e)(i)",
+      "marks": 2,
+      "page": 20,
+      "topics": [
+        "6.3"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate the current in amps when the 42 W cool box is plugged into a 12 V supply.",
+      "prompt": "Table 4.3 shows the technical specification for an electrically powered cool box.<br><br>Calculate the current in amps when the electrically powered cool box is plugged into a 12 V supply. Show your working. [2]",
+      "figures": [
+        "img/2021-autumn-01/table-4-3.jpg"
+      ],
+      "image": "img/2021-autumn-01/q4ei.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4ei.jpg",
+      "markscheme_text": "<b>Power Formula Calculation (2 marks):</b><br>1. Recall formula: $I = \\frac{P}{V}$ [1 mark]<br>2. Substitute values: $I = \\frac{42\\text{ W}}{12\\text{ V}} = \\mathbf{3.5\\text{ A}}$ [1 mark]"
+    },
+    {
+      "id": "2021-autumn-01-q4eii",
+      "paper": "2021-autumn-01",
+      "question": "4(e)(ii)",
+      "marks": 6,
+      "page": 21,
+      "topics": [
+        "5.2",
+        "6.4",
+        "6.5"
+      ],
+      "skills": [
+        "technical",
+        "practical"
+      ],
+      "summary": "Annotated sketches/notes outlining a prototype test to evaluate the 18 °C temperature reduction criterion.",
+      "prompt": "At the prototype stage of development, the electrically powered cool box would be tested to ensure that it meets the technical specification.<br><br>Use annotated sketches and/or notes to:<br>• outline a test that could be carried out on the prototype electrically powered cool box to evaluate the maximum cooling criteria specified in Table 4.3<br>• identify any relevant equipment required<br>• show how the results would be used to assess the suitability of the prototype. [6]",
+      "figures": [
+        "img/2021-autumn-01/table-4-3.jpg",
+        "img/2021-autumn-01/ms-4eii-diagram.jpg"
+      ],
+      "image": "img/2021-autumn-01/q4eii.jpg",
+      "markscheme": "img/2021-autumn-01/ms-4eii.jpg",
+      "markscheme_text": "<b>Level 3 (5–6 marks):</b> Valid and rigorous test measuring both internal and external temperatures over time until thermal equilibrium; valid equipment identified (thermocouple/thermistor temperature probes, data logger/microcontroller, timer); clear explanation of evaluating $\\Delta T = T_{\\text{ext}} - T_{\\text{int}} \\ge 18^\\circ\\text{C}$.<br><b>Level 2 (3–4 marks):</b> Sound test with reasonable equipment and method.<br><b>Level 1 (1–2 marks):</b> Basic test description."
+    },
+    {
+      "id": "2021-autumn-02-q1",
+      "paper": "2021-autumn-02",
+      "question": "1*",
+      "marks": 14,
+      "page": 2,
+      "topics": [
+        "2.1",
+        "5.1"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Discuss the impact that technological progression has had on the environment since the First Industrial Revolution.",
+      "prompt": "Since the First Industrial Revolution, technology has been advancing at an increasing pace. For every advancement, there are consequences.<br><br>Discuss the impact that technological progression has had on the environment.<br><br>You <b>must</b> use your own examples of the effects that technological progression has had on the environment.<br><br>Refer to information on pages 2 and 3 of the Resource Booklet for additional support. [*14]",
+      "figures": [
+        "img/2021-autumn-02/rb-p2.jpg",
+        "img/2021-autumn-02/fig-1.jpg",
+        "img/2021-autumn-02/rb-p3.jpg",
+        "img/2021-autumn-02/fig-2.jpg"
+      ],
+      "image": "img/2021-autumn-02/q1.jpg",
+      "markscheme": "img/2021-autumn-02/ms-1.jpg",
+      "markscheme_text": "<b>Level 4 (11–14 marks):</b> Comprehensive discussion of environmental impacts with detailed analysis across energy, pollution, and resource depletion. Wide range of relevant technical examples.<br><b>Level 3 (7–10 marks):</b> Good discussion covering most key aspects with relevant examples.<br><b>Level 2 (4–6 marks):</b> Satisfactory discussion but lacks depth.<br><b>Level 1 (1–3 marks):</b> Limited descriptive comments.<br><br><b>Indicative Content:</b><br>• <b>Pollution:</b> Emissions of greenhouse gases ($CO_2$, $NO_x$, $SO_2$) leading to atmospheric warming, smog, and acid rain; chemical discharges and plastic pollution into aquatic ecosystems.<br>• <b>Natural Resource Depletion:</b> Unsustainable extraction of finite fossil fuels (oil, gas, coal), deforestation for industrial timber and agriculture, depletion of rare earth minerals (neodymium, lithium, cobalt) for consumer electronics.<br>• <b>Energy Consumption Growth:</b> Industrial automation, cloud data centres, electrified transport, and artificial heating/cooling escalating global primary energy demand as charted in Fig. 2.<br>• <b>Technological Solutions:</b> Rise of renewable energy (wind, solar, wave), circular economy closed-loop manufacturing, and environmental legislation mitigating legacy damage."
+    },
+    {
+      "id": "2021-autumn-02-q2",
+      "paper": "2021-autumn-02",
+      "question": "2",
+      "marks": 14,
+      "page": 4,
+      "topics": [
+        "2.1",
+        "5.1"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Critically examine ways design engineers reduce environmental impacts of a chosen product across its 5 lifecycle stages.",
+      "prompt": "Design engineers play an important role in the design of future technological products. They have the ability to minimise the negative impact that products have on the environment.<br><br>With reference to a product of your choice, critically examine the ways in which a design engineer can reduce the negative impact of that product on the environment throughout its lifecycle (raw material extraction, manufacture, distribution, use, disposal).<br><br>Refer to information on page 3 of the Resource Booklet. [14]",
+      "figures": [
+        "img/2021-autumn-02/rb-p3.jpg"
+      ],
+      "image": "img/2021-autumn-02/q2.jpg",
+      "markscheme": "img/2021-autumn-02/ms-2.jpg",
+      "markscheme_text": "<b>Level 4 (11–14 marks):</b> Comprehensive critical evaluation of ways design engineers reduce environmental impacts across all 5 lifecycle stages with clear justifications and specific technical strategies.<br><b>Level 3 (7–10 marks):</b> Good critical evaluation covering most lifecycle stages.<br><b>Level 2 (4–6 marks):</b> Adequate evaluation covering some stages.<br><b>Level 1 (1–3 marks):</b> Basic descriptive response.<br><br><b>Lifecycle Stages & Indicative Strategies:</b><br>• <b>1. Raw material extraction:</b> Selecting sustainably sourced, renewable, or post-consumer recycled materials (e.g. bio-based polymers, recycled aluminium); reducing raw material mass via generative design.<br>• <b>2. Manufacture:</b> Designing for minimal scrap / near-net-shape processing (injection moulding, additive manufacturing); reducing embedded energy and eliminating toxic solvents/finishes.<br>• <b>3. Distribution:</b> Designing compact, flat-pack, or nested geometries to maximise shipping pallet density and minimise logistics fuel; replacing plastic packaging with biodegradable mycelium or pulp.<br>• <b>4. Use phase:</b> Maximising operational energy efficiency (low-power microcontrollers, LED lighting, high thermal insulation); extending product durability via modular, easily replaceable wear components.<br>• <b>5. Disposal / End-of-Life:</b> Design for Disassembly (DfD) using standard fasteners rather than permanent adhesives; moulding SPI polymer resin codes for rapid robotic sorting; establishing circular take-back schemes."
+    },
+    {
+      "id": "2021-autumn-02-q3",
+      "paper": "2021-autumn-02",
+      "question": "3",
+      "marks": 16,
+      "page": 6,
+      "topics": [
+        "6.1",
+        "6.3",
+        "6.4"
+      ],
+      "skills": [
+        "technical",
+        "design"
+      ],
+      "summary": "Determine technical solutions for The Snake WEC: 3:1 frequency multiplying reciprocating-to-rotary mechanism, and wireless telemetry microcontroller counter.",
+      "prompt": "An engineering company is developing a wave energy converter (WEC) to generate renewable electricity from the kinetic energy of waves on the sea. The name given to the prototype WEC is ‘The Snake’.<br><br>The Snake WEC is described on pages 4 and 5 of the Resource Booklet. The Snake is a modular product aimed at entrepreneurs who are interested in venturing into the renewable energy industry.<br><br>The design engineers have two issues to overcome:<br><b>Issue 1:</b> When on the sea, the movement of The Snake segments creates reciprocating motion of a pushrod shown in Fig. 4. A mechanical system is required to convert this input reciprocating motion into an output rotary motion to turn the generator axle and multiply the frequency by three (for each reciprocation, generator shaft rotates 3 times).<br><b>Issue 2:</b> Each prototype unit will contain a microcontroller system to record the total number of pushrod reciprocations, to be collected via wireless technology by engineers in a boat. A system diagram and a program flowchart are required, showing how an identified sensor detects pushrod reciprocations, records count, and transmits data wirelessly.<br><br>Use sketches and/or notes to determine suitable technical solutions that overcome the two issues identified.<br><br>Refer to information on pages 4 and 5 of the Resource Booklet. [16]",
+      "figures": [
+        "img/2021-autumn-02/rb-p4.jpg",
+        "img/2021-autumn-02/fig-3.jpg",
+        "img/2021-autumn-02/rb-p5.jpg",
+        "img/2021-autumn-02/fig-4.jpg",
+        "img/2021-autumn-02/ms-3-mechanism.jpg",
+        "img/2021-autumn-02/ms-3-flowchart.jpg",
+        "img/2021-autumn-02/ms-3-system.jpg"
+      ],
+      "image": "img/2021-autumn-02/q3.jpg",
+      "markscheme": "img/2021-autumn-02/ms-3.jpg",
+      "markscheme_text": "<b>Award up to 8 marks for Issue 1 and up to 8 marks for Issue 2 (Total 16 marks):</b><br><br><b>Issue 1 Breakdown (8 marks):</b><br>• <b>Reciprocating to Rotary conversion (4 marks):</b> Rack and pinion mechanism or slider-crank / scotch yoke arrangement clearly sketched and annotated; bidirectional clutch / freewheel / one-way sprag bearing mechanism to maintain unidirectional rotation.<br>• <b>3:1 Frequency Multiplication (4 marks):</b> Gear train with exact $3:1$ ratio (e.g. 60-tooth driver gear driving 20-tooth pinion, or 36T to 12T), or pulley/sprocket system with $3:1$ diameter ratio; correct gear meshing and axle bearings labelled.<br><br><b>Issue 2 Breakdown (8 marks):</b><br>• <b>Sensor & System Diagram (3 marks):</b> Identifies valid sensor (magnetic reed switch / Hall effect sensor with magnet on pushrod, optical interrupter, or limit microswitch); shows pushrod sensor inputting to microcontroller, outputting to wireless transmitter module (Bluetooth Low Energy, RF transceiver 433/868 MHz, or Wi-Fi).<br>• <b>Program Flowchart / Logic (5 marks):</b> Clear flowchart with Start block, initialising count `C = 0`, polling loop checking if sensor activated; debouncing delay/state check; incrementing counter `C = C + 1`; checking for wireless interrogation signal from boat; transmitting total count packet; looping back continually."
+    },
+    {
+      "id": "2021-autumn-02-q4a",
+      "paper": "2021-autumn-02",
+      "question": "4(a)",
+      "marks": 3,
+      "page": 11,
+      "topics": [
+        "3.1",
+        "5.2"
+      ],
+      "skills": [
+        "maths",
+        "technical"
+      ],
+      "summary": "Calculate Brinell Hardness Number (BHN) for F=10 kN, D=10 mm, Di=0.60 mm and evaluate pushrod suitability (3900-4100 MPa).",
+      "prompt": "During the development of The Snake prototype WEC described on pages 4 and 5 of the Resource Booklet, the design engineers used destructive testing techniques on materials in order to check their properties.<br><br>They chose to use the Brinell Hardness Test which is described on page 6 of the Resource Booklet.<br><br>When one material was tested, the following results were obtained:<br>• Force applied $F = 10\\text{ kN}$<br>• Indenter diameter $D = 10\\text{ mm}$<br>• Indentation diameter $D_i = 0.60\\text{ mm}$<br><br>The engineers require a material with a Brinell Hardness Number (BHN) between <b>3900 MPa</b> and <b>4100 MPa</b> for the pushrod.<br><br>Determine, by calculation, whether the material being tested is suitable for the pushrod. State <b>Yes</b> or <b>No</b> and show your working.<br><br>Refer to information on page 6 of the Resource Booklet. [3]",
+      "figures": [
+        "img/2021-autumn-02/rb-p6.jpg",
+        "img/2021-autumn-02/fig-5.jpg"
+      ],
+      "image": "img/2021-autumn-02/q4a.jpg",
+      "markscheme": "img/2021-autumn-02/ms-4a.jpg",
+      "markscheme_text": "<b>BHN Formula & Calculation (3 marks):</b><br>1. Formula from Resource Booklet:<br>$$\\text{BHN} = 102 \\times \\frac{2F}{\\pi D\\left(D - \\sqrt{D^2 - D_i^2}\\right)}$$<br>2. Substitute values ($F = 10\\text{ kN}$, $D = 10\\text{ mm}$, $D_i = 0.60\\text{ mm}$):<br>$$\\sqrt{D^2 - D_i^2} = \\sqrt{10^2 - 0.60^2} = \\sqrt{100 - 0.36} = \\sqrt{99.64} \\approx 9.98198\\text{ mm}$$<br>$$D - \\sqrt{D^2 - D_i^2} = 10 - 9.98198 = 0.018016\\text{ mm}$$<br>$$\\text{Denominator} = \\pi \\times 10 \\times 0.018016 = 0.565997$$<br>$$\\text{BHN} = 102 \\times \\frac{20}{0.565997} = 102 \\times 35.3359 = \\mathbf{3604\\text{ MPa}} \\quad (\\text{allow } 3600\\text{ to } 3605\\text{ MPa}) \\quad [2\\text{ marks}]$$<br>3. Suitability judgment: Since $3604\\text{ MPa}$ does not lie within the required range of $3900 - 4100\\text{ MPa}$, the material is <b>not suitable</b>. Answer: <b>No</b> [1 mark]"
+    },
+    {
+      "id": "2021-autumn-02-q4bi",
+      "paper": "2021-autumn-02",
+      "question": "4(b)(i)",
+      "marks": 3,
+      "page": 12,
+      "topics": [
+        "5.2"
+      ],
+      "skills": [
+        "maths"
+      ],
+      "summary": "Calculate the diameter in mm of the polymer rope given cross-sectional area of 2.84 x 10^-4 m^2.",
+      "prompt": "During use at sea, The Snake described on pages 4 and 5 of the Resource Booklet is tethered to a fixed buoy by a rope as shown in Fig. 3. The design engineers responsible for The Snake want to calculate the diameter of the polymer rope.<br><br>Data for the rope under investigation is given in Fig. 6 on page 7 of the Resource Booklet ($A = 2.84 \\times 10^{-4}\\text{ m}^2$).<br><br>Calculate the diameter in mm of the polymer rope. Give your answer to <b>1 decimal place</b> and show your working. [3]",
+      "figures": [
+        "img/2021-autumn-02/rb-p4.jpg",
+        "img/2021-autumn-02/fig-3.jpg",
+        "img/2021-autumn-02/rb-p7.jpg",
+        "img/2021-autumn-02/fig-6.jpg"
+      ],
+      "image": "img/2021-autumn-02/q4bi.jpg",
+      "markscheme": "img/2021-autumn-02/ms-4bi.jpg",
+      "markscheme_text": "<b>Diameter Calculation (3 marks):</b><br>1. Area of circular cross-section: $A = \\frac{\\pi d^2}{4} \\implies d = \\sqrt{\\frac{4A}{\\pi}}$ [1 mark]<br>2. Substitute area $A = 2.84 \\times 10^{-4}\\text{ m}^2$:<br>$$d = \\sqrt{\\frac{4 \\times 2.84 \\times 10^{-4}}{\\pi}} = \\sqrt{\\frac{0.001136}{\\pi}} = \\sqrt{0.0003616} \\approx 0.019016\\text{ m} \\quad [1\\text{ mark}]$$<br>3. Convert to millimetres: $d = 0.019016 \\times 1000 = \\mathbf{19.0\\text{ mm}}$ (to 1 d.p.) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-02-q4bii",
+      "paper": "2021-autumn-02",
+      "question": "4(b)(ii)",
+      "marks": 3,
+      "page": 12,
+      "topics": [
+        "6.2"
+      ],
+      "skills": [
+        "maths",
+        "technical"
+      ],
+      "summary": "Calculate tensile stress in N/m^2 in the polymer rope under a tensile force of 4200 N.",
+      "prompt": "Tests have been carried out to determine that the average tensile force in the polymer rope will be 4200 N.<br><br>Calculate the tensile stress (in N/m²) in the polymer rope when the tensile force is 4200 N. Give your answer in N/m² and show your working. [3]",
+      "figures": [
+        "img/2021-autumn-02/rb-p7.jpg",
+        "img/2021-autumn-02/fig-6.jpg"
+      ],
+      "image": "img/2021-autumn-02/q4bii.jpg",
+      "markscheme": "img/2021-autumn-02/ms-4bii.jpg",
+      "markscheme_text": "<b>Tensile Stress Calculation (3 marks):</b><br>1. Recall formula: $\\sigma = \\frac{F}{A}$ [1 mark]<br>2. Substitute values ($F = 4200\\text{ N}$, $A = 2.84 \\times 10^{-4}\\text{ m}^2$):<br>$$\\sigma = \\frac{4200}{2.84 \\times 10^{-4}} = \\frac{4200}{0.000284} \\quad [1\\text{ mark}]$$<br>3. Calculate stress: $\\sigma = \\mathbf{14\\,788\\,732\\text{ N/m}^2}$ (allow $1.48 \\times 10^7\\text{ N/m}^2$ or $14.79\\text{ MPa}$) [1 mark]"
+    },
+    {
+      "id": "2021-autumn-02-q4biii",
+      "paper": "2021-autumn-02",
+      "question": "4(b)(iii)",
+      "marks": 3,
+      "page": 13,
+      "topics": [
+        "6.2"
+      ],
+      "skills": [
+        "maths",
+        "technical"
+      ],
+      "summary": "Calculate the extension of the 20 m polymer rope in metres using Young's modulus E = 1.3 x 10^9 N/m^2.",
+      "prompt": "When the polymer rope is under tension it will stretch.<br><br>Calculate the extension of the polymer rope in m when the stress is at the value you calculated in part (b)(ii) ($\\sigma = 14\\,788\\,732\\text{ N/m}^2$, $L_0 = 20\\text{ m}$, $E = 1.3 \\times 10^9\\text{ N/m}^2$).<br><br>Give your answer to <b>3 decimal places</b> and show your working. [3]",
+      "figures": [
+        "img/2021-autumn-02/rb-p7.jpg",
+        "img/2021-autumn-02/fig-6.jpg"
+      ],
+      "image": "img/2021-autumn-02/q4biii.jpg",
+      "markscheme": "img/2021-autumn-02/ms-4biii.jpg",
+      "markscheme_text": "<b>Young's Modulus & Extension Steps (3 marks):</b><br>1. Recall relationships: $E = \\frac{\\text{Stress}}{\\text{Strain}} \\implies \\epsilon = \\frac{\\sigma}{E}$ [1 mark]<br>2. Calculate strain $\\epsilon$:<br>$$\\epsilon = \\frac{14\\,788\\,732}{1.3 \\times 10^9} \\approx 0.0113759 \\quad [1\\text{ mark}]$$<br>3. Calculate extension $\\Delta L = \\epsilon \\times L_0$ ($L_0 = 20\\text{ m}$):<br>$$\\Delta L = 0.0113759 \\times 20 = 0.2275\\text{ m} \\approx \\mathbf{0.228\\text{ m}} \\quad (\\text{to 3 d.p.}) \\quad [1\\text{ mark}]$$"
+    },
+    {
+      "id": "2021-autumn-02-q5",
+      "paper": "2021-autumn-02",
+      "question": "5*",
+      "marks": 14,
+      "page": 14,
+      "topics": [
+        "2.2",
+        "5.1"
+      ],
+      "skills": [
+        "design"
+      ],
+      "summary": "Critically evaluate any three factors influencing the commercial viability of The Snake WEC prototype.",
+      "prompt": "The Snake WEC described on pages 4 and 5 of the Resource Booklet is a prototype product in the development stage.<br><br>The stakeholders of The Snake are concerned about its commercial viability and have asked for an evaluation of a range of factors:<br>• how well the product performs<br>• technical difficulty of manufacture and materials selection<br>• cost and profits<br>• maintenance requirements<br>• size and appearance.<br><br>Choose <b>any three</b> factors from the list above. Critically evaluate the ways in which they influence the commercial viability of The Snake.<br><br>Use information on pages 4, 5 and 7 of the Resource Booklet. [*14]",
+      "figures": [
+        "img/2021-autumn-02/rb-p4.jpg",
+        "img/2021-autumn-02/fig-3.jpg",
+        "img/2021-autumn-02/rb-p5.jpg",
+        "img/2021-autumn-02/fig-4.jpg",
+        "img/2021-autumn-02/rb-p7.jpg"
+      ],
+      "image": "img/2021-autumn-02/q5.jpg",
+      "markscheme": "img/2021-autumn-02/ms-5.jpg",
+      "markscheme_text": "<b>Level 4 (11–14 marks):</b> Comprehensive critical evaluation of 3 chosen factors with direct, detailed references to The Snake WEC, offshore deployment realities, and commercial financial viability.<br><b>Level 3 (7–10 marks):</b> Good critical evaluation of 3 factors with clear application.<br><b>Level 2 (4–6 marks):</b> Adequate evaluation of factors with general points.<br><b>Level 1 (1–3 marks):</b> Limited descriptive response.<br><br><b>Indicative Content for Factors:</b><br>• <b>How well the product performs:</b> Electrical power generation output (kWh) depends on ocean wave frequency and wave amplitude; irregular wave cycles cause fluctuating generation requiring complex onboard power conditioning; prototype efficiency vs theoretical maximum.<br>• <b>Technical difficulty of manufacture & materials selection:</b> Marine-grade materials essential (corrosion-resistant stainless steel 316, marine bronze, UV-stabilised composite polymers, antifouling coatings); dynamic waterproof seals around reciprocating pushrods must withstand high hydrostatic pressure without leaking; large fabrication tolerances.<br>• <b>Costs and profits:</b> High capital expenditure (CapEx) for tooling, fabrication, and specialised offshore towing vessels; long return on investment (payback period) reliant on government renewable feed-in tariffs; competitive levelized cost of energy (LCOE) compared to offshore wind and solar.<br>• <b>Maintenance requirements:</b> Offshore maintenance is notoriously hazardous and weather-dependent; salt encrustation, bio-fouling (barnacles/seaweed), and tether rope fatigue wear; remote wireless telemetry helps condition monitoring to avoid catastrophic offshore failure.<br>• <b>Size and appearance:</b> Low visual profile on the horizon reduces coastal NIMBY objections compared to towering wind turbines; modular scalable length allows flexible expansion based on client budget."
     }
   ]
 }

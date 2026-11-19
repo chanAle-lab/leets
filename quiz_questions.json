@@ -780,5 +780,83 @@
     "correctIndex": 1,
     "explanation": "The slotted disc breaks the opto-switch beam, producing pulses whose interval the microcontroller can time.",
     "topic": "6"
+  },
+  {
+    "id": "quiz-2021-a01-q1",
+    "question": "In an electric screwdriver with two identical 7:1 epicyclic reduction stages, what is the overall compound gear ratio?",
+    "choices": [
+      "49:1",
+      "14:1",
+      "7:1",
+      "343:1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Compound gear ratio multiplies each consecutive stage ratio: 7 × 7 = 49:1.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2021-a01-q2",
+    "question": "Why are epicyclic (planetary) gearboxes commonly chosen for handheld power tools such as electric screwdrivers?",
+    "choices": [
+      "Co-linear input and output shafts allow a slim cylindrical body, with multiple planet gears sharing high torque loads",
+      "They are cheaper to produce than simple spur gear pairs",
+      "They eliminate the need for lubrication or ball bearings",
+      "They can only operate in one rotational direction"
+    ],
+    "correctIndex": 0,
+    "explanation": "Epicyclic gearboxes keep input and output inline and distribute tooth stress across multiple planet gears in a compact envelope.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2021-a01-q3",
+    "question": "What is the primary function of a decoupling capacitor placed across DC supply rails in an electronic motor drive circuit?",
+    "choices": [
+      "It filters motor brush electrical noise and stabilises supply voltage during transient current spikes",
+      "It converts DC voltage into AC voltage",
+      "It amplifies current delivered to the motor",
+      "It increases the motor armature resistance"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decoupling capacitors store charge to suppress rapid voltage dips and filter high-frequency brush commutation noise.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2021-a02-q1",
+    "question": "In the Brinell Hardness Test, what determines the hardness value of the tested material?",
+    "choices": [
+      "The diameter of the surface indentation left by a spherical ball under a specified static load",
+      "The rebound height of a dropped diamond hammer",
+      "The depth of penetration of a conical diamond under alternating loads",
+      "The scratch width produced by a hardened steel stylus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Brinell test presses a 10 mm spherical ball into the specimen under load F and measures the optical indentation diameter Di.",
+    "topic": "3"
+  },
+  {
+    "id": "quiz-2021-a02-q2",
+    "question": "In The Snake wave energy converter, why is a 3:1 frequency multiplier needed between pushrod and generator?",
+    "choices": [
+      "Ocean swell waves oscillate at very low frequency, so gearing is required to spin the generator at efficient speeds",
+      "To reduce mechanical wear on the pushrod seals",
+      "To prevent the generator from overheating",
+      "To convert rotational motion into linear oscillation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Wave motion is typically 0.1 to 0.5 Hz; a 3:1 speed multiplier triples rotational frequency per reciprocation for greater generator EMF.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2021-a02-q3",
+    "question": "How is the elastic extension of a 20 m polymer tether rope calculated from stress σ and Young's modulus E?",
+    "choices": [
+      "Extension = (σ / E) × original length",
+      "Extension = (σ × E) / original length",
+      "Extension = E / (σ × original length)",
+      "Extension = σ × original length"
+    ],
+    "correctIndex": 0,
+    "explanation": "Strain ε = Stress / Young's Modulus (σ / E), and total extension ΔL = ε × L0.",
+    "topic": "6"
   }
 ]

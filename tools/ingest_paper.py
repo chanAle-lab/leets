@@ -48,6 +48,45 @@ TOPIC_KEYWORDS = {
 
 GIT_PATH = r'C:\Users\Alexander\AppData\Local\GitHubDesktop\app-3.6.10\resources\app\git\cmd\git.exe'
 
+# =====================================================================
+# STANDARD SEPARATION HEURISTICS (Question Prompt vs. Resource Figure)
+# =====================================================================
+# Heuristic Standard:
+# 1. Preamble & Stimulus Figures -> 'figures': ['img/<paper_id>/fig-*.jpg']
+#    Contains: Question intro paragraph + stimulus figure/drawing/photo + "Fig. X.Y" label.
+# 2. Subquestion Prompt -> 'image': 'img/<paper_id>/q*.jpg'
+#    Contains: Subpart label (e.g. "(a)", "(b)(i)") + specific task text + answer lines/box + mark count [X].
+# =====================================================================
+
+def detect_page_boundaries(page):
+    """
+    Analyzes text blocks on a page to identify preamble figure boundaries vs question prompt boundaries.
+    """
+    blocks = page.get_text('blocks')
+    # Filter header/footer
+    valid_blocks = [b for b in blocks if b[1] > 50 and b[3] < 800 and not 'OCR' in b[4] and not 'Turn over' in b[4]]
+    valid_blocks.sort(key=lambda b: b[1])
+    
+    preamble_blocks = []
+    question_blocks = []
+    fig_boundary_y = None
+    
+    subpart_pattern = re.compile(r'^\s*(\([a-z]\)|\([i|v|x]+\)|[0-9]+\s*\([a-z]\))', re.I)
+    fig_pattern = re.compile(r'Fig\.\s*\d+(\.\d+)?', re.I)
+    
+    for b in valid_blocks:
+        text = b[4].strip()
+        if fig_boundary_y is None:
+            if subpart_pattern.search(text) and not fig_pattern.search(text):
+                fig_boundary_y = b[1]
+                question_blocks.append(b)
+            else:
+                preamble_blocks.append(b)
+        else:
+            question_blocks.append(b)
+            
+    return preamble_blocks, question_blocks, fig_boundary_y
+
 def detect_role(doc):
     t0 = doc[0].get_text()
     if 'Mark Scheme' in t0:
@@ -189,10 +228,13 @@ def verify_ingestion(repo_path, paper_id, expected_marks):
     tot = sum(q['marks'] for q in qs)
     
     missing_assets = []
+    separation_issues = []
     for q in qs:
         if 'image' in q:
             ip = os.path.join(repo_path, q['image'])
             if not os.path.exists(ip): missing_assets.append((q['id'], 'image', q['image']))
+            if q['image'] in q.get('figures', []):
+                separation_issues.append((q['id'], 'image matches figure duplicate', q['image']))
         if 'markscheme' in q:
             mp = os.path.join(repo_path, q['markscheme'])
             if not os.path.exists(mp): missing_assets.append((q['id'], 'markscheme', q['markscheme']))
@@ -208,6 +250,11 @@ def verify_ingestion(repo_path, paper_id, expected_marks):
     else:
         print(f"✓ Mark parity verified: Exactly {tot} marks.")
         
+    if separation_issues:
+        print(f"⚠️ Found {len(separation_issues)} separation duplicates where q.image matches a figure!")
+    else:
+        print(f"✓ Separation standard verified: Clean demarcation between question prompt and resources.")
+
     if missing_assets:
         print(f"⚠️ Found {len(missing_assets)} missing image assets!")
         for m in missing_assets:

@@ -516,5 +516,61 @@
     ],
     "answer": 0,
     "explanation": "Control of Substances Hazardous to Health (COSHH) mandates risk assessment, storage protocols, extraction ventilation (LEV), and exposure limits for hazardous chemicals, resins, and dusts."
+  },
+  {
+    "id": "6.1-03",
+    "topic": "6.1",
+    "category": "Triangulation & Geometry",
+    "question": "A support tie on a prosthetic arm is attached 120 mm above an elbow joint and 70 mm along a perpendicular forearm. What is the angle C formed between the tie and forearm?",
+    "options": [
+      "59.7° (≈ 60°)",
+      "30.3°",
+      "45.0°",
+      "72.5°"
+    ],
+    "answer": 0,
+    "explanation": "tan(C) = Opposite / Adjacent = 120 / 70 = 1.714. Angle C = arctan(1.714) = 59.68° ≈ 60°."
+  },
+  {
+    "id": "6.1-04",
+    "topic": "6.1",
+    "category": "Triangulation & Geometry",
+    "question": "In a prosthetic arm framework, a right-angled support triangle has legs of 120 mm and 70 mm. What is the length of the diagonal support tie to the nearest mm?",
+    "options": [
+      "139 mm",
+      "95 mm",
+      "165 mm",
+      "190 mm"
+    ],
+    "answer": 0,
+    "explanation": "By Pythagoras: y = √(120² + 70²) = √(14400 + 4900) = √19300 = 138.92 mm ≈ 139 mm."
+  },
+  {
+    "id": "6.2-03",
+    "topic": "6.2",
+    "category": "Kinematics & Mechanisms",
+    "question": "A surgical Endo-wrist forceps jaw tip opening of 15 mm is driven by a linear actuator with a 5 mm stroke. What mechanical amplification ratio must the linkage provide?",
+    "options": [
+      "3:1 movement amplification",
+      "1:3 movement reduction",
+      "2:1 movement amplification",
+      "5:1 movement amplification"
+    ],
+    "answer": 0,
+    "explanation": "Amplification ratio = Output motion / Input stroke = 15 mm / 5 mm = 3:1."
+  },
+  {
+    "id": "2.2-03",
+    "topic": "2.2",
+    "category": "Medical Robotics Innovation",
+    "question": "What is the primary clinical advantage of 1 cm diameter robotic surgical arms (e.g. da Vinci system) compared to open surgery?",
+    "options": [
+      "Minimally invasive incisions, reduced tissue trauma, lower infection risk, and faster recovery times",
+      "Completely eliminates the need for any trained surgeons in the operating theatre",
+      "Allows surgical operations to proceed without electrical power or backup generators",
+      "Replaces all medical instruments with disposable single-use plastic needles"
+    ],
+    "answer": 0,
+    "explanation": "Miniaturised keyhole robotic arms enter through small ports rather than large incisions, drastically cutting blood loss, post-operative pain, and hospital stay duration."
   }
 ]

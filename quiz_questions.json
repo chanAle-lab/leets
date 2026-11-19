@@ -1,0 +1,520 @@
+[
+  {
+    "id": "1.1-01",
+    "topic": "1.1",
+    "category": "Requirements & Contexts",
+    "question": "Why is engineering design described as inherently 'context dependent'?",
+    "options": [
+      "A solution must satisfy the specific physical, economic, and operational environment where it is deployed",
+      "Design specifications can never be changed once customer feedback is gathered",
+      "Engineers only design for indoor factory settings with controlled climate",
+      "Products are manufactured using identical materials regardless of application"
+    ],
+    "answer": 0,
+    "explanation": "Context dependency means an engineered system cannot be evaluated in isolation—it must operate reliably within its specific ambient conditions, user demographics, and economic boundaries."
+  },
+  {
+    "id": "1.2-01",
+    "topic": "1.2",
+    "category": "Anthropometrics",
+    "question": "Which anthropometric percentile range is standard practice when designing mass-market adjustable products (e.g. office seating)?",
+    "options": [
+      "5th to 95th percentile",
+      "50th percentile only",
+      "0th to 100th percentile",
+      "25th to 75th percentile"
+    ],
+    "answer": 0,
+    "explanation": "Designing between the 5th percentile female and 95th percentile male accommodates approximately 90% of the target population with adjustability."
+  },
+  {
+    "id": "1.2-02",
+    "topic": "1.2",
+    "category": "Anthropometrics",
+    "question": "When designing the clear opening height of an emergency fire exit door, which percentile should be used?",
+    "options": [
+      "95th percentile (plus clearance allowance)",
+      "5th percentile",
+      "50th percentile (average height)",
+      "10th percentile"
+    ],
+    "answer": 0,
+    "explanation": "Clearances (doorways, legroom, escape hatches) must accommodate the tallest users, so the 95th percentile (or 99th percentile) plus an extra safety clearance is required."
+  },
+  {
+    "id": "1.3-01",
+    "topic": "1.3",
+    "category": "Ergonomics",
+    "question": "What is the primary objective of ergonomic design in handheld power tool controls?",
+    "options": [
+      "Reducing physical strain, repetitive strain injury (RSI), and vibration white finger",
+      "Maximizing the cosmetic gloss finish of the outer polymer casing",
+      "Minimizing the bill-of-materials cost by eliminating rubber overmouldings",
+      "Ensuring the motor runs at maximum unloaded RPM without safety cutoffs"
+    ],
+    "answer": 0,
+    "explanation": "Ergonomics optimizes the human-machine interface to reduce user fatigue, musculoskeletal strain, and long-term industrial vibration disorders."
+  },
+  {
+    "id": "2.2-01",
+    "topic": "2.2",
+    "category": "Design Movements",
+    "question": "Which famous design tenet is most strongly associated with the Bauhaus movement (1919–1933)?",
+    "options": [
+      "Form follows function",
+      "Less is a bore",
+      "Ornamentation is the essence of structure",
+      "Design for planned obsolescence"
+    ],
+    "answer": 0,
+    "explanation": "The Bauhaus philosophy championed geometric simplicity, rational utility, and industrial mass-producibility under the principle 'Form follows function'."
+  },
+  {
+    "id": "2.3-01",
+    "topic": "2.3",
+    "category": "Design Movements",
+    "question": "What distinct characteristics defined the 1980s Memphis Design Group led by Ettore Sottsass?",
+    "options": [
+      "Vibrant clashing colours, bold asymmetrical geometric forms, and plastic laminates",
+      "Strict monochrome palettes and exposed raw cast iron structural ribs",
+      "Traditional handcrafted timber joints and natural unvarnished oak",
+      "Aerodynamic teardrop streamlining in polished chrome aluminium"
+    ],
+    "answer": 0,
+    "explanation": "Memphis rebelled against strict modernism with playful pop-art aesthetics, bright laminate surfaces, asymmetrical silhouettes, and flamboyant motifs."
+  },
+  {
+    "id": "3.1-01",
+    "topic": "3.1",
+    "category": "Sustainability & LCA",
+    "question": "What four main lifecycle stages are assessed in a formal Life Cycle Assessment (LCA) (ISO 14040)?",
+    "options": [
+      "Raw material extraction, Manufacture, In-service use, and End-of-life disposal",
+      "Marketing, Distribution, Retail sales, and Customer warranty",
+      "Ideation, 3D CAD modeling, Prototyping, and Mass injection moulding",
+      "Patent filing, Trademark registration, Production setup, and Breakeven"
+    ],
+    "answer": 0,
+    "explanation": "An LCA quantifies environmental impacts across 'Cradle to Grave': raw material harvesting, processing/assembly, operational energy/emissions, and ultimate disposal/recycling."
+  },
+  {
+    "id": "3.3-01",
+    "topic": "3.3",
+    "category": "DFMA",
+    "question": "What is the primary goal of Design for Manufacture and Assembly (DFMA)?",
+    "options": [
+      "Minimizing part count, standardising fasteners, and streamlining assembly paths",
+      "Increasing the complexity of sub-assemblies to prevent competitor cloning",
+      "Replacing all modular plastic clips with permanent multi-part adhesive joints",
+      "Ensuring that parts can only be assembled using specialised manual hand tools"
+    ],
+    "answer": 0,
+    "explanation": "DFMA systematically simplifies product architectures, eliminates redundant components, incorporates self-locating snap-fits, and slashes manufacturing cycle times."
+  },
+  {
+    "id": "3.5-01",
+    "topic": "3.5",
+    "category": "Intellectual Property",
+    "question": "Which form of legal intellectual property protects the novel functional working mechanism of an invention for up to 20 years?",
+    "options": [
+      "Patent",
+      "Registered Design",
+      "Trademark",
+      "Copyright"
+    ],
+    "answer": 0,
+    "explanation": "Patents protect new, inventive technical and functional inventions for up to 20 years. Registered designs protect visual appearance and aesthetics."
+  },
+  {
+    "id": "4.1-01",
+    "topic": "4.1",
+    "category": "Technical Drawing",
+    "question": "In BS 8888 3rd angle orthographic projection, where is the Plan (top) view positioned relative to the Front Elevation?",
+    "options": [
+      "Directly above the Front Elevation",
+      "Directly below the Front Elevation",
+      "To the far right of the End Elevation",
+      "Superimposed at a 45-degree isometric tilt"
+    ],
+    "answer": 0,
+    "explanation": "In 3rd angle projection (standard in engineering across the UK and US), the Plan view is placed directly above the Front Elevation, and the Right View is on the right."
+  },
+  {
+    "id": "4.2-01",
+    "topic": "4.2",
+    "category": "CAD & Simulation",
+    "question": "What engineering simulation tool subdivides a 3D CAD mesh into discrete elements to calculate mechanical stress concentrations?",
+    "options": [
+      "Finite Element Analysis (FEA)",
+      "Computational Fluid Dynamics (CFD)",
+      "Rapid Prototyping Slicer (CAM)",
+      "Optical Character Recognition (OCR)"
+    ],
+    "answer": 0,
+    "explanation": "FEA breaks down a continuous component geometry into a finite mesh of nodes and elements to predict von Mises stress, strain, and deformation under applied loads."
+  },
+  {
+    "id": "5.1-01",
+    "topic": "5.1",
+    "category": "Materials: Metals",
+    "question": "Which element is added to low-carbon steel in quantities over 10.5% to form a self-healing chromium oxide passive film against corrosion?",
+    "options": [
+      "Chromium (creating Stainless Steel)",
+      "Lead (for machinability)",
+      "Silicon (for electrical laminations)",
+      "Zinc (for hot-dip galvanising)"
+    ],
+    "answer": 0,
+    "explanation": "Chromium (>10.5%) reacts with atmospheric oxygen to form an invisible, self-healing chromium oxide (Cr2O3) layer that prevents rust in stainless steels."
+  },
+  {
+    "id": "5.2-01",
+    "topic": "5.2",
+    "category": "Materials: Polymers",
+    "question": "Why can thermoplastic polymers be repeatedly melted and reshaped, whereas thermosetting polymers cannot?",
+    "options": [
+      "Thermoplastics have linear chains held by weak van der Waals forces, while thermosets form permanent covalent cross-links",
+      "Thermoplastics contain metallic bonding while thermosets contain purely ionic lattices",
+      "Thermosets have lower molecular weights that decompose at room temperature",
+      "Thermoplastics are formed through condensation polymerization that reverses on reheating"
+    ],
+    "answer": 0,
+    "explanation": "Thermoplastic polymer chains can slide past each other when thermal energy overcomes weak intermolecular bonds. Thermosets form irreversible covalent cross-links during curing."
+  },
+  {
+    "id": "5.3-01",
+    "topic": "5.3",
+    "category": "Smart Materials",
+    "question": "What unique physical behaviour makes Nitinol (Nickel-Titanium alloy) a shape memory alloy (SMA)?",
+    "options": [
+      "It can be deformed when cold and return to its pre-programmed shape when heated through its martensite-to-austenite transition",
+      "It changes colour irreversibly when exposed to ultraviolet radiation",
+      "It generates a high voltage pulse whenever it experiences mechanical compression",
+      "It alters its magnetic polarity when submersed in water"
+    ],
+    "answer": 0,
+    "explanation": "Nitinol transitions between a low-temperature ductile martensitic phase and a high-temperature rigid austenitic phase, restoring its manufactured geometry."
+  },
+  {
+    "id": "5.3-02",
+    "topic": "5.3",
+    "category": "Materials Testing",
+    "question": "Which standard mechanical test measures the toughness and impact energy absorbed by a notched specimen before fracturing?",
+    "options": [
+      "Charpy / Izod impact test",
+      "Brinell ball hardness test",
+      "Tensile yield test",
+      "Vickers diamond pyramid test"
+    ],
+    "answer": 0,
+    "explanation": "The Charpy impact test swings a weighted pendulum to strike a notched specimen, measuring the energy absorbed in Joules to quantify notch toughness."
+  },
+  {
+    "id": "6.1-01",
+    "topic": "6.1",
+    "category": "Structural Mechanics",
+    "question": "Why is triangulation fundamental in structural frameworks and roof trusses?",
+    "options": [
+      "Triangles are geometrically rigid and cannot deform without changing the physical length of their members",
+      "Triangular members are cheaper to extrude than rectangular hollow sections",
+      "Triangles distribute all external forces exclusively as pure shear stress",
+      "Triangular trusses eliminate the need for gusset plates and welded joints"
+    ],
+    "answer": 0,
+    "explanation": "A triangle is the only geometric polygon whose shape is completely locked by the lengths of its three sides; it resists pin-joint distortion under coplanar loads."
+  },
+  {
+    "id": "6.2-01",
+    "topic": "6.2",
+    "category": "Mechanisms & Gears",
+    "question": "If a drive pinion with 15 teeth turns at 1200 rpm and drives a spur gear with 60 teeth, what is the output speed and gear ratio?",
+    "options": [
+      "300 rpm (Gear Ratio 4:1 reduction)",
+      "4800 rpm (Gear Ratio 1:4 overdrive)",
+      "600 rpm (Gear Ratio 2:1 reduction)",
+      "1200 rpm (Gear Ratio 1:1 idler)"
+    ],
+    "answer": 0,
+    "explanation": "Gear Ratio = Driven / Driver = 60 / 15 = 4:1. Output Speed = Input / Ratio = 1200 / 4 = 300 rpm."
+  },
+  {
+    "id": "6.2-02",
+    "topic": "6.2",
+    "category": "Mechanisms & Gears",
+    "question": "What key engineering advantage does a worm and wheel gear set provide over spur gears?",
+    "options": [
+      "Massive speed reduction in a compact 90-degree axis and inherent irreversible self-locking",
+      "Near 100% mechanical efficiency with zero frictional thermal dissipation",
+      "Ability to connect two parallel shafts with zero backlash at high RPM",
+      "Reversible overdrive capability allowing the wheel to effortlessly spin the worm"
+    ],
+    "answer": 0,
+    "explanation": "Worm drives offer high gear reductions (e.g. 50:1) in a single stage and cannot be back-driven by the load (self-locking), making them ideal for hoists and winches."
+  },
+  {
+    "id": "6.3-01",
+    "topic": "6.3",
+    "category": "Calculations: Stress & Strain",
+    "question": "What is the engineering equation for tensile stress (σ)?",
+    "options": [
+      "σ = F / A (Force divided by Cross-Sectional Area)",
+      "σ = ΔL / L₀ (Extension divided by Original Length)",
+      "σ = E × ε² (Young's Modulus times Strain squared)",
+      "σ = F × d (Force multiplied by perpendicular distance)"
+    ],
+    "answer": 0,
+    "explanation": "Tensile stress σ is defined as internal resistive force per unit cross-sectional area (σ = F / A), measured in N/m² or Pascals (Pa / MPa)."
+  },
+  {
+    "id": "6.3-02",
+    "topic": "6.3",
+    "category": "Calculations: Young's Modulus",
+    "question": "How is Young's Modulus (E) defined in the linear elastic region of a material stress-strain curve?",
+    "options": [
+      "E = σ / ε (Tensile Stress divided by Tensile Strain)",
+      "E = F × ΔL (Force multiplied by Extension)",
+      "E = ε / σ (Tensile Strain divided by Tensile Stress)",
+      "E = Mass × Acceleration due to gravity"
+    ],
+    "answer": 0,
+    "explanation": "Young's Modulus E = σ / ε represents the gradient of the initial linear elastic Hookean region, measuring the fundamental tensile stiffness of the material."
+  },
+  {
+    "id": "6.4-01",
+    "topic": "6.4",
+    "category": "Electronics & Calculations",
+    "question": "In a potential divider with Vin = 12 V, R1 = 8 kΩ, and R2 = 4 kΩ (where Vout is taken across R2), what is Vout?",
+    "options": [
+      "4.0 V",
+      "8.0 V",
+      "6.0 V",
+      "2.0 V"
+    ],
+    "answer": 0,
+    "explanation": "Vout = Vin × [ R2 / (R1 + R2) ] = 12 × [ 4000 / (8000 + 4000) ] = 12 × (4 / 12) = 4.0 V."
+  },
+  {
+    "id": "6.4-02",
+    "topic": "6.4",
+    "category": "Electronics: Sensors",
+    "question": "How does the electrical resistance of an NTC (Negative Temperature Coefficient) thermistor change as ambient temperature rises?",
+    "options": [
+      "Resistance decreases non-linearly",
+      "Resistance increases linearly",
+      "Resistance remains completely constant",
+      "Resistance drops instantly to zero like a superconductor"
+    ],
+    "answer": 0,
+    "explanation": "An NTC thermistor's semiconductor lattice releases more charge carriers as temperature increases, causing its electrical resistance to drop."
+  },
+  {
+    "id": "6.5-01",
+    "topic": "6.5",
+    "category": "Microcontrollers & ADC",
+    "question": "A microcontroller uses a 10-bit Analogue-to-Digital Converter (ADC) with a 5.0 V reference. What is the digital integer reading for an analogue input of 2.5 V?",
+    "options": [
+      "511 or 512 (half of 1023)",
+      "256",
+      "1023",
+      "128"
+    ],
+    "answer": 0,
+    "explanation": "A 10-bit ADC provides 2^10 = 1024 discrete steps (0 to 1023). An input voltage of exactly half scale (2.5 V / 5.0 V = 0.5) corresponds to 0.5 × 1023 = 511.5 (~511 or 512)."
+  },
+  {
+    "id": "6.5-02",
+    "topic": "6.5",
+    "category": "Microcontrollers & PWM",
+    "question": "What is the function of Pulse Width Modulation (PWM) in controlling DC motor speed?",
+    "options": [
+      "Rapidly switching supply voltage on and off and varying the duty cycle to alter average effective voltage without torque loss",
+      "Stepping down DC voltage into pure 50 Hz sinusoidal alternating current",
+      "Mechanically shifting the gear engagement using internal solenoids",
+      "Reversing the polarity across the brushes at high frequency"
+    ],
+    "answer": 0,
+    "explanation": "PWM pulses full supply voltage at high frequency; by modulating the high-time percentage (duty cycle), the average power delivered to the motor armature is smoothly adjusted."
+  },
+  {
+    "id": "7.1-01",
+    "topic": "7.1",
+    "category": "Machining: Turning",
+    "question": "Which lathe operation moves the cutting tool radially across the end of a rotating cylindrical workpiece to produce a flat perpendicular end face?",
+    "options": [
+      "Facing",
+      "Parallel turning",
+      "Parting off",
+      "Knurling"
+    ],
+    "answer": 0,
+    "explanation": "Facing feeds the tool across the rotational axis, establishing a true, flat datum face perpendicular to the spindle center line."
+  },
+  {
+    "id": "7.2-01",
+    "topic": "7.2",
+    "category": "Machining: Milling",
+    "question": "In CNC milling, what distinguishes 'Climb Milling' from 'Conventional Milling'?",
+    "options": [
+      "The cutter rotates in the direction of table feed, producing chips of maximum thickness at tooth entry and superior surface finish",
+      "The cutter moves strictly vertically along the Z-axis without XY planar motion",
+      "The workpiece rotates against a stationary single-point HSS lathe tool",
+      "Coolant is omitted to allow thermal softening of the swarf"
+    ],
+    "answer": 0,
+    "explanation": "In climb milling (down milling), the cutter enters the work at maximum chip thickness and leaves at zero, reducing tool wear, work hardening, and surface chatter on rigid CNC machines."
+  },
+  {
+    "id": "7.3-01",
+    "topic": "7.3",
+    "category": "Manufacturing: Moulding",
+    "question": "Why must injection moulded components incorporate a 'draft angle' on vertical interior and exterior walls?",
+    "options": [
+      "To allow the solidified plastic part to cleanly release from the mould cavity without scuffing or sticking during ejection",
+      "To facilitate maximum turbulence during molten polymer injection",
+      "To reduce the clamping tonnage required by the hydraulic mould press",
+      "To prevent internal air entrapment from causing sink marks on thick ribs"
+    ],
+    "answer": 0,
+    "explanation": "Draft angles (typically 1° to 2° per side) ensure that as soon as the mould halves separate and ejector pins fire, the part immediately breaks contact with tool walls without friction drag."
+  },
+  {
+    "id": "7.3-02",
+    "topic": "7.3",
+    "category": "Manufacturing: Casting",
+    "question": "Which casting process forces molten non-ferrous metal under immense hydraulic pressure into hardened reusable steel tool steel dies?",
+    "options": [
+      "High-Pressure Die Casting",
+      "Sand Casting",
+      "Investment (lost-wax) Casting",
+      "Slip Casting"
+    ],
+    "answer": 0,
+    "explanation": "Die casting injects molten alloys (zinc, aluminium, magnesium) at pressures up to 100 MPa into precision steel tooling, yielding high dimensional accuracy and thin wall sections."
+  },
+  {
+    "id": "7.3-03",
+    "topic": "7.3",
+    "category": "Manufacturing: 3D Printing",
+    "question": "Which additive manufacturing process fuses powdered polymer or metal granules layer-by-layer using a targeted high-powered laser, requiring no support structures?",
+    "options": [
+      "Selective Laser Sintering (SLS)",
+      "Fused Deposition Modeling (FDM)",
+      "Stereolithography (SLA)",
+      "Vacuum Casting"
+    ],
+    "answer": 0,
+    "explanation": "SLS uses a CO2 laser to fuse powder particles. The surrounding unsintered loose powder bed supports overhangs and complex internal channels without disposable support geometry."
+  },
+  {
+    "id": "7.4-01",
+    "topic": "7.4",
+    "category": "Joining: Welding",
+    "question": "What is the key difference between TIG (Tungsten Inert Gas) welding and MIG (Metal Inert Gas) welding?",
+    "options": [
+      "TIG uses a non-consumable tungsten electrode and manual filler rod; MIG uses a continuous automatically fed consumable wire electrode",
+      "TIG requires no shielding gas, while MIG requires pure acetylene gas",
+      "TIG operates exclusively on alternating current for mild steel only",
+      "MIG can only join thermoplastics while TIG can only join cast iron"
+    ],
+    "answer": 0,
+    "explanation": "TIG employs a non-consumable tungsten electrode under argon gas for precise, clean welds on aluminium and stainless steel. MIG feeds consumable filler wire on a motorized spool for rapid production."
+  },
+  {
+    "id": "7.5-01",
+    "topic": "7.5",
+    "category": "Quality Assurance",
+    "question": "What is the fundamental distinction between Quality Control (QC) and Quality Assurance (QA)?",
+    "options": [
+      "QC is product-oriented (inspecting finished goods for defects); QA is process-oriented (preventing defects through systemic protocols)",
+      "QC is governed by ISO 9001 while QA is an unregulated internal company guideline",
+      "QC eliminates manufacturing waste; QA only measures financial accounting overheads",
+      "QC is performed solely by robots while QA is performed solely by manual line operators"
+    ],
+    "answer": 0,
+    "explanation": "Quality Control (QC) inspects and tests products at the end of the line to catch non-conformances. Quality Assurance (QA) establishes standardized procedures, calibration, and audits to prevent defects from occurring."
+  },
+  {
+    "id": "7.5-02",
+    "topic": "7.5",
+    "category": "Lean Manufacturing",
+    "question": "What is the primary operational principle of Just-in-Time (JIT) production and Kanban signaling?",
+    "options": [
+      "Components and materials are pulled into the production line only when required by downstream demand, minimizing inventory holding costs",
+      "Warehouses are stocked with massive buffer inventory batches to hedge against all supplier delays",
+      "Production machinery operates continuously at 100% capacity irrespective of customer orders",
+      "Finished goods are discounted immediately to clear factory floor space"
+    ],
+    "answer": 0,
+    "explanation": "JIT is a demand-pull manufacturing system that eliminates the waste (muda) of excess inventory, work-in-progress holding costs, and warehouse footprint."
+  },
+  {
+    "id": "8.1-01",
+    "topic": "8.1",
+    "category": "Testing & NDT",
+    "question": "What is the primary advantage of Non-Destructive Testing (NDT) over destructive testing in quality inspection?",
+    "options": [
+      "NDT inspects 100% of flight-critical production parts for hidden flaws without damaging their functional integrity",
+      "NDT is guaranteed to take less than one second per test cycle",
+      "NDT eliminates the need for trained quality engineers and optical sensors",
+      "NDT permanently work-hardens the surface of the component being inspected"
+    ],
+    "answer": 0,
+    "explanation": "Destructive testing destroys the test specimen (coupon testing). NDT (ultrasonic, eddy current, X-ray) allows the actual production parts to be safely tested and then placed into service."
+  },
+  {
+    "id": "8.2-01",
+    "topic": "8.2",
+    "category": "Testing & NDT",
+    "question": "Which NDT method uses high-frequency acoustic waves directed through a couplant gel into a metal casting to reveal internal voids and cracks?",
+    "options": [
+      "Ultrasonic flaw detection",
+      "Dye penetrant inspection",
+      "Vickers micro-hardness indentation",
+      "Brinell optical ball test"
+    ],
+    "answer": 0,
+    "explanation": "Ultrasonic testing transmits transducer pulses into the material; echo reflections from internal flaws or the back wall indicate exact defect depth and size."
+  },
+  {
+    "id": "8.3-01",
+    "topic": "8.3",
+    "category": "Viability & Economics",
+    "question": "If high-pressure injection moulding tooling costs £60,000 to manufacture and the variable cost per plastic casing is £2.00, what is the unit production cost at 120,000 units?",
+    "options": [
+      "£2.50 per unit",
+      "£0.50 per unit",
+      "£3.00 per unit",
+      "£1.50 per unit"
+    ],
+    "answer": 0,
+    "explanation": "Tooling amortization per unit = £60,000 / 120,000 = £0.50. Total unit cost = Variable cost + Amortized tooling = £2.00 + £0.50 = £2.50."
+  },
+  {
+    "id": "9.1-01",
+    "topic": "9.1",
+    "category": "Health & Safety",
+    "question": "According to the universal Hierarchy of Hazard Control, which control measure is the MOST effective and should be prioritized first?",
+    "options": [
+      "Elimination (physically removing the hazard at source)",
+      "Personal Protective Equipment (PPE) (e.g. safety goggles)",
+      "Administrative controls (e.g. warning signs and manuals)",
+      "Engineering controls (e.g. interlocking acoustic guards)"
+    ],
+    "answer": 0,
+    "explanation": "The hierarchy ranks: 1. Elimination (most effective), 2. Substitution, 3. Engineering controls, 4. Administrative controls, 5. PPE (least reliable, last line of defense)."
+  },
+  {
+    "id": "9.2-01",
+    "topic": "9.2",
+    "category": "Health & Safety: Regulations",
+    "question": "What is the primary statutory purpose of the UK COSHH 2002 regulations in school and industrial engineering workshops?",
+    "options": [
+      "Protecting workers and students against health risks arising from exposure to hazardous chemicals, fumes, dusts, and solvents",
+      "Regulating the minimum speed of cutting tools on manual lathe spindles",
+      "Enforcing copyright compliance for 3D CAD parametric software licenses",
+      "Standardising the metric thread pitch of machine screws across European suppliers"
+    ],
+    "answer": 0,
+    "explanation": "Control of Substances Hazardous to Health (COSHH) mandates risk assessment, storage protocols, extraction ventilation (LEV), and exposure limits for hazardous chemicals, resins, and dusts."
+  }
+]

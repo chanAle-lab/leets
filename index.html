@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
@@ -1086,6 +1086,990 @@ footer {
   .split-pane { height: 45vh; }
   .flashcard-box { padding: 20px; }
 }
+
+/* ========================================================
+   TEACHER'S HUB & CLASSROOM GENERATORS (CSS)
+   ======================================================== */
+   Teacher's Hub & Classroom Generators
+   ======================================================== */
+.teacher-hub-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.teacher-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+.teacher-nav-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink-secondary);
+  border-radius: var(--radius);
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.teacher-nav-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--ink);
+}
+.teacher-nav-btn.active {
+  background: var(--ink);
+  color: var(--surface);
+  border-color: var(--ink);
+}
+
+.teacher-hero-header {
+  margin-bottom: 4px;
+}
+.teacher-hero-title {
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.teacher-hero-desc {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Gateway Cards */
+.teacher-gateway-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.teacher-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.teacher-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+.teacher-card-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.teacher-card-title {
+  margin: 0 0 8px;
+  font-size: 1.22rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+}
+.teacher-card-desc {
+  font-size: 0.88rem;
+  color: var(--ink-secondary);
+  line-height: 1.55;
+  margin: 0 0 16px;
+}
+.teacher-card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.teacher-card-features li {
+  font-size: 0.82rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.teacher-card-features li::before {
+  content: "â€¢";
+  color: var(--ink);
+  font-weight: bold;
+}
+.btn-gateway {
+  background: var(--ink);
+  color: var(--surface);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  text-align: center;
+  width: 100%;
+}
+.btn-gateway:hover {
+  opacity: 0.88;
+}
+
+/* Preset Cards */
+.teacher-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 8px 0 12px;
+  color: var(--ink);
+}
+.teacher-presets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+}
+.preset-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  text-align: left;
+}
+.preset-card:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+.preset-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ink);
+}
+.preset-sub {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0;
+}
+.preset-action {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  margin-top: 4px;
+}
+
+
+/* ========================================================
+   GEOLLION: DEEP EARTH TRIVIA GAME STYLES (Krillion-inspired)
+   ======================================================== */
+.geollion-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.geollion-banner {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.08) 0%, rgba(245, 158, 11, 0.08) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.geollion-banner-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.geollion-banner-desc {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  max-width: 660px;
+  margin-top: 4px;
+  line-height: 1.45;
+}
+
+/* Earth Depth Meter */
+.geollion-meter-card {
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.geollion-meter-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.geollion-meter-bar {
+  display: flex;
+  width: 100%;
+  height: 22px;
+  border-radius: 11px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+.geollion-meter-seg {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.geollion-meter-seg.active-tier {
+  filter: brightness(1.35);
+  box-shadow: inset 0 0 6px #fff;
+  transform: scaleY(1.15);
+  z-index: 2;
+}
+
+/* Stage Box */
+.geollion-stage {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.geollion-cat-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  color: var(--ink-secondary);
+}
+.geollion-prompt-text {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.25;
+  margin: 0;
+  max-width: 740px;
+}
+.geollion-prompt-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-top: -6px;
+}
+.geollion-input-wrap {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 580px;
+  margin-top: 10px;
+}
+.geollion-input {
+  flex: 1;
+  padding: 13px 18px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.geollion-input:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+.btn-geollion-drill {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 13px 26px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-geollion-drill:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+.btn-geollion-skip {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 7px 16px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  margin-top: 6px;
+}
+.btn-geollion-skip:hover {
+  color: var(--ink);
+  background: var(--surface-hover);
+}
+
+/* Reveal styling */
+.geollion-reveal-box {
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  animation: geollionPop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes geollionPop {
+  0% { transform: scale(0.92); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.geollion-tier-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 8px 22px;
+  border-radius: 30px;
+}
+.geollion-depth-callout {
+  font-size: 2.3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.geollion-all-tiers-box {
+  width: 100%;
+  max-width: 820px;
+  text-align: left;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.geollion-tier-header {
+  padding: 10px 14px;
+  background: var(--surface-hover);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
+}
+.geollion-tier-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.86rem;
+}
+.geollion-tier-row:last-child {
+  border-bottom: none;
+}
+.geollion-tier-row.hit-tier {
+  background: rgba(220, 38, 38, 0.09);
+  font-weight: 700;
+}
+.geollion-tier-label {
+  width: 140px;
+  flex-shrink: 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.geollion-tier-items {
+  color: var(--ink-secondary);
+  line-height: 1.45;
+}
+
+/* Quiz Generator UI */
+.quiz-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.quiz-config-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  background: var(--surface-hover);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.quiz-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.quiz-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+.quiz-field select, .quiz-field input[type="text"] {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+/* Live Quiz */
+.quiz-live-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+.quiz-live-progress {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.quiz-timer-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+}
+.quiz-timer-box.urgent {
+  color: #dc2626;
+  border-color: #f87171;
+  background: rgba(239, 68, 68, 0.08);
+  animation: pulseTimer 1s infinite alternate;
+}
+@keyframes pulseTimer {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.quiz-scoreboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.team-score-card {
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.team-score-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.team-score-num {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink);
+  min-width: 32px;
+  text-align: center;
+}
+.btn-score-adjust {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+.btn-score-adjust:hover {
+  background: var(--border);
+}
+
+.quiz-stage {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.quiz-q-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.quiz-q-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 8px 0 16px;
+  color: var(--ink);
+}
+.quiz-img-box {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #ffffff;
+  padding: 8px;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+.quiz-img-box img {
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+/* Multiple choice */
+.quiz-mc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.quiz-mc-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  text-align: left;
+  font-family: inherit;
+  font-size: 0.92rem;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.quiz-mc-btn:hover:not(:disabled) {
+  border-color: var(--border-strong);
+  background: var(--surface-hover);
+}
+.quiz-mc-btn.correct {
+  border-color: #16a34a !important;
+  background: rgba(22, 163, 74, 0.1) !important;
+  color: #15803d !important;
+  font-weight: 600;
+}
+.quiz-mc-btn.wrong {
+  border-color: #dc2626 !important;
+  background: rgba(239, 68, 68, 0.08) !important;
+  color: #b91c1c !important;
+}
+.mc-letter {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--muted);
+  width: 20px;
+}
+
+/* Reveal Mode */
+.quiz-reveal-box {
+  background: var(--surface-hover);
+  border-left: 3px solid var(--ink);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  animation: fadeInAns 0.15s ease-out;
+}
+.quiz-reveal-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.quiz-reveal-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.quiz-scoring-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+/* Quiz End Summary */
+.quiz-summary-box {
+  text-align: center;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.quiz-winner-badge {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.quiz-result-score {
+  font-size: 1.05rem;
+  color: var(--ink-secondary);
+}
+
+/* ========================================================
+   Worksheet & Assessment Generator UI
+   ======================================================== */
+.ws-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ws-controls-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ws-controls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+.ws-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ws-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+.ws-field select, .ws-field input[type="text"], .ws-field input[type="number"] {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+.ws-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.ws-export-btns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Live Paper Preview */
+.ws-paper-preview {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.ws-candidate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+.ws-candidate-table td {
+  border: 1px solid var(--border-strong);
+  padding: 8px 12px;
+}
+.ws-exam-instructions {
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  color: var(--ink-secondary);
+  margin-bottom: 24px;
+}
+.ws-q-card {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  position: relative;
+}
+.ws-q-card:last-child {
+  border-bottom: none;
+}
+.ws-q-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ws-q-number {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.ws-q-actions {
+  display: flex;
+  gap: 6px;
+}
+.ws-q-lines {
+  margin-top: 14px;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 24px,
+    var(--border) 24px,
+    var(--border) 25px
+  );
+  min-height: calc(var(--lines, 4) * 25px);
+  border-top: 1px solid var(--border);
+}
+
+.print-candidate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12pt;
+  font-size: 9pt;
+}
+.print-candidate-table td {
+  border: 1pt solid #333;
+  padding: 5pt 8pt;
+}
+.print-lines-box {
+  margin-top: 8pt;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 20pt,
+    #ccc 20pt,
+    #ccc 21pt
+  ) !important;
+  border-top: 1pt solid #ccc;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+  .teacher-gateway-grid { grid-template-columns: 1fr; }
+  .quiz-mc-grid { grid-template-columns: 1fr; }
+  .quiz-scoreboard-grid { grid-template-columns: 1fr; }
+  .ws-paper-preview { padding: 18px 16px; }
+}
+
+/* ========================================================
+   Print & PDF Export Stylesheet (A4 Layout)
+   ======================================================== */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-size: 10pt !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* When printing custom question pack */
+  body.is-printing-pack #lock-screen,
+  body.is-printing-pack #app-root,
+  body.is-printing-pack .modal-overlay,
+  body.is-printing-pack .toast,
+  body.is-printing-pack .selection-dock {
+    display: none !important;
+  }
+
+  #print-container {
+    display: none;
+  }
+
+  body.is-printing-pack #print-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Default print cleanup when printing normal page */
+  body:not(.is-printing-pack) .site-header,
+  body:not(.is-printing-pack) .filter-panel,
+  body:not(.is-printing-pack) .status-bar,
+  body:not(.is-printing-pack) .selection-dock,
+  body:not(.is-printing-pack) .q-actions,
+  body:not(.is-printing-pack) .q-footer,
+  body:not(.is-printing-pack) .btn-compare-link,
+  body:not(.is-printing-pack) .sheet-topic-bar,
+  body:not(.is-printing-pack) .flashcard-toolbar,
+  body:not(.is-printing-pack) .flashcard-footer-nav,
+  body:not(.is-printing-pack) .flashcard-shortcuts-tip,
+  body:not(.is-printing-pack) .modal-overlay,
+  body:not(.is-printing-pack) .toast,
+  body:not(.is-printing-pack) #lock-screen,
+  body:not(.is-printing-pack) .btn-minimal,
+  body:not(.is-printing-pack) .q-select-chk-label,
+  body:not(.is-printing-pack) footer {
+    display: none !important;
+  }
+
+  body:not(.is-printing-pack) .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  body:not(.is-printing-pack) .sheet-card {
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  body:not(.is-printing-pack) .sheet-section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Clean Cropping-Only Print Mode: Remove all banners, headers, dividers and meta */
+  .print-pack-head,
+  .print-pack-footer,
+  .print-pack-q-head,
+  .print-pack-q-citation,
+  .print-pack-q-summary,
+  .print-pack-fig-label,
+  .print-pack-ms-title {
+    display: none !important;
+  }
+
+  .print-pack-list {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-pack-q-item {
+    page-break-inside: auto;
+    break-inside: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .print-pack-img-block {
+    text-align: center;
+    margin: 0 auto !important;
+    padding: 6mm 8mm !important;
+    box-sizing: border-box !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    width: 100% !important;
+  }
+
+  .print-pack-img-block img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 280mm !important;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .print-pack-ms-block {
+    margin: 6pt 0 0 0 !important;
+    padding: 0 !important;
+    border-top: none !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1128,6 +2112,7 @@ footer {
         <button class="tab-link" data-view="cards" role="tab" aria-selected="false">Questions</button>
         <button class="tab-link" data-view="practice" role="tab" aria-selected="false">Practice</button>
         <button class="tab-link" data-view="cheatsheets" role="tab" aria-selected="false">Cheatsheets</button>
+        <button class="tab-link" data-view="teachers" role="tab" aria-selected="false">Teacher's Hub</button>
       </nav>
 
       <div class="header-right">
@@ -1467,6 +2452,7 @@ let practiceState = { topic: '', status: '', idx: 0, revealed: false };
 let activeSheetTopic = '1.1';
 
 let state = {
+  teacherTab: 'hub',
   view: 'strata',
   level: '',
   topic: '',
@@ -1506,6 +2492,8 @@ if (isAuthorized()) {
 
 function loadQuestionBank() {
   if (D) return;
+  fetch('quiz_questions.json').then(r => r.json()).then(q => { if (q && q.length) QUIZ_BANK = q; }).catch(() => {});
+  fetch('enginillion_prompts.json').then(r => r.json()).then(ep => { if (ep && ep.length) { ENGINILLION_PROMPTS = ep; GEOLLION_PROMPTS = ep; } }).catch(() => {});
   fetch('cheatsheets.json').then(r => r.json()).then(c => { CHEATS = c; buildFlashcards(); }).catch(() => {});
   fetch('flashcards.json').then(r => r.json()).then(fc => { FLASHCARDS = fc; }).catch(() => {});
   fetch('questions.json')
@@ -1652,6 +2640,7 @@ function syncViewButtons() {
 function fromHash() {
   const p = new URLSearchParams(location.hash.slice(1));
   state.view = p.get('view') || state.view || 'strata';
+  state.teacherTab = p.get('tab') || state.teacherTab || 'hub';
   state.level = p.get('level') || '';
   state.topic = p.get('topic') || '';
   state.skill = p.get('skill') || '';
@@ -1665,6 +2654,7 @@ function fromHash() {
 function toHash() {
   const p = new URLSearchParams();
   if (state.view && state.view !== 'strata') p.set('view', state.view);
+  if (state.view === 'teachers' && state.teacherTab && state.teacherTab !== 'hub') p.set('tab', state.teacherTab);
   ['level','topic','skill','year','min','status','q','pick'].forEach(k => {
     if (state[k]) p.set(k, state[k]);
   });
@@ -1744,6 +2734,10 @@ function render() {
     if (filterPanel) filterPanel.style.display = 'none';
     if (statusBar) statusBar.style.display = 'none';
     renderFlashcardPractice();
+  } else if (state.view === 'teachers') {
+    if (filterPanel) filterPanel.style.display = 'none';
+    if (statusBar) statusBar.style.display = 'none';
+    renderTeachersHub();
   } else {
     if (filterPanel) filterPanel.style.display = '';
     if (statusBar) statusBar.style.display = '';
@@ -2404,6 +3398,2861 @@ function renderCheatsheets() {
   `;
 }
 
+
+/* ========================================================
+   TEACHER'S HUB & CLASSROOM GENERATORS (LEETS)
+   ======================================================== */
+const QuizAudio = {
+  ctx: null,
+  enabled: true,
+  init() {
+    if (!this.ctx && (window.AudioContext || window.webkitAudioContext)) {
+      this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (this.ctx && this.ctx.state === 'suspended') {
+      this.ctx.resume();
+    }
+  },
+  play(fn) {
+    if (!this.enabled) return;
+    try {
+      this.init();
+      if (this.ctx) fn(this.ctx);
+    } catch (e) {}
+  },
+  correct() {
+    this.play(ctx => {
+      const t = ctx.currentTime;
+      [523.25, 659.25, 783.99].forEach((freq, i) => {
+        const osc = ctx.createOscillator();
+        const g = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, t + i * 0.08);
+        g.gain.setValueAtTime(0.12, t + i * 0.08);
+        g.gain.exponentialRampToValueAtTime(0.001, t + i * 0.08 + 0.22);
+        osc.connect(g);
+        g.connect(ctx.destination);
+        osc.start(t + i * 0.08);
+        osc.stop(t + i * 0.08 + 0.22);
+      });
+    });
+  },
+  deepRumble() {
+    this.play(ctx => {
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const g = ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(85, t);
+      osc.frequency.exponentialRampToValueAtTime(35, t + 0.65);
+      g.gain.setValueAtTime(0.28, t);
+      g.gain.exponentialRampToValueAtTime(0.001, t + 0.65);
+      osc.connect(g);
+      g.connect(ctx.destination);
+      osc.start(t);
+      osc.stop(t + 0.65);
+    });
+  },
+  coreSwell() {
+    this.play(ctx => {
+      const t = ctx.currentTime;
+      [130.81, 164.81, 196.00, 261.63, 329.63, 392.00].forEach((f, i) => {
+        const osc = ctx.createOscillator();
+        const g = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(f, t + i * 0.06);
+        g.gain.setValueAtTime(0.12, t + i * 0.06);
+        g.gain.exponentialRampToValueAtTime(0.001, t + i * 0.06 + 0.5);
+        osc.connect(g);
+        g.connect(ctx.destination);
+        osc.start(t + i * 0.06);
+        osc.stop(t + i * 0.06 + 0.5);
+      });
+    });
+  },
+  wrong() {
+    this.play(ctx => {
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const g = ctx.createGain();
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(220, t);
+      osc.frequency.linearRampToValueAtTime(140, t + 0.22);
+      g.gain.setValueAtTime(0.1, t);
+      g.gain.exponentialRampToValueAtTime(0.001, t + 0.22);
+      osc.connect(g);
+      g.connect(ctx.destination);
+      osc.start(t);
+      osc.stop(t + 0.22);
+    });
+  },
+  tick() {
+    this.play(ctx => {
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const g = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(900, t);
+      g.gain.setValueAtTime(0.05, t);
+      g.gain.exponentialRampToValueAtTime(0.001, t + 0.03);
+      osc.connect(g);
+      g.connect(ctx.destination);
+      osc.start(t);
+      osc.stop(t + 0.03);
+    });
+  },
+  fanfare() {
+    this.play(ctx => {
+      const t = ctx.currentTime;
+      const notes = [523.25, 659.25, 783.99, 1046.50];
+      notes.forEach((freq, i) => {
+        const osc = ctx.createOscillator();
+        const g = ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, t + i * 0.1);
+        g.gain.setValueAtTime(0.18, t + i * 0.1);
+        g.gain.exponentialRampToValueAtTime(0.001, t + i * 0.1 + (i === 3 ? 0.6 : 0.2));
+        osc.connect(g);
+        g.connect(ctx.destination);
+        osc.start(t + i * 0.1);
+        osc.stop(t + i * 0.1 + (i === 3 ? 0.6 : 0.2));
+      });
+    });
+  }
+};
+
+let QUIZ_BANK = [
+  {
+    "id": "1.1-01",
+    "topic": "1.1",
+    "category": "Requirements & Contexts",
+    "question": "Why is engineering design described as inherently 'context dependent'?",
+    "options": [
+      "A solution must satisfy the specific physical, economic, and operational environment where it is deployed",
+      "Design specifications can never be changed once customer feedback is gathered",
+      "Engineers only design for indoor factory settings with controlled climate",
+      "Products are manufactured using identical materials regardless of application"
+    ],
+    "answer": 0,
+    "explanation": "Context dependency means an engineered system cannot be evaluated in isolation—it must operate reliably within its specific ambient conditions, user demographics, and economic boundaries."
+  },
+  {
+    "id": "1.2-01",
+    "topic": "1.2",
+    "category": "Anthropometrics",
+    "question": "Which anthropometric percentile range is standard practice when designing mass-market adjustable products (e.g. office seating)?",
+    "options": [
+      "5th to 95th percentile",
+      "50th percentile only",
+      "0th to 100th percentile",
+      "25th to 75th percentile"
+    ],
+    "answer": 0,
+    "explanation": "Designing between the 5th percentile female and 95th percentile male accommodates approximately 90% of the target population with adjustability."
+  },
+  {
+    "id": "1.2-02",
+    "topic": "1.2",
+    "category": "Anthropometrics",
+    "question": "When designing the clear opening height of an emergency fire exit door, which percentile should be used?",
+    "options": [
+      "95th percentile (plus clearance allowance)",
+      "5th percentile",
+      "50th percentile (average height)",
+      "10th percentile"
+    ],
+    "answer": 0,
+    "explanation": "Clearances (doorways, legroom, escape hatches) must accommodate the tallest users, so the 95th percentile (or 99th percentile) plus an extra safety clearance is required."
+  },
+  {
+    "id": "1.3-01",
+    "topic": "1.3",
+    "category": "Ergonomics",
+    "question": "What is the primary objective of ergonomic design in handheld power tool controls?",
+    "options": [
+      "Reducing physical strain, repetitive strain injury (RSI), and vibration white finger",
+      "Maximizing the cosmetic gloss finish of the outer polymer casing",
+      "Minimizing the bill-of-materials cost by eliminating rubber overmouldings",
+      "Ensuring the motor runs at maximum unloaded RPM without safety cutoffs"
+    ],
+    "answer": 0,
+    "explanation": "Ergonomics optimizes the human-machine interface to reduce user fatigue, musculoskeletal strain, and long-term industrial vibration disorders."
+  },
+  {
+    "id": "2.2-01",
+    "topic": "2.2",
+    "category": "Design Movements",
+    "question": "Which famous design tenet is most strongly associated with the Bauhaus movement (1919–1933)?",
+    "options": [
+      "Form follows function",
+      "Less is a bore",
+      "Ornamentation is the essence of structure",
+      "Design for planned obsolescence"
+    ],
+    "answer": 0,
+    "explanation": "The Bauhaus philosophy championed geometric simplicity, rational utility, and industrial mass-producibility under the principle 'Form follows function'."
+  },
+  {
+    "id": "2.3-01",
+    "topic": "2.3",
+    "category": "Design Movements",
+    "question": "What distinct characteristics defined the 1980s Memphis Design Group led by Ettore Sottsass?",
+    "options": [
+      "Vibrant clashing colours, bold asymmetrical geometric forms, and plastic laminates",
+      "Strict monochrome palettes and exposed raw cast iron structural ribs",
+      "Traditional handcrafted timber joints and natural unvarnished oak",
+      "Aerodynamic teardrop streamlining in polished chrome aluminium"
+    ],
+    "answer": 0,
+    "explanation": "Memphis rebelled against strict modernism with playful pop-art aesthetics, bright laminate surfaces, asymmetrical silhouettes, and flamboyant motifs."
+  },
+  {
+    "id": "3.1-01",
+    "topic": "3.1",
+    "category": "Sustainability & LCA",
+    "question": "What four main lifecycle stages are assessed in a formal Life Cycle Assessment (LCA) (ISO 14040)?",
+    "options": [
+      "Raw material extraction, Manufacture, In-service use, and End-of-life disposal",
+      "Marketing, Distribution, Retail sales, and Customer warranty",
+      "Ideation, 3D CAD modeling, Prototyping, and Mass injection moulding",
+      "Patent filing, Trademark registration, Production setup, and Breakeven"
+    ],
+    "answer": 0,
+    "explanation": "An LCA quantifies environmental impacts across 'Cradle to Grave': raw material harvesting, processing/assembly, operational energy/emissions, and ultimate disposal/recycling."
+  },
+  {
+    "id": "3.3-01",
+    "topic": "3.3",
+    "category": "DFMA",
+    "question": "What is the primary goal of Design for Manufacture and Assembly (DFMA)?",
+    "options": [
+      "Minimizing part count, standardising fasteners, and streamlining assembly paths",
+      "Increasing the complexity of sub-assemblies to prevent competitor cloning",
+      "Replacing all modular plastic clips with permanent multi-part adhesive joints",
+      "Ensuring that parts can only be assembled using specialised manual hand tools"
+    ],
+    "answer": 0,
+    "explanation": "DFMA systematically simplifies product architectures, eliminates redundant components, incorporates self-locating snap-fits, and slashes manufacturing cycle times."
+  },
+  {
+    "id": "3.5-01",
+    "topic": "3.5",
+    "category": "Intellectual Property",
+    "question": "Which form of legal intellectual property protects the novel functional working mechanism of an invention for up to 20 years?",
+    "options": [
+      "Patent",
+      "Registered Design",
+      "Trademark",
+      "Copyright"
+    ],
+    "answer": 0,
+    "explanation": "Patents protect new, inventive technical and functional inventions for up to 20 years. Registered designs protect visual appearance and aesthetics."
+  },
+  {
+    "id": "4.1-01",
+    "topic": "4.1",
+    "category": "Technical Drawing",
+    "question": "In BS 8888 3rd angle orthographic projection, where is the Plan (top) view positioned relative to the Front Elevation?",
+    "options": [
+      "Directly above the Front Elevation",
+      "Directly below the Front Elevation",
+      "To the far right of the End Elevation",
+      "Superimposed at a 45-degree isometric tilt"
+    ],
+    "answer": 0,
+    "explanation": "In 3rd angle projection (standard in engineering across the UK and US), the Plan view is placed directly above the Front Elevation, and the Right View is on the right."
+  },
+  {
+    "id": "4.2-01",
+    "topic": "4.2",
+    "category": "CAD & Simulation",
+    "question": "What engineering simulation tool subdivides a 3D CAD mesh into discrete elements to calculate mechanical stress concentrations?",
+    "options": [
+      "Finite Element Analysis (FEA)",
+      "Computational Fluid Dynamics (CFD)",
+      "Rapid Prototyping Slicer (CAM)",
+      "Optical Character Recognition (OCR)"
+    ],
+    "answer": 0,
+    "explanation": "FEA breaks down a continuous component geometry into a finite mesh of nodes and elements to predict von Mises stress, strain, and deformation under applied loads."
+  },
+  {
+    "id": "5.1-01",
+    "topic": "5.1",
+    "category": "Materials: Metals",
+    "question": "Which element is added to low-carbon steel in quantities over 10.5% to form a self-healing chromium oxide passive film against corrosion?",
+    "options": [
+      "Chromium (creating Stainless Steel)",
+      "Lead (for machinability)",
+      "Silicon (for electrical laminations)",
+      "Zinc (for hot-dip galvanising)"
+    ],
+    "answer": 0,
+    "explanation": "Chromium (>10.5%) reacts with atmospheric oxygen to form an invisible, self-healing chromium oxide (Cr2O3) layer that prevents rust in stainless steels."
+  },
+  {
+    "id": "5.2-01",
+    "topic": "5.2",
+    "category": "Materials: Polymers",
+    "question": "Why can thermoplastic polymers be repeatedly melted and reshaped, whereas thermosetting polymers cannot?",
+    "options": [
+      "Thermoplastics have linear chains held by weak van der Waals forces, while thermosets form permanent covalent cross-links",
+      "Thermoplastics contain metallic bonding while thermosets contain purely ionic lattices",
+      "Thermosets have lower molecular weights that decompose at room temperature",
+      "Thermoplastics are formed through condensation polymerization that reverses on reheating"
+    ],
+    "answer": 0,
+    "explanation": "Thermoplastic polymer chains can slide past each other when thermal energy overcomes weak intermolecular bonds. Thermosets form irreversible covalent cross-links during curing."
+  },
+  {
+    "id": "5.3-01",
+    "topic": "5.3",
+    "category": "Smart Materials",
+    "question": "What unique physical behaviour makes Nitinol (Nickel-Titanium alloy) a shape memory alloy (SMA)?",
+    "options": [
+      "It can be deformed when cold and return to its pre-programmed shape when heated through its martensite-to-austenite transition",
+      "It changes colour irreversibly when exposed to ultraviolet radiation",
+      "It generates a high voltage pulse whenever it experiences mechanical compression",
+      "It alters its magnetic polarity when submersed in water"
+    ],
+    "answer": 0,
+    "explanation": "Nitinol transitions between a low-temperature ductile martensitic phase and a high-temperature rigid austenitic phase, restoring its manufactured geometry."
+  },
+  {
+    "id": "5.3-02",
+    "topic": "5.3",
+    "category": "Materials Testing",
+    "question": "Which standard mechanical test measures the toughness and impact energy absorbed by a notched specimen before fracturing?",
+    "options": [
+      "Charpy / Izod impact test",
+      "Brinell ball hardness test",
+      "Tensile yield test",
+      "Vickers diamond pyramid test"
+    ],
+    "answer": 0,
+    "explanation": "The Charpy impact test swings a weighted pendulum to strike a notched specimen, measuring the energy absorbed in Joules to quantify notch toughness."
+  },
+  {
+    "id": "6.1-01",
+    "topic": "6.1",
+    "category": "Structural Mechanics",
+    "question": "Why is triangulation fundamental in structural frameworks and roof trusses?",
+    "options": [
+      "Triangles are geometrically rigid and cannot deform without changing the physical length of their members",
+      "Triangular members are cheaper to extrude than rectangular hollow sections",
+      "Triangles distribute all external forces exclusively as pure shear stress",
+      "Triangular trusses eliminate the need for gusset plates and welded joints"
+    ],
+    "answer": 0,
+    "explanation": "A triangle is the only geometric polygon whose shape is completely locked by the lengths of its three sides; it resists pin-joint distortion under coplanar loads."
+  },
+  {
+    "id": "6.2-01",
+    "topic": "6.2",
+    "category": "Mechanisms & Gears",
+    "question": "If a drive pinion with 15 teeth turns at 1200 rpm and drives a spur gear with 60 teeth, what is the output speed and gear ratio?",
+    "options": [
+      "300 rpm (Gear Ratio 4:1 reduction)",
+      "4800 rpm (Gear Ratio 1:4 overdrive)",
+      "600 rpm (Gear Ratio 2:1 reduction)",
+      "1200 rpm (Gear Ratio 1:1 idler)"
+    ],
+    "answer": 0,
+    "explanation": "Gear Ratio = Driven / Driver = 60 / 15 = 4:1. Output Speed = Input / Ratio = 1200 / 4 = 300 rpm."
+  },
+  {
+    "id": "6.2-02",
+    "topic": "6.2",
+    "category": "Mechanisms & Gears",
+    "question": "What key engineering advantage does a worm and wheel gear set provide over spur gears?",
+    "options": [
+      "Massive speed reduction in a compact 90-degree axis and inherent irreversible self-locking",
+      "Near 100% mechanical efficiency with zero frictional thermal dissipation",
+      "Ability to connect two parallel shafts with zero backlash at high RPM",
+      "Reversible overdrive capability allowing the wheel to effortlessly spin the worm"
+    ],
+    "answer": 0,
+    "explanation": "Worm drives offer high gear reductions (e.g. 50:1) in a single stage and cannot be back-driven by the load (self-locking), making them ideal for hoists and winches."
+  },
+  {
+    "id": "6.3-01",
+    "topic": "6.3",
+    "category": "Calculations: Stress & Strain",
+    "question": "What is the engineering equation for tensile stress (σ)?",
+    "options": [
+      "σ = F / A (Force divided by Cross-Sectional Area)",
+      "σ = ΔL / L₀ (Extension divided by Original Length)",
+      "σ = E × ε² (Young's Modulus times Strain squared)",
+      "σ = F × d (Force multiplied by perpendicular distance)"
+    ],
+    "answer": 0,
+    "explanation": "Tensile stress σ is defined as internal resistive force per unit cross-sectional area (σ = F / A), measured in N/m² or Pascals (Pa / MPa)."
+  },
+  {
+    "id": "6.3-02",
+    "topic": "6.3",
+    "category": "Calculations: Young's Modulus",
+    "question": "How is Young's Modulus (E) defined in the linear elastic region of a material stress-strain curve?",
+    "options": [
+      "E = σ / ε (Tensile Stress divided by Tensile Strain)",
+      "E = F × ΔL (Force multiplied by Extension)",
+      "E = ε / σ (Tensile Strain divided by Tensile Stress)",
+      "E = Mass × Acceleration due to gravity"
+    ],
+    "answer": 0,
+    "explanation": "Young's Modulus E = σ / ε represents the gradient of the initial linear elastic Hookean region, measuring the fundamental tensile stiffness of the material."
+  },
+  {
+    "id": "6.4-01",
+    "topic": "6.4",
+    "category": "Electronics & Calculations",
+    "question": "In a potential divider with Vin = 12 V, R1 = 8 kΩ, and R2 = 4 kΩ (where Vout is taken across R2), what is Vout?",
+    "options": [
+      "4.0 V",
+      "8.0 V",
+      "6.0 V",
+      "2.0 V"
+    ],
+    "answer": 0,
+    "explanation": "Vout = Vin × [ R2 / (R1 + R2) ] = 12 × [ 4000 / (8000 + 4000) ] = 12 × (4 / 12) = 4.0 V."
+  },
+  {
+    "id": "6.4-02",
+    "topic": "6.4",
+    "category": "Electronics: Sensors",
+    "question": "How does the electrical resistance of an NTC (Negative Temperature Coefficient) thermistor change as ambient temperature rises?",
+    "options": [
+      "Resistance decreases non-linearly",
+      "Resistance increases linearly",
+      "Resistance remains completely constant",
+      "Resistance drops instantly to zero like a superconductor"
+    ],
+    "answer": 0,
+    "explanation": "An NTC thermistor's semiconductor lattice releases more charge carriers as temperature increases, causing its electrical resistance to drop."
+  },
+  {
+    "id": "6.5-01",
+    "topic": "6.5",
+    "category": "Microcontrollers & ADC",
+    "question": "A microcontroller uses a 10-bit Analogue-to-Digital Converter (ADC) with a 5.0 V reference. What is the digital integer reading for an analogue input of 2.5 V?",
+    "options": [
+      "511 or 512 (half of 1023)",
+      "256",
+      "1023",
+      "128"
+    ],
+    "answer": 0,
+    "explanation": "A 10-bit ADC provides 2^10 = 1024 discrete steps (0 to 1023). An input voltage of exactly half scale (2.5 V / 5.0 V = 0.5) corresponds to 0.5 × 1023 = 511.5 (~511 or 512)."
+  },
+  {
+    "id": "6.5-02",
+    "topic": "6.5",
+    "category": "Microcontrollers & PWM",
+    "question": "What is the function of Pulse Width Modulation (PWM) in controlling DC motor speed?",
+    "options": [
+      "Rapidly switching supply voltage on and off and varying the duty cycle to alter average effective voltage without torque loss",
+      "Stepping down DC voltage into pure 50 Hz sinusoidal alternating current",
+      "Mechanically shifting the gear engagement using internal solenoids",
+      "Reversing the polarity across the brushes at high frequency"
+    ],
+    "answer": 0,
+    "explanation": "PWM pulses full supply voltage at high frequency; by modulating the high-time percentage (duty cycle), the average power delivered to the motor armature is smoothly adjusted."
+  },
+  {
+    "id": "7.1-01",
+    "topic": "7.1",
+    "category": "Machining: Turning",
+    "question": "Which lathe operation moves the cutting tool radially across the end of a rotating cylindrical workpiece to produce a flat perpendicular end face?",
+    "options": [
+      "Facing",
+      "Parallel turning",
+      "Parting off",
+      "Knurling"
+    ],
+    "answer": 0,
+    "explanation": "Facing feeds the tool across the rotational axis, establishing a true, flat datum face perpendicular to the spindle center line."
+  },
+  {
+    "id": "7.2-01",
+    "topic": "7.2",
+    "category": "Machining: Milling",
+    "question": "In CNC milling, what distinguishes 'Climb Milling' from 'Conventional Milling'?",
+    "options": [
+      "The cutter rotates in the direction of table feed, producing chips of maximum thickness at tooth entry and superior surface finish",
+      "The cutter moves strictly vertically along the Z-axis without XY planar motion",
+      "The workpiece rotates against a stationary single-point HSS lathe tool",
+      "Coolant is omitted to allow thermal softening of the swarf"
+    ],
+    "answer": 0,
+    "explanation": "In climb milling (down milling), the cutter enters the work at maximum chip thickness and leaves at zero, reducing tool wear, work hardening, and surface chatter on rigid CNC machines."
+  },
+  {
+    "id": "7.3-01",
+    "topic": "7.3",
+    "category": "Manufacturing: Moulding",
+    "question": "Why must injection moulded components incorporate a 'draft angle' on vertical interior and exterior walls?",
+    "options": [
+      "To allow the solidified plastic part to cleanly release from the mould cavity without scuffing or sticking during ejection",
+      "To facilitate maximum turbulence during molten polymer injection",
+      "To reduce the clamping tonnage required by the hydraulic mould press",
+      "To prevent internal air entrapment from causing sink marks on thick ribs"
+    ],
+    "answer": 0,
+    "explanation": "Draft angles (typically 1° to 2° per side) ensure that as soon as the mould halves separate and ejector pins fire, the part immediately breaks contact with tool walls without friction drag."
+  },
+  {
+    "id": "7.3-02",
+    "topic": "7.3",
+    "category": "Manufacturing: Casting",
+    "question": "Which casting process forces molten non-ferrous metal under immense hydraulic pressure into hardened reusable steel tool steel dies?",
+    "options": [
+      "High-Pressure Die Casting",
+      "Sand Casting",
+      "Investment (lost-wax) Casting",
+      "Slip Casting"
+    ],
+    "answer": 0,
+    "explanation": "Die casting injects molten alloys (zinc, aluminium, magnesium) at pressures up to 100 MPa into precision steel tooling, yielding high dimensional accuracy and thin wall sections."
+  },
+  {
+    "id": "7.3-03",
+    "topic": "7.3",
+    "category": "Manufacturing: 3D Printing",
+    "question": "Which additive manufacturing process fuses powdered polymer or metal granules layer-by-layer using a targeted high-powered laser, requiring no support structures?",
+    "options": [
+      "Selective Laser Sintering (SLS)",
+      "Fused Deposition Modeling (FDM)",
+      "Stereolithography (SLA)",
+      "Vacuum Casting"
+    ],
+    "answer": 0,
+    "explanation": "SLS uses a CO2 laser to fuse powder particles. The surrounding unsintered loose powder bed supports overhangs and complex internal channels without disposable support geometry."
+  },
+  {
+    "id": "7.4-01",
+    "topic": "7.4",
+    "category": "Joining: Welding",
+    "question": "What is the key difference between TIG (Tungsten Inert Gas) welding and MIG (Metal Inert Gas) welding?",
+    "options": [
+      "TIG uses a non-consumable tungsten electrode and manual filler rod; MIG uses a continuous automatically fed consumable wire electrode",
+      "TIG requires no shielding gas, while MIG requires pure acetylene gas",
+      "TIG operates exclusively on alternating current for mild steel only",
+      "MIG can only join thermoplastics while TIG can only join cast iron"
+    ],
+    "answer": 0,
+    "explanation": "TIG employs a non-consumable tungsten electrode under argon gas for precise, clean welds on aluminium and stainless steel. MIG feeds consumable filler wire on a motorized spool for rapid production."
+  },
+  {
+    "id": "7.5-01",
+    "topic": "7.5",
+    "category": "Quality Assurance",
+    "question": "What is the fundamental distinction between Quality Control (QC) and Quality Assurance (QA)?",
+    "options": [
+      "QC is product-oriented (inspecting finished goods for defects); QA is process-oriented (preventing defects through systemic protocols)",
+      "QC is governed by ISO 9001 while QA is an unregulated internal company guideline",
+      "QC eliminates manufacturing waste; QA only measures financial accounting overheads",
+      "QC is performed solely by robots while QA is performed solely by manual line operators"
+    ],
+    "answer": 0,
+    "explanation": "Quality Control (QC) inspects and tests products at the end of the line to catch non-conformances. Quality Assurance (QA) establishes standardized procedures, calibration, and audits to prevent defects from occurring."
+  },
+  {
+    "id": "7.5-02",
+    "topic": "7.5",
+    "category": "Lean Manufacturing",
+    "question": "What is the primary operational principle of Just-in-Time (JIT) production and Kanban signaling?",
+    "options": [
+      "Components and materials are pulled into the production line only when required by downstream demand, minimizing inventory holding costs",
+      "Warehouses are stocked with massive buffer inventory batches to hedge against all supplier delays",
+      "Production machinery operates continuously at 100% capacity irrespective of customer orders",
+      "Finished goods are discounted immediately to clear factory floor space"
+    ],
+    "answer": 0,
+    "explanation": "JIT is a demand-pull manufacturing system that eliminates the waste (muda) of excess inventory, work-in-progress holding costs, and warehouse footprint."
+  },
+  {
+    "id": "8.1-01",
+    "topic": "8.1",
+    "category": "Testing & NDT",
+    "question": "What is the primary advantage of Non-Destructive Testing (NDT) over destructive testing in quality inspection?",
+    "options": [
+      "NDT inspects 100% of flight-critical production parts for hidden flaws without damaging their functional integrity",
+      "NDT is guaranteed to take less than one second per test cycle",
+      "NDT eliminates the need for trained quality engineers and optical sensors",
+      "NDT permanently work-hardens the surface of the component being inspected"
+    ],
+    "answer": 0,
+    "explanation": "Destructive testing destroys the test specimen (coupon testing). NDT (ultrasonic, eddy current, X-ray) allows the actual production parts to be safely tested and then placed into service."
+  },
+  {
+    "id": "8.2-01",
+    "topic": "8.2",
+    "category": "Testing & NDT",
+    "question": "Which NDT method uses high-frequency acoustic waves directed through a couplant gel into a metal casting to reveal internal voids and cracks?",
+    "options": [
+      "Ultrasonic flaw detection",
+      "Dye penetrant inspection",
+      "Vickers micro-hardness indentation",
+      "Brinell optical ball test"
+    ],
+    "answer": 0,
+    "explanation": "Ultrasonic testing transmits transducer pulses into the material; echo reflections from internal flaws or the back wall indicate exact defect depth and size."
+  },
+  {
+    "id": "8.3-01",
+    "topic": "8.3",
+    "category": "Viability & Economics",
+    "question": "If high-pressure injection moulding tooling costs £60,000 to manufacture and the variable cost per plastic casing is £2.00, what is the unit production cost at 120,000 units?",
+    "options": [
+      "£2.50 per unit",
+      "£0.50 per unit",
+      "£3.00 per unit",
+      "£1.50 per unit"
+    ],
+    "answer": 0,
+    "explanation": "Tooling amortization per unit = £60,000 / 120,000 = £0.50. Total unit cost = Variable cost + Amortized tooling = £2.00 + £0.50 = £2.50."
+  },
+  {
+    "id": "9.1-01",
+    "topic": "9.1",
+    "category": "Health & Safety",
+    "question": "According to the universal Hierarchy of Hazard Control, which control measure is the MOST effective and should be prioritized first?",
+    "options": [
+      "Elimination (physically removing the hazard at source)",
+      "Personal Protective Equipment (PPE) (e.g. safety goggles)",
+      "Administrative controls (e.g. warning signs and manuals)",
+      "Engineering controls (e.g. interlocking acoustic guards)"
+    ],
+    "answer": 0,
+    "explanation": "The hierarchy ranks: 1. Elimination (most effective), 2. Substitution, 3. Engineering controls, 4. Administrative controls, 5. PPE (least reliable, last line of defense)."
+  },
+  {
+    "id": "9.2-01",
+    "topic": "9.2",
+    "category": "Health & Safety: Regulations",
+    "question": "What is the primary statutory purpose of the UK COSHH 2002 regulations in school and industrial engineering workshops?",
+    "options": [
+      "Protecting workers and students against health risks arising from exposure to hazardous chemicals, fumes, dusts, and solvents",
+      "Regulating the minimum speed of cutting tools on manual lathe spindles",
+      "Enforcing copyright compliance for 3D CAD parametric software licenses",
+      "Standardising the metric thread pitch of machine screws across European suppliers"
+    ],
+    "answer": 0,
+    "explanation": "Control of Substances Hazardous to Health (COSHH) mandates risk assessment, storage protocols, extraction ventilation (LEV), and exposure limits for hazardous chemicals, resins, and dusts."
+  }
+]
+;
+let ENGINILLION_PROMPTS = [
+  {
+    "id": "eng-metals",
+    "category": "Materials: Metals & Alloys",
+    "prompt": "Name an engineering metal, steel grade, or alloy",
+    "hint": "Ferrous, non-ferrous, structural, or aerospace superalloy",
+    "tiers": {
+      "workshop": ["mild steel", "aluminium", "copper", "cast iron", "brass", "tin", "lead", "zinc", "carbon steel"],
+      "machining": ["stainless steel", "duralumin", "phosphor bronze", "solder", "galvanised steel", "tool steel", "wrought iron", "pewter", "silicon bronze"],
+      "toolroom": ["high speed steel", "hss", "beryllium copper", "manganese steel", "alnico", "spring steel", "o1 tool steel", "d2 tool steel", "silver steel", "gauge plate"],
+      "aerospace": ["titanium", "ti-6al-4v", "inconel", "inconel 718", "maraging steel", "hastelloy", "monel", "monel 400", "invár", "invar", "nitinol"],
+      "submicron": ["rené 41", "haynes 230", "stellite", "tungsten heavy alloy", "elgiloy", "nimonic", "kovar", "zircaloy", "tantalum alloy"],
+      "quantum": ["single-crystal superalloy", "cmsx-4", "metallic glass", "vitreloy", "cantor alloy", "high-entropy alloy", "bulk metallic glass", "tungsten carbide-cobalt", "osmium alloy"]
+    }
+  },
+  {
+    "id": "eng-thermoplastics",
+    "category": "Materials: Polymers",
+    "prompt": "Name a thermoplastic polymer",
+    "hint": "Linear or branched polymer that softens reversibly on heating",
+    "tiers": {
+      "workshop": ["acrylic", "pmma", "polypropylene", "pp", "polystyrene", "hips", "pvc", "polyvinyl chloride", "polythene", "polyethylene", "ldpe"],
+      "machining": ["hdpe", "nylon", "nylon 66", "polyamide", "abs", "polycarbonate", "pc", "pet", "polyethylene terephthalate", "pla", "polylactic acid"],
+      "toolroom": ["delrin", "acetal", "pom", "ptfe", "teflon", "pvdf", "tpu", "polyurethane", "eva", "cellulose acetate", "petg"],
+      "aerospace": ["peek", "polyether ether ketone", "ultem", "pei", "polyetherimide", "pps", "polyphenylene sulfide", "psu", "polysulfone", "torlon", "pai"],
+      "submicron": ["pbi", "polybenzimidazole", "liquid crystal polymer", "lcp", "polyarylate", "pes", "polyethersulfone", "fep", "parlene"],
+      "quantum": ["uhmwpe", "dyneema", "spectra", "conductive polyaniline", "pha", "polyhydroxyalkanoate", "graphene-pekk", "carbon nanotube nylon", "aromatic polyamide"]
+    }
+  },
+  {
+    "id": "eng-thermosets",
+    "category": "Materials: Polymers",
+    "prompt": "Name a thermosetting polymer or resin",
+    "hint": "Covalently cross-linked polymer that degrades rather than melts",
+    "tiers": {
+      "workshop": ["epoxy", "epoxy resin", "polyester resin", "melamine", "melamine formaldehyde", "urea formaldehyde", "bakelite", "phenol formaldehyde"],
+      "machining": ["rigid polyurethane", "vulcanised rubber", "silicone", "silicone rubber", "alkyd resin", "formica", "neoprene"],
+      "toolroom": ["vinyl ester", "vinyl ester resin", "polyimide", "polyimide resin", "cyanate ester", "furan resin", "diallyl phthalate"],
+      "aerospace": ["bismaleimide", "bmi", "benzoxazine", "novolac", "phenolic novolac", "high-tg epoxy", "geopolymer", "polyimide film", "kapton"],
+      "submicron": ["silicone-polyimide", "poss", "polyhedral oligomeric silsesquioxane", "cyanate ester-bmi", "resole phenolic", "polyisocyanurate", "pir"],
+      "quantum": ["vitrimer", "self-healing thermoset", "diels-alder network", "carbon matrix precursor", "aerogel thermoset", "lignin bio-epoxy"]
+    }
+  },
+  {
+    "id": "eng-mechanisms",
+    "category": "Mechanisms & Motion",
+    "prompt": "Name an engineering mechanism, linkage, or motion converter",
+    "hint": "Converts rotary, linear, oscillating, or intermittent motion",
+    "tiers": {
+      "workshop": ["lever", "pulley", "wedge", "screw", "wheel and axle", "inclined plane", "ramp", "crank"],
+      "machining": ["rack and pinion", "crank and slider", "slider crank", "cam and follower", "bell crank", "four bar linkage", "geneva drive", "geneva wheel", "ratchet", "pawl"],
+      "toolroom": ["scotch yoke", "pantograph", "whitworth quick return", "quick return mechanism", "toggle clamp", "peaucellier linkage", "parallel motion"],
+      "aerospace": ["planetary gearbox", "epicyclic gear", "harmonic drive", "strain wave gearing", "oldham coupling", "swashplate", "watt linkage", "jansen linkage"],
+      "submicron": ["cycloidal drive", "sarrus linkage", "klann linkage", "rzeppa joint", "cv joint", "constant velocity joint", "spherical geneva", "differential mechanism"],
+      "quantum": ["compliant mechanism", "bistable compliant mechanism", "mems comb drive", "flexure hinge", "hoberman sphere", "magnetorheological coupling"]
+    }
+  },
+  {
+    "id": "eng-gears",
+    "category": "Mechanisms: Gears",
+    "prompt": "Name a specific type of gear or gear system",
+    "hint": "Transmits torque and rotational motion between shafts",
+    "tiers": {
+      "workshop": ["spur gear", "gear wheel", "pinion", "cog", "idler gear", "sprocket", "chain drive"],
+      "machining": ["bevel gear", "helical gear", "rack and pinion", "worm gear", "worm and wheel", "crown gear", "miter gear", "mitre gear"],
+      "toolroom": ["herringbone gear", "double helical gear", "internal gear", "annulus gear", "hypoid gear", "spiral bevel gear", "compound gear train"],
+      "aerospace": ["epicyclic gear", "planetary gear", "sun and planet gear", "harmonic gear", "strain wave gear", "face gear", "differential gear"],
+      "submicron": ["cycloidal gear", "magnetic gear", "non-circular gear", "involute spline gear", "wobble gear", "zero-backlash gear"],
+      "quantum": ["harmonic drive flexspline", "micro-machined mems gear", "magnetic levitation gear", "split-torque planetary", "differential planetary"]
+    }
+  },
+  {
+    "id": "eng-manufacturing",
+    "category": "Manufacturing Processes",
+    "prompt": "Name an engineering manufacturing, machining, or forming process",
+    "hint": "Shaping raw stock into finished parts",
+    "tiers": {
+      "workshop": ["hacksaw", "drilling", "sand casting", "vacuum forming", "strip heater", "brazing", "hand filing", "soldering"],
+      "machining": ["turning", "lathe turning", "milling", "vertical milling", "injection moulding", "blow moulding", "tig welding", "mig welding", "drop forging", "piercing"],
+      "toolroom": ["cnc milling", "die casting", "extrusion", "metal spinning", "powder metallurgy", "spark erosion", "sinker edm", "press brake bending", "broaching"],
+      "aerospace": ["wire edm", "selective laser sintering", "sls", "stereolithography", "sla", "investment casting", "lost wax casting", "hydroforming", "friction stir welding"],
+      "submicron": ["direct metal laser sintering", "dmls", "slm", "electron beam welding", "ebw", "superplastic forming", "5-axis cnc", "deep drawing", "chemical vapor deposition", "cvd"],
+      "quantum": ["atomic layer deposition", "ald", "two-photon lithography", "micro-edm", "focused ion beam", "fib", "magnetron sputtering", "explosive cladding", "molecular beam epitaxy"]
+    }
+  },
+  {
+    "id": "eng-sensors",
+    "category": "Electronics: Sensors",
+    "prompt": "Name an electronic sensor, transducer, or input component",
+    "hint": "Converts physical stimulus into an electrical signal",
+    "tiers": {
+      "workshop": ["push switch", "toggle switch", "ldr", "light dependent resistor", "thermistor", "potentiometer", "button", "reed switch"],
+      "machining": ["ultrasonic sensor", "hc-sr04", "pir sensor", "microswitch", "photodiode", "phototransistor", "ntc thermistor", "ptc thermistor"],
+      "toolroom": ["hall effect sensor", "strain gauge", "piezoelectric sensor", "rotary encoder", "thermocouple", "type k thermocouple", "tilt sensor"],
+      "aerospace": ["load cell", "wheatstone bridge", "mems accelerometer", "mpu-6050", "optical interrupter", "capacitive proximity sensor", "rtd", "pt100"],
+      "submicron": ["lvdt", "linear variable differential transformer", "mems gyroscope", "magnetoresistive sensor", "ingaas photodiode", "thermopile", "infrared pyrometer"],
+      "quantum": ["squid", "fiber bragg grating", "fbg sensor", "quartz crystal microbalance", "qcm", "atomic force probe", "fabry-pérot sensor", "laser doppler vibrometer"]
+    }
+  },
+  {
+    "id": "eng-actuators",
+    "category": "Electronics: Actuators",
+    "prompt": "Name an electronic actuator, motor, or output component",
+    "hint": "Converts electrical energy into mechanical work or physical output",
+    "tiers": {
+      "workshop": ["dc motor", "led", "light emitting diode", "buzzer", "lamp", "filament bulb", "solenoid", "electromagnet"],
+      "machining": ["stepper motor", "servo motor", "rc servo", "relay", "spdt relay", "7 segment display", "solenoid valve", "vibration motor"],
+      "toolroom": ["brushless dc motor", "bldc", "linear actuator", "h-bridge", "piezoelectric buzzer", "mosfet", "stepper with gearbox", "geared motor"],
+      "aerospace": ["voice coil actuator", "coreless motor", "pancake motor", "pneumatic cylinder", "solid state relay", "ssr", "optical encoder motor", "servo drive"],
+      "submicron": ["piezoelectric motor", "ultrasonic motor", "muscle wire", "nitinol wire actuator", "proportional servo valve", "galvanometer scanner", "galvo mirror", "magnetostrictive actuator"],
+      "quantum": ["dielectric elastomer actuator", "eap muscle", "fast steering mirror", "mems thermal actuator", "magnetorheological damper", "superconducting maglev drive", "piezo stage flexure"]
+    }
+  },
+  {
+    "id": "eng-smart-materials",
+    "category": "Smart & Modern Materials",
+    "prompt": "Name a smart material, composite, or modern technical material",
+    "hint": "Responds dynamically to external stimuli (heat, stress, voltage, light)",
+    "tiers": {
+      "workshop": ["carbon fibre", "cfrp", "kevlar", "nitinol", "glow in the dark", "photochromic glass", "fibre glass", "grp"],
+      "machining": ["shape memory alloy", "sma", "thermochromic pigment", "piezoelectric crystal", "electroluminescent sheet", "carbon fiber reinforced polymer"],
+      "toolroom": ["magnetorheological fluid", "mr fluid", "quantum tunnelling composite", "qtc", "self-healing polymer", "d3o", "d3o impact foam", "electrorheological fluid"],
+      "aerospace": ["shape memory polymer", "smp", "thermoelectric bismuth telluride", "dielectric elastomer", "aerogel", "silica aerogel", "carbon nanotube yarn", "graphene"],
+      "submicron": ["pvdf film", "piezoelectric pvdf", "photomechanical polymer", "piezoresistive fabric", "graphene nanoplatelet", "phase change material", "pcm"],
+      "quantum": ["auxetic metamaterial", "pmn-pt crystal", "mxene", "magnetocaloric gadolinium", "negative poisson ratio lattice", "chiral mechanical metamaterial"]
+    }
+  },
+  {
+    "id": "eng-joining",
+    "category": "Assembly & Fastening",
+    "prompt": "Name a method of joining or fastening engineering components",
+    "hint": "Permanent, semi-permanent, thermal, mechanical, or chemical joining",
+    "tiers": {
+      "workshop": ["nut and bolt", "bolt", "wood screw", "machine screw", "pop rivet", "pva glue", "solder", "hot melt glue", "nail"],
+      "machining": ["tig welding", "mig welding", "spot welding", "brazing", "snap fit", "countersunk screw", "socket head cap screw", "grub screw", "stud"],
+      "toolroom": ["blind rivet", "superglue", "cyanoacrylate", "epoxy adhesive", "silver solder", "roll pin", "dowel pin", "taper pin", "retaining ring", "circlip"],
+      "aerospace": ["friction stir welding", "ultrasonic welding", "loctite", "threadlocker", "solid rivet", "solvent welding", "tensol", "hard brazing", "cleco fastener"],
+      "submicron": ["electron beam welding", "laser beam welding", "diffusion bonding", "structural acrylic adhesive", "self-piercing rivet", "hot gas welding"],
+      "quantum": ["explosive welding", "transient liquid phase bonding", "tlp bonding", "laser micro-welding", "thermosonic wire bonding", "anodic bonding", "friction hydro-pillar"]
+    }
+  },
+  {
+    "id": "eng-testing",
+    "category": "Testing & Metrology",
+    "prompt": "Name a material testing or quality inspection method",
+    "hint": "Destructive or non-destructive quality evaluation",
+    "tiers": {
+      "workshop": ["visual inspection", "steel rule", "weighing scale", "tensile test", "scratch test", "spirit level", "feeler gauge"],
+      "machining": ["vernier caliper", "micrometer", "dial indicator", "charpy test", "brinell test", "caliper", "height gauge"],
+      "toolroom": ["vickers test", "rockwell test", "go no go gauge", "plug gauge", "dye penetrant inspection", "izod test", "slip gauge", "sine bar"],
+      "aerospace": ["coordinate measuring machine", "cmm", "ultrasonic testing", "surface roughness tester", "eddy current testing", "magnetic particle inspection", "ra tester"],
+      "submicron": ["x-ray radiography", "optical comparator", "shadowgraph", "digital image correlation", "dic", "acoustic emission testing", "micro-vickers test"],
+      "quantum": ["industrial ct scan", "computed tomography", "laser doppler vibrometry", "scanning electron microscopy", "sem", "white light interferometry", "nano-indentation"]
+    }
+  },
+  {
+    "id": "eng-designers",
+    "category": "Design History & Pioneers",
+    "prompt": "Name an influential industrial designer, engineer, or design movement",
+    "hint": "Pioneers who shaped modern products and manufacturing",
+    "tiers": {
+      "workshop": ["james dyson", "dyson", "bauhaus", "dieter rams", "jony ive", "apple", "philippe starck", "henry ford"],
+      "machining": ["memphis group", "de stijl", "raymond loewy", "isambard kingdom brunel", "brunel", "charles and ray eames", "eames"],
+      "toolroom": ["art deco", "william morris", "arts and crafts", "marc newson", "kenneth grange", "peter behrens", "luigi colani"],
+      "aerospace": ["modernism", "le corbusier", "streamlining", "richard rogers", "norman foster", "zaha hadid", "thomas heatherwick"],
+      "submicron": ["walter gropius", "marcel breuer", "marianne brandt", "ettore sottsass", "buckminster fuller", "mies van der rohe"],
+      "quantum": ["christopher dresser", "henry royce", "barnes wallis", "colin chapman", "frei otto", "alexander issigonis", "verner panton"]
+    }
+  },
+  {
+    "id": "eng-sustainability",
+    "category": "Sustainability & Environment",
+    "prompt": "Name a sustainable engineering concept, metric, or circular design strategy",
+    "hint": "Reducing environmental impact and carbon emissions",
+    "tiers": {
+      "workshop": ["recycling", "reusing", "solar power", "wind power", "carbon footprint", "energy saving", "repairing"],
+      "machining": ["6 rs", "life cycle assessment", "lca", "biodegradable", "energy star", "rohs", "rethink", "refuse", "reduce"],
+      "toolroom": ["cradle to cradle", "circular economy", "embodied energy", "weee", "design for disassembly", "dfd", "upcycling"],
+      "aerospace": ["iso 14001", "design for manufacture and assembly", "dfma", "nesting", "material nesting", "carbon offsetting", "biomimicry"],
+      "submicron": ["environmental product declaration", "epd", "closed loop supply chain", "eco-indicator 99", "bio-composite", "material passport"],
+      "quantum": ["industrial symbiosis", "factor 10", "exergy analysis", "depolymerization", "planetary boundaries", "biological nutrients loop"]
+    }
+  },
+  {
+    "id": "eng-cad-cae",
+    "category": "CAD & Digital Engineering",
+    "prompt": "Name a CAD, CAM, or CAE digital engineering tool or technique",
+    "hint": "Software modeling, simulation, and computer-aided manufacture",
+    "tiers": {
+      "workshop": ["cad", "2d drawing", "3d modeling", "3d printing slicer", "cura", "tinkercad", "fusion 360", "laser cutting software"],
+      "machining": ["cam", "g-code", "parametric modeling", "solidworks", "autodesk inventor", "onshape", "dxf export", "step file"],
+      "toolroom": ["fea", "finite element analysis", "cfd", "computational fluid dynamics", "mesh generation", "von mises stress simulation", "toolpath generation"],
+      "aerospace": ["topology optimisation", "generative design", "catia", "siemens nx", "kinematic simulation", "ptc creo", "ansys"],
+      "submicron": ["modal vibration analysis", "multi-physics simulation", "comsol", "moldflow simulation", "cfd thermal boundary analysis"],
+      "quantum": ["digital twin", "stochastic fatigue simulation", "lattice infill homogenization", "molecular dynamics simulation", "abqaus co-simulation"]
+    }
+  }
+]
+;
+let GEOLLION_PROMPTS = ENGINILLION_PROMPTS; // alias
+
+let quizState = {
+  screen: 'setup',
+  mode: 'team',
+  topic: '',
+  source: 'flashcards',
+  questionCount: 10,
+  timerSeconds: 30,
+  soundEnabled: true,
+  team1Name: 'Team Mechanical',
+  team2Name: 'Team Electronics',
+  team1Score: 0,
+  team2Score: 0,
+  soloScore: 0,
+  streak: 0,
+  maxStreak: 0,
+  currentIdx: 0,
+  revealed: false,
+  selectedChoice: null,
+  timerRemaining: 0,
+  timerInterval: null,
+  questions: []
+};
+
+let wsState = {
+  title: 'OCR A-Level Design Engineering (H404) Assessment',
+  subtitle: 'Complete all questions. Marks are indicated in brackets. Show all calculations and technical reasoning clearly.',
+  topic: '',
+  level: '',
+  targetMarks: 20,
+  skill: '',
+  includeLines: true,
+  includeHeader: true,
+  questions: []
+};
+
+function launchConfetti() {
+  const canvas = document.createElement('canvas');
+  canvas.style.position = 'fixed';
+  canvas.style.top = '0';
+  canvas.style.left = '0';
+  canvas.style.width = '100vw';
+  canvas.style.height = '100vh';
+  canvas.style.pointerEvents = 'none';
+  canvas.style.zIndex = '99999';
+  document.body.appendChild(canvas);
+
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const count = 120;
+  const particles = [];
+  const colors = ['#dc2626', '#ea580c', '#eab308', '#16a34a', '#0284c7', '#7c3aed', '#ec4899', '#f43f5e'];
+
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      x: canvas.width / 2,
+      y: canvas.height * 0.45,
+      r: 3 + Math.random() * 5,
+      vx: (Math.random() - 0.5) * 16,
+      vy: -Math.random() * 14 - 3,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      alpha: 1,
+      decay: 0.012 + Math.random() * 0.018,
+      gravity: 0.35 + Math.random() * 0.15,
+      tilt: Math.random() * 10,
+      tiltAngle: Math.random() * Math.PI,
+      tiltSpeed: 0.1 + Math.random() * 0.2
+    });
+  }
+
+  let animId;
+  function update() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    let alive = 0;
+
+    particles.forEach(p => {
+      p.x += p.vx;
+      p.vy += p.gravity;
+      p.y += p.vy;
+      p.vx *= 0.985;
+      p.alpha -= p.decay;
+      p.tiltAngle += p.tiltSpeed;
+      p.tilt = Math.sin(p.tiltAngle) * 8;
+
+      if (p.alpha > 0) {
+        alive++;
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, p.alpha);
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.ellipse(p.x + p.tilt, p.y, p.r, p.r * 0.5, p.tiltAngle, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    });
+
+    if (alive > 0) {
+      animId = requestAnimationFrame(update);
+    } else {
+      cancelAnimationFrame(animId);
+      canvas.remove();
+    }
+  }
+
+  update();
+}
+
+function cleanAnswerText(html) {
+  if (!html) return '';
+  return html.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function renderTeachersHub() {
+  const tab = state.teacherTab || 'hub';
+  if (tab === 'enginillion' || tab === 'geollion') {
+    renderGeollionGenerator();
+  } else if (tab === 'quiz') {
+    renderQuizGenerator();
+  } else if (tab === 'worksheet') {
+    renderWorksheetGenerator();
+  } else {
+    renderTeacherDashboard();
+  }
+}
+
+function switchTeacherTab(tab) {
+  state.teacherTab = tab;
+  toHash();
+  renderTeachersHub();
+}
+
+function renderTeacherDashboard() {
+  const html = `
+    <div class="teacher-hub-wrap">
+      <nav class="teacher-nav">
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Show Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+      </nav>
+
+      <div class="teacher-hero-header">
+        <h1 class="teacher-hero-title">Teacher's Revision & Classroom Hub</h1>
+        <p class="teacher-hero-desc">Curriculum-aligned classroom gamification, customizable homework sheets, and mock assessments based on official OCR A-Level Design Engineering (H404) past papers.</p>
+      </div>
+
+      <div class="teacher-gateway-grid">
+        <article class="teacher-card" style="border-top: 3px solid #dc2626;">
+          <div>
+            <span class="teacher-card-badge" style="color: #dc2626; border-color: rgba(220, 38, 38, 0.3); background: rgba(220, 38, 38, 0.08);">Classroom Hit · Inspired by Krillion</span>
+            <h2 class="teacher-card-title">⚙️ Enginillion: Engineering Precision Trivia Dive</h2>
+            <p class="teacher-card-desc">The rarer and more advanced your engineering answer, the tighter you drill into micrometer and nanometer precision tolerances! Students race against the clock to name the rarest alloys, mechanisms, sensors, and manufacturing processes.</p>
+            <ul class="teacher-card-features">
+              <li>6 real engineering tolerance tiers: Workshop (±1 mm), Machine Shop (±0.1 mm), Precision Toolroom (±0.01 mm), Aerospace Metrology (±1 µm), Sub-Micron (±0.1 µm), and Atomic/Quantum (±1 nm)</li>
+              <li>Live animated Precision Tolerance Gauge Meter & mechanical acoustic feedback</li>
+              <li>20+ OCR H404 curriculum prompts with 600+ categorized engineering answers</li>
+              <li>Solo challenge or Team Face-Off mode (Team Mechanical vs Team Electronics)</li>
+              <li>Printable classroom drill sheets with teacher tolerance tier key</li>
+            </ul>
+          </div>
+          <button type="button" class="btn-gateway" style="background:#dc2626;" onclick="switchTeacherTab('enginillion')">Play Enginillion Generator →</button>
+        </article>
+
+        <article class="teacher-card">
+          <div>
+            <span class="teacher-card-badge">Classroom Gamification</span>
+            <h2 class="teacher-card-title">🎮 Fun Quiz Show Generator</h2>
+            <p class="teacher-card-desc">Run engaging, high-energy quizzes on your classroom projector or smartboard. Supports team competitions, rapid multiple-choice, speed timers, and audio effects.</p>
+            <ul class="teacher-card-features">
+              <li>Team 1 vs Team 2 scoreboard with live +1/-1 point adjustments</li>
+              <li>Rapid-fire 4-choice recall with instant step-by-step engineering explanations</li>
+              <li>Customizable 15s-60s countdown timer with audio chimes & fanfare</li>
+              <li>Printable quiz worksheets with teacher answer key</li>
+            </ul>
+          </div>
+          <button type="button" class="btn-gateway" onclick="switchTeacherTab('quiz')">Launch Quiz Generator →</button>
+        </article>
+
+        <article class="teacher-card">
+          <div>
+            <span class="teacher-card-badge">Assessment Creator</span>
+            <h2 class="teacher-card-title">📋 Question & Worksheet Generator</h2>
+            <p class="teacher-card-desc">Assemble tailored, printable assessment papers and homework booklets from official OCR H404 past paper questions with diagrams, formulas, and figures.</p>
+            <ul class="teacher-card-features">
+              <li>Target specific mark totals (10m, 20m, 30m, 50m) or custom topics</li>
+              <li>Authentic exam cover table (Name, Date, Score) and ruled response lines</li>
+              <li>Interactive question swapping, reordering, and mark recalculation</li>
+              <li>One-click export to Student Worksheet PDF + Teacher Mark Scheme Key</li>
+            </ul>
+          </div>
+          <button type="button" class="btn-gateway" onclick="switchTeacherTab('worksheet')">Build Custom Worksheet →</button>
+        </article>
+      </div>
+
+      <div>
+        <h2 class="teacher-section-title">⚡ Quick-Start Lesson Presets</h2>
+        <div class="teacher-presets-grid">
+          <div class="preset-card" onclick="launchGeollionPreset('classic7')">
+            <div>
+              <h3 class="preset-title">⚙️ 7-Prompt Enginillion Precision Drill</h3>
+              <p class="preset-sub">Classic 25-second rarity dive across alloys, mechanisms, sensors, and manufacturing.</p>
+            </div>
+            <span class="preset-action" style="color:#dc2626">Launch Drill →</span>
+          </div>
+
+          <div class="preset-card" onclick="launchGeollionPreset('teamdrill')">
+            <div>
+              <h3 class="preset-title">⚔️ Team Precision Race (Showdown)</h3>
+              <p class="preset-sub">Team Mechanical vs Team Electronics competing for highest cumulative precision points.</p>
+            </div>
+            <span class="preset-action" style="color:#dc2626">Start Match →</span>
+          </div>
+
+          <div class="preset-card" onclick="launchQuizPreset('bellringer')">
+            <div>
+              <h3 class="preset-title">⚡ 5-Min Starter Bell-Ringer</h3>
+              <p class="preset-sub">5 rapid-fire multiple-choice questions on materials, mechanisms, and workshop tools.</p>
+            </div>
+            <span class="preset-action">Start Quiz →</span>
+          </div>
+
+          <div class="preset-card" onclick="launchQuizPreset('teamshowdown')">
+            <div>
+              <h3 class="preset-title">🕹️ Mechanics & Electronics Showdown</h3>
+              <p class="preset-sub">10-question team showdown on compound gears, stress/strain, Ohm's law, and logic circuits.</p>
+            </div>
+            <span class="preset-action">Launch Game →</span>
+          </div>
+
+          <div class="preset-card" onclick="launchWorksheetPreset('starter20')">
+            <div>
+              <h3 class="preset-title">📄 20-Mark Unit Check Assessment</h3>
+              <p class="preset-sub">Printable assessment with ruled answer lines on Young's modulus, gears, and potential dividers.</p>
+            </div>
+            <span class="preset-action">Generate Test →</span>
+          </div>
+
+          <div class="preset-card" onclick="launchWorksheetPreset('exam50')">
+            <div>
+              <h3 class="preset-title">📚 Full Component Mock Paper (50 Marks)</h3>
+              <p class="preset-sub">Comprehensive printable past paper exam pack with cover table and official teacher mark scheme.</p>
+            </div>
+            <span class="preset-action">Assemble Mock →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+function launchQuizPreset(type) {
+  state.teacherTab = 'quiz';
+  toHash();
+
+  if (type === 'bellringer') {
+    quizState.mode = 'mc';
+    quizState.questionCount = 5;
+    quizState.timerSeconds = 20;
+    quizState.topic = '';
+  } else if (type === 'teamshowdown') {
+    quizState.mode = 'team';
+    quizState.questionCount = 10;
+    quizState.timerSeconds = 30;
+    quizState.team1Name = 'Team Mechanical';
+    quizState.team2Name = 'Team Electronics';
+    quizState.topic = '6';
+  }
+
+  renderTeachersHub();
+  startQuiz();
+}
+
+function launchWorksheetPreset(type) {
+  state.teacherTab = 'worksheet';
+  toHash();
+
+  if (type === 'starter20') {
+    wsState.title = 'OCR A-Level Design Engineering · 20-Mark Core Unit Check';
+    wsState.subtitle = 'Answer all questions. Show all working, units, and engineering calculations clearly.';
+    wsState.targetMarks = 20;
+    wsState.includeLines = true;
+    wsState.includeHeader = true;
+    wsState.topic = '';
+  } else if (type === 'exam50') {
+    wsState.title = 'OCR A-Level Design Engineering (H404) · Component Mock Paper';
+    wsState.subtitle = 'Time allowed: 1 hour. Maximum marks: 50. Calculators and drawing instruments permitted.';
+    wsState.targetMarks = 50;
+    wsState.includeLines = true;
+    wsState.includeHeader = true;
+    wsState.topic = '';
+  }
+
+  wsState.questions = [];
+  renderTeachersHub();
+}
+
+/* ========================================================
+   ENGINILLION: PRECISION ENGINEERING TRIVIA GAME
+   ======================================================== */
+const ENGINILLION_TIERS = {
+  workshop: {
+    name: 'Workshop Scale (±1.0 mm)',
+    icon: '📏',
+    depth: 100,
+    points: 100,
+    color: '#64748b',
+    bg: '#f8fafc',
+    border: '#cbd5e1',
+    desc: 'Standard manual hand tools, hacksaws, sand casting & rough stock'
+  },
+  machining: {
+    name: 'Machine Shop (±0.1 mm)',
+    icon: '⚙️',
+    depth: 300,
+    points: 300,
+    color: '#0284c7',
+    bg: '#f0f9ff',
+    border: '#bae6fd',
+    desc: 'Centre lathe, vertical milling, sheet metal press brake, injection moulding'
+  },
+  toolroom: {
+    name: 'Precision Toolroom (±0.01 mm)',
+    icon: '🔬',
+    depth: 750,
+    points: 750,
+    color: '#16a34a',
+    bg: '#f0fdf4',
+    border: '#bbf7d0',
+    desc: 'Micrometer, surface grinding, spark erosion EDM, CNC machining'
+  },
+  aerospace: {
+    name: 'High-Tolerance Aerospace (±1 µm)',
+    icon: '🚀',
+    depth: 1500,
+    points: 1500,
+    color: '#f59e0b',
+    bg: '#fffbeb',
+    border: '#fde68a',
+    desc: 'CMM metrology, wire EDM, selective laser sintering, titanium Grade 5'
+  },
+  submicron: {
+    name: 'Sub-Micron Precision (±0.1 µm)',
+    icon: '💎',
+    depth: 2500,
+    points: 2500,
+    color: '#ea580c',
+    bg: '#fff7ed',
+    border: '#fed7aa',
+    desc: 'Laser interferometry, cleanroom tooling, superalloys & optical alignment'
+  },
+  quantum: {
+    name: 'Atomic & Nano Precision (ONE IN AN ENGINILLION!)',
+    icon: '⚡',
+    depth: 5000,
+    points: 5000,
+    color: '#dc2626',
+    bg: '#fef2f2',
+    border: '#fca5a5',
+    desc: 'Sub-nanometer photolithography, single-crystal superalloys, MEMS & quantum metrology!'
+  }
+};
+
+const GEOLLION_TIERS = ENGINILLION_TIERS; // backward alias
+
+const geollionState = {
+  screen: 'setup',
+  mode: 'solo',
+  promptCount: 7,
+  timerSeconds: 25,
+  topic: 'all',
+  soundEnabled: true,
+  fuzzyTolerance: true,
+  prompts: [],
+  currentIdx: 0,
+  currentTeam: 1,
+  team1Name: 'Team Mechanical',
+  team2Name: 'Team Electronics',
+  team1Score: 0,
+  team2Score: 0,
+  team1Depth: 0,
+  team2Depth: 0,
+  timerRemaining: 0,
+  timerInterval: null,
+  history: [],
+  lastSubmission: null
+};
+
+function normalizeEngineeringTerm(s) {
+  if (!s) return '';
+  return s.toLowerCase()
+    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()'"?]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizeGeologyTerm(s) { return normalizeEngineeringTerm(s); }
+
+function levenshteinDistance(s1, s2) {
+  if (s1 === s2) return 0;
+  if (!s1.length) return s2.length;
+  if (!s2.length) return s1.length;
+  const v0 = new Array(s2.length + 1);
+  const v1 = new Array(s2.length + 1);
+  for (let i = 0; i <= s2.length; i++) v0[i] = i;
+  for (let i = 0; i < s1.length; i++) {
+    v1[0] = i + 1;
+    for (let j = 0; j < s2.length; j++) {
+      const cost = s1[i] === s2[j] ? 0 : 1;
+      v1[j + 1] = Math.min(v1[j] + 1, v0[j + 1] + 1, v0[j] + cost);
+    }
+    for (let j = 0; j <= s2.length; j++) v0[j] = v1[j];
+  }
+  return v1[s2.length];
+}
+
+function evaluateGeollionAnswer(userInput, prompt) {
+  const normInput = normalizeEngineeringTerm(userInput);
+  if (!normInput) return null;
+
+  const tierOrder = ['quantum', 'submicron', 'aerospace', 'toolroom', 'machining', 'workshop'];
+  const singular = normInput.endsWith('s') && !normInput.endsWith('ss') ? normInput.slice(0, -1) : normInput;
+
+  for (const tierKey of tierOrder) {
+    const wordList = prompt.tiers[tierKey] || [];
+    for (const term of wordList) {
+      const normTerm = normalizeEngineeringTerm(term);
+      const normTermSingular = normTerm.endsWith('s') && !normTerm.endsWith('ss') ? normTerm.slice(0, -1) : normTerm;
+
+      if (normInput === normTerm || singular === normTerm || normInput === normTermSingular) {
+        return { matched: true, matchedTerm: term, tierKey: tierKey, typo: false };
+      }
+
+      if (geollionState.fuzzyTolerance && normInput.length >= 4 && normTerm.length >= 4) {
+        const dist = levenshteinDistance(normInput, normTerm);
+        const maxDist = normTerm.length >= 8 ? 2 : 1;
+        if (dist <= maxDist) {
+          return { matched: true, matchedTerm: term, tierKey: tierKey, typo: true };
+        }
+      }
+    }
+  }
+
+  return { matched: false };
+}
+
+function renderGeollionGenerator() {
+  if (geollionState.screen === 'playing') {
+    renderGeollionLive();
+  } else if (geollionState.screen === 'reveal') {
+    renderGeollionReveal();
+  } else if (geollionState.screen === 'summary') {
+    renderGeollionSummary();
+  } else {
+    renderGeollionSetup();
+  }
+}
+
+function renderGeollionSetup() {
+  const html = `
+    <div class="teacher-hub-wrap">
+      <nav class="teacher-nav">
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+      </nav>
+
+      <div class="geollion-panel">
+        <div class="geollion-banner">
+          <div>
+            <div class="geollion-banner-title">⚙️ ENGINILLION: The Engineering Precision Trivia Dive</div>
+            <div class="geollion-banner-desc">
+              Inspired by <i>Krillion</i> — the rarer and more advanced your engineering answer, the tighter you drill into micrometer and nanometer tolerances!
+              Common workshop materials stay at the surface, while aerospace superalloys, advanced mechanisms, and nano-materials plunge straight into <b>Atomic Precision</b>.
+            </div>
+          </div>
+          <button type="button" class="btn-minimal" onclick="printGeollionHandout()">📄 Print Classroom Handout</button>
+        </div>
+
+        <div class="quiz-config-grid">
+          <div class="quiz-field">
+            <label>Game Mode</label>
+            <select id="cfg-geo-mode" onchange="geollionState.mode=this.value;renderGeollionSetup()">
+              <option value="solo" ${geollionState.mode==='solo'?'selected':''}>Single Device / Solo Drill</option>
+              <option value="team" ${geollionState.mode==='team'?'selected':''}>Team Showdown (Team Mechanical vs Team Electronics)</option>
+            </select>
+          </div>
+
+          <div class="quiz-field">
+            <label>Number of Prompts</label>
+            <select id="cfg-geo-count" onchange="geollionState.promptCount=+this.value">
+              <option value="5" ${geollionState.promptCount===5?'selected':''}>5 Prompts (Quick Drill - 2 mins)</option>
+              <option value="7" ${geollionState.promptCount===7?'selected':''}>7 Prompts (Classic Krillion - 3.5 mins)</option>
+              <option value="10" ${geollionState.promptCount===10?'selected':''}>10 Prompts (Precision Master - 5 mins)</option>
+            </select>
+          </div>
+
+          <div class="quiz-field">
+            <label>Curriculum Theme</label>
+            <select id="cfg-geo-topic" onchange="geollionState.topic=this.value">
+              <option value="all" ${geollionState.topic==='all'?'selected':''}>All Engineering Topics (Full Variety)</option>
+              <option value="materials" ${geollionState.topic==='materials'?'selected':''}>Materials (Metals, Polymers, Smart Materials)</option>
+              <option value="mechanisms" ${geollionState.topic==='mechanisms'?'selected':''}>Mechanisms, Gears & Motion</option>
+              <option value="manufacturing" ${geollionState.topic==='manufacturing'?'selected':''}>Manufacturing & Joining Processes</option>
+              <option value="electronics" ${geollionState.topic==='electronics'?'selected':''}>Electronics (Sensors, Motors, Actuators)</option>
+              <option value="testing" ${geollionState.topic==='testing'?'selected':''}>Metrology & Testing (NDT, Quality)</option>
+              <option value="sustainability" ${geollionState.topic==='sustainability'?'selected':''}>Sustainable Design & Pioneers</option>
+            </select>
+          </div>
+
+          <div class="quiz-field">
+            <label>Timer per Prompt</label>
+            <select id="cfg-geo-timer" onchange="geollionState.timerSeconds=+this.value">
+              <option value="0" ${geollionState.timerSeconds===0?'selected':''}>Untimed / Open Discussion</option>
+              <option value="15" ${geollionState.timerSeconds===15?'selected':''}>15 Seconds (Lightning)</option>
+              <option value="25" ${geollionState.timerSeconds===25?'selected':''}>25 Seconds (Recommended)</option>
+              <option value="35" ${geollionState.timerSeconds===35?'selected':''}>35 Seconds (Deliberate)</option>
+            </select>
+          </div>
+
+          <div class="quiz-field" style="grid-column:1 / -1">
+            <label>Tolerance & Audio Settings</label>
+            <div style="display:flex;align-items:center;gap:18px;padding-top:4px;flex-wrap:wrap">
+              <label style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:0.85rem">
+                <input type="checkbox" ${geollionState.fuzzyTolerance?'checked':''} onchange="geollionState.fuzzyTolerance=this.checked" style="accent-color:var(--ink)">
+                <span>Fuzzy typo tolerance (allows minor spelling variations)</span>
+              </label>
+              <label style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:0.85rem">
+                <input type="checkbox" ${geollionState.soundEnabled?'checked':''} onchange="geollionState.soundEnabled=this.checked;QuizAudio.enabled=this.checked;" style="accent-color:var(--ink)">
+                <span>Sound effects (rumble, drilling hum, correct chimes, fanfare)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        ${geollionState.mode === 'team' ? `
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border)">
+            <div class="quiz-field">
+              <label>Team 1 Name (Red / Mechanical)</label>
+              <input type="text" id="cfg-team1-name" value="${esc(geollionState.team1Name)}" oninput="geollionState.team1Name=this.value.trim()||'Team Mechanical'">
+            </div>
+            <div class="quiz-field">
+              <label>Team 2 Name (Blue / Electronics)</label>
+              <input type="text" id="cfg-team2-name" value="${esc(geollionState.team2Name)}" oninput="geollionState.team2Name=this.value.trim()||'Team Electronics'">
+            </div>
+          </div>
+        ` : ''}
+
+        <div style="display:flex;justify-content:center;margin-top:10px">
+          <button type="button" class="btn-gateway" style="max-width:320px;background:#dc2626;border-color:#dc2626;" onclick="startGeollion()">
+            ⚙️ Begin Enginillion Expedition →
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+function launchGeollionPreset(presetType) {
+  state.teacherTab = 'enginillion';
+  toHash();
+
+  if (presetType === 'classic7') {
+    geollionState.mode = 'solo';
+    geollionState.promptCount = 7;
+    geollionState.timerSeconds = 25;
+    geollionState.topic = 'all';
+  } else if (presetType === 'teamdrill') {
+    geollionState.mode = 'team';
+    geollionState.promptCount = 8;
+    geollionState.timerSeconds = 30;
+    geollionState.team1Name = 'Team Mechanical';
+    geollionState.team2Name = 'Team Electronics';
+    geollionState.topic = 'all';
+  }
+
+  renderTeachersHub();
+  startGeollion();
+}
+
+function startGeollion() {
+  if (geollionState.timerInterval) clearInterval(geollionState.timerInterval);
+
+  let pool = (ENGINILLION_PROMPTS && ENGINILLION_PROMPTS.length) ? ENGINILLION_PROMPTS.slice() : [];
+
+  if (geollionState.topic && geollionState.topic !== 'all') {
+    const filtered = pool.filter(p => p.category.toLowerCase().includes(geollionState.topic.toLowerCase()));
+    if (filtered.length >= 3) pool = filtered;
+  }
+
+  shuffle(pool);
+  geollionState.prompts = pool.slice(0, Math.min(geollionState.promptCount, pool.length));
+  geollionState.currentIdx = 0;
+  geollionState.currentTeam = 1;
+  geollionState.team1Score = 0;
+  geollionState.team2Score = 0;
+  geollionState.team1Depth = 0;
+  geollionState.team2Depth = 0;
+  geollionState.history = [];
+  geollionState.screen = 'playing';
+
+  renderGeollionGenerator();
+  startGeollionTimer();
+  if (geollionState.soundEnabled) QuizAudio.deepRumble();
+}
+
+function startGeollionTimer() {
+  if (geollionState.timerInterval) clearInterval(geollionState.timerInterval);
+  if (geollionState.timerSeconds <= 0) {
+    geollionState.timerRemaining = 0;
+    return;
+  }
+
+  geollionState.timerRemaining = geollionState.timerSeconds;
+  updateGeollionTimerDisplay();
+
+  geollionState.timerInterval = setInterval(() => {
+    geollionState.timerRemaining--;
+    updateGeollionTimerDisplay();
+
+    if (geollionState.timerRemaining <= 5 && geollionState.soundEnabled) {
+      QuizAudio.tick();
+    }
+
+    if (geollionState.timerRemaining <= 0) {
+      clearInterval(geollionState.timerInterval);
+      submitGeollionAnswer(false);
+    }
+  }, 1000);
+}
+
+function updateGeollionTimerDisplay() {
+  const el = $('#geo-timer-num');
+  const box = $('#geo-timer-box');
+  if (el) el.textContent = `${geollionState.timerRemaining}s`;
+  if (box) {
+    if (geollionState.timerRemaining <= 5) {
+      box.classList.add('urgent');
+    } else {
+      box.classList.remove('urgent');
+    }
+  }
+}
+
+function renderGeollionLive() {
+  const p = geollionState.prompts[geollionState.currentIdx];
+  const roundNum = geollionState.currentIdx + 1;
+  const totalRounds = geollionState.prompts.length;
+
+  let teamBannerHtml = '';
+  if (geollionState.mode === 'team') {
+    const isT1 = geollionState.currentTeam === 1;
+    teamBannerHtml = `
+      <div class="quiz-scoreboard-grid" style="margin-bottom:12px">
+        <div class="team-score-card ${isT1 ? 'active-team' : ''}" style="${isT1 ? 'border-color:#dc2626;background:rgba(220,38,38,0.08);' : ''}">
+          <div>
+            <div class="team-name" style="${isT1 ? 'color:#dc2626;font-weight:800' : ''}">⚙️ ${geollionState.team1Name} ${isT1 ? '◀ CURRENT TURN' : ''}</div>
+            <div style="font-size:0.8rem;color:var(--muted)">Tolerance Points: ${geollionState.team1Score.toLocaleString()} pts</div>
+          </div>
+        </div>
+        <div class="team-score-card ${!isT1 ? 'active-team' : ''}" style="${!isT1 ? 'border-color:#0284c7;background:rgba(2,132,199,0.08);' : ''}">
+          <div>
+            <div class="team-name" style="${!isT1 ? 'color:#0284c7;font-weight:800' : ''}">⚡ ${geollionState.team2Name} ${!isT1 ? '◀ CURRENT TURN' : ''}</div>
+            <div style="font-size:0.8rem;color:var(--muted)">Tolerance Points: ${geollionState.team2Score.toLocaleString()} pts</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const totalCumulativePoints = geollionState.mode === 'team' 
+    ? (geollionState.team1Score + geollionState.team2Score)
+    : geollionState.history.reduce((sum, h) => sum + h.points, 0);
+
+  const html = `
+    <div class="teacher-hub-wrap">
+      <div class="geollion-panel">
+        <div class="quiz-live-header">
+          <div class="quiz-live-progress">
+            PROMPT <b>${roundNum}</b> OF <b>${totalRounds}</b> · PRECISION EXPEDITION
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            ${geollionState.timerSeconds ? `
+              <div class="quiz-timer-box" id="geo-timer-box">
+                ⏱️ <span id="geo-timer-num">${geollionState.timerRemaining}s</span>
+              </div>
+            ` : '<div class="quiz-timer-box">⏱️ Untimed</div>'}
+            <button type="button" class="btn-minimal" onclick="geollionState.soundEnabled=!geollionState.soundEnabled;this.textContent=geollionState.soundEnabled?'🔊 Sound':'🔇 Mute'">
+              ${geollionState.soundEnabled ? '🔊 Sound' : '🔇 Mute'}
+            </button>
+            <button type="button" class="btn-minimal" onclick="abandonGeollion()">✕ Exit</button>
+          </div>
+        </div>
+
+        ${teamBannerHtml}
+
+        <div class="geollion-meter-card">
+          <div class="geollion-meter-top">
+            <span>ENGINEERING PRECISION & METROLOGY SCALE</span>
+            <span>Total Points: <span style="color:#dc2626">${totalCumulativePoints.toLocaleString()} pts</span></span>
+          </div>
+          <div class="geollion-meter-bar">
+            <div class="geollion-meter-seg" style="background:#64748b;width:16%" title="Workshop Scale (±1.0 mm)">±1mm</div>
+            <div class="geollion-meter-seg" style="background:#0284c7;width:18%" title="Machine Shop (±0.1 mm)">±0.1mm</div>
+            <div class="geollion-meter-seg" style="background:#16a34a;width:18%" title="Precision Toolroom (±0.01 mm)">±0.01mm</div>
+            <div class="geollion-meter-seg" style="background:#f59e0b;width:18%" title="Aerospace Metrology (±1 µm)">±1µm</div>
+            <div class="geollion-meter-seg" style="background:#ea580c;width:15%" title="Sub-Micron (±0.1 µm)">±0.1µm</div>
+            <div class="geollion-meter-seg" style="background:#dc2626;width:15%" title="Atomic & Nano (±1 nm)">±1nm!</div>
+          </div>
+        </div>
+
+        <div class="geollion-stage">
+          <span class="geollion-cat-badge">${esc(p.category)}</span>
+          <h2 class="geollion-prompt">${esc(p.prompt)}</h2>
+          <div class="geollion-hint">💡 Hint: ${esc(p.hint)}</div>
+
+          <form class="geollion-input-wrap" onsubmit="event.preventDefault();submitGeollionAnswer(true);">
+            <input type="text" id="geo-input" class="geollion-input" placeholder="Type engineering term & press Enter..." autocomplete="off" autofocus required>
+            <button type="submit" class="geollion-submit-btn">SUBMIT</button>
+            <button type="button" class="geollion-pass-btn" onclick="submitGeollionAnswer(false)">PASS</button>
+          </form>
+          <div style="font-size:0.75rem;color:var(--muted)">Press <b>Enter</b> to submit · Rare & obscure terms earn tighter tolerances and higher scores!</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+  setTimeout(() => {
+    const inp = $('#geo-input');
+    if (inp) inp.focus();
+  }, 50);
+}
+
+function submitGeollionAnswer(passed) {
+  if (geollionState.timerInterval) clearInterval(geollionState.timerInterval);
+
+  const p = geollionState.prompts[geollionState.currentIdx];
+  const inp = $('#geo-input');
+  const userText = inp ? inp.value.trim() : '';
+
+  let evalResult = null;
+  if (passed && userText) {
+    evalResult = evaluateGeollionAnswer(userText, p);
+  }
+
+  let tierKey = null;
+  let tierInfo = null;
+  let points = 0;
+  let isCorrect = false;
+
+  if (evalResult && evalResult.matched) {
+    tierKey = evalResult.tierKey;
+    tierInfo = ENGINILLION_TIERS[tierKey];
+    points = tierInfo.points;
+    isCorrect = true;
+
+    if (tierKey === 'quantum') {
+      if (geollionState.soundEnabled) QuizAudio.fanfare();
+      launchConfetti();
+    } else if (tierKey === 'submicron' || tierKey === 'aerospace') {
+      if (geollionState.soundEnabled) QuizAudio.coreSwell();
+    } else {
+      if (geollionState.soundEnabled) QuizAudio.correct();
+    }
+  } else {
+    if (geollionState.soundEnabled) QuizAudio.wrong();
+  }
+
+  const resultRecord = {
+    prompt: p,
+    userText: userText,
+    isCorrect: isCorrect,
+    evalResult: evalResult,
+    tierKey: tierKey,
+    tierInfo: tierInfo,
+    points: points,
+    team: geollionState.currentTeam
+  };
+
+  if (geollionState.mode === 'team') {
+    if (geollionState.currentTeam === 1) {
+      geollionState.team1Score += points;
+    } else {
+      geollionState.team2Score += points;
+    }
+  }
+
+  geollionState.history.push(resultRecord);
+  geollionState.lastSubmission = resultRecord;
+  geollionState.screen = 'reveal';
+
+  renderGeollionGenerator();
+}
+
+function renderGeollionReveal() {
+  const p = geollionState.prompts[geollionState.currentIdx];
+  const res = geollionState.lastSubmission;
+  const roundNum = geollionState.currentIdx + 1;
+  const totalRounds = geollionState.prompts.length;
+
+  let resultBannerHtml = '';
+  if (res.isCorrect) {
+    const t = res.tierInfo;
+    resultBannerHtml = `
+      <div class="geollion-tier-reveal" style="background:${t.bg};border-color:${t.color};color:${t.color}">
+        <div style="font-size:2.4rem">${t.icon}</div>
+        <div>
+          <div style="font-size:1.15rem;font-weight:800;letter-spacing:-0.01em">${t.name.toUpperCase()}</div>
+          <div style="font-size:0.9rem;font-weight:600;margin-top:2px">
+            "${esc(res.evalResult.matchedTerm)}" · +${t.points} Points Earned!
+            ${res.evalResult.typo ? '<span style="font-size:0.75rem;color:var(--muted);margin-left:6px">(spelling corrected)</span>' : ''}
+          </div>
+          <div style="font-size:0.78rem;color:var(--muted);margin-top:2px">${t.desc}</div>
+        </div>
+      </div>
+    `;
+  } else {
+    resultBannerHtml = `
+      <div class="geollion-tier-reveal" style="background:var(--surface-hover);border-color:var(--border);color:var(--muted)">
+        <div style="font-size:2.2rem">❌</div>
+        <div>
+          <div style="font-size:1.1rem;font-weight:700;color:var(--ink)">
+            ${res.userText ? `"${esc(res.userText)}" Not Recognized` : 'Time Expired / Passed'}
+          </div>
+          <div style="font-size:0.85rem;color:var(--muted);margin-top:2px">0 points earned for this round. Check the tolerance tier breakdown below!</div>
+        </div>
+      </div>
+    `;
+  }
+
+  const tierKeys = ['quantum', 'submicron', 'aerospace', 'toolroom', 'machining', 'workshop'];
+  let breakdownHtml = '';
+
+  tierKeys.forEach(tk => {
+    const t = ENGINILLION_TIERS[tk];
+    const words = p.tiers[tk] || [];
+    const isThisTier = res.tierKey === tk;
+
+    breakdownHtml += `
+      <div style="background:${isThisTier ? t.bg : 'var(--surface)'};border:1px solid ${isThisTier ? t.color : 'var(--border)'};border-radius:var(--radius);padding:10px 12px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-size:0.82rem;font-weight:700;color:${t.color}">
+            ${t.icon} ${t.name}
+          </span>
+          <span style="font-size:0.75rem;font-weight:600;color:var(--muted)">${t.points} pts</span>
+        </div>
+        <div class="geollion-answers-grid">
+          ${words.map(w => {
+            const isMatch = res.isCorrect && res.evalResult.matchedTerm.toLowerCase() === w.toLowerCase();
+            return `<span class="geollion-ans-pill ${isMatch ? 'user-matched' : ''}" style="${isMatch ? `border-color:${t.color};background:${t.color};color:#fff` : ''}">${esc(w)}</span>`;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  });
+
+  const html = `
+    <div class="teacher-hub-wrap">
+      <div class="geollion-panel">
+        <div class="quiz-live-header">
+          <div class="quiz-live-progress">
+            PROMPT <b>${roundNum}</b> OF <b>${totalRounds}</b> · TOLERANCE REVEAL
+          </div>
+          <button type="button" class="btn-minimal" onclick="abandonGeollion()">✕ Exit</button>
+        </div>
+
+        ${resultBannerHtml}
+
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px">
+          <div style="font-size:0.85rem;font-weight:700;color:var(--ink)">COMPLETE OCR SPECIFICATION TOLERANCE TIERS:</div>
+          <div style="display:grid;grid-template-columns:1fr;gap:8px">
+            ${breakdownHtml}
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:center;margin-top:18px">
+          <button type="button" class="btn-gateway" style="max-width:320px;background:#dc2626;border-color:#dc2626;" onclick="nextGeollionPrompt()">
+            ${roundNum < totalRounds ? 'Next Engineering Prompt →' : 'View Mission Summary →'}
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+function nextGeollionPrompt() {
+  if (geollionState.mode === 'team') {
+    geollionState.currentTeam = geollionState.currentTeam === 1 ? 2 : 1;
+  }
+
+  geollionState.currentIdx++;
+  if (geollionState.currentIdx < geollionState.prompts.length) {
+    geollionState.screen = 'playing';
+    renderGeollionGenerator();
+    startGeollionTimer();
+    if (geollionState.soundEnabled) QuizAudio.deepRumble();
+  } else {
+    endGeollion();
+  }
+}
+
+function endGeollion() {
+  if (geollionState.timerInterval) clearInterval(geollionState.timerInterval);
+  geollionState.screen = 'summary';
+  renderGeollionGenerator();
+  launchConfetti();
+  if (geollionState.soundEnabled) QuizAudio.fanfare();
+}
+
+function abandonGeollion() {
+  if (confirm('Exit current Enginillion drill?')) {
+    if (geollionState.timerInterval) clearInterval(geollionState.timerInterval);
+    geollionState.screen = 'setup';
+    renderGeollionGenerator();
+  }
+}
+
+function renderGeollionSummary() {
+  const totalPrompts = geollionState.prompts.length;
+  const correctCount = geollionState.history.filter(h => h.isCorrect).length;
+  const totalPoints = geollionState.history.reduce((sum, h) => sum + h.points, 0);
+
+  let teamSummaryHtml = '';
+  if (geollionState.mode === 'team') {
+    const t1Win = geollionState.team1Score > geollionState.team2Score;
+    const tie = geollionState.team1Score === geollionState.team2Score;
+    teamSummaryHtml = `
+      <div style="padding:16px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border);text-align:center;margin-bottom:16px">
+        <h3 style="margin:0 0 4px;font-size:1.2rem;font-weight:800;color:var(--ink)">
+          ${tie ? '🤝 HONORABLE DRAW!' : (t1Win ? `🏆 ${geollionState.team1Name} WINS!` : `🏆 ${geollionState.team2Name} WINS!`)}
+        </h3>
+        <div style="display:flex;justify-content:center;gap:32px;margin-top:10px">
+          <div>
+            <div style="font-size:0.8rem;color:var(--muted)">${geollionState.team1Name}</div>
+            <div style="font-size:1.3rem;font-weight:800;color:#dc2626">${geollionState.team1Score.toLocaleString()} pts</div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem;color:var(--muted)">${geollionState.team2Name}</div>
+            <div style="font-size:1.3rem;font-weight:800;color:#0284c7">${geollionState.team2Score.toLocaleString()} pts</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const historyRowsHtml = geollionState.history.map((h, i) => {
+    return `
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border)">
+        <div>
+          <span style="font-size:0.75rem;font-weight:700;color:var(--muted)">ROUND ${i + 1}</span>
+          <div style="font-size:0.88rem;font-weight:600;color:var(--ink)">${esc(h.prompt.prompt)}</div>
+          <div style="font-size:0.8rem;color:var(--muted)">
+            Input: <b>${h.userText ? esc(h.userText) : 'Passed'}</b>
+            ${h.isCorrect ? `→ Matched <b>${esc(h.evalResult.matchedTerm)}</b>` : ''}
+          </div>
+        </div>
+        <div style="text-align:right">
+          ${h.isCorrect ? `
+            <div style="font-size:0.85rem;font-weight:800;color:${h.tierInfo.color}">
+              ${h.tierInfo.icon} ${h.tierInfo.name.split('(')[0].trim()}
+            </div>
+            <div style="font-size:0.78rem;font-weight:600;color:var(--muted)">+${h.points} pts</div>
+          ` : '<span style="font-size:0.85rem;font-weight:700;color:var(--muted)">0 pts</span>'}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  const html = `
+    <div class="teacher-hub-wrap">
+      <div class="geollion-panel">
+        <div class="geollion-summary-card">
+          <div style="font-size:2.8rem">🏆</div>
+          <h2 style="margin:0 0 4px;font-size:1.4rem;font-weight:800;color:var(--ink)">ENGINILLION EXPEDITION COMPLETE</h2>
+          <p style="margin:0;font-size:0.88rem;color:var(--muted)">Great engineering recall! Here is your final performance report across tolerances.</p>
+
+          <div class="geollion-stats-grid" style="margin-top:16px">
+            <div class="geollion-stat-box">
+              <div class="geollion-stat-val">${totalPoints.toLocaleString()}</div>
+              <div class="geollion-stat-lbl">TOTAL PRECISION POINTS</div>
+            </div>
+            <div class="geollion-stat-box">
+              <div class="geollion-stat-val">${correctCount} / ${totalPrompts}</div>
+              <div class="geollion-stat-lbl">PROMPTS ANSWERED</div>
+            </div>
+            <div class="geollion-stat-box">
+              <div class="geollion-stat-val">${Math.round((correctCount / totalPrompts) * 100)}%</div>
+              <div class="geollion-stat-lbl">SUCCESS ACCURACY</div>
+            </div>
+          </div>
+        </div>
+
+        ${teamSummaryHtml}
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-top:16px">
+          <div style="padding:10px 14px;background:var(--surface-hover);font-size:0.82rem;font-weight:700;color:var(--ink)">
+            ROUND BY ROUND EXPEDITION LOG
+          </div>
+          ${historyRowsHtml}
+        </div>
+
+        <div style="display:flex;justify-content:center;gap:12px;margin-top:18px">
+          <button type="button" class="btn-gateway" style="max-width:240px;background:#dc2626;border-color:#dc2626;" onclick="startGeollion()">
+            🔄 Play Again
+          </button>
+          <button type="button" class="btn-minimal" onclick="switchTeacherTab('hub')">
+            ← Back to Teacher's Hub
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+function printGeollionHandout() {
+  const prompts = (ENGINILLION_PROMPTS && ENGINILLION_PROMPTS.length) ? ENGINILLION_PROMPTS.slice(0, 10) : [];
+  let printContainer = $('#print-container');
+  if (!printContainer) {
+    printContainer = document.createElement('div');
+    printContainer.id = 'print-container';
+    document.body.appendChild(printContainer);
+  }
+
+  const itemsHtml = prompts.map((p, idx) => `
+    <article class="print-pack-q-item" style="page-break-inside:avoid;margin-bottom:18pt;padding-bottom:12pt;border-bottom:1px solid #ccc">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4pt">
+        <b style="font-size:11pt">Prompt ${idx + 1}: ${esc(p.prompt)}</b>
+        <span style="font-size:8.5pt;color:#666">${esc(p.category)}</span>
+      </div>
+      <div style="font-size:8.5pt;color:#555;margin-bottom:6pt">💡 Hint: ${esc(p.hint)}</div>
+      <div style="border:1px dashed #aaa;min-height:36pt;padding:4pt;border-radius:4px;font-size:8.5pt;color:#888">
+        Student Answer: __________________________________________________________________
+      </div>
+    </article>
+  `).join('');
+
+  printContainer.innerHTML = `
+    <div style="margin-bottom:14pt;border-bottom:2pt solid #000;padding-bottom:6pt">
+      <h1 style="margin:0;font-size:16pt;font-weight:800">ENGINILLION · Precision Engineering Classroom Drill</h1>
+      <p style="margin:2pt 0 0;font-size:9pt;color:#555">OCR A-Level Design Engineering (H404) · The rarer and more precise your answer, the higher your tolerance rating!</p>
+    </div>
+    <table class="print-candidate-table" style="margin-bottom:14pt">
+      <tr>
+        <td style="width:50%"><b>Student Name:</b></td>
+        <td style="width:25%"><b>Date:</b></td>
+        <td style="width:25%"><b>Class / Group:</b></td>
+      </tr>
+      <tr>
+        <td colspan="2"><b>Total Precision Score:</b> _______ / 35,000 pts</td>
+        <td><b>Highest Tier Reached:</b> ____________</td>
+      </tr>
+    </table>
+    <main class="print-pack-list">
+      ${itemsHtml}
+    </main>
+  `;
+
+  document.body.classList.add('is-printing-pack');
+  setTimeout(() => {
+    window.print();
+  }, 100);
+}
+
+function handleGeollionKeydown(e) {
+  if (geollionState.screen === 'reveal' && (e.key === ' ' || e.key === 'Enter')) {
+    e.preventDefault();
+    nextGeollionPrompt();
+  }
+}
+
+/* ========================================================
+   QUIZ SHOW GENERATOR
+   ======================================================== */
+function renderQuizGenerator() {
+  if (quizState.screen === 'playing') {
+    renderQuizLive();
+  } else if (quizState.screen === 'ended') {
+    renderQuizSummary();
+  } else {
+    renderQuizSetup();
+  }
+}
+
+function renderQuizSetup() {
+  const topicsHtml = buildQuizTopicOptions();
+
+  const html = `
+    <div class="teacher-hub-wrap">
+      <nav class="teacher-nav">
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+      </nav>
+
+      <div class="quiz-panel">
+        <div>
+          <h2 style="margin:0 0 6px;font-size:1.3rem;font-weight:700;color:var(--ink)">Classroom Multiple-Choice Quiz Show</h2>
+          <p style="margin:0;font-size:0.85rem;color:var(--muted)">Direct, curriculum-aligned multiple choice questions with live scoreboard, speed timer, and audio effects.</p>
+        </div>
+
+        <div class="quiz-config-grid">
+          <div class="quiz-field">
+            <label>Game Mode</label>
+            <select id="cfg-quiz-mode" onchange="quizState.mode=this.value;renderQuizSetup();">
+              <option value="team" ${quizState.mode==='team'?'selected':''}>Team Showdown (Scoreboard & Buzzers)</option>
+              <option value="mc" ${quizState.mode==='mc'?'selected':''}>Rapid-Fire (Solo / Whole Class Speed)</option>
+            </select>
+          </div>
+
+          <div class="quiz-field">
+            <label>Topic Focus</label>
+            <select id="cfg-quiz-topic" onchange="quizState.topic=this.value;">
+              ${topicsHtml}
+            </select>
+          </div>
+
+          <div class="quiz-field">
+            <label>Number of Questions</label>
+            <select id="cfg-quiz-count" onchange="quizState.questionCount=+this.value;">
+              <option value="5" ${quizState.questionCount===5?'selected':''}>5 Questions (Quick Starter)</option>
+              <option value="10" ${quizState.questionCount===10?'selected':''}>10 Questions (Standard Round)</option>
+              <option value="15" ${quizState.questionCount===15?'selected':''}>15 Questions (Plenary)</option>
+              <option value="20" ${quizState.questionCount===20?'selected':''}>20 Questions (Grand Tournament)</option>
+            </select>
+          </div>
+
+          <div class="quiz-field">
+            <label>Timer per Question</label>
+            <select id="cfg-quiz-timer" onchange="quizState.timerSeconds=+this.value;">
+              <option value="0" ${quizState.timerSeconds===0?'selected':''}>No Timer (Untimed / Open Discussion)</option>
+              <option value="15" ${quizState.timerSeconds===15?'selected':''}>15 Seconds (Lightning)</option>
+              <option value="30" ${quizState.timerSeconds===30?'selected':''}>30 Seconds (Recommended)</option>
+              <option value="45" ${quizState.timerSeconds===45?'selected':''}>45 Seconds (Standard)</option>
+              <option value="60" ${quizState.timerSeconds===60?'selected':''}>60 Seconds (Deep Thinking)</option>
+            </select>
+          </div>
+
+          <div class="quiz-field" style="grid-column:1 / -1">
+            <label>Audio & Sound Effects</label>
+            <div style="display:flex;align-items:center;height:100%;gap:8px;padding-top:4px">
+              <label style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:0.85rem">
+                <input type="checkbox" id="cfg-quiz-sound" ${quizState.soundEnabled?'checked':''} onchange="quizState.soundEnabled=this.checked;QuizAudio.enabled=this.checked;" style="accent-color:var(--ink)">
+                <span>Sound effects enabled (correct chimes, buzzers, countdown tick, victory fanfare)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        ${quizState.mode === 'team' ? `
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border)">
+            <div class="quiz-field">
+              <label>Team 1 Name</label>
+              <input type="text" id="cfg-team1-name" value="${esc(quizState.team1Name)}" oninput="quizState.team1Name=this.value.trim()||'Team 1'">
+            </div>
+            <div class="quiz-field">
+              <label>Team 2 Name</label>
+              <input type="text" id="cfg-team2-name" value="${esc(quizState.team2Name)}" oninput="quizState.team2Name=this.value.trim()||'Team 2'">
+            </div>
+          </div>
+        ` : ''}
+
+        <div style="display:flex;justify-content:center;gap:12px;margin-top:10px">
+          <button type="button" class="btn-gateway" style="max-width:280px;" onclick="startQuiz()">
+            🚀 Start Quiz Show →
+          </button>
+          <button type="button" class="btn-minimal" onclick="printQuizHandout()">
+            🖨️ Print Quiz Paper
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+function buildQuizTopicOptions() {
+  let html = `<option value="">All Topics (Complete OCR H404 Specification)</option>`;
+  if (D && D.topics) {
+    const groups = {};
+    D.topics.forEach(t => {
+      const g = t.group || 'Topics';
+      if (!groups[g]) groups[g] = [];
+      groups[g].push(t);
+    });
+    for (const [g, ts] of Object.entries(groups)) {
+      html += `<optgroup label="${esc(g)}">`;
+      ts.forEach(t => {
+        html += `<option value="${esc(t.id)}" ${quizState.topic === t.id ? 'selected' : ''}>Topic ${esc(t.id)} · ${esc(t.name)}</option>`;
+      });
+      html += `</optgroup>`;
+    }
+  }
+  return html;
+}
+
+function startQuiz() {
+  if (quizState.timerInterval) clearInterval(quizState.timerInterval);
+
+  let pool = (QUIZ_BANK && QUIZ_BANK.length) ? QUIZ_BANK.slice() : [];
+
+  if (quizState.topic) {
+    const topicFiltered = pool.filter(q => q.topic === quizState.topic || q.topic.startsWith(quizState.topic));
+    if (topicFiltered.length > 0) {
+      pool = topicFiltered;
+    }
+  }
+
+  if (!pool.length) {
+    showToast('No questions found for this topic.');
+    return;
+  }
+
+  shuffle(pool);
+  const selected = pool.slice(0, Math.min(quizState.questionCount, pool.length));
+
+  selected.forEach(item => {
+    const correctText = item.options[item.answer];
+    const shuffled = item.options.slice();
+    shuffle(shuffled);
+    item.choices = shuffled;
+    item.correctIndex = shuffled.indexOf(correctText);
+  });
+
+  quizState.questions = selected;
+  quizState.currentIdx = 0;
+  quizState.revealed = false;
+  quizState.selectedChoice = null;
+  quizState.soloScore = 0;
+  quizState.streak = 0;
+  quizState.maxStreak = 0;
+  quizState.team1Score = 0;
+  quizState.team2Score = 0;
+  quizState.screen = 'playing';
+
+  renderQuizGenerator();
+  setupQuizTimer();
+}
+
+function setupQuizTimer() {
+  if (quizState.timerInterval) clearInterval(quizState.timerInterval);
+  if (quizState.timerSeconds <= 0) {
+    quizState.timerRemaining = 0;
+    return;
+  }
+
+  quizState.timerRemaining = quizState.timerSeconds;
+  quizState.timerInterval = setInterval(() => {
+    quizState.timerRemaining--;
+    const tBox = $('#quiz-timer-num');
+    if (tBox) {
+      tBox.textContent = quizState.timerRemaining;
+      if (quizState.timerRemaining <= 5) {
+        tBox.parentElement.classList.add('urgent');
+        QuizAudio.tick();
+      }
+    }
+
+    if (quizState.timerRemaining <= 0) {
+      clearInterval(quizState.timerInterval);
+      QuizAudio.wrong();
+      quizState.selectedChoice = -1;
+      quizState.revealed = true;
+      renderQuizGenerator();
+    }
+  }, 1000);
+}
+
+function renderQuizLive() {
+  const q = quizState.questions[quizState.currentIdx];
+  const qNum = quizState.currentIdx + 1;
+  const qTotal = quizState.questions.length;
+  const letters = ['A', 'B', 'C', 'D'];
+
+  let scoreboardHtml = '';
+  if (quizState.mode === 'team') {
+    scoreboardHtml = `
+      <div class="quiz-scoreboard-grid">
+        <div class="team-score-card">
+          <div>
+            <div class="team-name">${esc(quizState.team1Name)}</div>
+            <div class="team-score-num">${quizState.team1Score}</div>
+          </div>
+          <div class="team-quick-btns">
+            <button type="button" class="btn-score-adj" onclick="adjustTeamScore(1, 1)">+1</button>
+            <button type="button" class="btn-score-adj" onclick="adjustTeamScore(1, -1)">-1</button>
+          </div>
+        </div>
+
+        <div class="team-score-card">
+          <div>
+            <div class="team-name">${esc(quizState.team2Name)}</div>
+            <div class="team-score-num">${quizState.team2Score}</div>
+          </div>
+          <div class="team-quick-btns">
+            <button type="button" class="btn-score-adj" onclick="adjustTeamScore(2, 1)">+1</button>
+            <button type="button" class="btn-score-adj" onclick="adjustTeamScore(2, -1)">-1</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const choicesHtml = q.choices.map((choice, idx) => {
+    let stateClass = '';
+    if (quizState.revealed) {
+      if (idx === q.correctIndex) {
+        stateClass = 'correct-choice';
+      } else if (idx === quizState.selectedChoice) {
+        stateClass = 'wrong-choice';
+      } else {
+        stateClass = 'dimmed-choice';
+      }
+    }
+
+    return `
+      <button type="button" class="quiz-choice-btn ${stateClass}" onclick="selectQuizChoice(${idx})" ${quizState.revealed ? 'disabled' : ''}>
+        <span class="choice-letter">${letters[idx]}</span>
+        <span class="choice-text">${choice}</span>
+      </button>
+    `;
+  }).join('');
+
+  const html = `
+    <div class="teacher-hub-wrap">
+      <div class="quiz-panel">
+        <div class="quiz-live-header">
+          <div class="quiz-live-progress">
+            QUESTION <b>${qNum}</b> OF <b>${qTotal}</b> · TOPIC ${esc(q.topic)}
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            ${quizState.timerSeconds ? `
+              <div class="quiz-timer-box" id="quiz-timer-box">
+                ⏱️ <span id="quiz-timer-num">${quizState.timerRemaining}</span>s
+              </div>
+            ` : '<div class="quiz-timer-box">⏱️ Untimed</div>'}
+            <button type="button" class="btn-minimal" onclick="quizState.soundEnabled=!quizState.soundEnabled;this.textContent=quizState.soundEnabled?'🔊 Sound':'🔇 Mute'">
+              ${quizState.soundEnabled ? '🔊 Sound' : '🔇 Mute'}
+            </button>
+            <button type="button" class="btn-minimal" onclick="endQuiz()">End Quiz</button>
+          </div>
+        </div>
+
+        ${scoreboardHtml}
+
+        <div class="quiz-q-stage">
+          <span class="quiz-q-category">Topic ${esc(q.topic)} · ${esc(q.category || 'Recall')}</span>
+          <div class="quiz-q-text">${esc(q.question)}</div>
+
+          <div class="quiz-choices-grid">
+            ${choicesHtml}
+          </div>
+
+          ${quizState.revealed ? `
+            <div class="quiz-explanation-box">
+              <div class="quiz-exp-title">
+                ${quizState.selectedChoice === q.correctIndex ? '✅ Correct Answer!' : (quizState.selectedChoice === -1 ? '⏱️ Time Expired!' : '❌ Incorrect')}
+              </div>
+              <div class="quiz-exp-body">${esc(q.explanation)}</div>
+            </div>
+          ` : ''}
+
+          <div class="quiz-controls-row">
+            <button type="button" class="btn-minimal" onclick="prevQuizQuestion()" ${quizState.currentIdx === 0 ? 'disabled' : ''}>← Previous</button>
+            <div style="font-size:0.75rem;color:var(--muted)">Shortcuts: <b>1-4</b> or <b>A-D</b> to choose · <b>Space / Enter</b> next</div>
+            <button type="button" class="quiz-next-btn" onclick="nextQuizQuestion()">
+              ${qNum < qTotal ? 'Next Question →' : 'View Results 🏆'}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+function selectQuizChoice(idx) {
+  if (quizState.revealed) return;
+  if (quizState.timerInterval) clearInterval(quizState.timerInterval);
+
+  const q = quizState.questions[quizState.currentIdx];
+  quizState.selectedChoice = idx;
+  quizState.revealed = true;
+
+  if (idx === q.correctIndex) {
+    quizState.soloScore++;
+    quizState.streak++;
+    if (quizState.streak > quizState.maxStreak) quizState.maxStreak = quizState.streak;
+    QuizAudio.correct();
+    if (quizState.streak > 0 && quizState.streak % 5 === 0) {
+      launchConfetti();
+    }
+  } else {
+    quizState.streak = 0;
+    QuizAudio.wrong();
+  }
+
+  renderQuizGenerator();
+}
+
+function adjustTeamScore(team, delta) {
+  if (team === 1) {
+    quizState.team1Score = Math.max(0, quizState.team1Score + delta);
+  } else {
+    quizState.team2Score = Math.max(0, quizState.team2Score + delta);
+  }
+  const cards = $$('.team-score-card');
+  if (cards.length >= 2) {
+    cards[0].querySelector('.team-score-num').textContent = quizState.team1Score;
+    cards[1].querySelector('.team-score-num').textContent = quizState.team2Score;
+  }
+}
+
+function nextQuizQuestion() {
+  if (quizState.timerInterval) clearInterval(quizState.timerInterval);
+  quizState.currentIdx++;
+
+  if (quizState.currentIdx < quizState.questions.length) {
+    quizState.revealed = false;
+    quizState.selectedChoice = null;
+    renderQuizGenerator();
+    setupQuizTimer();
+  } else {
+    endQuiz();
+  }
+}
+
+function prevQuizQuestion() {
+  if (quizState.timerInterval) clearInterval(quizState.timerInterval);
+  if (quizState.currentIdx > 0) {
+    quizState.currentIdx--;
+    quizState.revealed = false;
+    quizState.selectedChoice = null;
+    renderQuizGenerator();
+    setupQuizTimer();
+  }
+}
+
+function endQuiz() {
+  if (quizState.timerInterval) clearInterval(quizState.timerInterval);
+  quizState.screen = 'ended';
+  renderQuizGenerator();
+  launchConfetti();
+  QuizAudio.fanfare();
+}
+
+function renderQuizSummary() {
+  const total = quizState.questions.length;
+  const score = quizState.soloScore;
+  const pct = Math.round((score / total) * 100);
+
+  let teamResultHtml = '';
+  if (quizState.mode === 'team') {
+    const t1Wins = quizState.team1Score > quizState.team2Score;
+    const tie = quizState.team1Score === quizState.team2Score;
+    teamResultHtml = `
+      <div style="padding:16px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border);text-align:center;margin-bottom:18px">
+        <h3 style="margin:0 0 4px;font-size:1.3rem;font-weight:800;color:var(--ink)">
+          ${tie ? '🤝 IT’S A TIE!' : (t1Wins ? `🏆 ${esc(quizState.team1Name)} VICTORY!` : `🏆 ${esc(quizState.team2Name)} VICTORY!`)}
+        </h3>
+        <div style="display:flex;justify-content:center;gap:36px;margin-top:10px">
+          <div>
+            <div style="font-size:0.8rem;color:var(--muted)">${esc(quizState.team1Name)}</div>
+            <div style="font-size:1.8rem;font-weight:800;color:var(--ink)">${quizState.team1Score}</div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem;color:var(--muted)">${esc(quizState.team2Name)}</div>
+            <div style="font-size:1.8rem;font-weight:800;color:var(--ink)">${quizState.team2Score}</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const reviewCardsHtml = quizState.questions.map((q, idx) => `
+    <div class="quiz-review-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span style="font-size:0.75rem;font-weight:700;color:var(--muted)">QUESTION ${idx + 1} · TOPIC ${esc(q.topic)}</span>
+      </div>
+      <div style="font-size:0.88rem;font-weight:600;color:var(--ink);margin-bottom:6px">${esc(q.question)}</div>
+      <div style="font-size:0.8rem;color:#16a34a">✓ <b>Correct:</b> ${q.choices[q.correctIndex]}</div>
+      <div style="font-size:0.78rem;color:var(--muted);margin-top:4px">${esc(q.explanation)}</div>
+    </div>
+  `).join('');
+
+  const html = `
+    <div class="teacher-hub-wrap">
+      <div class="quiz-panel">
+        <div class="quiz-summary-card">
+          <div class="quiz-sum-trophy">🏆</div>
+          <h2 class="quiz-sum-title">Quiz Show Finished!</h2>
+          <p class="quiz-sum-sub">Fantastic active recall practice with the OCR Design Engineering curriculum bank.</p>
+
+          ${quizState.mode === 'mc' ? `
+            <div class="quiz-stats-grid">
+              <div class="quiz-stat-box">
+                <div class="quiz-stat-val">${score} / ${total}</div>
+                <div class="quiz-stat-lbl">SCORE</div>
+              </div>
+              <div class="quiz-stat-box">
+                <div class="quiz-stat-val">${pct}%</div>
+                <div class="quiz-stat-lbl">ACCURACY</div>
+              </div>
+              <div class="quiz-stat-box">
+                <div class="quiz-stat-val">${quizState.maxStreak} 🔥</div>
+                <div class="quiz-stat-lbl">BEST STREAK</div>
+              </div>
+            </div>
+          ` : ''}
+        </div>
+
+        ${teamResultHtml}
+
+        <div style="margin-top:20px">
+          <h3 style="font-size:0.95rem;font-weight:700;margin:0 0 10px;color:var(--ink)">Questions & Explanations Review</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            ${reviewCardsHtml}
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:center;gap:12px;margin-top:24px">
+          <button type="button" class="quiz-next-btn" onclick="startQuiz()">
+            🔄 Play Again
+          </button>
+          <button type="button" class="btn-minimal" onclick="switchTeacherTab('hub')">
+            🎓 Teacher's Hub
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+async function printQuizHandout() {
+  const questions = quizState.questions.length ? quizState.questions : (QUIZ_BANK || []).slice(0, 10);
+  let printContainer = $('#print-container');
+  if (!printContainer) {
+    printContainer = document.createElement('div');
+    printContainer.id = 'print-container';
+    document.body.appendChild(printContainer);
+  }
+
+  const letters = ['A', 'B', 'C', 'D'];
+  const itemsHtml = questions.map((q, idx) => `
+    <article class="print-pack-q-item" style="page-break-inside:avoid;margin-bottom:14pt;border-bottom:1px solid #ddd;padding-bottom:10pt">
+      <div class="print-pack-q-head" style="margin-bottom:4pt">
+        <h2 class="print-pack-q-title">Question ${idx + 1} (${esc(q.category || 'Recall')})</h2>
+        <span class="print-pack-q-marks">Topic ${esc(q.topic)}</span>
+      </div>
+      <div style="font-size:9.5pt;font-weight:600;margin:4pt 0 6pt">${esc(q.question)}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4pt;font-size:8.5pt">
+        ${(q.choices || q.options || []).map((ch, i) => `
+          <div>[ ${letters[i]} ] ${ch}</div>
+        `).join('')}
+      </div>
+    </article>
+  `).join('');
+
+  printContainer.innerHTML = `
+    <div style="margin-bottom:14pt;border-bottom:2pt solid #000;padding-bottom:6pt">
+      <h1 style="margin:0;font-size:16pt;font-weight:800">OCR A-Level Design Engineering (H404) · Multiple Choice Quiz</h1>
+      <p style="margin:2pt 0 0;font-size:9pt;color:#555">Active recall quick check · Time allowed: 20 minutes · Calculators permitted.</p>
+    </div>
+    <table class="print-candidate-table" style="margin-bottom:14pt">
+      <tr>
+        <td style="width:50%"><b>Candidate Name:</b></td>
+        <td style="width:25%"><b>Date:</b></td>
+        <td style="width:25%"><b>Class / Group:</b></td>
+      </tr>
+      <tr>
+        <td colspan="2"><b>Candidate Score:</b> _______ / ${questions.length} marks</td>
+        <td><b>Percentage:</b> _______%</td>
+      </tr>
+    </table>
+    <main class="print-pack-list">
+      ${itemsHtml}
+    </main>
+  `;
+
+  document.body.classList.add('is-printing-pack');
+  setTimeout(() => {
+    window.print();
+  }, 100);
+}
+
+/* ========================================================
+   QUESTION & WORKSHEET GENERATOR
+   ======================================================== */
+function renderWorksheetGenerator() {
+  if (!wsState.questions.length) {
+    generateWorksheet();
+  }
+
+  const topicsHtml = buildWorksheetTopicOptions();
+  const totalMarks = wsState.questions.reduce((s, q) => s + q.marks, 0);
+
+  const html = `
+    <div class="teacher-hub-wrap">
+      <nav class="teacher-nav">
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Generator</button>
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+      </nav>
+
+      <div class="ws-controls-card">
+        <div>
+          <h2 style="margin:0 0 4px;font-size:1.3rem;font-weight:700;color:var(--ink)">Exam Question & Worksheet Generator</h2>
+          <p style="margin:0;font-size:0.85rem;color:var(--muted)">Assemble custom tests, homework packs, and mock assessments from official OCR H404 past paper questions.</p>
+        </div>
+
+        <div class="ws-controls-grid">
+          <div class="ws-field" style="grid-column:1 / -1">
+            <label>Worksheet Title</label>
+            <input type="text" id="ws-title-input" value="${esc(wsState.title)}" oninput="wsState.title=this.value;">
+          </div>
+
+          <div class="ws-field" style="grid-column:1 / -1">
+            <label>Candidate Instructions / Subtitle</label>
+            <input type="text" id="ws-sub-input" value="${esc(wsState.subtitle)}" oninput="wsState.subtitle=this.value;">
+          </div>
+
+          <div class="ws-field">
+            <label>Topic Filter</label>
+            <select id="ws-topic-sel" onchange="wsState.topic=this.value;generateWorksheet();">
+              ${topicsHtml}
+            </select>
+          </div>
+
+          <div class="ws-field">
+            <label>Component / Level</label>
+            <select id="ws-level-sel" onchange="wsState.level=this.value;generateWorksheet();">
+              <option value="">All Components (H404/01 & 02)</option>
+              <option value="H404/01" ${wsState.level==='H404/01'?'selected':''}>H404/01 Principles of Design Engineering</option>
+              <option value="H404/02" ${wsState.level==='H404/02'?'selected':''}>H404/02 Problem Solving in Design Engineering</option>
+            </select>
+          </div>
+
+          <div class="ws-field">
+            <label>Target Mark Allocation</label>
+            <select id="ws-marks-sel" onchange="wsState.targetMarks=+this.value;generateWorksheet();">
+              <option value="10" ${wsState.targetMarks===10?'selected':''}>~10 Marks (Quick Starter / Exit Ticket)</option>
+              <option value="20" ${wsState.targetMarks===20?'selected':''}>~20 Marks (Standard Homework Sheet)</option>
+              <option value="30" ${wsState.targetMarks===30?'selected':''}>~30 Marks (End-of-Unit Test)</option>
+              <option value="50" ${wsState.targetMarks===50?'selected':''}>~50 Marks (Full Component Mock Paper)</option>
+            </select>
+          </div>
+
+          <div class="ws-field">
+            <label>Special Skill Filter</label>
+            <select id="ws-skill-sel" onchange="wsState.skill=this.value;generateWorksheet();">
+              <option value="">All Question Types</option>
+              <option value="maths" ${wsState.skill==='maths'?'selected':''}>Mathematical Calculations Only (25% Requirement)</option>
+              <option value="technical" ${wsState.skill==='technical'?'selected':''}>Technical Theory & Engineering Principles</option>
+            </select>
+          </div>
+
+          <div class="ws-field" style="grid-column:1 / -1">
+            <label>Print Layout Options</label>
+            <div style="display:flex;gap:20px;padding-top:4px;flex-wrap:wrap">
+              <label style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:0.85rem">
+                <input type="checkbox" id="ws-cfg-lines" ${wsState.includeLines?'checked':''} onchange="wsState.includeLines=this.checked;" style="accent-color:var(--ink)">
+                <span>Include ruled answer lines scaled to marks</span>
+              </label>
+              <label style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:0.85rem">
+                <input type="checkbox" id="ws-cfg-header" ${wsState.includeHeader?'checked':''} onchange="wsState.includeHeader=this.checked;" style="accent-color:var(--ink)">
+                <span>Include candidate exam details table (Name, Date, Score)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="ws-actions-bar">
+          <div style="font-size:0.88rem;color:var(--ink);display:flex;align-items:center;gap:8px">
+            <span>Selected: <b>${wsState.questions.length}</b> questions</span> · 
+            <span>Total Marks: <b style="color:#dc2626">${totalMarks}</b> marks</span>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button type="button" class="btn-minimal" onclick="generateWorksheet()">🎲 Shuffle Questions</button>
+            <button type="button" class="btn-minimal" onclick="addWorksheetQuestion()">➕ Add Question</button>
+            <button type="button" class="btn-gateway" style="background:#dc2626;border-color:#dc2626;padding:7px 16px;width:auto;" onclick="executePrintWorksheet({isTeacherKey:false})">
+              🖨️ Print Student Worksheet
+            </button>
+            <button type="button" class="btn-gateway" style="background:var(--ink);border-color:var(--ink);padding:7px 16px;width:auto;" onclick="executePrintWorksheet({isTeacherKey:true})">
+              🔑 Print Teacher Mark Scheme
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ws-paper-preview">
+        ${wsState.includeHeader ? `
+          <div style="border:1px solid var(--border);border-radius:var(--radius);padding:14px;background:var(--surface);margin-bottom:18px">
+            <div style="font-size:1.15rem;font-weight:800;color:var(--ink)">${esc(wsState.title)}</div>
+            <div style="font-size:0.85rem;color:var(--muted);margin:4px 0 12px">${esc(wsState.subtitle)}</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:0.82rem;padding-top:10px;border-top:1px dashed var(--border)">
+              <div>Candidate Name: _______________________</div>
+              <div>Date: _______________</div>
+              <div>Class: _______________</div>
+            </div>
+          </div>
+        ` : ''}
+
+        ${wsState.questions.map((q, idx) => {
+          const p = D.P[q.paper] || {};
+          return `
+            <div class="ws-q-item">
+              <div class="ws-q-head">
+                <span class="ws-q-title">Question ${idx + 1} (${q.marks} Marks)</span>
+                <div class="ws-q-actions">
+                  <button type="button" class="ws-q-btn" onclick="moveWorksheetQuestion(${idx}, -1)" ${idx === 0 ? 'disabled' : ''} title="Move Up">↑ Up</button>
+                  <button type="button" class="ws-q-btn" onclick="moveWorksheetQuestion(${idx}, 1)" ${idx === wsState.questions.length - 1 ? 'disabled' : ''} title="Move Down">↓ Down</button>
+                  <button type="button" class="ws-q-btn" onclick="swapWorksheetQuestion(${idx})" title="Swap for another question">🔄 Swap</button>
+                  <button type="button" class="ws-q-btn" style="color:#dc2626" onclick="removeWorksheetQuestion(${idx})" title="Remove">✕</button>
+                </div>
+              </div>
+
+              <div class="ws-q-meta">
+                <span class="ws-q-meta-tag">${p.code || 'H404'} · ${p.series || 'Summer'} ${p.year || 2023} · Q${esc(q.question)}</span>
+                <span class="ws-q-meta-tag">Marks: ${q.marks}m</span>
+                ${(q.topics || []).map(tid => `<span class="ws-q-meta-tag">Topic ${esc(tid)} · ${esc(T[tid]?T[tid].name:tid)}</span>`).join('')}
+              </div>
+
+              <div class="ws-q-body">
+                ${q.image ? `<img src="${esc(q.image)}" alt="Question ${esc(q.question)}" style="max-width:100%;border-radius:4px;border:1px solid var(--border)">` : ''}
+                ${q.prompt ? `<div class="ws-q-prompt-box" style="font-size:0.9rem;line-height:1.6;margin-top:8px;padding:12px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border)">${q.prompt}</div>` : ''}
+              </div>
+
+              ${q.markscheme_text ? `
+                <div class="ws-q-ms" style="margin-top:10px;padding:10px 12px;background:rgba(22,163,74,0.06);border:1px solid rgba(22,163,74,0.25);border-radius:var(--radius);font-size:0.84rem">
+                  <div style="font-weight:700;color:#16a34a;margin-bottom:4px">Official Mark Scheme Solution:</div>
+                  <div style="line-height:1.55;color:var(--ink)">${q.markscheme_text}</div>
+                </div>
+              ` : ''}
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+
+  $('#app-view').innerHTML = html;
+}
+
+function buildWorksheetTopicOptions() {
+  let html = `<option value="">All Topics (Complete Specification)</option>`;
+  if (D && D.topics) {
+    const groups = {};
+    D.topics.forEach(t => {
+      const g = t.group || 'Topics';
+      if (!groups[g]) groups[g] = [];
+      groups[g].push(t);
+    });
+    for (const [g, ts] of Object.entries(groups)) {
+      html += `<optgroup label="${esc(g)}">`;
+      ts.forEach(t => {
+        html += `<option value="${esc(t.id)}" ${wsState.topic === t.id ? 'selected' : ''}>Topic ${esc(t.id)} · ${esc(t.name)}</option>`;
+      });
+      html += `</optgroup>`;
+    }
+  }
+  return html;
+}
+
+function generateWorksheet() {
+  if (!D || !D.questions) return;
+  let pool = D.questions.filter(q => {
+    if (wsState.level && D.P[q.paper].level !== wsState.level) return false;
+    if (wsState.topic && !q.topics.includes(wsState.topic)) return false;
+    if (wsState.skill && !q.skills.includes(wsState.skill)) return false;
+    return true;
+  });
+
+  if (!pool.length) {
+    pool = D.questions.slice();
+  }
+
+  shuffle(pool);
+  let total = 0;
+  const picked = [];
+
+  for (const q of pool) {
+    if (total >= wsState.targetMarks) break;
+    picked.push(q);
+    total += q.marks;
+    if (total >= wsState.targetMarks - 2 && total <= wsState.targetMarks + 4) break;
+  }
+
+  wsState.questions = picked.length ? picked : pool.slice(0, 3);
+  renderWorksheetGenerator();
+}
+
+function swapWorksheetQuestion(idx) {
+  const currentIds = new Set(wsState.questions.map(q => q.id));
+  const pool = D.questions.filter(q => {
+    if (currentIds.has(q.id)) return false;
+    if (wsState.level && D.P[q.paper].level !== wsState.level) return false;
+    if (wsState.topic && !q.topics.includes(wsState.topic)) return false;
+    return true;
+  });
+  if (!pool.length) {
+    showToast('No alternative questions found for current filters.');
+    return;
+  }
+  shuffle(pool);
+  wsState.questions[idx] = pool[0];
+  renderWorksheetGenerator();
+  showToast(`Swapped Question ${idx + 1}`);
+}
+
+function removeWorksheetQuestion(idx) {
+  if (wsState.questions.length <= 1) {
+    showToast('Worksheet must have at least 1 question.');
+    return;
+  }
+  wsState.questions.splice(idx, 1);
+  renderWorksheetGenerator();
+}
+
+function moveWorksheetQuestion(idx, direction) {
+  const newIdx = idx + direction;
+  if (newIdx < 0 || newIdx >= wsState.questions.length) return;
+  const temp = wsState.questions[idx];
+  wsState.questions[idx] = wsState.questions[newIdx];
+  wsState.questions[newIdx] = temp;
+  renderWorksheetGenerator();
+}
+
+function addWorksheetQuestion() {
+  const currentIds = new Set(wsState.questions.map(q => q.id));
+  const pool = D.questions.filter(q => !currentIds.has(q.id));
+  if (!pool.length) {
+    showToast('All available questions are already added.');
+    return;
+  }
+  shuffle(pool);
+  const added = pool[0];
+  wsState.questions.push(added);
+  renderWorksheetGenerator();
+  showToast(`Added Question ${added.question} (${added.marks}m)`);
+}
+
+async function executePrintWorksheet(options = {}) {
+  const isTeacherKey = !!options.isTeacherKey;
+  const questions = options.questions || wsState.questions;
+  const isQuiz = !!options.isQuiz;
+
+  if (!questions || !questions.length) {
+    showToast('No questions to print.');
+    return;
+  }
+
+  let printContainer = $('#print-container');
+  if (!printContainer) {
+    printContainer = document.createElement('div');
+    printContainer.id = 'print-container';
+    document.body.appendChild(printContainer);
+  }
+
+  const totalMarks = questions.reduce((sum, q) => sum + (q.marks || 1), 0);
+  const dateStr = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+
+  let itemsHtml = '';
+  if (isQuiz) {
+    itemsHtml = questions.map((q, i) => `
+      <article class="print-pack-q-item">
+        <div class="print-pack-q-head">
+          <h2 class="print-pack-q-title">Question ${i + 1}</h2>
+          <span class="print-pack-q-marks">Topic ${esc(q.topicId || q.topic)}</span>
+        </div>
+        <div style="font-size:10pt;font-weight:600;margin:6pt 0">${esc(q.question)}</div>
+        <div class="print-lines-box" style="min-height:30pt"></div>
+      </article>
+    `).join('');
+  } else {
+    itemsHtml = questions.map((q, idx) => {
+      const p = D.P[q.paper] || {};
+      let figHtml = (q.figures || []).map(f => `
+        <div class="print-pack-img-block">
+          <div class="print-pack-fig-label">Resource Figure: ${esc(figLabel ? figLabel(f) : f)}</div>
+          <img src="${esc(f)}" alt="Figure">
+        </div>
+      `).join('');
+
+      let answerArea = '';
+      if (!isTeacherKey && wsState.includeLines) {
+        answerArea = `<div class="print-lines-box" style="min-height:${Math.max(3, q.marks * 2) * 22}pt"></div>`;
+      }
+
+      let msBlock = '';
+      if (isTeacherKey) {
+        msBlock = `
+          <div class="print-pack-ms-block" style="margin-top:12pt;padding:8pt 12pt;background:#f0fdf4;border:1pt solid #bbf7d0;border-radius:4pt">
+            <div class="print-pack-ms-title" style="font-weight:bold;color:#15803d;margin-bottom:4pt">Official Mark Scheme — Question ${esc(q.question)} (${q.marks}m)</div>
+            ${q.markscheme ? `<div class="print-pack-img-block"><img src="${esc(q.markscheme)}" alt="Mark scheme"></div>` : ''}
+            ${q.markscheme_text ? `<div class="print-pack-ms-text" style="font-size:9.5pt;line-height:1.5">${q.markscheme_text}</div>` : ''}
+          </div>
+        `;
+      }
+
+      const contentHtml = q.image
+        ? `<div class="print-pack-img-block"><img src="${esc(q.image)}" alt="Question ${esc(q.question)}"></div>`
+        : `<div class="print-pack-prompt-text" style="font-size:10.5pt;line-height:1.6;margin:6pt 0">${q.prompt || q.summary}</div>`;
+
+      return `
+        <article class="print-pack-q-item" style="page-break-inside:avoid;margin-bottom:20pt;padding-bottom:12pt;border-bottom:1pt solid #ccc">
+          <div class="print-pack-q-head" style="display:flex;justify-content:space-between;border-bottom:1.5pt solid #000;padding-bottom:3pt;margin-bottom:8pt">
+            <h2 class="print-pack-q-title" style="margin:0;font-size:12pt;font-weight:bold">Question ${idx + 1} (${q.marks} marks)</h2>
+            <span class="print-pack-q-marks" style="font-size:9pt;font-weight:600">${p.code || 'H404'} · ${p.series || 'Summer'} ${p.year || 2023} · Q${esc(q.question)}</span>
+          </div>
+          ${contentHtml}
+          ${figHtml}
+          ${answerArea}
+          ${msBlock}
+        </article>
+      `;
+    }).join('');
+  }
+
+  printContainer.innerHTML = `
+    <div style="border-bottom:2pt solid #000;padding-bottom:8pt;margin-bottom:12pt">
+      <h1 style="margin:0;font-size:17pt;font-weight:800">${esc(wsState.title)} ${isTeacherKey ? '— [TEACHER MARK SCHEME & MODEL ANSWERS]' : ''}</h1>
+      <p style="margin:3pt 0 0;font-size:9.5pt;color:#444">${esc(wsState.subtitle)} · Date Generated: ${dateStr}</p>
+    </div>
+
+    ${!isTeacherKey && wsState.includeHeader && !isQuiz ? `
+      <table class="print-candidate-table" style="width:100%;border-collapse:collapse;margin-bottom:16pt">
+        <tr>
+          <td style="border:1pt solid #000;padding:6pt 8pt;width:50%"><b>Candidate Name:</b></td>
+          <td style="border:1pt solid #000;padding:6pt 8pt;width:25%"><b>Date:</b></td>
+          <td style="border:1pt solid #000;padding:6pt 8pt;width:25%"><b>Class / Group:</b></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border:1pt solid #000;padding:6pt 8pt"><b>Candidate Score:</b> _______ / ${totalMarks} marks</td>
+          <td style="border:1pt solid #000;padding:6pt 8pt"><b>Grade / Percentage:</b> _______%</td>
+        </tr>
+      </table>
+    ` : ''}
+
+    <main class="print-pack-list">
+      ${itemsHtml}
+    </main>
+
+    <footer style="margin-top:24pt;padding-top:8pt;border-top:1pt solid #ccc;font-size:8pt;color:#666;text-align:center">
+      OCR A-Level Design Engineering (H404) revision aid. Generated via LEETS Teacher's Hub.
+    </footer>
+  `;
+
+  showToast('Preparing document for print / PDF export...');
+
+  const imgs = Array.from(printContainer.querySelectorAll('img'));
+  await Promise.all(imgs.map(img => {
+    if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+    return new Promise(resolve => {
+      img.onload = img.onerror = resolve;
+      if (img.decode) {
+        img.decode().then(resolve).catch(resolve);
+      }
+    });
+  }));
+
+  document.body.classList.add('is-printing-pack');
+
+  setTimeout(() => {
+    window.print();
+  }, 100);
+}
+
+window.addEventListener('keydown', e => {
+  if (state.view !== 'teachers') return;
+  if (state.teacherTab === 'enginillion' || state.teacherTab === 'geollion') {
+    handleGeollionKeydown(e);
+    return;
+  }
+  if (state.teacherTab !== 'quiz' || quizState.screen !== 'playing') return;
+  if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT') return;
+
+  const key = e.key.toLowerCase();
+  if (key === '1' || key === 'a') {
+    if (!quizState.revealed) selectQuizChoice(0);
+  } else if (key === '2' || key === 'b') {
+    if (!quizState.revealed) selectQuizChoice(1);
+  } else if (key === '3' || key === 'c') {
+    if (!quizState.revealed) selectQuizChoice(2);
+  } else if (key === '4' || key === 'd') {
+    if (!quizState.revealed) selectQuizChoice(3);
+  } else if (e.key === ' ' || e.code === 'Space' || e.key === 'Enter' || e.key === 'ArrowRight') {
+    e.preventDefault();
+    if (quizState.revealed) {
+      nextQuizQuestion();
+    }
+  } else if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    prevQuizQuestion();
+  }
+});
 </script>
 </body>
 </html>

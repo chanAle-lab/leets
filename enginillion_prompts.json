@@ -1,0 +1,198 @@
+[
+  {
+    "id": "eng-metals",
+    "category": "Materials: Metals & Alloys",
+    "prompt": "Name an engineering metal, steel grade, or alloy",
+    "hint": "Ferrous, non-ferrous, structural, or aerospace superalloy",
+    "tiers": {
+      "workshop": ["mild steel", "aluminium", "copper", "cast iron", "brass", "tin", "lead", "zinc", "carbon steel"],
+      "machining": ["stainless steel", "duralumin", "phosphor bronze", "solder", "galvanised steel", "tool steel", "wrought iron", "pewter", "silicon bronze"],
+      "toolroom": ["high speed steel", "hss", "beryllium copper", "manganese steel", "alnico", "spring steel", "o1 tool steel", "d2 tool steel", "silver steel", "gauge plate"],
+      "aerospace": ["titanium", "ti-6al-4v", "inconel", "inconel 718", "maraging steel", "hastelloy", "monel", "monel 400", "invár", "invar", "nitinol"],
+      "submicron": ["rené 41", "haynes 230", "stellite", "tungsten heavy alloy", "elgiloy", "nimonic", "kovar", "zircaloy", "tantalum alloy"],
+      "quantum": ["single-crystal superalloy", "cmsx-4", "metallic glass", "vitreloy", "cantor alloy", "high-entropy alloy", "bulk metallic glass", "tungsten carbide-cobalt", "osmium alloy"]
+    }
+  },
+  {
+    "id": "eng-thermoplastics",
+    "category": "Materials: Polymers",
+    "prompt": "Name a thermoplastic polymer",
+    "hint": "Linear or branched polymer that softens reversibly on heating",
+    "tiers": {
+      "workshop": ["acrylic", "pmma", "polypropylene", "pp", "polystyrene", "hips", "pvc", "polyvinyl chloride", "polythene", "polyethylene", "ldpe"],
+      "machining": ["hdpe", "nylon", "nylon 66", "polyamide", "abs", "polycarbonate", "pc", "pet", "polyethylene terephthalate", "pla", "polylactic acid"],
+      "toolroom": ["delrin", "acetal", "pom", "ptfe", "teflon", "pvdf", "tpu", "polyurethane", "eva", "cellulose acetate", "petg"],
+      "aerospace": ["peek", "polyether ether ketone", "ultem", "pei", "polyetherimide", "pps", "polyphenylene sulfide", "psu", "polysulfone", "torlon", "pai"],
+      "submicron": ["pbi", "polybenzimidazole", "liquid crystal polymer", "lcp", "polyarylate", "pes", "polyethersulfone", "fep", "parlene"],
+      "quantum": ["uhmwpe", "dyneema", "spectra", "conductive polyaniline", "pha", "polyhydroxyalkanoate", "graphene-pekk", "carbon nanotube nylon", "aromatic polyamide"]
+    }
+  },
+  {
+    "id": "eng-thermosets",
+    "category": "Materials: Polymers",
+    "prompt": "Name a thermosetting polymer or resin",
+    "hint": "Covalently cross-linked polymer that degrades rather than melts",
+    "tiers": {
+      "workshop": ["epoxy", "epoxy resin", "polyester resin", "melamine", "melamine formaldehyde", "urea formaldehyde", "bakelite", "phenol formaldehyde"],
+      "machining": ["rigid polyurethane", "vulcanised rubber", "silicone", "silicone rubber", "alkyd resin", "formica", "neoprene"],
+      "toolroom": ["vinyl ester", "vinyl ester resin", "polyimide", "polyimide resin", "cyanate ester", "furan resin", "diallyl phthalate"],
+      "aerospace": ["bismaleimide", "bmi", "benzoxazine", "novolac", "phenolic novolac", "high-tg epoxy", "geopolymer", "polyimide film", "kapton"],
+      "submicron": ["silicone-polyimide", "poss", "polyhedral oligomeric silsesquioxane", "cyanate ester-bmi", "resole phenolic", "polyisocyanurate", "pir"],
+      "quantum": ["vitrimer", "self-healing thermoset", "diels-alder network", "carbon matrix precursor", "aerogel thermoset", "lignin bio-epoxy"]
+    }
+  },
+  {
+    "id": "eng-mechanisms",
+    "category": "Mechanisms & Motion",
+    "prompt": "Name an engineering mechanism, linkage, or motion converter",
+    "hint": "Converts rotary, linear, oscillating, or intermittent motion",
+    "tiers": {
+      "workshop": ["lever", "pulley", "wedge", "screw", "wheel and axle", "inclined plane", "ramp", "crank"],
+      "machining": ["rack and pinion", "crank and slider", "slider crank", "cam and follower", "bell crank", "four bar linkage", "geneva drive", "geneva wheel", "ratchet", "pawl"],
+      "toolroom": ["scotch yoke", "pantograph", "whitworth quick return", "quick return mechanism", "toggle clamp", "peaucellier linkage", "parallel motion"],
+      "aerospace": ["planetary gearbox", "epicyclic gear", "harmonic drive", "strain wave gearing", "oldham coupling", "swashplate", "watt linkage", "jansen linkage"],
+      "submicron": ["cycloidal drive", "sarrus linkage", "klann linkage", "rzeppa joint", "cv joint", "constant velocity joint", "spherical geneva", "differential mechanism"],
+      "quantum": ["compliant mechanism", "bistable compliant mechanism", "mems comb drive", "flexure hinge", "hoberman sphere", "magnetorheological coupling"]
+    }
+  },
+  {
+    "id": "eng-gears",
+    "category": "Mechanisms: Gears",
+    "prompt": "Name a specific type of gear or gear system",
+    "hint": "Transmits torque and rotational motion between shafts",
+    "tiers": {
+      "workshop": ["spur gear", "gear wheel", "pinion", "cog", "idler gear", "sprocket", "chain drive"],
+      "machining": ["bevel gear", "helical gear", "rack and pinion", "worm gear", "worm and wheel", "crown gear", "miter gear", "mitre gear"],
+      "toolroom": ["herringbone gear", "double helical gear", "internal gear", "annulus gear", "hypoid gear", "spiral bevel gear", "compound gear train"],
+      "aerospace": ["epicyclic gear", "planetary gear", "sun and planet gear", "harmonic gear", "strain wave gear", "face gear", "differential gear"],
+      "submicron": ["cycloidal gear", "magnetic gear", "non-circular gear", "involute spline gear", "wobble gear", "zero-backlash gear"],
+      "quantum": ["harmonic drive flexspline", "micro-machined mems gear", "magnetic levitation gear", "split-torque planetary", "differential planetary"]
+    }
+  },
+  {
+    "id": "eng-manufacturing",
+    "category": "Manufacturing Processes",
+    "prompt": "Name an engineering manufacturing, machining, or forming process",
+    "hint": "Shaping raw stock into finished parts",
+    "tiers": {
+      "workshop": ["hacksaw", "drilling", "sand casting", "vacuum forming", "strip heater", "brazing", "hand filing", "soldering"],
+      "machining": ["turning", "lathe turning", "milling", "vertical milling", "injection moulding", "blow moulding", "tig welding", "mig welding", "drop forging", "piercing"],
+      "toolroom": ["cnc milling", "die casting", "extrusion", "metal spinning", "powder metallurgy", "spark erosion", "sinker edm", "press brake bending", "broaching"],
+      "aerospace": ["wire edm", "selective laser sintering", "sls", "stereolithography", "sla", "investment casting", "lost wax casting", "hydroforming", "friction stir welding"],
+      "submicron": ["direct metal laser sintering", "dmls", "slm", "electron beam welding", "ebw", "superplastic forming", "5-axis cnc", "deep drawing", "chemical vapor deposition", "cvd"],
+      "quantum": ["atomic layer deposition", "ald", "two-photon lithography", "micro-edm", "focused ion beam", "fib", "magnetron sputtering", "explosive cladding", "molecular beam epitaxy"]
+    }
+  },
+  {
+    "id": "eng-sensors",
+    "category": "Electronics: Sensors",
+    "prompt": "Name an electronic sensor, transducer, or input component",
+    "hint": "Converts physical stimulus into an electrical signal",
+    "tiers": {
+      "workshop": ["push switch", "toggle switch", "ldr", "light dependent resistor", "thermistor", "potentiometer", "button", "reed switch"],
+      "machining": ["ultrasonic sensor", "hc-sr04", "pir sensor", "microswitch", "photodiode", "phototransistor", "ntc thermistor", "ptc thermistor"],
+      "toolroom": ["hall effect sensor", "strain gauge", "piezoelectric sensor", "rotary encoder", "thermocouple", "type k thermocouple", "tilt sensor"],
+      "aerospace": ["load cell", "wheatstone bridge", "mems accelerometer", "mpu-6050", "optical interrupter", "capacitive proximity sensor", "rtd", "pt100"],
+      "submicron": ["lvdt", "linear variable differential transformer", "mems gyroscope", "magnetoresistive sensor", "ingaas photodiode", "thermopile", "infrared pyrometer"],
+      "quantum": ["squid", "fiber bragg grating", "fbg sensor", "quartz crystal microbalance", "qcm", "atomic force probe", "fabry-pérot sensor", "laser doppler vibrometer"]
+    }
+  },
+  {
+    "id": "eng-actuators",
+    "category": "Electronics: Actuators",
+    "prompt": "Name an electronic actuator, motor, or output component",
+    "hint": "Converts electrical energy into mechanical work or physical output",
+    "tiers": {
+      "workshop": ["dc motor", "led", "light emitting diode", "buzzer", "lamp", "filament bulb", "solenoid", "electromagnet"],
+      "machining": ["stepper motor", "servo motor", "rc servo", "relay", "spdt relay", "7 segment display", "solenoid valve", "vibration motor"],
+      "toolroom": ["brushless dc motor", "bldc", "linear actuator", "h-bridge", "piezoelectric buzzer", "mosfet", "stepper with gearbox", "geared motor"],
+      "aerospace": ["voice coil actuator", "coreless motor", "pancake motor", "pneumatic cylinder", "solid state relay", "ssr", "optical encoder motor", "servo drive"],
+      "submicron": ["piezoelectric motor", "ultrasonic motor", "muscle wire", "nitinol wire actuator", "proportional servo valve", "galvanometer scanner", "galvo mirror", "magnetostrictive actuator"],
+      "quantum": ["dielectric elastomer actuator", "eap muscle", "fast steering mirror", "mems thermal actuator", "magnetorheological damper", "superconducting maglev drive", "piezo stage flexure"]
+    }
+  },
+  {
+    "id": "eng-smart-materials",
+    "category": "Smart & Modern Materials",
+    "prompt": "Name a smart material, composite, or modern technical material",
+    "hint": "Responds dynamically to external stimuli (heat, stress, voltage, light)",
+    "tiers": {
+      "workshop": ["carbon fibre", "cfrp", "kevlar", "nitinol", "glow in the dark", "photochromic glass", "fibre glass", "grp"],
+      "machining": ["shape memory alloy", "sma", "thermochromic pigment", "piezoelectric crystal", "electroluminescent sheet", "carbon fiber reinforced polymer"],
+      "toolroom": ["magnetorheological fluid", "mr fluid", "quantum tunnelling composite", "qtc", "self-healing polymer", "d3o", "d3o impact foam", "electrorheological fluid"],
+      "aerospace": ["shape memory polymer", "smp", "thermoelectric bismuth telluride", "dielectric elastomer", "aerogel", "silica aerogel", "carbon nanotube yarn", "graphene"],
+      "submicron": ["pvdf film", "piezoelectric pvdf", "photomechanical polymer", "piezoresistive fabric", "graphene nanoplatelet", "phase change material", "pcm"],
+      "quantum": ["auxetic metamaterial", "pmn-pt crystal", "mxene", "magnetocaloric gadolinium", "negative poisson ratio lattice", "chiral mechanical metamaterial"]
+    }
+  },
+  {
+    "id": "eng-joining",
+    "category": "Assembly & Fastening",
+    "prompt": "Name a method of joining or fastening engineering components",
+    "hint": "Permanent, semi-permanent, thermal, mechanical, or chemical joining",
+    "tiers": {
+      "workshop": ["nut and bolt", "bolt", "wood screw", "machine screw", "pop rivet", "pva glue", "solder", "hot melt glue", "nail"],
+      "machining": ["tig welding", "mig welding", "spot welding", "brazing", "snap fit", "countersunk screw", "socket head cap screw", "grub screw", "stud"],
+      "toolroom": ["blind rivet", "superglue", "cyanoacrylate", "epoxy adhesive", "silver solder", "roll pin", "dowel pin", "taper pin", "retaining ring", "circlip"],
+      "aerospace": ["friction stir welding", "ultrasonic welding", "loctite", "threadlocker", "solid rivet", "solvent welding", "tensol", "hard brazing", "cleco fastener"],
+      "submicron": ["electron beam welding", "laser beam welding", "diffusion bonding", "structural acrylic adhesive", "self-piercing rivet", "hot gas welding"],
+      "quantum": ["explosive welding", "transient liquid phase bonding", "tlp bonding", "laser micro-welding", "thermosonic wire bonding", "anodic bonding", "friction hydro-pillar"]
+    }
+  },
+  {
+    "id": "eng-testing",
+    "category": "Testing & Metrology",
+    "prompt": "Name a material testing or quality inspection method",
+    "hint": "Destructive or non-destructive quality evaluation",
+    "tiers": {
+      "workshop": ["visual inspection", "steel rule", "weighing scale", "tensile test", "scratch test", "spirit level", "feeler gauge"],
+      "machining": ["vernier caliper", "micrometer", "dial indicator", "charpy test", "brinell test", "caliper", "height gauge"],
+      "toolroom": ["vickers test", "rockwell test", "go no go gauge", "plug gauge", "dye penetrant inspection", "izod test", "slip gauge", "sine bar"],
+      "aerospace": ["coordinate measuring machine", "cmm", "ultrasonic testing", "surface roughness tester", "eddy current testing", "magnetic particle inspection", "ra tester"],
+      "submicron": ["x-ray radiography", "optical comparator", "shadowgraph", "digital image correlation", "dic", "acoustic emission testing", "micro-vickers test"],
+      "quantum": ["industrial ct scan", "computed tomography", "laser doppler vibrometry", "scanning electron microscopy", "sem", "white light interferometry", "nano-indentation"]
+    }
+  },
+  {
+    "id": "eng-designers",
+    "category": "Design History & Pioneers",
+    "prompt": "Name an influential industrial designer, engineer, or design movement",
+    "hint": "Pioneers who shaped modern products and manufacturing",
+    "tiers": {
+      "workshop": ["james dyson", "dyson", "bauhaus", "dieter rams", "jony ive", "apple", "philippe starck", "henry ford"],
+      "machining": ["memphis group", "de stijl", "raymond loewy", "isambard kingdom brunel", "brunel", "charles and ray eames", "eames"],
+      "toolroom": ["art deco", "william morris", "arts and crafts", "marc newson", "kenneth grange", "peter behrens", "luigi colani"],
+      "aerospace": ["modernism", "le corbusier", "streamlining", "richard rogers", "norman foster", "zaha hadid", "thomas heatherwick"],
+      "submicron": ["walter gropius", "marcel breuer", "marianne brandt", "ettore sottsass", "buckminster fuller", "mies van der rohe"],
+      "quantum": ["christopher dresser", "henry royce", "barnes wallis", "colin chapman", "frei otto", "alexander issigonis", "verner panton"]
+    }
+  },
+  {
+    "id": "eng-sustainability",
+    "category": "Sustainability & Environment",
+    "prompt": "Name a sustainable engineering concept, metric, or circular design strategy",
+    "hint": "Reducing environmental impact and carbon emissions",
+    "tiers": {
+      "workshop": ["recycling", "reusing", "solar power", "wind power", "carbon footprint", "energy saving", "repairing"],
+      "machining": ["6 rs", "life cycle assessment", "lca", "biodegradable", "energy star", "rohs", "rethink", "refuse", "reduce"],
+      "toolroom": ["cradle to cradle", "circular economy", "embodied energy", "weee", "design for disassembly", "dfd", "upcycling"],
+      "aerospace": ["iso 14001", "design for manufacture and assembly", "dfma", "nesting", "material nesting", "carbon offsetting", "biomimicry"],
+      "submicron": ["environmental product declaration", "epd", "closed loop supply chain", "eco-indicator 99", "bio-composite", "material passport"],
+      "quantum": ["industrial symbiosis", "factor 10", "exergy analysis", "depolymerization", "planetary boundaries", "biological nutrients loop"]
+    }
+  },
+  {
+    "id": "eng-cad-cae",
+    "category": "CAD & Digital Engineering",
+    "prompt": "Name a CAD, CAM, or CAE digital engineering tool or technique",
+    "hint": "Software modeling, simulation, and computer-aided manufacture",
+    "tiers": {
+      "workshop": ["cad", "2d drawing", "3d modeling", "3d printing slicer", "cura", "tinkercad", "fusion 360", "laser cutting software"],
+      "machining": ["cam", "g-code", "parametric modeling", "solidworks", "autodesk inventor", "onshape", "dxf export", "step file"],
+      "toolroom": ["fea", "finite element analysis", "cfd", "computational fluid dynamics", "mesh generation", "von mises stress simulation", "toolpath generation"],
+      "aerospace": ["topology optimisation", "generative design", "catia", "siemens nx", "kinematic simulation", "ptc creo", "ansys"],
+      "submicron": ["modal vibration analysis", "multi-physics simulation", "comsol", "moldflow simulation", "cfd thermal boundary analysis"],
+      "quantum": ["digital twin", "stochastic fatigue simulation", "lattice infill homogenization", "molecular dynamics simulation", "abqaus co-simulation"]
+    }
+  }
+]

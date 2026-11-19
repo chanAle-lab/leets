@@ -192,9 +192,12 @@ def get_fig_label(filename):
     if m2:
         sub = f'({m2.group(3)})' if m2.group(3) else ''
         return f'Fig. {m2.group(1)}.{m2.group(2)}{sub}'
-    m1 = re.search(r'fig-(\d+)\.jpg', f, re.I)
+    m1 = re.search(r'fig-(\d+)([a-z]?)\.jpg', f, re.I)
     if m1:
-        return f'Fig. {m1.group(1)}'
+        return f'Fig. {m1.group(1)}{m1.group(2)}'
+    rbp = re.search(r'rb-p(\d+)\.jpg', f, re.I)
+    if rbp:
+        return f'Resource Booklet – page {rbp.group(1)}'
     return 'Resource Diagram'
 
 def crop_box(page, rect, out_path, zoom=2.0):

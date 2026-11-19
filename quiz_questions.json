@@ -728,5 +728,57 @@
     "correctIndex": 1,
     "explanation": "Small 150 mm solid wheels struggle in mud and sand with zero shock absorption, and the 380 mm wide bed forces vertical stacking which raises the centre of gravity dangerously.",
     "topic": "1"
+  },
+  {
+    "id": "quiz-2020-a02-q1",
+    "question": "A 50 mm generator pulley must turn at 1500 rpm when the flywheel turns at 600 rpm. What diameter driver pulley is needed on the flywheel?",
+    "choices": [
+      "20 mm",
+      "75 mm",
+      "125 mm",
+      "250 mm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity ratio = 600/1500 = 0.4, so driver = 50 / 0.4 = 125 mm.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2020-a02-q2",
+    "question": "A pneumatic cylinder has a 300 mm vertical rise over a 750 mm horizontal run. What is its extended length to the nearest mm?",
+    "choices": [
+      "750 mm",
+      "808 mm",
+      "850 mm",
+      "1050 mm"
+    ],
+    "correctIndex": 1,
+    "explanation": "√(300² + 750²) = √652 500 ≈ 808 mm.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2020-a02-q3",
+    "question": "Why must the piston rod area be subtracted when calculating the instroke force of a double-acting cylinder?",
+    "choices": [
+      "Air only acts on the annular area around the rod on the instroke",
+      "The rod increases air pressure",
+      "The rod adds friction equal to its area",
+      "It is only needed on the outstroke"
+    ],
+    "correctIndex": 0,
+    "explanation": "On the instroke the rod occupies part of the piston face, so the effective area is π/4 (D² − d²).",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2020-a02-q4",
+    "question": "Which sensor arrangement best measures the rotational speed of a generator pulley for a microcontroller?",
+    "choices": [
+      "LDR and fixed resistor",
+      "Slotted opto-switch with a slotted disc",
+      "Thermistor on the bearing",
+      "Strain gauge on the belt"
+    ],
+    "correctIndex": 1,
+    "explanation": "The slotted disc breaks the opto-switch beam, producing pulses whose interval the microcontroller can time.",
+    "topic": "6"
   }
 ]

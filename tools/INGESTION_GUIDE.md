@@ -69,11 +69,24 @@ Every question in `questions.json` adheres to the clean visual format:
 
 ## 4. Current Repository Ingestion Status
 
+* **2020 Autumn H404/02** (Problem Solving): 7 questions · **70 / 70 marks** · Verified ✓
 * **2020 Autumn H404/01** (Principles): 23 questions · **80 / 80 marks** · Verified ✓
 * **2019 Summer H404/01** (Principles): 25 questions · **80 / 80 marks** · Verified ✓
 * **2019 Summer H404/02** (Problem Solving): 6 questions · **70 / 70 marks** · Verified ✓
 * **2019 Summer H004/01** (AS Principles): 23 questions · **90 / 90 marks** · Verified ✓
 * **2018 Practice Set 1 H404/01** (Principles): 25 questions · **80 / 80 marks** · Verified ✓
 * **2018 Practice Set 1 H404/02** (Problem Solving): 7 questions · **70 / 70 marks** · Verified ✓
-* **Total Questions in Database:** **120**
-* **Total Curriculum Marks:** **550 marks**
+* **Total Questions in Database:** **127**
+* **Total Curriculum Marks:** **620 marks**
+
+---
+
+## 5. Notes for Scanned (image-only) PDFs
+
+Some OCR papers (e.g. Nov 2020 QP + RB) are scanned, so `get_text()` returns nothing.
+
+1. Render each page (zoom 1.1) and build contact sheets with a pt ruler to measure crop rectangles.
+2. Write a per-paper build script (template: [`tools/build_2020_autumn_02.py`](file:///C:/Users/Alexander/.gemini/antigravity/scratch/leets/tools/build_2020_autumn_02.py)) that renders clips at zoom 2.
+3. **Answer-space rule:** question cards keep the prompt + 1–2 answer lines (or the final answer line, e.g. `Distance H ........ mm`) + the mark `[X]`; large working boxes are cut out and the two halves stitched.
+4. Mark scheme pages are landscape tables — `autotrim_bottom()` strips empty table space (check short trailing words aren't clipped).
+5. Resource naming: `fig-N.jpg` / `fig-Na.jpg` → "Fig. N" / "Fig. Na"; whole RB text pages → `rb-pN.jpg` → "Resource Booklet – page N".

@@ -676,5 +676,57 @@
     ],
     "answer": 0,
     "explanation": "PWM rapidly switches the full supply voltage ON and OFF; varying the pulse duty cycle adjusts the average voltage and rotational speed while keeping low power losses in the switching transistor."
+  },
+  {
+    "id": "quiz-2019-s02-q1",
+    "question": "How many complete cycles of the India MkIII hand pump handle are required to fill one 20-litre container with water (accounting for piston rod displacement)?",
+    "choices": [
+      "7 cycles",
+      "8 cycles",
+      "10 cycles",
+      "14 cycles"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gross cylinder volume is 2.365 L and piston rod displacement is 0.30 L, leaving a net delivery of ~2.065 L per stroke. 20 L / 2.065 L = 9.68 strokes, which rounds up to 10 complete cycles.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2019-s02-q2",
+    "question": "Using the solar equation E = A × r × H × PR, how many 1000 × 500 mm photovoltaic panels (r = 0.15, PR = 0.75, H = 2100 kWh/m²) are required to produce 1890 kWh annually?",
+    "choices": [
+      "8 panels",
+      "12 panels",
+      "16 panels",
+      "24 panels"
+    ],
+    "correctIndex": 2,
+    "explanation": "Required array area A = 1890 / (0.15 × 2100 × 0.75) = 8.0 m². Each 1000 × 500 mm panel has an area of 0.5 m². Total panels = 8.0 / 0.5 = 16 panels.",
+    "topic": "4"
+  },
+  {
+    "id": "quiz-2019-s02-q3",
+    "question": "Which compound gear arrangement produces a 32:1 gear reduction using available spur gears (20t, 80t, 160t)?",
+    "choices": [
+      "(80t / 20t) × (160t / 20t)",
+      "(160t / 40t) × (80t / 40t)",
+      "(160t / 20t) × (40t / 20t)",
+      "(160t / 80t) × (80t / 20t)"
+    ],
+    "correctIndex": 0,
+    "explanation": "(80t / 20t) gives a 4:1 reduction and (160t / 20t) gives an 8:1 reduction. Compounding them yields 4 × 8 = 32:1.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2019-s02-q4",
+    "question": "What is the primary operational defect of the DLR-90 industrial trolley when transporting 20L water containers across rural dirt terrain?",
+    "choices": [
+      "Max load capacity is exceeded by the containers",
+      "150 mm solid wheels cause excessive jarring and bed is too narrow for two containers side-by-side",
+      "Aluminium frame is too heavy for women and children",
+      "Telescopic handle cannot adjust to adult human height"
+    ],
+    "correctIndex": 1,
+    "explanation": "Small 150 mm solid wheels struggle in mud and sand with zero shock absorption, and the 380 mm wide bed forces vertical stacking which raises the centre of gravity dangerously.",
+    "topic": "1"
   }
 ]

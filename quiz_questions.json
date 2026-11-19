@@ -572,5 +572,109 @@
     ],
     "answer": 0,
     "explanation": "Miniaturised keyhole robotic arms enter through small ports rather than large incisions, drastically cutting blood loss, post-operative pain, and hospital stay duration."
+  },
+  {
+    "id": "quiz-2019-p1-stress",
+    "topic": "1.2",
+    "question": "What is the formula used to calculate direct mechanical stress (σ) in a loaded component?",
+    "options": [
+      "Stress = Force / Cross-sectional Area",
+      "Stress = Force × Distance",
+      "Stress = Strain / Original Length",
+      "Stress = Mass × Acceleration"
+    ],
+    "answer": 0,
+    "explanation": "Direct stress is defined as force per unit cross-sectional area: σ = F / A (measured in N/m² or Pa)."
+  },
+  {
+    "id": "quiz-2019-p1-plastic-marking",
+    "topic": "4.2",
+    "question": "What polymer is denoted by the resin identification symbol '>PP<' on a moulded plastic part?",
+    "options": [
+      "Polypropylene",
+      "Polyethylene",
+      "Polycarbonate",
+      "Polystyrene"
+    ],
+    "answer": 0,
+    "explanation": "PP stands for Polypropylene, a flexible, fatigue-resistant thermo softening polymer widely used in garden equipment and living hinges."
+  },
+  {
+    "id": "quiz-2019-p1-vernier",
+    "topic": "4.1",
+    "question": "Which measuring tool is standardly designed to measure outer diameters to a precision of 0.02 mm?",
+    "options": [
+      "Vernier / Digital Caliper",
+      "Steel Rule",
+      "Dial Test Indicator (DTI)",
+      "Feeler Gauge"
+    ],
+    "answer": 0,
+    "explanation": "A standard vernier or digital caliper offers external jaw resolution down to 0.02 mm (or 0.01 mm for digital displays)."
+  },
+  {
+    "id": "quiz-2019-p1-ribbing",
+    "topic": "5.1",
+    "question": "Why do engineers incorporate internal ribs and webs into thin-walled injection moulded casings?",
+    "options": [
+      "To increase structural rigidity without increasing wall thickness",
+      "To speed up raw molten plastic flow into the mould cavity",
+      "To act as internal conduit channels for electrical wiring",
+      "To decrease thermal conductivity through the polymer"
+    ],
+    "answer": 0,
+    "explanation": "Ribs increase the section modulus and second moment of area, delivering high torsional and bending stiffness while preventing sink marks that occur with thick walls."
+  },
+  {
+    "id": "quiz-2019-as-pulley-ratio",
+    "topic": "3.2",
+    "question": "In a belt-driven pulley system, if a motor pulley has a diameter of 50 mm and the driven drum pulley is 350 mm, what is the velocity ratio?",
+    "options": [
+      "7 : 1 (reduction)",
+      "1 : 7 (speed increase)",
+      "14 : 1",
+      "3.5 : 1"
+    ],
+    "answer": 0,
+    "explanation": "Velocity ratio is Driven Diameter / Driver Diameter = 350 / 50 = 7. The drum rotates at 1/7th the speed of the motor."
+  },
+  {
+    "id": "quiz-2019-as-youngs-modulus",
+    "topic": "4.1",
+    "question": "What is the standard engineering unit for Young's Modulus of elasticity (E)?",
+    "options": [
+      "GPa (or N/m² / Pa)",
+      "N m",
+      "J / kg",
+      "Dimensionless ratio"
+    ],
+    "answer": 0,
+    "explanation": "Young's Modulus is stress / strain. Since strain is dimensionless, E has units of pressure / stress: Pa (Pascals), typically expressed in GPa for metals."
+  },
+  {
+    "id": "quiz-2019-as-flyback-diode",
+    "topic": "3.3",
+    "question": "Why is a diode connected in reverse-parallel across an electromagnetic relay coil in transistor driver circuits?",
+    "options": [
+      "To suppress high-voltage back-EMF spikes when the relay switches off",
+      "To rectify AC supply voltage into pure DC",
+      "To increase the current gain of the transistor",
+      "To indicate with light when the coil is energised"
+    ],
+    "answer": 0,
+    "explanation": "When an inductor's current is abruptly cut off, the collapsing magnetic field induces a large reverse back-EMF spike that can destroy the driver transistor. A flyback diode safely clamps this spike."
+  },
+  {
+    "id": "quiz-2019-as-pwm-speed",
+    "topic": "3.3",
+    "question": "How does Pulse Width Modulation (PWM) control the speed of a DC electric motor efficiently?",
+    "options": [
+      "By varying the duty cycle (ratio of ON to OFF time) at a fixed frequency",
+      "By inserting variable power resistors in series with the motor",
+      "By altering the chemical composition of the motor brushes",
+      "By converting the DC supply into variable three-phase AC"
+    ],
+    "answer": 0,
+    "explanation": "PWM rapidly switches the full supply voltage ON and OFF; varying the pulse duty cycle adjusts the average voltage and rotational speed while keeping low power losses in the switching transistor."
   }
 ]

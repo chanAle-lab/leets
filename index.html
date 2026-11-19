@@ -2112,7 +2112,6 @@ footer {
         <button class="tab-link" data-view="cards" role="tab" aria-selected="false">Questions</button>
         <button class="tab-link" data-view="practice" role="tab" aria-selected="false">Practice</button>
         <button class="tab-link" data-view="cheatsheets" role="tab" aria-selected="false">Cheatsheets</button>
-        <button class="tab-link" data-view="teachers" role="tab" aria-selected="false">Teacher's Hub</button>
       </nav>
 
       <div class="header-right">
@@ -2169,7 +2168,9 @@ footer {
     <div id="app-view" aria-live="polite"></div>
 
     <footer>
-      OCR A Level Design and Technology: Design Engineering (H404). Specification © OCR (Oxford Cambridge and RSA).
+      <span>OCR A Level Design and Technology: Design Engineering (H404). Specification © OCR (Oxford Cambridge and RSA).</span>
+      <span style="opacity:0.4;margin:0 8px;">·</span>
+      <a href="#view=teachers" id="footer-teachers-link" style="color:var(--muted);text-decoration:none;transition:color 0.15s;">Teacher's Hub</a>
     </footer>
   </main>
 </div>
@@ -2410,6 +2411,19 @@ $('#lock-toggle-pwd').onclick = () => {
 $('#btn-lock-site').onclick = () => {
   if (confirm('Lock portal?')) lockSite();
 };
+
+/* Footer Teacher Hub Link */
+const footerTeacherBtn = $('#footer-teachers-link');
+if (footerTeacherBtn) {
+  footerTeacherBtn.onclick = (e) => {
+    e.preventDefault();
+    state.view = 'teachers';
+    state.teacherTab = 'hub';
+    syncViewButtons();
+    toHash();
+    render();
+  };
+}
 
 /* Formula modal controls */
 $('#btn-open-formulae').onclick = () => {
@@ -4389,6 +4403,9 @@ function switchTeacherTab(tab) {
 function renderTeacherDashboard() {
   const html = `
     <div class="teacher-hub-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+        <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
+      </div>
       <nav class="teacher-nav">
         <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
         <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>

@@ -858,5 +858,83 @@
     "correctIndex": 0,
     "explanation": "Strain ε = Stress / Young's Modulus (σ / E), and total extension ΔL = ε × L0.",
     "topic": "6"
+  },
+  {
+    "id": "quiz-2022-s01-q1",
+    "question": "In a 30-cell battery pack arranged as 3 parallel branches of 10 cells in series (3.6 V per cell), what is the output terminal voltage?",
+    "choices": [
+      "36 V",
+      "108 V",
+      "12 V",
+      "3.6 V"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cells in series sum voltages (10 × 3.6 V = 36 V). Parallel branches maintain the same terminal voltage while tripling charge capacity.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2022-s01-q2",
+    "question": "How does the electrical resistance of a wire change if its length is doubled while its cross-sectional area is halved?",
+    "choices": [
+      "It increases by a factor of 4",
+      "It remains unchanged",
+      "It doubles",
+      "It decreases by half"
+    ],
+    "correctIndex": 0,
+    "explanation": "Resistance R = ρL/A. Doubling L and halving A gives (2)/(0.5) = 4× the original resistance.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2022-s01-q3",
+    "question": "In a rack and pinion mechanism with a 2 mm tooth pitch, how many revolutions must a 12-tooth pinion turn to move the rack 18 mm?",
+    "choices": [
+      "0.75 revolutions",
+      "1.5 revolutions",
+      "9 revolutions",
+      "0.67 revolutions"
+    ],
+    "correctIndex": 0,
+    "explanation": "18 mm / 2 mm per tooth = 9 teeth moved on the rack. 9 teeth / 12 teeth per pinion rev = 0.75 revolutions.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2022-s02-q1",
+    "question": "According to Archimedes' principle, what governs whether an object floats stably at a desired waterline?",
+    "choices": [
+      "The weight of the displaced fluid must equal the total weight of the object and its load",
+      "The object must have greater surface area than depth",
+      "The air pressure inside the object must exceed atmospheric pressure",
+      "The volume of the object must be exactly twice its mass"
+    ],
+    "correctIndex": 0,
+    "explanation": "Archimedes principle states that upward buoyant force B = ρVg equals the weight of displaced fluid, balancing the total downward gravitational weight.",
+    "topic": "6"
+  },
+  {
+    "id": "quiz-2022-s02-q2",
+    "question": "When selecting or designing an SUP paddle, what anthropometric guideline is used for the overall paddle length?",
+    "choices": [
+      "Around 20 cm taller than the rider's standing height",
+      "Equal to the rider's eye level height",
+      "Twice the rider's waist height",
+      "Equal to the rider's fingertip height"
+    ],
+    "correctIndex": 0,
+    "explanation": "An efficient paddle should be approximately 20 cm taller than the user's standing height to allow full reach without bending the back excessively.",
+    "topic": "1"
+  },
+  {
+    "id": "quiz-2022-s02-q3",
+    "question": "Why must individual protective resistors be placed in series with LEDs connected to microcontroller output pins?",
+    "choices": [
+      "To limit forward current and prevent thermal runaway or burn-out of the LED and microcontroller I/O transistors",
+      "To step up the microcontroller voltage to the LED operating voltage",
+      "To convert digital output signals into analogue voltages",
+      "To discharge internal capacitance when the LED turns off"
+    ],
+    "correctIndex": 0,
+    "explanation": "LEDs have very low internal forward resistance once conducting; series resistors drop excess voltage and limit current to safe levels (e.g. 10-20 mA).",
+    "topic": "6"
   }
 ]

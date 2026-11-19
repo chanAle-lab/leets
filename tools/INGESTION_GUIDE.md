@@ -46,19 +46,22 @@ The pipeline CLI is located at [`tools/ingest_paper.py`](file:///C:/Users/Alexan
 
 Every question in `questions.json` adheres to the clean visual format:
 
-1. **Clean Visual Card:**
-   * `q.image`: High-resolution cropped snippet (`img/<paper-id>/q{num}.jpg`).
+1. **Strict Question vs. Resource Separation (Template Standard):**
+   * **Question Prompt Card (`q.image`):** Cropped strictly around the subpart prompt only (e.g., `(a) Identify three ways... [3]`, `(b)(i) The lift moves at... [3]`). Introductory context paragraphs and stimulus drawings are excluded from `q.image`.
+   * **Resources Section (`q.figures`):** Contextual preambles and stimulus drawings/photos (e.g., `1 A home lift can be installed... Fig. 1.1 shows...` + photos) are isolated into `fig-*.jpg` and displayed under the collapsible **Resources** accordion (`<details class="details-clean"><summary>${figLabel(f)}</summary>`).
+   * *Benefit:* Eliminates visual duplication, keeps the main question card concise and readable, and lets subparts (e.g., `(a)`, `(b)(i)`, `(b)(ii)`) cleanly share the same stimulus figure.
+2. **Clean Visual Card:**
    * No raw HTML prompt boxes cluttering the card when `q.image` is present.
-2. **Descriptive Figure Labels:**
+3. **Descriptive Figure Labels:**
    * Handled dynamically by `figLabel(f)` in `index.html`.
    * Formats filenames like `fig-1-1.jpg` into `Fig. 1.1`, `fig-3.jpg` into `Fig. 3`, and `ms-...` into `Exemplar Model Solution Diagram`.
-3. **Streamlined Mark Schemes:**
+4. **Streamlined Mark Schemes:**
    * `q.markscheme`: Stitched mark scheme image (`img/<paper-id>/ms-{num}.jpg`).
    * Rendered in `<details class="details-clean"><summary>Mark scheme</summary>...`.
-4. **Side-by-Side Modal:**
+5. **Side-by-Side Modal:**
    * Left pane: Question snippet + stacked resource figures.
    * Right pane: Mark scheme solution.
-5. **PDF Export & Selection Dock:**
+6. **PDF Export & Selection Dock:**
    * Checkboxes enable custom problem pack creation.
    * Floating dock displays total marks selected with an "Export PDF / Print" action.
 

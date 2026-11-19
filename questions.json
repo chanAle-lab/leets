@@ -673,7 +673,8 @@
       "prompt": "Data for the actual sensor used on the handheld gimbal is given below:<br>• Power supply: 1.8 to 3.6 V<br>• Power consumption: &lt; 1 mW<br>• Sensitivity: 0.005g<br><br>Explain <b>one</b> reason why this sensor is suitable for use on the handheld gimbal. [2]",
       "image": "img/2018-practice-01/q1ciii.jpg",
       "markscheme": "img/2018-practice-01/ms-1ciii.jpg",
-      "markscheme_text": "<b>One mark for analysing the data in the table to identify a reason; one mark for explaining why it is suitable on the gimbal (2 marks):</b><br>• <b>Wide power supply range (1.8–3.6 V) (1):</b> will suit a variety of single-cell or multi-cell battery packs without needing complex voltage regulation (1).<br>• <b>Low power consumption (&lt; 1 mW) (1):</b> ensures the battery will last a long time during extended handheld filming sessions (1).<br>• <b>High sensitivity (0.005g) (1):</b> enables minute hand tremors and slight vibrations to be detected quickly and corrected (1)."
+      "markscheme_text": "<b>One mark for analysing the data in the table to identify a reason; one mark for explaining why it is suitable on the gimbal (2 marks):</b><br>• <b>Wide power supply range (1.8–3.6 V) (1):</b> will suit a variety of single-cell or multi-cell battery packs without needing complex voltage regulation (1).<br>• <b>Low power consumption (&lt; 1 mW) (1):</b> ensures the battery will last a long time during extended handheld filming sessions (1).<br>• <b>High sensitivity (0.005g) (1):</b> enables minute hand tremors and slight vibrations to be detected quickly and corrected (1).",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q1di",
@@ -692,7 +693,8 @@
       "prompt": "Electric motors as used in the handheld gimbal often make use of modern materials such as rare earth magnets.<br><br>Explain <b>one</b> reason why modern materials are used in electric motors. [2]",
       "image": "img/2018-practice-01/q1di.jpg",
       "markscheme": "img/2018-practice-01/ms-1di.jpg",
-      "markscheme_text": "<b>Up to 2 marks for explaining why modern materials are used in electric motors:</b><br>• Modern materials such as rare earth magnets have a very strong magnetic field / high flux density (1). This enables the motor to produce a high torque / be very compact and lightweight / be very powerful for its size (1).<br>• High-performance alloys enable the rotor to be lightweight (1), allowing the rotor to spin at higher speeds and respond rapidly with low rotational inertia (1).<br><i>(Do not accept smart material-based answers.)</i>"
+      "markscheme_text": "<b>Up to 2 marks for explaining why modern materials are used in electric motors:</b><br>• Modern materials such as rare earth magnets have a very strong magnetic field / high flux density (1). This enables the motor to produce a high torque / be very compact and lightweight / be very powerful for its size (1).<br>• High-performance alloys enable the rotor to be lightweight (1), allowing the rotor to spin at higher speeds and respond rapidly with low rotational inertia (1).<br><i>(Do not accept smart material-based answers.)</i>",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q1dii",
@@ -711,7 +713,8 @@
       "prompt": "State <b>one</b> type of motor that would be suitable for use in the handheld gimbal and explain why it would be used. [2]",
       "image": "img/2018-practice-01/q1dii.jpg",
       "markscheme": "img/2018-practice-01/ms-1dii.jpg",
-      "markscheme_text": "<b>One mark for identifying a suitable motor; one mark for explaining why it would be suitable (2 marks):</b><br>• <b>Brushless DC motor (BLDC) (1):</b> High torque-to-weight ratio, high efficiency, can hold fine angular positions smoothly without brush friction, and very quiet in operation (1).<br>• <b>Servo motor (1):</b> Rotates to a given commanded angular position then holds, provides fast response and high closed-loop torque (1).<br>• <b>Stepper motor (1):</b> Rotates through precise discrete step angles per pulse, provides high holding torque without slip (1)."
+      "markscheme_text": "<b>One mark for identifying a suitable motor; one mark for explaining why it would be suitable (2 marks):</b><br>• <b>Brushless DC motor (BLDC) (1):</b> High torque-to-weight ratio, high efficiency, can hold fine angular positions smoothly without brush friction, and very quiet in operation (1).<br>• <b>Servo motor (1):</b> Rotates to a given commanded angular position then holds, provides fast response and high closed-loop torque (1).<br>• <b>Stepper motor (1):</b> Rotates through precise discrete step angles per pulse, provides high holding torque without slip (1).",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q1diii",
@@ -823,7 +826,8 @@
       "prompt": "The cable is made from stainless steel. It has an unstretched length of 1500 mm and a diameter of 1.6 mm.<br><br>Calculate the cross sectional area of the wire in m² to 3 significant figures. Show your working.<br>Area of a circle = πr² [3]",
       "image": "img/2018-practice-01/q2cii.jpg",
       "markscheme": "img/2018-practice-01/ms-2cii.jpg",
-      "markscheme_text": "<b>Award 3 marks as follows:</b><br>• Radius r = 1.6 mm / 2 = 0.8 mm (1 mark)<br>• Convert mm into m: 0.8 mm = 0.0008 m = 8.0 × 10⁻⁴ m (1 mark)<br>• Area A = π × (0.0008)² = <b>2.01 × 10⁻⁶ m²</b> (to 3 s.f.) (1 mark)<br><i>(Full marks if correct answer is given without working out. ECF applies.)</i>"
+      "markscheme_text": "<b>Award 3 marks as follows:</b><br>• Radius r = 1.6 mm / 2 = 0.8 mm (1 mark)<br>• Convert mm into m: 0.8 mm = 0.0008 m = 8.0 × 10⁻⁴ m (1 mark)<br>• Area A = π × (0.0008)² = <b>2.01 × 10⁻⁶ m²</b> (to 3 s.f.) (1 mark)<br><i>(Full marks if correct answer is given without working out. ECF applies.)</i>",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q2ciii",
@@ -842,7 +846,8 @@
       "prompt": "Calculate the stress in the wire in Pa (N·m⁻²) when a tensile force of 300 N is applied to the end of the cable. Show your working. [3]",
       "image": "img/2018-practice-01/q2ciii.jpg",
       "markscheme": "img/2018-practice-01/ms-2ciii.jpg",
-      "markscheme_text": "<b>Award 3 marks as follows:</b><br>• Formula: Stress σ = Force / Cross-sectional Area (1 mark)<br>• Substitution: Stress = 300 N / 2.01 × 10⁻⁶ m² (1 mark)<br>• Stress = <b>1.49 × 10⁸ Pa (N·m⁻²)</b> or <b>149 MPa</b> (also accept 149,253,731 Pa) (1 mark)<br><i>(Full marks if correct answer is given without working out. ECF applies.)</i>"
+      "markscheme_text": "<b>Award 3 marks as follows:</b><br>• Formula: Stress σ = Force / Cross-sectional Area (1 mark)<br>• Substitution: Stress = 300 N / 2.01 × 10⁻⁶ m² (1 mark)<br>• Stress = <b>1.49 × 10⁸ Pa (N·m⁻²)</b> or <b>149 MPa</b> (also accept 149,253,731 Pa) (1 mark)<br><i>(Full marks if correct answer is given without working out. ECF applies.)</i>",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q2civ",
@@ -861,7 +866,8 @@
       "prompt": "Calculate the extension of the cable in mm to 3 significant figures. Show your working.<br>Young’s modulus of stainless steel = 180 GPa [3]",
       "image": "img/2018-practice-01/q2civ.jpg",
       "markscheme": "img/2018-practice-01/ms-2civ.jpg",
-      "markscheme_text": "<b>Award 3 marks as follows:</b><br>• Young's Modulus equation: E = Stress / Strain ⇒ 180 × 10⁹ = 149 × 10⁶ / Strain (1 mark)<br>• Calculate Strain: ε = 149 × 10⁶ / 180 × 10⁹ = 0.000828 (or 8.28 × 10⁻⁴) (1 mark)<br>• Calculate Extension: ΔL = Strain × Original length = 0.000828 × 1500 mm = <b>1.24 mm</b> (to 3 s.f.) (1 mark)<br><i>(Full marks if correct answer is given without working out. ECF applies.)</i>"
+      "markscheme_text": "<b>Award 3 marks as follows:</b><br>• Young's Modulus equation: E = Stress / Strain ⇒ 180 × 10⁹ = 149 × 10⁶ / Strain (1 mark)<br>• Calculate Strain: ε = 149 × 10⁶ / 180 × 10⁹ = 0.000828 (or 8.28 × 10⁻⁴) (1 mark)<br>• Calculate Extension: ΔL = Strain × Original length = 0.000828 × 1500 mm = <b>1.24 mm</b> (to 3 s.f.) (1 mark)<br><i>(Full marks if correct answer is given without working out. ECF applies.)</i>",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q2di",
@@ -923,7 +929,8 @@
       "prompt": "Designers and manufacturers should consider the social footprint and the ecological footprint of any materials they use.<br><br>Describe how a social footprint is created by the manufacture of a product. [2]",
       "image": "img/2018-practice-01/q3ai.jpg",
       "markscheme": "img/2018-practice-01/ms-3ai.jpg",
-      "markscheme_text": "<b>Up to 2 marks for describing how a social footprint is created by product manufacture (macro or micro level):</b><br>• Mining chemicals or raw materials to make batteries and electronics can scar the landscape and impact local communities (1).<br>• Building factories to manufacture the product can alter the local environment and community infrastructure (1).<br>• Creating factory employment stimulates the local economy, skills base, and job market (1).<br>• Working conditions, worker safety, health standards, and fair wages across global supply chains (1)."
+      "markscheme_text": "<b>Up to 2 marks for describing how a social footprint is created by product manufacture (macro or micro level):</b><br>• Mining chemicals or raw materials to make batteries and electronics can scar the landscape and impact local communities (1).<br>• Building factories to manufacture the product can alter the local environment and community infrastructure (1).<br>• Creating factory employment stimulates the local economy, skills base, and job market (1).<br>• Working conditions, worker safety, health standards, and fair wages across global supply chains (1).",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q3aii",
@@ -943,7 +950,8 @@
       "prompt": "Describe the ecological footprint that results when using timber in products. [4]",
       "image": "img/2018-practice-01/q3aii.jpg",
       "markscheme": "img/2018-practice-01/ms-3aii.jpg",
-      "markscheme_text": "<b>Up to 4 marks for describing the ecological footprint of using timber in products:</b><br>• Timber is a natural material requiring extensive forest land to cultivate; while tree growth absorbs carbon dioxide (nearly carbon neutral), fossil energy is required to fell, kiln dry, process, and transport timber to market (1).<br>• Softwoods (e.g. pine, spruce) grow significantly faster than hardwoods (e.g. oak, beech), producing a smaller ecological footprint in construction and furniture (1).<br>• Waste sawdust and offcuts created during milling are utilized for biomass fuel or manufactured boards like MDF and chipboard (1).<br>• Risk of deforestation, habitat destruction, and biodiversity loss if timber is not certified by sustainable forestry bodies (e.g. FSC / PEFC) (1)."
+      "markscheme_text": "<b>Up to 4 marks for describing the ecological footprint of using timber in products:</b><br>• Timber is a natural material requiring extensive forest land to cultivate; while tree growth absorbs carbon dioxide (nearly carbon neutral), fossil energy is required to fell, kiln dry, process, and transport timber to market (1).<br>• Softwoods (e.g. pine, spruce) grow significantly faster than hardwoods (e.g. oak, beech), producing a smaller ecological footprint in construction and furniture (1).<br>• Waste sawdust and offcuts created during milling are utilized for biomass fuel or manufactured boards like MDF and chipboard (1).<br>• Risk of deforestation, habitat destruction, and biodiversity loss if timber is not certified by sustainable forestry bodies (e.g. FSC / PEFC) (1).",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q3b",
@@ -964,7 +972,8 @@
       "prompt": "Discuss how a lifecycle assessment (LCA) would be carried out on a domestic refrigerator.<br><br>Make reference to the following stages of the product’s life in your answer:<br>• manufacture;<br>• use;<br>• end of life. [*8]",
       "image": "img/2018-practice-01/q3b.jpg",
       "markscheme": "img/2018-practice-01/ms-3b.jpg",
-      "markscheme_text": "<b>Level 3 (6–8 marks):</b> Clear understanding of LCA. Thorough, well-structured discussion covering manufacture, use, and end-of-life stages for a refrigerator with relevant examples and clear reasoning.<br><b>Level 2 (3–5 marks):</b> Reasonable understanding. Sound discussion covering multiple LCA stages for a refrigerator with some structure.<br><b>Level 1 (1–2 marks):</b> Basic generic knowledge of LCA with little direct application.<br><br><b>Indicative content:</b><br>• <b>Manufacture:</b> Sourcing metals (sheet steel body, copper motor windings, aluminium cooling coils) and polymers (injection moulded ABS liners, polyurethane foam insulation). Toxic refrigerant gasses manufacture. Embodied energy in steel pressing, thermoforming liners, PCB assembly, and factory running energy.<br>• <b>Use:</b> Continuous 24/7 power draw over 10–15 year lifespan. Energy efficiency rating, improved vacuum/foam thermal insulation to lower compressor duty cycle.<br>• <b>End of Life:</b> Safe extraction and recycling of refrigerant gas (avoiding greenhouse/ozone depletion). Magnetic sorting and recycling of steel casing and copper coils. Difficulty recycling mixed insulation foam. RoHS directive compliance reducing hazardous substances.<br>• <b>Transport:</b> Embodied transport carbon moving bulky products from overseas manufacturing hubs."
+      "markscheme_text": "<b>Level 3 (6–8 marks):</b> Clear understanding of LCA. Thorough, well-structured discussion covering manufacture, use, and end-of-life stages for a refrigerator with relevant examples and clear reasoning.<br><b>Level 2 (3–5 marks):</b> Reasonable understanding. Sound discussion covering multiple LCA stages for a refrigerator with some structure.<br><b>Level 1 (1–2 marks):</b> Basic generic knowledge of LCA with little direct application.<br><br><b>Indicative content:</b><br>• <b>Manufacture:</b> Sourcing metals (sheet steel body, copper motor windings, aluminium cooling coils) and polymers (injection moulded ABS liners, polyurethane foam insulation). Toxic refrigerant gasses manufacture. Embodied energy in steel pressing, thermoforming liners, PCB assembly, and factory running energy.<br>• <b>Use:</b> Continuous 24/7 power draw over 10–15 year lifespan. Energy efficiency rating, improved vacuum/foam thermal insulation to lower compressor duty cycle.<br>• <b>End of Life:</b> Safe extraction and recycling of refrigerant gas (avoiding greenhouse/ozone depletion). Magnetic sorting and recycling of steel casing and copper coils. Difficulty recycling mixed insulation foam. RoHS directive compliance reducing hazardous substances.<br>• <b>Transport:</b> Embodied transport carbon moving bulky products from overseas manufacturing hubs.",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q4a",
@@ -1048,7 +1057,8 @@
       "prompt": "Describe how a closed loop control system is used to regulate the rotational speed of the washing machine drum. [3]",
       "image": "img/2018-practice-01/q4biii.jpg",
       "markscheme": "img/2018-practice-01/ms-4biii.jpg",
-      "markscheme_text": "<b>Up to 3 marks for describing closed loop drum speed regulation:</b><br>• <b>Sensing:</b> The signal from an input transducer (e.g. slotted optical opto-switch, tachogenerator, or Hall effect sensor) measures drum/motor rotational speed (1).<br>• <b>Feedback comparison:</b> The measured speed signal is fed back to the microcontroller/controller and compared against the target programmed cycle speed (1).<br>• <b>Actuation error correction:</b> The controller adjusts the electrical drive power (e.g. PWM duty cycle or triac phase angle) to minimize the error difference between feedback speed and setpoint speed (1)."
+      "markscheme_text": "<b>Up to 3 marks for describing closed loop drum speed regulation:</b><br>• <b>Sensing:</b> The signal from an input transducer (e.g. slotted optical opto-switch, tachogenerator, or Hall effect sensor) measures drum/motor rotational speed (1).<br>• <b>Feedback comparison:</b> The measured speed signal is fed back to the microcontroller/controller and compared against the target programmed cycle speed (1).<br>• <b>Actuation error correction:</b> The controller adjusts the electrical drive power (e.g. PWM duty cycle or triac phase angle) to minimize the error difference between feedback speed and setpoint speed (1).",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q4c",
@@ -1068,7 +1078,8 @@
       "prompt": "User interfaces on early washing machines used simple LED indicators, but many modern washing machines feature graphical displays.<br><br>Explain <b>two</b> ways in which a graphical display enhances the user interface on the washing machine. [4]",
       "image": "img/2018-practice-01/q4c.jpg",
       "markscheme": "img/2018-practice-01/ms-4c.jpg",
-      "markscheme_text": "<b>Award up to 4 marks (1 mark for identifying a way, 1 mark for explaining why in context, for each of two ways):</b><br>• <b>Rich visual & alphanumeric feedback:</b> Can display more than basic lights, such as exact remaining cycle time, wash temperature, spin speed, and animated tutorials/error diagnostics (1+1).<br>• <b>Universal international symbols:</b> Can display intuitive icons and multi-lingual text menus, allowing the appliance to be sold globally without redesigning physical control fascia panels (1+1).<br>• <b>Ergonomics and intuitive navigation:</b> Graphical layouts and icons are clearer to comprehend than cryptic blinking LEDs, reducing human operational errors (1+1).<br>• <b>Touchscreen / soft keys:</b> Touchscreens reduce physical push buttons, creating a flush, hygienic surface that is easy to wipe clean with a premium luxury aesthetic (1+1)."
+      "markscheme_text": "<b>Award up to 4 marks (1 mark for identifying a way, 1 mark for explaining why in context, for each of two ways):</b><br>• <b>Rich visual & alphanumeric feedback:</b> Can display more than basic lights, such as exact remaining cycle time, wash temperature, spin speed, and animated tutorials/error diagnostics (1+1).<br>• <b>Universal international symbols:</b> Can display intuitive icons and multi-lingual text menus, allowing the appliance to be sold globally without redesigning physical control fascia panels (1+1).<br>• <b>Ergonomics and intuitive navigation:</b> Graphical layouts and icons are clearer to comprehend than cryptic blinking LEDs, reducing human operational errors (1+1).<br>• <b>Touchscreen / soft keys:</b> Touchscreens reduce physical push buttons, creating a flush, hygienic surface that is easy to wipe clean with a premium luxury aesthetic (1+1).",
+      "figures": []
     },
     {
       "id": "2018-practice-01-q4d",
@@ -1089,7 +1100,8 @@
       "prompt": "Discuss how the washing machine manufacturer would use destructive and non-destructive testing methods to assess the machine’s suitability for purpose. [*8]",
       "image": "img/2018-practice-01/q4d.jpg",
       "markscheme": "img/2018-practice-01/ms-4d.jpg",
-      "markscheme_text": "<b>Level 3 (6–8 marks):</b> Clear understanding of destructive and non-destructive testing. Thorough discussion explaining how both testing methods judge fitness for purpose across multiple perspectives.<br><b>Level 2 (3–5 marks):</b> Reasonable understanding of testing methods. Sound discussion explaining how destructive and/or non-destructive tests assess fitness for purpose.<br><b>Level 1 (1–2 marks):</b> Basic generic knowledge of testing with little application.<br><br><b>Indicative content:</b><br>• <b>Destructive tests (testing to failure):</b><br>  - Robotic cyclic door opening/slamming until latch failure.<br>  - Drive belt tensile fatigue pull test until snapping.<br>  - Accelerated life / time-to-failure continuous running tests.<br>  - Overload tests with excess heavy laundry and unbalanced weight distribution.<br>  - Thermal overheat and heater dry-run fire safety tests.<br>  - Electrical overvoltage/spike insulation breakdown tests.<br>• <b>Non-destructive tests (NDT / QA verification):</b><br>  - Water pressure leak testing of pumps, valves, and drum seals.<br>  - PAT testing (earth bonding continuity and insulation resistance).<br>  - Failsafe cut-out testing (e.g. door interlock preventing opening during spin).<br>  - Dynamic drum balancing sensor and accelerometer calibration.<br>  - Automated PCB diagnostic test bench and firmware verification.<br>  - Acoustic noise level measurements (dB meter) during 1600 rpm spin."
+      "markscheme_text": "<b>Level 3 (6–8 marks):</b> Clear understanding of destructive and non-destructive testing. Thorough discussion explaining how both testing methods judge fitness for purpose across multiple perspectives.<br><b>Level 2 (3–5 marks):</b> Reasonable understanding of testing methods. Sound discussion explaining how destructive and/or non-destructive tests assess fitness for purpose.<br><b>Level 1 (1–2 marks):</b> Basic generic knowledge of testing with little application.<br><br><b>Indicative content:</b><br>• <b>Destructive tests (testing to failure):</b><br>  - Robotic cyclic door opening/slamming until latch failure.<br>  - Drive belt tensile fatigue pull test until snapping.<br>  - Accelerated life / time-to-failure continuous running tests.<br>  - Overload tests with excess heavy laundry and unbalanced weight distribution.<br>  - Thermal overheat and heater dry-run fire safety tests.<br>  - Electrical overvoltage/spike insulation breakdown tests.<br>• <b>Non-destructive tests (NDT / QA verification):</b><br>  - Water pressure leak testing of pumps, valves, and drum seals.<br>  - PAT testing (earth bonding continuity and insulation resistance).<br>  - Failsafe cut-out testing (e.g. door interlock preventing opening during spin).<br>  - Dynamic drum balancing sensor and accelerometer calibration.<br>  - Automated PCB diagnostic test bench and firmware verification.<br>  - Acoustic noise level measurements (dB meter) during 1600 rpm spin.",
+      "figures": []
     },
     {
       "id": "2018-practice-02-q1",
@@ -1415,7 +1427,9 @@
       ],
       "summary": "Discuss, using examples, the significance of good user interface design in engineered products.",
       "prompt": "Discuss, using examples, the significance of good user interface design in engineered products. [8]",
-      "figures": [],
+      "figures": [
+        "img/2019-summer-01/fig-1-1.jpg"
+      ],
       "image": "img/2019-summer-01/q1c.jpg",
       "markscheme": "img/2019-summer-01/ms-1c.jpg",
       "markscheme_text": "<b>Level 3 (6-8 marks):</b> Clear, thorough understanding of UI significance in engineered products (i.e. good UI simplifies complex interactions). Well-structured line of reasoning with relevant, substantiated physical and software UI examples.<br><b>Level 2 (3-5 marks):</b> Sound understanding of UI significance, recognising what UI accomplishes in specific products, with some structure.<br><b>Level 1 (1-2 marks):</b> Basic descriptive knowledge with limited examples or evaluation.<br><br><b>Indicative Content:</b><br>• Physical UI: Button sizing, grouping, tactile feedback, color-coding (e.g. red emergency stop), anthropometric sizing for diverse users.<br>• Software UI: Menu hierarchy, clear visual feedback, confirmation dialogs for critical actions, high contrast displays.<br>• Usability & Safety: Preventing operator error in safety-critical devices (medical equipment, vehicles); reducing cognitive workload; intuitive operation without dense training manuals.<br>• Commercial impact: Enhanced brand reputation, user satisfaction, and reduced customer support costs."
@@ -1695,7 +1709,7 @@
       "summary": "Explain one reason why a plastic manufacturer marks the product with >PP<.",
       "prompt": "The >PP< marking that is visible on the surface of the product in Fig. 4.2b identifies the type of thermo softening polymer that has been used.<br><br>Explain <b>one</b> reason why a plastic manufacturer marks the type of plastic used on their product in this way. [2]",
       "figures": [
-        "img/2019-summer-01/fig-4-2b.jpg"
+        "img/2019-summer-01/fig-4-2.jpg"
       ],
       "image": "img/2019-summer-01/q4biii.jpg",
       "markscheme": "img/2019-summer-01/ms-4biii.jpg",
@@ -1975,7 +1989,8 @@
       "summary": "Convert 150 kg to Newtons (N) stating the formula used.",
       "prompt": "Fig. 2.1 shows an example of a bicycle for hire designed to support a maximum weight of \\(150\\text{ kg}\\).<br><br>Convert \\(150\\text{ kg}\\) to Newtons (N) stating the formula used. [2]",
       "figures": [
-        "img/2019-summer-as-01/fig-2-1.jpg"
+        "img/2019-summer-as-01/fig-2-1.jpg",
+        "img/2019-summer-as-01/fig-2-2.jpg"
       ],
       "image": "img/2019-summer-as-01/q2ai.jpg",
       "markscheme": "img/2019-summer-as-01/ms-2ai.jpg",
@@ -2041,7 +2056,9 @@
       ],
       "summary": "Calculate Young's Modulus in GPa if seat post length is 60 cm and compresses by 0.04 mm.",
       "prompt": "The length of the seat post is \\(60\\text{ cm}\\). When a person weighing \\(150\\text{ kg}\\) sits on the bicycle the length of the seat post compresses by \\(0.04\\text{ mm}\\). Calculate the Young's Modulus of the material of the seat post in GPa. Show your working. [5]",
-      "figures": [],
+      "figures": [
+        "img/2019-summer-as-01/fig-2-2.jpg"
+      ],
       "image": "img/2019-summer-as-01/q2b.jpg",
       "markscheme": "img/2019-summer-as-01/ms-2b.jpg",
       "markscheme_text": "<b>Award five marks as follows:</b><br>• Formula: \\(\\text{YM} = \\frac{\\text{stress}}{\\text{strain}}\\) (1)<br>• Strain formula: \\(\\text{Strain} = \\frac{\\text{extension}}{\\text{original length}}\\) (1)<br>• Strain calculation: \\(\\frac{0.04 \\times 10^{-3}\\text{ m}}{0.60\\text{ m}} = 6.67 \\times 10^{-5}\\) (1)<br>• Young's modulus application: \\(\\frac{4.87 \\times 10^6\\text{ Pa}}{6.67 \\times 10^{-5}}\\) (1)<br>• Final answer in GPa: \\(73\\text{ GPa}\\) (allow 73 to 75 GPa) (1)"

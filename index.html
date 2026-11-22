@@ -2533,6 +2533,8 @@ footer {
 const $ = s => document.querySelector(s);
 const $$ = s => document.querySelectorAll(s);
 const esc = s => String(s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const IMG_VERSION = 'v=20261122b';
+const imgSrc = url => (!url ? '' : (url.includes('?') ? url : `${url}?${IMG_VERSION}`));
 
 /* ========================================================
    Password Gate (Supported: engineering)
@@ -3210,7 +3212,7 @@ async function executePrintQuestions(questions, options = {}) {
       figHtml = q.figures.map(f => `
         <div class="print-pack-img-block">
           <div class="print-pack-fig-label">Resource Figure: ${esc(figLabel ? figLabel(f) : f)}</div>
-          <img src="${esc(f)}" alt="${esc(figLabel ? figLabel(f) : 'Figure')}">
+          <img src="${esc(imgSrc(f))}" alt="${esc(figLabel ? figLabel(f) : 'Figure')}">
         </div>
       `).join('');
     }
@@ -3221,7 +3223,7 @@ async function executePrintQuestions(questions, options = {}) {
         <div class="print-pack-ms-block">
           <div class="print-pack-fig-label" style="color:#b91c1c">Official OCR Mark Scheme — Question ${esc(q.question)}:</div>
           <div class="print-pack-img-block">
-            <img src="${esc(q.markscheme)}" alt="Mark Scheme Question ${esc(q.question)}">
+            <img src="${esc(imgSrc(q.markscheme))}" alt="Mark Scheme Question ${esc(q.question)}">
           </div>
         </div>
       `;
@@ -3236,7 +3238,7 @@ async function executePrintQuestions(questions, options = {}) {
 
     let qImg = q.image ? `
       <div class="print-pack-img-block">
-        <img src="${esc(q.image)}" alt="Question ${esc(q.question)}">
+        <img src="${esc(imgSrc(q.image))}" alt="Question ${esc(q.question)}">
       </div>
     ` : `
       <div style="padding:12px;font-size:10pt;line-height:1.5">
@@ -3342,7 +3344,7 @@ function renderCard(x) {
 
       ${x.image ? `
         <div class="img-container">
-          <img loading="lazy" src="${esc(x.image)}" alt="Question ${esc(x.question)}" onclick="openModal('${x.id}', 'question')">
+          <img loading="lazy" src="${esc(imgSrc(x.image))}" alt="Question ${esc(x.question)}" onclick="openModal('${x.id}', 'question')">
         </div>
       ` : (x.prompt ? `
         <div class="q-prompt-box">
@@ -3355,7 +3357,7 @@ function renderCard(x) {
           <summary>${figLabel(f)}</summary>
           <div class="details-body">
             <div class="img-container">
-              <img loading="lazy" src="${esc(f)}" alt="${figLabel(f)}" onclick="openModal('${x.id}', 'figure', ${fi})">
+              <img loading="lazy" src="${esc(imgSrc(f))}" alt="${figLabel(f)}" onclick="openModal('${x.id}', 'figure', ${fi})">
             </div>
           </div>
         </details>
@@ -3366,7 +3368,7 @@ function renderCard(x) {
           <summary>Mark scheme</summary>
           <div class="details-body">
             <div class="img-container">
-              <img loading="lazy" src="${esc(x.markscheme)}" alt="Mark Scheme" onclick="openModal('${x.id}', 'markscheme')">
+              <img loading="lazy" src="${esc(imgSrc(x.markscheme))}" alt="Mark Scheme" onclick="openModal('${x.id}', 'markscheme')">
             </div>
           </div>
         </details>
@@ -3825,7 +3827,7 @@ function renderModalContent() {
   const body = $('#modal-body');
 
   if (activeModalTab === 'question') {
-    body.innerHTML = q.image ? `<img src="${esc(q.image)}" alt="Question ${esc(q.question)}">` : `
+    body.innerHTML = q.image ? `<img src="${esc(imgSrc(q.image))}" alt="Question ${esc(q.question)}">` : `
       <div style="background:var(--surface);padding:30px;border-radius:var(--radius);max-width:800px;line-height:1.6">
         <h3>Question ${esc(q.question)} (${q.marks} marks)</h3>
         <p>${q.prompt || esc(q.summary)}</p>
@@ -3833,10 +3835,10 @@ function renderModalContent() {
   } else if (activeModalTab === 'figures') {
     body.innerHTML = `
       <div style="display:flex;flex-direction:column;gap:16px;align-items:center">
-        ${(q.figures || []).map(f => `<img src="${esc(f)}" alt="${figLabel(f)}">`).join('')}
+        ${(q.figures || []).map(f => `<img src="${esc(imgSrc(f))}" alt="${figLabel(f)}">`).join('')}
       </div>`;
   } else if (activeModalTab === 'markscheme') {
-    body.innerHTML = q.markscheme ? `<img src="${esc(q.markscheme)}" alt="Mark Scheme">` : `
+    body.innerHTML = q.markscheme ? `<img src="${esc(imgSrc(q.markscheme))}" alt="Mark Scheme">` : `
       <div style="background:var(--surface);padding:30px;border-radius:var(--radius);max-width:800px;line-height:1.6">
         <h3>Official Mark Scheme · Question ${esc(q.question)}</h3>
         <p>${q.markscheme_text || 'Mark scheme available in syllabus reference.'}</p>
@@ -3847,14 +3849,14 @@ function renderModalContent() {
         <div class="split-pane">
           <div class="split-pane-head">Question & Resource</div>
           <div class="split-pane-body">
-            ${q.image ? `<img src="${esc(q.image)}" alt="Question">` : (q.prompt ? `<div style="line-height:1.6">${q.prompt}</div>` : '')}
-            ${(q.figures || []).map(f => `<img src="${esc(f)}" alt="${figLabel(f)}">`).join('')}
+            ${q.image ? `<img src="${esc(imgSrc(q.image))}" alt="Question">` : (q.prompt ? `<div style="line-height:1.6">${q.prompt}</div>` : '')}
+            ${(q.figures || []).map(f => `<img src="${esc(imgSrc(f))}" alt="${figLabel(f)}">`).join('')}
           </div>
         </div>
         <div class="split-pane">
           <div class="split-pane-head">Mark Scheme</div>
           <div class="split-pane-body">
-            ${q.markscheme ? `<img src="${esc(q.markscheme)}" alt="Mark Scheme">` : ''}
+            ${q.markscheme ? `<img src="${esc(imgSrc(q.markscheme))}" alt="Mark Scheme">` : ''}
             ${!q.markscheme && q.markscheme_text ? `<div style="line-height:1.6">${q.markscheme_text}</div>` : ''}
           </div>
         </div>
@@ -7296,7 +7298,7 @@ function renderWorksheetGenerator() {
               </div>
 
               <div class="ws-q-body">
-                ${q.image ? `<img src="${esc(q.image)}" alt="Question ${esc(q.question)}" style="max-width:100%;border-radius:4px;border:1px solid var(--border)">` : ''}
+                ${q.image ? `<img src="${esc(imgSrc(q.image))}" alt="Question ${esc(q.question)}" style="max-width:100%;border-radius:4px;border:1px solid var(--border)">` : ''}
                 ${q.prompt ? `<div class="ws-q-prompt-box" style="font-size:0.9rem;line-height:1.6;margin-top:8px;padding:12px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border)">${q.prompt}</div>` : ''}
               </div>
 
@@ -7452,7 +7454,7 @@ async function executePrintWorksheet(options = {}) {
       let figHtml = (q.figures || []).map(f => `
         <div class="print-pack-img-block">
           <div class="print-pack-fig-label">Resource Figure: ${esc(figLabel ? figLabel(f) : f)}</div>
-          <img src="${esc(f)}" alt="Figure">
+          <img src="${esc(imgSrc(f))}" alt="Figure">
         </div>
       `).join('');
 
@@ -7466,14 +7468,14 @@ async function executePrintWorksheet(options = {}) {
         msBlock = `
           <div class="print-pack-ms-block" style="margin-top:12pt;padding:8pt 12pt;background:#f0fdf4;border:1pt solid #bbf7d0;border-radius:4pt">
             <div class="print-pack-ms-title" style="font-weight:bold;color:#15803d;margin-bottom:4pt">Official Mark Scheme — Question ${esc(q.question)} (${q.marks}m)</div>
-            ${q.markscheme ? `<div class="print-pack-img-block"><img src="${esc(q.markscheme)}" alt="Mark scheme"></div>` : ''}
+            ${q.markscheme ? `<div class="print-pack-img-block"><img src="${esc(imgSrc(q.markscheme))}" alt="Mark scheme"></div>` : ''}
             ${q.markscheme_text ? `<div class="print-pack-ms-text" style="font-size:9.5pt;line-height:1.5">${q.markscheme_text}</div>` : ''}
           </div>
         `;
       }
 
       const contentHtml = q.image
-        ? `<div class="print-pack-img-block"><img src="${esc(q.image)}" alt="Question ${esc(q.question)}"></div>`
+        ? `<div class="print-pack-img-block"><img src="${esc(imgSrc(q.image))}" alt="Question ${esc(q.question)}"></div>`
         : `<div class="print-pack-prompt-text" style="font-size:10.5pt;line-height:1.6;margin:6pt 0">${q.prompt || q.summary}</div>`;
 
       return `

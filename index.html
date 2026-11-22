@@ -933,6 +933,119 @@ a.q-tag:hover {
 /* ========================================================
    Lightbox Modal
    ======================================================== */
+
+/* Utility Hidden Class */
+.hidden {
+  display: none !important;
+}
+
+/* Floating Bottom Selection Dock */
+.selection-dock {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+  padding: 10px 22px;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  animation: slideUpDock 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.2s ease;
+}
+
+@keyframes slideUpDock {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+.selection-dock-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.selection-dock-info b {
+  color: #dc2626;
+  font-weight: 800;
+}
+
+.selection-dock-opts {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  padding: 0 14px;
+}
+
+.selection-dock-opts label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selection-dock-opts input[type="checkbox"] {
+  accent-color: #dc2626;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.selection-dock-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-print-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #dc2626;
+  color: #ffffff;
+  border: 1px solid #dc2626;
+  border-radius: 9999px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.3);
+}
+
+.btn-print-primary:hover {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(220, 38, 38, 0.4);
+}
+
+.btn-print-primary:active {
+  transform: translateY(0);
+}
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -1949,7 +2062,7 @@ footer {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 0;
+    margin: 8mm 10mm;
   }
 
   html, body {
@@ -2022,15 +2135,67 @@ footer {
     break-inside: avoid;
   }
 
-  /* Clean Cropping-Only Print Mode: Remove all banners, headers, dividers and meta */
-  .print-pack-head,
-  .print-pack-footer,
-  .print-pack-q-head,
-  .print-pack-q-citation,
-  .print-pack-q-summary,
-  .print-pack-fig-label,
-  .print-pack-ms-title {
-    display: none !important;
+  /* Print Pack Styles */
+  .print-pack-head {
+    display: block !important;
+    margin-bottom: 10pt !important;
+    padding-bottom: 6pt !important;
+    border-bottom: 2pt solid #111 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  .print-pack-head h1, .print-pack-title {
+    font-size: 15pt !important;
+    font-weight: 800 !important;
+    margin: 0 0 3pt 0 !important;
+    color: #000 !important;
+  }
+
+  .print-pack-sub {
+    font-size: 9pt !important;
+    color: #444 !important;
+    margin: 0 !important;
+  }
+
+  .print-candidate-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: 12pt !important;
+    font-size: 9pt !important;
+  }
+
+  .print-candidate-table td {
+    border: 1pt solid #444 !important;
+    padding: 5pt 8pt !important;
+  }
+
+  .print-pack-q-head {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 6pt !important;
+    border-bottom: 1pt solid #ccc !important;
+    padding-bottom: 3pt !important;
+  }
+
+  .print-pack-q-title {
+    font-size: 11pt !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+  }
+
+  .print-pack-q-marks {
+    font-size: 9pt !important;
+    font-weight: 700 !important;
+  }
+
+  .print-pack-fig-label {
+    display: block !important;
+    font-size: 8.5pt !important;
+    font-weight: 700 !important;
+    color: #444 !important;
+    margin-bottom: 4pt !important;
   }
 
   .print-pack-list {
@@ -2041,18 +2206,18 @@ footer {
   }
 
   .print-pack-q-item {
-    page-break-inside: auto;
-    break-inside: auto;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin: 0 0 14pt 0 !important;
+    padding: 0 0 10pt 0 !important;
+    border-bottom: 1pt dashed #ccc !important;
     box-shadow: none !important;
   }
 
   .print-pack-img-block {
-    text-align: center;
-    margin: 0 auto !important;
-    padding: 6mm 8mm !important;
+    text-align: center !important;
+    margin: 4pt auto 8pt auto !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
@@ -2061,23 +2226,28 @@ footer {
 
   .print-pack-img-block img {
     max-width: 100% !important;
-    width: 100% !important;
+    width: auto !important;
     height: auto !important;
-    max-height: 280mm !important;
-    display: block;
-    margin: 0 auto;
-    object-fit: contain;
+    max-height: 250mm !important;
+    display: block !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
   }
 
   .print-pack-ms-block {
-    margin: 6pt 0 0 0 !important;
-    padding: 0 !important;
-    border-top: none !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    margin: 8pt 0 0 0 !important;
+    padding: 6pt 0 0 0 !important;
+    border-top: 1pt dotted #999 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .print-lines-box {
+    margin-top: 8pt !important;
+    background: repeating-linear-gradient(transparent, transparent 20pt, #d1d5db 20pt, #d1d5db 21pt) !important;
+    border-bottom: 1pt solid #d1d5db !important;
   }
 }
-
 </style>
 </head>
 <body>
@@ -2945,12 +3115,15 @@ function updateStatusSelectionInfo() {
   const list = filtered();
   const count = selectedQuestions.size;
   if (count === 0) {
-    container.innerHTML = `<button type="button" class="btn-minimal" style="padding:2px 8px;font-size:0.75rem" onclick="selectAllFiltered()">Select All (${list.length})</button>`;
+    container.innerHTML = `
+      <button type="button" class="btn-minimal" style="padding:2px 8px;font-size:0.75rem" onclick="selectAllFiltered()">Select All (${list.length})</button>
+      <button type="button" class="btn-minimal" style="padding:2px 8px;font-size:0.75rem" onclick="printSelectedQuestions()" title="Print all ${list.length} questions in view">🖨️ Print View (${list.length})</button>
+    `;
   } else {
     container.innerHTML = `
       <span style="font-size:0.78rem;color:var(--ink);font-weight:600">${count} selected</span>
-      <button type="button" class="btn-minimal" style="padding:2px 8px;font-size:0.75rem" onclick="selectAllFiltered()">Select All (${list.length})</button>
       <button type="button" class="btn-minimal" style="padding:2px 8px;font-size:0.75rem" onclick="clearSelection()">Clear</button>
+      <button type="button" class="btn-minimal" style="padding:2px 8px;font-size:0.75rem" onclick="printSelectedQuestions()">🖨️ Print Selected (${count})</button>
     `;
   }
 }
@@ -2958,28 +3131,38 @@ function updateStatusSelectionInfo() {
 function printSingleQuestion(id) {
   const q = D.questions.find(x => x.id === id);
   if (!q) return;
-  const includeMS = $('#sel-dock-ms') && $('#sel-dock-ms').checked;
-  const withMS = includeMS || (q.markscheme && confirm('Include mark scheme in this print / PDF export?\n\n• OK: Question and Mark Scheme\n• Cancel: Question only'));
+  const includeMS = $('#sel-dock-ms') ? $('#sel-dock-ms').checked : false;
   executePrintQuestions([q], {
-    title: `Question ${q.question} (${q.marks}m)`,
-    includeMS: withMS,
+    title: `Question ${q.question} (${q.marks} marks)`,
+    includeMS: includeMS || !!q.markscheme,
     includeFigures: true
   });
 }
 
 function printSelectedQuestions() {
-  if (!selectedQuestions.size) {
-    showToast('No questions selected. Use checkboxes to select questions first.');
-    return;
-  }
-  const qs = D.questions.filter(q => selectedQuestions.has(q.id));
   const includeMS = $('#sel-dock-ms') ? $('#sel-dock-ms').checked : false;
   const includeFig = $('#sel-dock-fig') ? $('#sel-dock-fig').checked : true;
-  executePrintQuestions(qs, {
-    title: 'Selected Questions Pack',
-    includeMS: includeMS,
-    includeFigures: includeFig
-  });
+
+  if (selectedQuestions.size > 0) {
+    const qs = D.questions.filter(q => selectedQuestions.has(q.id));
+    executePrintQuestions(qs, {
+      title: 'Selected Questions Practice Pack',
+      includeMS: includeMS,
+      includeFigures: includeFig
+    });
+  } else {
+    // If no specific checkboxes are selected, print all currently filtered questions in view
+    const list = filtered();
+    if (!list.length) {
+      showToast('No questions currently in view to print.');
+      return;
+    }
+    executePrintQuestions(list, {
+      title: 'Filtered Questions Practice Pack',
+      includeMS: includeMS,
+      includeFigures: includeFig
+    });
+  }
 }
 
 async function executePrintQuestions(questions, options = {}) {
@@ -2990,6 +3173,7 @@ async function executePrintQuestions(questions, options = {}) {
 
   const includeMS = !!options.includeMS;
   const includeFigures = options.includeFigures !== false;
+  const title = options.title || 'Selected Questions Practice Pack';
 
   let printContainer = $('#print-container');
   if (!printContainer) {
@@ -2998,12 +3182,35 @@ async function executePrintQuestions(questions, options = {}) {
     document.body.appendChild(printContainer);
   }
 
+  const totalMarks = questions.reduce((sum, q) => sum + (q.marks || 0), 0);
+  const dateStr = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+
+  // Pack header
+  const headerHtml = `
+    <header class="print-pack-head">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2pt solid #000;padding-bottom:6pt;margin-bottom:8pt">
+        <div>
+          <h1 style="font-size:15pt;font-weight:800;margin:0 0 2pt 0;color:#000">OCR A-Level Design Engineering (H404)</h1>
+          <p style="font-size:9.5pt;color:#444;margin:0">${esc(title)} · ${questions.length} Question${questions.length > 1 ? 's' : ''} · ${totalMarks} Marks · ${dateStr}</p>
+        </div>
+      </div>
+      <table class="print-candidate-table" style="margin-bottom:12pt">
+        <tr>
+          <td style="width:50%"><b>Candidate Name:</b></td>
+          <td style="width:25%"><b>Date:</b></td>
+          <td style="width:25%"><b>Score:</b> ______ / ${totalMarks}</td>
+        </tr>
+      </table>
+    </header>
+  `;
+
   let itemsHtml = questions.map(q => {
     let figHtml = '';
     if (includeFigures && q.figures && q.figures.length) {
       figHtml = q.figures.map(f => `
         <div class="print-pack-img-block">
-          <img src="${esc(f)}" alt="${esc(figLabel(f))}">
+          <div class="print-pack-fig-label">Resource Figure: ${esc(figLabel ? figLabel(f) : f)}</div>
+          <img src="${esc(f)}" alt="${esc(figLabel ? figLabel(f) : 'Figure')}">
         </div>
       `).join('');
     }
@@ -3012,6 +3219,7 @@ async function executePrintQuestions(questions, options = {}) {
     if (includeMS && q.markscheme) {
       msHtml = `
         <div class="print-pack-ms-block">
+          <div class="print-pack-fig-label" style="color:#b91c1c">Official OCR Mark Scheme — Question ${esc(q.question)}:</div>
           <div class="print-pack-img-block">
             <img src="${esc(q.markscheme)}" alt="Mark Scheme Question ${esc(q.question)}">
           </div>
@@ -3019,8 +3227,8 @@ async function executePrintQuestions(questions, options = {}) {
       `;
     } else if (includeMS && q.markscheme_text) {
       msHtml = `
-        <div class="print-pack-ms-block" style="padding:16px;font-size:9pt;line-height:1.5">
-          <b>Mark Scheme Question ${esc(q.question)}:</b><br>
+        <div class="print-pack-ms-block" style="padding:10px 14px;background:#f9fafb;border:1pt solid #e5e7eb;font-size:9pt;line-height:1.5">
+          <b style="color:#b91c1c">Official OCR Mark Scheme — Question ${esc(q.question)}:</b><br>
           ${q.markscheme_text}
         </div>
       `;
@@ -3031,7 +3239,7 @@ async function executePrintQuestions(questions, options = {}) {
         <img src="${esc(q.image)}" alt="Question ${esc(q.question)}">
       </div>
     ` : `
-      <div style="padding:16px;font-size:10pt;line-height:1.5">
+      <div style="padding:12px;font-size:10pt;line-height:1.5">
         <b>Question ${esc(q.question)} (${q.marks} marks):</b><br>
         ${q.prompt || esc(q.summary)}
       </div>
@@ -3047,6 +3255,7 @@ async function executePrintQuestions(questions, options = {}) {
   }).join('');
 
   printContainer.innerHTML = `
+    ${headerHtml}
     <main class="print-pack-list">
       ${itemsHtml}
     </main>
@@ -3077,6 +3286,7 @@ window.addEventListener('afterprint', () => {
   const pc = $('#print-container');
   if (pc) pc.innerHTML = '';
 });
+
 
 function renderCards(list) {
   if (!list.length) {

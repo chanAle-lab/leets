@@ -3255,8 +3255,8 @@ async function executePrintQuestions(questions, options = {}) {
 
     return `
       <article class="print-pack-q-item">
-        ${qImg}
         ${figHtml}
+        ${qImg}
         ${msHtml}
       </article>
     `;
@@ -7490,8 +7490,8 @@ async function executePrintWorksheet(options = {}) {
             <h2 class="print-pack-q-title" style="margin:0;font-size:12pt;font-weight:bold">Question ${idx + 1} (${q.marks} marks)</h2>
             <span class="print-pack-q-marks" style="font-size:9pt;font-weight:600">${p.code || 'H404'} · ${p.series || 'Summer'} ${p.year || 2023} · Q${esc(q.question)}</span>
           </div>
-          ${contentHtml}
           ${figHtml}
+          ${contentHtml}
           ${answerArea}
           ${msBlock}
         </article>

@@ -903,6 +903,275 @@ a.q-tag:hover {
 }
 
 /* ========================================================
+   Interactive Mindmap (NotebookLM Inspired)
+   ======================================================== */
+.mindmap-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cheatsheet-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.sheet-mode-tabs {
+  display: inline-flex;
+  background: var(--surface-hover);
+  padding: 3px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  gap: 4px;
+}
+.sheet-mode-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  padding: 6px 14px;
+  border-radius: calc(var(--radius) - 2px);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.sheet-mode-btn:hover {
+  color: var(--ink);
+}
+.sheet-mode-btn.active {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.mindmap-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.mindmap-search-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+  font-family: inherit;
+  width: 220px;
+  transition: border-color 0.15s;
+}
+.mindmap-search-input:focus {
+  outline: none;
+  border-color: var(--border-strong);
+}
+
+.mindmap-hero {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.mindmap-hero-title {
+  margin: 0 0 4px 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.mindmap-hero-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* Mindmap Tree View */
+.mindmap-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mindmap-branch-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.mindmap-branch-card:hover {
+  border-color: var(--border-strong);
+}
+.mindmap-branch-card.open {
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.08);
+}
+.mindmap-branch-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  background: var(--surface);
+  transition: background 0.15s;
+}
+.mindmap-branch-header:hover {
+  background: var(--surface-hover);
+}
+.mindmap-branch-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.mindmap-branch-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  letter-spacing: 0.02em;
+}
+.mindmap-branch-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ink);
+}
+.mindmap-branch-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.mindmap-branch-count {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.mindmap-caret {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+.mindmap-branch-card.open .mindmap-caret {
+  transform: rotate(90deg);
+}
+
+.mindmap-branch-body {
+  display: none;
+  padding: 0 20px 20px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+.mindmap-branch-card.open .mindmap-branch-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Subnodes within Branch */
+.mindmap-subnode {
+  margin-top: 14px;
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.mindmap-subnode-header {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+.mindmap-subnode-header:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+.mindmap-subnode-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ink);
+}
+.mindmap-subnode-caret {
+  font-size: 0.8rem;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+.mindmap-subnode.open .mindmap-subnode-caret {
+  transform: rotate(90deg);
+}
+
+.mindmap-subnode-body {
+  display: none;
+  padding: 14px 16px;
+  border-top: 1px dashed var(--border);
+}
+.mindmap-subnode.open .mindmap-subnode-body {
+  display: block;
+}
+.mindmap-subnode-summary {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+/* Concept Cards inside Subnode */
+.mindmap-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+}
+.mindmap-concept-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.mindmap-concept-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+.mindmap-concept-card.highlight {
+  border-color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.05) !important;
+}
+.mindmap-concept-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.mindmap-concept-detail {
+  font-size: 0.78rem;
+  color: var(--ink-secondary);
+  line-height: 1.45;
+}
+
+.mindmap-group-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #dc2626;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 12px 0 8px 0;
+}
+
+
+/* ========================================================
    Formulae Quick Reference Modal
    ======================================================== */
 .formula-table {
@@ -3878,9 +4147,804 @@ function openSheet(tid) {
   render();
 }
 
+
+let activeSheetMode = 'mindmap';
+
+const ENGINEERING_MINDMAP = {
+  title: "Materials, Design, and Manufacturing",
+  desc: "Interactive hierarchical mindmap based on the 8 core Design Engineering syllabus domains. Click any branch or subnode to expand and explore the dropout menus.",
+  branches: [
+  {
+    "id": "b1",
+    "title": "Base Materials",
+    "tag": "1.1, 1.2 & 2.1",
+    "subnodes": [
+      {
+        "id": "b1-1",
+        "title": "Ferrous Metals & Steels",
+        "summary": "Iron alloys containing controlled carbon percentages (0.15% to 4%) affecting hardness, ductility and tensile strength.",
+        "items": [
+          {
+            "name": "Low Carbon / Mild Steel (0.15\u20130.30% C)",
+            "detail": "Ductile, malleable, easily welded. Poor corrosion resistance without galvanising or powder coating. Applications: car chassis, structural beams, general fabrication."
+          },
+          {
+            "name": "Medium Carbon Steel (0.30\u20130.60% C)",
+            "detail": "Increased tensile strength and hardness; reduced ductility. Heat treatable (quenched and tempered). Applications: transmission shafts, axles, high-strength bolts, crankshafts."
+          },
+          {
+            "name": "High Carbon Steel (0.60\u20131.40% C)",
+            "detail": "Very hard, brittle, exceptional wear and abrasion resistance. Retains cutting edge under heat. Applications: metal cutting chisels, twist drills, files, saw blades."
+          },
+          {
+            "name": "Cast Iron (2.0\u20134.0% C)",
+            "detail": "High carbon content with graphite flakes; exceptional compressive strength, fluidity in sand casting, vibration damping. Brittle in tension. Applications: lathe beds, automotive engine blocks, disc brake rotors."
+          },
+          {
+            "name": "Stainless Steel (Ferritic & Austenitic)",
+            "detail": "Alloyed with minimum 10.5% chromium and nickel. Forms self-healing passive chromium oxide (Cr2O3) layer. Applications: cutlery, surgical instruments, chemical processing plant, marine fasteners."
+          }
+        ]
+      },
+      {
+        "id": "b1-2",
+        "title": "Non-Ferrous Metals & Alloys",
+        "summary": "Metals containing no iron; non-magnetic, natural corrosion resistance, high electrical and thermal conductivity.",
+        "items": [
+          {
+            "name": "Aluminium & Engineering Alloys (e.g. 6061-T6, 7075)",
+            "detail": "Low density (2.7 g/cm\u00b3), high strength-to-weight ratio, forms transparent protective aluminium oxide film. Highly ductile and thermally conductive. Applications: aircraft skins, bicycle frames, heat sinks."
+          },
+          {
+            "name": "Copper",
+            "detail": "Superior electrical conductivity (second only to silver) and thermal dissipation. Malleable, antibacterial, corrosion resistant. Applications: domestic water pipework, electrical motor windings, busbars, PCB traces."
+          },
+          {
+            "name": "Brass (Copper + Zinc)",
+            "detail": "Low friction coefficient, acoustic resonance, non-sparking, corrosion resistant against moisture. Applications: musical instruments, valve bodies, sanitary fittings, gas couplings."
+          },
+          {
+            "name": "Bronze (Copper + Tin)",
+            "detail": "Tough, hard wearing, resists saltwater galvanic corrosion. Exceptional fatigue resistance in sliding contact. Applications: submerged marine ship propellers, heavy duty journal bearings, sculptures."
+          },
+          {
+            "name": "Titanium (Grade 5 Ti-6Al-4V)",
+            "detail": "High tensile strength (approx. 900 MPa) coupled with low density (4.43 g/cm\u00b3). Bio-inert and extreme corrosion resistance up to 500\u00b0C. Applications: aerospace turbine compressor blades, prosthetic joint implants."
+          },
+          {
+            "name": "Zinc & Magnesium",
+            "detail": "Zinc provides sacrificial cathodic protection (galvanising). Magnesium offers lowest density structural metal (1.74 g/cm\u00b3) for ultra-lightweight power tool and camera housings."
+          }
+        ]
+      },
+      {
+        "id": "b1-3",
+        "title": "Polymers: Thermosets & Thermoplastics",
+        "summary": "Synthetic and semi-synthetic macromolecules characterised by polymer chain bonding (linear vs cross-linked).",
+        "groups": [
+          {
+            "groupName": "Thermoplastics (Re-meltable linear chains with weak van der Waals forces)",
+            "items": [
+              {
+                "name": "Polypropylene (PP)",
+                "detail": "High flexural fatigue resistance; enables living hinges without fatigue failure. Chemical and moisture proof. Applications: automotive battery cases, hinge caps, food packaging."
+              },
+              {
+                "name": "ABS (Acrylonitrile Butadiene Styrene)",
+                "detail": "High impact resistance, toughness, rigidity. Excellent dimensional stability and electroplating ability. Applications: LEGO bricks, power tool casings, automotive dashboard trim."
+              },
+              {
+                "name": "High & Low Density Polyethylene (HDPE / LDPE)",
+                "detail": "Chemical resistance, moisture barrier. HDPE is rigid (wheelie bins, chemical drums); LDPE is flexible (carrier bags, squeeze bottles)."
+              },
+              {
+                "name": "Nylon (Polyamide)",
+                "detail": "Low coefficient of friction, high wear resistance, self-lubricating, high tensile strength. Applications: engineering spur gears, cable ties, curtain track rollers, synthetic ropes."
+              }
+            ]
+          },
+          {
+            "groupName": "Thermosetting Polymers (Irreversible covalent cross-linked network; decompose on heating)",
+            "items": [
+              {
+                "name": "Epoxy Resin",
+                "detail": "High adhesive strength, excellent chemical resistance, low shrinkage during curing, electrical insulator. Applications: structural adhesives, carbon fibre matrix, PCB substrate boards."
+              },
+              {
+                "name": "Melamine Formaldehyde",
+                "detail": "Hard, scratch-resistant, flame retardant, food safe, thermoset. Applications: laminate kitchen worktops (Formica), institutional picnic tableware, electrical housings."
+              },
+              {
+                "name": "Urea Formaldehyde",
+                "detail": "High tensile strength, stiff, excellent electrical insulation and heat resistance. Applications: UK 13A wall socket plates, electrical switches, particle board binders."
+              },
+              {
+                "name": "Polyester Resin",
+                "detail": "Viscous liquid thermoset resin activated with MEKP catalyst; chemically bonds glass fibres. Applications: GRP boat hulls, fairground rides, vehicle bodywork repair."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b1-4",
+        "title": "Timber & Engineered Boards",
+        "summary": "Natural organic composites of cellulose fibres bound by lignin matrix, plus modern reconstituted board materials.",
+        "items": [
+          {
+            "name": "Hardwoods (Deciduous Trees)",
+            "detail": "Slow growing, broad leaves. Dense tracheid cells. Oak (tough, acidic), Beech (hard, fine-grain, non-tainting for food utensils), Mahogany (stable, decorative)."
+          },
+          {
+            "name": "Softwoods (Coniferous Trees)",
+            "detail": "Fast growing, needle leaves. Lower density, resinous. Scots Pine (knotty, general joinery), Spruce (soundboards), Cedar (rot-resistant exterior cladding)."
+          },
+          {
+            "name": "Plywood",
+            "detail": "Engineered sheet made of rotary cut wood veneers laminated with adhesive at alternating 90\u00b0 grain angles. High cross-directional stiffness, resists warping and splitting near edges."
+          },
+          {
+            "name": "MDF (Medium Density Fibreboard)",
+            "detail": "Reconstituted wood fibres bonded under heat and pressure with urea-formaldehyde adhesive. Uniform density, isotropic, no grain direction, CNC machinable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b2",
+    "title": "Complex and Smart Materials",
+    "tag": "2.1 & 3.2",
+    "subnodes": [
+      {
+        "id": "b2-1",
+        "title": "Composite Materials",
+        "summary": "Engineered materials formed by combining two or more distinct constituents (matrix and reinforcement) with superior hybrid properties.",
+        "items": [
+          {
+            "name": "Carbon Fibre Reinforced Polymer (CFRP)",
+            "detail": "High tensile strength and modulus aligned along carbon filaments in an epoxy matrix. Anisotropic behaviour requires directional layups. Applications: aircraft wings (Boeing 787), F1 survival cells, high-end bicycle frames."
+          },
+          {
+            "name": "Glass Reinforced Plastic (GRP / Fibreglass)",
+            "detail": "Glass filaments woven or chopped strand mat in polyester/epoxy resin. Non-conductive, RF transparent, corrosion resistant, impact resistant. Applications: boat hulls, radomes, chemical storage vessels."
+          },
+          {
+            "name": "Kevlar (Aramid Fibres)",
+            "detail": "Aromatic polyamide with rigid crystalline molecular chains. Extreme tensile strength-to-weight ratio and puncture/abrasion resistance. Applications: ballistic body armor, motorcycle protective suits, run-flat tyres."
+          },
+          {
+            "name": "Metal Matrix Composites (MMC)",
+            "detail": "Continuous metal matrix (e.g. aluminium alloy) reinforced with ceramic particles (silicon carbide). High thermal conductivity, stiffness, wear resistance. Applications: brake calipers, tank tracks, jet engine vanes."
+          }
+        ]
+      },
+      {
+        "id": "b2-2",
+        "title": "Smart Materials (Dynamic Reversible Responses)",
+        "summary": "Materials whose physical properties reversibly change in response to external environmental stimuli (temperature, stress, light, electric field).",
+        "items": [
+          {
+            "name": "Shape Memory Alloys (Nitinol - NiTi)",
+            "detail": "Reversible solid-state phase transformation between low-temp martensite and high-temp austenite. Deformed cold, recovers programmed geometry when heated. Applications: cardiovascular arterial stents, dental archwires, greenhouse vents."
+          },
+          {
+            "name": "Piezoelectric Materials (PZT Ceramics)",
+            "detail": "Direct effect generates voltage when mechanically stressed; inverse effect produces mechanical deflection when electric field applied. Applications: ultrasonic medical transducers, quartz clocks, gas barbecue spark igniters."
+          },
+          {
+            "name": "Thermochromic Pigments",
+            "detail": "Liquid crystals or microencapsulated dyes that alter molecular reflectance at calibrated transition temperatures. Applications: forehead medical thermometer strips, coffee mug safety warnings, baby feeding spoons."
+          },
+          {
+            "name": "Photochromic Materials",
+            "detail": "Molecules (such as naphthopyrans) undergo reversible photochemical reaction under UV radiation, darkening proportionally. Applications: optical transition sunglasses, UV radiation dosimeters."
+          },
+          {
+            "name": "Magnetorheological (MR) & Electrorheological (ER) Fluids",
+            "detail": "Suspension of micron-sized ferromagnetic/dielectric particles in oil. Changes viscosity from free-flowing liquid to semi-solid in milliseconds under a magnetic or electric field. Applications: adaptive vehicle suspension dampers, earthquake dampers."
+          },
+          {
+            "name": "Quantum Tunnelling Composite (QTC)",
+            "detail": "Metal nanoparticles embedded in silicone elastomer. Under compression, conductive quantum tunnelling occurs, smoothly reducing electrical resistance from billions of ohms to zero. Applications: pressure sensors, variable speed triggers, smartphone pressure keys."
+          }
+        ]
+      },
+      {
+        "id": "b2-3",
+        "title": "Modern & Nano Materials",
+        "summary": "Engineered materials with tailored micro- and nanoscale morphology delivering breakthrough physical performance.",
+        "items": [
+          {
+            "name": "Graphene",
+            "detail": "Single atomic layer of sp\u00b2-hybridised carbon atoms arranged in a hexagonal honeycomb lattice. Ballistic electron mobility, thermal conductivity > 3000 W/m\u00b7K, 200x tensile strength of steel. Applications: transparent conductors, flexible electronics, supercapacitors."
+          },
+          {
+            "name": "Carbon Nanotubes (CNTs)",
+            "detail": "Seamless cylindrical graphene tubes with exceptional axial tensile strength (up to 100 GPa). Used as reinforcing nanofillers in polymers to impart electrical conductivity and structural stiffness."
+          },
+          {
+            "name": "Metal Foams",
+            "detail": "Metallic matrix (e.g. aluminium) containing 75\u201395% volume gas pores. Ultra-lightweight with exceptional progressive plastic collapse under impact. Applications: automotive crash impact absorbers, blast shields, sound insulation."
+          },
+          {
+            "name": "Biopolymers & PLA",
+            "detail": "Polylactic acid derived from fermented renewable starches (corn starch / sugarcane). Thermoplastic, compostable in industrial facilities. Applications: FDM 3D printing filament, dissolvable surgical sutures."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b3",
+    "title": "Design Context and Principles",
+    "tag": "1.1, 1.3 & 2.3",
+    "subnodes": [
+      {
+        "id": "b3-1",
+        "title": "Historical Movements & Influential Designers",
+        "summary": "Key design paradigms that shaped modern industrial engineering aesthetics, usability, and manufacturing methodologies.",
+        "items": [
+          {
+            "name": "Bauhaus (1919\u20131933, Walter Gropius, Marcel Breuer)",
+            "detail": "Key tenets: 'Form follows function', machine aesthetic, rejection of historical ornamentation, truth to materials. Pioneered tubular steel mass production furniture, clean geometric proportion, and design for mass manufacturing."
+          },
+          {
+            "name": "Dieter Rams & Functionalism (Braun)",
+            "detail": "10 Principles of Good Design: Innovative, useful, aesthetic, understandable, unobtrusive, honest, long-lasting, thorough down to the last detail, environmentally friendly, and as little design as possible ('Weniger, aber besser')."
+          },
+          {
+            "name": "Post-Modernism & Memphis Group (Ettore Sottsass)",
+            "detail": "1980s reaction against strict functionalism. Emphasised emotional expression, vibrant colours, bold geometric laminate clashing, humor, and provocative sculptural forms over pure utility."
+          },
+          {
+            "name": "Modern British Design (James Dyson, Jonathan Ive)",
+            "detail": "James Dyson: iterative functional engineering, cyclic separation, transparent housings showcasing internal engineering. Jonathan Ive: extreme minimalist reduction, CNC unibody aluminium enclosures, seamless hardware/software integration."
+          }
+        ]
+      },
+      {
+        "id": "b3-2",
+        "title": "User-Centred Design & Ergonomics",
+        "summary": "Designing technical systems tailored to human biological, anatomical, and cognitive requirements.",
+        "items": [
+          {
+            "name": "Anthropometrics (Static vs Dynamic)",
+            "detail": "Application of human physical measurement percentiles: 5th percentile (female minimums, e.g. reach, button heights), 95th percentile (male maximums, e.g. clearance, door apertures), and 50th percentile (average). Incorporating adjustability (e.g. office chairs)."
+          },
+          {
+            "name": "Ergonomics (Physical, Cognitive, Organisational)",
+            "detail": "Physical: grip comfort, wrist alignment, weight balance, low vibration. Cognitive: clear visual affordances, mapping of controls to action, sensory haptic/acoustic feedback to prevent cognitive overload."
+          },
+          {
+            "name": "Inclusive Design & Equality Act 2010",
+            "detail": "Designing products accessible to the widest possible range of users without specialized adaptation: high-contrast typography, single-handed operation, ambidextrous grips, tactile identifiers."
+          }
+        ]
+      },
+      {
+        "id": "b3-3",
+        "title": "Innovation Drivers & Enterprise",
+        "summary": "Forces that catalyse product research, development, and market adoption.",
+        "items": [
+          {
+            "name": "Technology Push",
+            "detail": "R&D scientific or engineering breakthrough creates a capability looking for application (e.g. Gore-Tex membrane, touchscreen capacitive glass, Nitinol stents, gallium nitride semiconductors)."
+          },
+          {
+            "name": "Market Pull",
+            "detail": "Emerging consumer demands, social changes, or environmental challenges compel engineers to develop solutions (e.g. electric vehicles to meet emissions mandates, lightweight foldable e-bikes, biodegradable packaging)."
+          },
+          {
+            "name": "Enterprise & Venture Capital",
+            "detail": "Commercialisation of engineering IP via seed capital, crowdfunding, incubator scaling, spin-outs, and rapid prototyping to capture competitive first-mover advantage."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b4",
+    "title": "Intellectual Property and Quality",
+    "tag": "2.4 & 3.1",
+    "subnodes": [
+      {
+        "id": "b4-1",
+        "title": "Intellectual Property Rights (IPR)",
+        "summary": "Legal mechanisms granting creators exclusive rights over technical inventions, aesthetic designs, and brand equity.",
+        "items": [
+          {
+            "name": "Patents (UK IPO / EPO)",
+            "detail": "Protects new functional working mechanisms, chemical compositions, or technical processes. Duration: up to 20 years. Must meet criteria: absolute novelty, inventive step (non-obvious), and industrial applicability."
+          },
+          {
+            "name": "Registered Designs",
+            "detail": "Protects novel aesthetic appearance, surface contour, configuration, shape, or ornamentation of an industrial product. Does not protect function. Duration: up to 25 years (renewed in 5-year periods)."
+          },
+          {
+            "name": "Trademarks",
+            "detail": "Protects distinctive brand names, logos, symbols, sounds, or colours that distinguish goods and services in trade. Renewable indefinitely every 10 years."
+          },
+          {
+            "name": "Copyright & Design Rights",
+            "detail": "Copyright automatically protects original technical drawings, CAD datasets, source code, and instruction manuals (life + 70 years). Unregistered design rights protect 3D shapes for 10\u201315 years."
+          }
+        ]
+      },
+      {
+        "id": "b4-2",
+        "title": "Quality Management & Standards",
+        "summary": "Systematic methodologies ensuring components consistently meet performance, safety, and reliability metrics.",
+        "items": [
+          {
+            "name": "Quality Control (QC) vs Quality Assurance (QA)",
+            "detail": "QC is reactive: inspecting physical finished products/batches (go/no-go gauges, CMM checks) to reject defectives. QA is proactive: systematic documented process audits (ISO 9001) to prevent defects occurring initially."
+          },
+          {
+            "name": "Total Quality Management (TQM) & Kaizen",
+            "detail": "Organisation-wide philosophy of continuous incremental improvement involving every employee. Emphasises zero defects, supplier partnership, and root-cause analysis (Ishikawa fishbone diagrams)."
+          },
+          {
+            "name": "Six Sigma & Statistical Process Control (SPC)",
+            "detail": "Data-driven statistical method targeting defect rates below 3.4 defects per million opportunities (DPMO). Control charts track process mean and upper/lower specification limits (Cp/Cpk)."
+          },
+          {
+            "name": "Conformity Standards (BSI, ISO, CE / UKCA)",
+            "detail": "BSI Kitemark denotes independent British Standards verification; CE and UKCA marks demonstrate conformity with statutory health, safety, environmental, and electromagnetic compatibility regulations."
+          }
+        ]
+      },
+      {
+        "id": "b4-3",
+        "title": "Lean Manufacturing Operations",
+        "summary": "Techniques to eliminate waste (Muda), optimize flow, and reduce production lead times.",
+        "items": [
+          {
+            "name": "Just-In-Time (JIT) Manufacturing",
+            "detail": "Pull production system driven by real-time customer orders (Kanban signals). Eliminates warehouse inventory holding costs, tied-up capital, and obsolete stock risks."
+          },
+          {
+            "name": "Poka-Yoke (Mistake Proofing)",
+            "detail": "Mechanical keyways, asymmetrical connectors, optical interlocks, or limit switches that make incorrect assembly or installation physically impossible."
+          },
+          {
+            "name": "Cellular Manufacturing",
+            "detail": "Grouping machines into U-shaped cells based on product families, minimising component transit distance, handling damage, and work-in-progress (WIP)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b5",
+    "title": "Manufacturing Processes and Systems",
+    "tag": "3.2 & 4.1",
+    "subnodes": [
+      {
+        "id": "b5-1",
+        "title": "Polymer Processing & Tooling",
+        "summary": "Industrial forming techniques converting raw thermoplastic pellets or thermoset resins into net-shape components.",
+        "items": [
+          {
+            "name": "Injection Moulding",
+            "detail": "Granules melted in heated barrel, rotating Archimedean screw injects molten polymer under 100+ MPa into split steel tool. High initial tooling cost, extremely rapid cycle times (seconds), enables integral snap-fits, living hinges, and ribs."
+          },
+          {
+            "name": "Extrusion",
+            "detail": "Continuous process forcing molten plastic through a shaped orifice die, calibrated in water cooling troughs. Produces uniform continuous cross-sections: pipes, guttering, window trims, electrical trunking."
+          },
+          {
+            "name": "Blow Moulding (Extrusion & Injection)",
+            "detail": "Molten tubular parison extruded, clamped in two-part mould, inflated with high-pressure compressed air against cooled cavity walls. Applications: bottles, detergent containers, fuel tanks."
+          },
+          {
+            "name": "Vacuum Forming",
+            "detail": "Thermoplastic sheet clamped, heated until pliable/viscoelastic, vacuum drawn over male or female aluminium pattern. Applications: yoghurt pots, blister packaging, automotive interior liners, bathtubs."
+          },
+          {
+            "name": "Rotational Moulding",
+            "detail": "Measured polymer powder placed in hollow closed mould, simultaneously rotated on two perpendicular axes inside heated oven. Stress-free, seamless, uniform wall thickness. Applications: kayaks, large water storage tanks, traffic barriers."
+          },
+          {
+            "name": "Compression Moulding",
+            "detail": "Preheated slug of thermoset resin placed into open heated steel cavity; hydraulic press closes with high pressure and heat to initiate cross-linking cure. Applications: electrical plug tops, toilet seats, melamine plates."
+          },
+          {
+            "name": "Additive Manufacturing (3D Printing)",
+            "detail": "FDM (Fused Deposition Modelling), SLA (Stereolithography photopolymer), SLS (Selective Laser Sintering of nylon powder). Enables complex internal lattice topologies and rapid generative iterations without hard tooling."
+          }
+        ]
+      },
+      {
+        "id": "b5-2",
+        "title": "Metal Forming, Casting & Joining",
+        "summary": "Processes that shape, cast, forge, and fuse metallic alloys into structural engineering assemblies.",
+        "items": [
+          {
+            "name": "High-Pressure Die Casting",
+            "detail": "Molten non-ferrous metal (aluminium, zinc, magnesium) injected at high velocity and pressure into hardened alloy steel dies. Exceptional dimensional accuracy (\u00b10.05 mm), fine surface finish, high production rate. Applications: engine casings, drill chucks."
+          },
+          {
+            "name": "Sand Casting",
+            "detail": "Pattern embedded in damp bonded silica sand flask; molten ferrous or non-ferrous metal poured via runner and riser gates. Low tooling cost, suited for massive components. Applications: heavy lathe beds, cast iron engine blocks."
+          },
+          {
+            "name": "Investment (Lost-Wax) Casting",
+            "detail": "Wax pattern coated in ceramic refractory slurry, fired to melt wax ('lost wax'), cavity filled with molten superalloy. Applications: single-crystal aerospace turbine blades, complex turbocharger impellers."
+          },
+          {
+            "name": "Drop Forging",
+            "detail": "Heated metal billet hammered between shaped upper and lower impression dies under immense tonnage. Forces internal metal grain structure to follow part contour, maximizing fatigue resistance. Applications: crankshafts, connecting rods, spanners."
+          },
+          {
+            "name": "Sheet Metal Stamping & Deep Drawing",
+            "detail": "Hydraulic press forces punch into die cavity, stretching sheet radially into hollow vessels without tearing (e.g. aluminium drinks cans, automotive body panels)."
+          },
+          {
+            "name": "CNC Machining (Milling & Turning)",
+            "detail": "Subtractive material removal: 3- and 5-axis CNC milling for prismatic organic surfaces; CNC lathe turning for axisymmetric shafts, threads, tapers. High precision (microns)."
+          },
+          {
+            "name": "Electrical Discharge Machining (EDM)",
+            "detail": "Material eroded by controlled high-frequency electrical spark discharges across dielectric fluid gap. Wire EDM cuts hardened tool steels without mechanical cutting forces."
+          },
+          {
+            "name": "Welding & Fabrication (TIG, MIG, Spot)",
+            "detail": "TIG (tungsten inert gas) delivers superior precision for aluminium and stainless steel; MIG (metal inert gas) for automated structural steel; resistance spot welding for overlapping automotive sheet panels."
+          }
+        ]
+      },
+      {
+        "id": "b5-3",
+        "title": "Surface Finishing & Protection",
+        "summary": "Treatments that enhance wear resistance, aesthetic appeal, and barrier corrosion protection.",
+        "items": [
+          {
+            "name": "Anodising (Aluminium)",
+            "detail": "Electrolytic passivation process converting aluminium surface into porous, hard aluminium oxide (Al2O3) layer. Readily absorbs organic dyes before boiling water seal."
+          },
+          {
+            "name": "Powder Coating",
+            "detail": "Electrostatically charged thermosetting powder (polyester/epoxy) sprayed onto grounded metal workpiece, cured in oven at 200\u00b0C into a durable, uniform, chip-resistant coat."
+          },
+          {
+            "name": "Galvanising (Hot-Dip)",
+            "detail": "Steel immersed in molten zinc bath at 450\u00b0C. Forms metallurgical zinc-iron alloy layers providing physical barrier and sacrificial cathodic protection against rust."
+          },
+          {
+            "name": "Electroplating",
+            "detail": "Cathodic electrodeposition of metallic ions (e.g. chromium, nickel, zinc) from electrolyte solution for aesthetic mirror polish and wear resistance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b6",
+    "title": "Electronics, Forces, and Mechanics",
+    "tag": "5.1, 5.2 & 6.4",
+    "subnodes": [
+      {
+        "id": "b6-1",
+        "title": "Mechanisms & Mechanical Power Transmission",
+        "summary": "Kinematic assemblies that convert, regulate, and transmit torque, velocity, and motion direction.",
+        "items": [
+          {
+            "name": "Gears & Gear Ratios",
+            "detail": "Gear ratio = Teeth on Driven / Teeth on Driver = Input Speed / Output Speed = Output Torque / Input Torque. Spur gears, helical gears (quieter), bevel gears (intersecting 90\u00b0 axes), worm & wheel (high reduction, non-reversible locking), rack & pinion (rotary to linear)."
+          },
+          {
+            "name": "Pulleys & Timing Belts",
+            "detail": "Velocity ratio = Diameter Driven / Diameter Driver. V-belts rely on wedge friction; toothed timing belts provide positive synchronous slip-free transmission (e.g. engine camshaft timing)."
+          },
+          {
+            "name": "Cams & Followers",
+            "detail": "Converts rotary motion into reciprocating motion according to cam profile (pear, circular, eccentric, snail). Followers: knife-edge, roller, flat. Profile features dwell, rise, fall periods."
+          },
+          {
+            "name": "Linkages",
+            "detail": "Planar 4-bar linkages: crank and rocker, double crank, drag link. Reverse motion, bell crank (90\u00b0 motion change), toggle linkages for mechanical clamping."
+          },
+          {
+            "name": "Bearings",
+            "detail": "Plain journal bushes (phosphor bronze, nylon, PTFE), deep groove radial ball bearings (high speed, moderate radial loads), tapered roller bearings (combined radial and axial thrust loads)."
+          }
+        ]
+      },
+      {
+        "id": "b6-2",
+        "title": "Structural Forces, Stress & Calculations",
+        "summary": "Static and dynamic mechanical calculations underpinning safe structural engineering.",
+        "items": [
+          {
+            "name": "Direct Stress & Strain",
+            "detail": "Normal Stress: \u03c3 = F / A (Pa or N/m\u00b2). Strain: \u03b5 = \u0394L / L\u2080 (dimensionless ratio). Shear stress \u03c4 = F / A_shear."
+          },
+          {
+            "name": "Young's Modulus & Stress-Strain Curve",
+            "detail": "E = \u03c3 / \u03b5 (in Pa or GPa). Characterises stiffness. Key points: limit of proportionality, elastic limit, upper/lower yield points, ultimate tensile strength (UTS), necking, fracture point."
+          },
+          {
+            "name": "Moments & Levers",
+            "detail": "Principle of Moments: Clockwise moments = Anticlockwise moments at equilibrium. Moment = F \u00d7 d. Mechanical Advantage MA = Load / Effort; Velocity Ratio VR = Distance Effort / Distance Load; Efficiency \u03b7 = (MA / VR) \u00d7 100%."
+          },
+          {
+            "name": "Pneumatic & Hydraulic Power",
+            "detail": "Pressure P = F / A (Pa). Pascal's Principle: Pressure applied to an enclosed fluid is transmitted undiminished in all directions. Hydraulic force multiplication: F2 = F1 \u00d7 (A2 / A1)."
+          }
+        ]
+      },
+      {
+        "id": "b6-3",
+        "title": "Electronic Systems & Control",
+        "summary": "Input sensors, microcontroller processing logic, and output actuation stages in mechatronic systems.",
+        "items": [
+          {
+            "name": "Sensing Circuits & Voltage Dividers",
+            "detail": "Voltage divider formula: V_out = V_in \u00d7 [R2 / (R1 + R2)]. LDR (resistance decreases with light), NTC Thermistor (resistance decreases with temperature), strain gauges in Wheatstone bridge."
+          },
+          {
+            "name": "Microcontroller Architectures & ADC",
+            "detail": "Microcontrollers (PIC, AVR, ARM) execute embedded routines. 10-bit ADC quantises analogue voltages into 0\u20131023 integer values: V_in = (ADC / 1023) \u00d7 V_ref."
+          },
+          {
+            "name": "PWM & Motor Control",
+            "detail": "Pulse Width Modulation (PWM) adjusts duty cycle (Ton / Tperiod) to regulate average motor power and speed without losing torque. H-Bridge circuit provides bidirectional DC motor control."
+          },
+          {
+            "name": "Transistor Switching & Actuation",
+            "detail": "BJT and MOSFET transistors act as electronic switches. Logic-level N-channel MOSFET gates switched with 5V to drive high current solenoids, motors, and heaters. Flyback protection diode suppresses inductive back-EMF spikes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b7",
+    "title": "Product Testing and Environmental Legislation",
+    "tag": "3.1 & 3.2",
+    "subnodes": [
+      {
+        "id": "b7-1",
+        "title": "Destructive & Non-Destructive Testing (NDT)",
+        "summary": "Methodologies evaluating material strength, structural integrity, and manufacturing defects.",
+        "items": [
+          {
+            "name": "Destructive Tensile & Impact Testing",
+            "detail": "Tensile testing generates stress-strain curves using extensometers. Charpy / Izod pendulum impact tests measure notch toughness and energy absorbed in joules during rapid fracture."
+          },
+          {
+            "name": "Hardness Testing (Brinell, Vickers, Rockwell)",
+            "detail": "Hardened steel ball, diamond pyramid, or cone pressed into material surface under calibrated static load; indenter indentation diameter/depth determines hardness number."
+          },
+          {
+            "name": "Non-Destructive Testing (NDT)",
+            "detail": "Ultrasonic testing detects internal cavities using reflected acoustic waves. Dye penetrant reveals microscopic surface cracks. Magnetic particle inspection reveals subsurface flaws in ferromagnetic parts. X-ray radiography inspects weld integrity."
+          }
+        ]
+      },
+      {
+        "id": "b7-2",
+        "title": "Environmental Legislation & Directives",
+        "summary": "Statutory environmental frameworks mandating manufacturer responsibility, toxic material reduction, and product end-of-life recovery.",
+        "items": [
+          {
+            "name": "WEEE Directive (Waste Electrical and Electronic Equipment)",
+            "detail": "Mandates manufacturers fund the collection, recovery, safe treatment, and recycling of electrical devices. Compels Design for Disassembly (DfD) and crossed-out wheelie bin symbol labeling."
+          },
+          {
+            "name": "RoHS Directive (Restriction of Hazardous Substances)",
+            "detail": "Restricts 10 toxic materials in electrical and electronic products, including lead (Pb), mercury (Hg), cadmium (Cd), hexavalent chromium (Cr6+), and brominated flame retardants (PBB/PBDE)."
+          },
+          {
+            "name": "Packaging and Packaging Waste Regulations",
+            "detail": "Places legal obligations on companies to minimize packaging volume and weight, reduce single-use plastic waste, and meet statutory recovery and recycling targets."
+          },
+          {
+            "name": "End-of-Life Vehicles (ELV) Directive",
+            "detail": "Mandates that car designs achieve a minimum of 85% reuse and recycling by vehicle weight (95% recovery including energy recovery), eliminating heavy metals."
+          }
+        ]
+      },
+      {
+        "id": "b7-3",
+        "title": "Sustainability & Circular Economy",
+        "summary": "Engineering strategies moving from linear take-make-dispose paradigms toward regenerative closed-loop cycles.",
+        "items": [
+          {
+            "name": "Life Cycle Assessment (LCA)",
+            "detail": "Cradle-to-grave / cradle-to-cradle quantitative analysis evaluating total environmental impact across four stages: raw material extraction, manufacturing/transport, customer usage, and disposal/recycling."
+          },
+          {
+            "name": "Planned Obsolescence (Functional, Aesthetic, Technological)",
+            "detail": "Deliberate design strategy limiting a product's operational lifespan to compel premature replacement: non-replaceable glued batteries, software upgrades unsupported by hardware, discontinued spare parts."
+          },
+          {
+            "name": "The 6 Rs of Sustainability",
+            "detail": "Rethink (redesign product architecture), Refuse (avoid unsustainable materials), Reduce (lightweighting and minimal material volume), Reuse (refillable/modular formats), Repair (standardized fasteners for easy maintenance), Recycle (identification polymer codes >PP<)."
+          },
+          {
+            "name": "Circular Economy & Cradle-to-Cradle",
+            "detail": "Eliminating waste by designing closed technical and biological nutrient loops: components are easily refurbished, remanufactured, or biodegraded, powered by renewable energy inputs."
+          }
+        ]
+      }
+    ]
+  }
+]
+};
+
+function toggleBranch(bid) {
+  const el = document.getElementById('branch-' + bid);
+  if (el) el.classList.toggle('open');
+}
+
+function toggleSubnode(sid) {
+  const el = document.getElementById('subnode-' + sid);
+  if (el) el.classList.toggle('open');
+}
+
+function expandAllMindmap() {
+  document.querySelectorAll('.mindmap-branch-card').forEach(el => el.classList.add('open'));
+  document.querySelectorAll('.mindmap-subnode').forEach(el => el.classList.add('open'));
+}
+
+function collapseAllMindmap() {
+  document.querySelectorAll('.mindmap-branch-card').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.mindmap-subnode').forEach(el => el.classList.remove('open'));
+}
+
+function filterMindmap(query) {
+  const q = String(query || '').trim().toLowerCase();
+  const branches = document.querySelectorAll('.mindmap-branch-card');
+  
+  if (!q) {
+    document.querySelectorAll('.mindmap-concept-card').forEach(c => c.classList.remove('highlight'));
+    return;
+  }
+  
+  branches.forEach(branch => {
+    let branchHasMatch = false;
+    const subnodes = branch.querySelectorAll('.mindmap-subnode');
+    
+    subnodes.forEach(sub => {
+      let subHasMatch = false;
+      const cards = sub.querySelectorAll('.mindmap-concept-card');
+      
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(q)) {
+          card.classList.add('highlight');
+          subHasMatch = true;
+          branchHasMatch = true;
+        } else {
+          card.classList.remove('highlight');
+        }
+      });
+      
+      if (subHasMatch) {
+        sub.classList.add('open');
+      }
+    });
+    
+    if (branchHasMatch) {
+      branch.classList.add('open');
+    }
+  });
+}
+
+function renderMindmapHtml() {
+  const branchesHtml = ENGINEERING_MINDMAP.branches.map(b => {
+    let totalItems = 0;
+    b.subnodes.forEach(s => {
+      totalItems += (s.items || []).length;
+      (s.groups || []).forEach(g => totalItems += (g.items || []).length);
+    });
+
+    const subnodesHtml = b.subnodes.map(s => {
+      let contentHtml = '';
+      if (s.items && s.items.length) {
+        contentHtml = `
+          <div class="mindmap-items-grid">
+            ${s.items.map(it => `
+              <div class="mindmap-concept-card">
+                <div class="mindmap-concept-name">${esc(it.name)}</div>
+                <div class="mindmap-concept-detail">${esc(it.detail)}</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      } else if (s.groups && s.groups.length) {
+        contentHtml = s.groups.map(g => `
+          <div class="mindmap-group-title">${esc(g.groupName)}</div>
+          <div class="mindmap-items-grid">
+            ${g.items.map(it => `
+              <div class="mindmap-concept-card">
+                <div class="mindmap-concept-name">${esc(it.name)}</div>
+                <div class="mindmap-concept-detail">${esc(it.detail)}</div>
+              </div>
+            `).join('')}
+          </div>
+        `).join('');
+      }
+
+      return `
+        <div class="mindmap-subnode open" id="subnode-${s.id}">
+          <div class="mindmap-subnode-header" onclick="toggleSubnode('${s.id}')">
+            <h4 class="mindmap-subnode-title">${esc(s.title)}</h4>
+            <span class="mindmap-subnode-caret">▶</span>
+          </div>
+          <div class="mindmap-subnode-body">
+            ${s.summary ? `<p class="mindmap-subnode-summary">${esc(s.summary)}</p>` : ''}
+            ${contentHtml}
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    return `
+      <article class="mindmap-branch-card open" id="branch-${b.id}">
+        <div class="mindmap-branch-header" onclick="toggleBranch('${b.id}')">
+          <div class="mindmap-branch-left">
+            <span class="mindmap-branch-badge">Topic ${esc(b.tag)}</span>
+            <h3 class="mindmap-branch-title">${esc(b.title)}</h3>
+          </div>
+          <div class="mindmap-branch-right">
+            <span class="mindmap-branch-count">${b.subnodes.length} areas · ${totalItems} concepts</span>
+            <span class="mindmap-caret">▶</span>
+          </div>
+        </div>
+        <div class="mindmap-branch-body">
+          ${subnodesHtml}
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  return `
+    <div class="mindmap-hero">
+      <div>
+        <h2 class="mindmap-hero-title">${esc(ENGINEERING_MINDMAP.title)}</h2>
+        <p class="mindmap-hero-desc">${esc(ENGINEERING_MINDMAP.desc)}</p>
+      </div>
+      <div style="font-size:0.8rem;color:var(--muted)">7 Specification Branches · 22 Domains · 100+ Concepts</div>
+    </div>
+    <div class="mindmap-tree">
+      ${branchesHtml}
+    </div>
+  `;
+}
+
+
 function renderCheatsheets() {
   if (!CHEATS) {
     $('#app-view').innerHTML = `<p style="text-align:center;padding:40px 0;color:var(--muted)">Loading cheatsheets...</p>`;
+    return;
+  }
+
+  const navHtml = `
+    <div class="cheatsheet-nav-bar">
+      <div class="sheet-mode-tabs">
+        <button type="button" class="sheet-mode-btn ${activeSheetMode === 'mindmap' ? 'active' : ''}" onclick="activeSheetMode='mindmap';renderCheatsheets()">Interactive Mindmap</button>
+        <button type="button" class="sheet-mode-btn ${activeSheetMode === 'guides' ? 'active' : ''}" onclick="activeSheetMode='guides';renderCheatsheets()">Topic Cheat Sheets</button>
+      </div>
+      ${activeSheetMode === 'mindmap' ? `
+        <div class="mindmap-controls">
+          <input type="search" id="mindmap-search" class="mindmap-search-input" placeholder="Search mindmap concepts..." oninput="filterMindmap(this.value)">
+          <button type="button" class="btn-minimal" onclick="expandAllMindmap()">Expand All</button>
+          <button type="button" class="btn-minimal" onclick="collapseAllMindmap()">Collapse All</button>
+        </div>
+      ` : ''}
+    </div>
+  `;
+
+  if (activeSheetMode === 'mindmap') {
+    $('#app-view').innerHTML = `
+      <div class="cheatsheets-wrap mindmap-wrap">
+        ${navHtml}
+        ${renderMindmapHtml()}
+      </div>
+    `;
     return;
   }
 
@@ -3907,6 +4971,7 @@ function renderCheatsheets() {
 
   $('#app-view').innerHTML = `
     <div class="cheatsheets-wrap">
+      ${navHtml}
       <div class="sheet-topic-bar">${pillsHtml}</div>
       <article class="sheet-card">
         <div class="sheet-head">

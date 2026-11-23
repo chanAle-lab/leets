@@ -2355,7 +2355,7 @@ footer {
     <footer>
       <div>OCR A Level Design and Technology: Design Engineering (H404). Specification © OCR (Oxford Cambridge and RSA).</div>
       <div style="margin-top:8px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
-        <a href="#view=teachers" id="footer-teachers-link" style="color:var(--muted);text-decoration:none;transition:color 0.15s;">🎓 Teacher's Hub</a>
+        <a href="#view=teachers" id="footer-teachers-link" style="color:var(--muted);text-decoration:none;transition:color 0.15s;">Teacher's Hub</a>
         <span style="opacity:0.4;">·</span>
         <span>Contact: <a href="mailto:chang8alex8@gmail.com" style="color:inherit;text-decoration:underline;">chang8alex8@gmail.com</a></span>
       </div>
@@ -5701,10 +5701,10 @@ function renderTeacherDashboard() {
         <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
       </div>
       <nav class="teacher-nav">
-        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Show Generator</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('hub')">Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">Quiz Show Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">Question & Worksheet Generator</button>
       </nav>
 
       <div class="teacher-hero-header">
@@ -5716,7 +5716,7 @@ function renderTeacherDashboard() {
         <article class="teacher-card" style="border-top: 3px solid #dc2626;">
           <div>
             <span class="teacher-card-badge" style="color: #dc2626; border-color: rgba(220, 38, 38, 0.3); background: rgba(220, 38, 38, 0.08);">Classroom Hit · Inspired by Krillion</span>
-            <h2 class="teacher-card-title">⚙️ Enginillion: Engineering Precision Trivia Dive</h2>
+            <h2 class="teacher-card-title">Enginillion: Engineering Precision Trivia Dive</h2>
             <p class="teacher-card-desc">The rarer and more advanced your engineering answer, the tighter you drill into micrometer and nanometer precision tolerances! Students race against the clock to name the rarest alloys, mechanisms, sensors, and manufacturing processes.</p>
             <ul class="teacher-card-features">
               <li>6 real engineering tolerance tiers: Workshop (±1 mm), Machine Shop (±0.1 mm), Precision Toolroom (±0.01 mm), Aerospace Metrology (±1 µm), Sub-Micron (±0.1 µm), and Atomic/Quantum (±1 nm)</li>
@@ -5732,7 +5732,7 @@ function renderTeacherDashboard() {
         <article class="teacher-card">
           <div>
             <span class="teacher-card-badge">Classroom Gamification</span>
-            <h2 class="teacher-card-title">🎮 Fun Quiz Show Generator</h2>
+            <h2 class="teacher-card-title">Quiz Show Generator</h2>
             <p class="teacher-card-desc">Run engaging, high-energy quizzes on your classroom projector or smartboard. Supports team competitions, rapid multiple-choice, speed timers, and audio effects.</p>
             <ul class="teacher-card-features">
               <li>Team 1 vs Team 2 scoreboard with live +1/-1 point adjustments</li>
@@ -5747,7 +5747,7 @@ function renderTeacherDashboard() {
         <article class="teacher-card">
           <div>
             <span class="teacher-card-badge">Assessment Creator</span>
-            <h2 class="teacher-card-title">📋 Question & Worksheet Generator</h2>
+            <h2 class="teacher-card-title">Question & Worksheet Generator</h2>
             <p class="teacher-card-desc">Assemble tailored, printable assessment papers and homework booklets from official OCR H404 past paper questions with diagrams, formulas, and figures.</p>
             <ul class="teacher-card-features">
               <li>Target specific mark totals (10m, 20m, 30m, 50m) or custom topics</li>
@@ -5761,11 +5761,11 @@ function renderTeacherDashboard() {
       </div>
 
       <div>
-        <h2 class="teacher-section-title">⚡ Quick-Start Lesson Presets</h2>
+        <h2 class="teacher-section-title">Quick-Start Lesson Presets</h2>
         <div class="teacher-presets-grid">
           <div class="preset-card" onclick="launchGeollionPreset('classic7')">
             <div>
-              <h3 class="preset-title">⚙️ 7-Prompt Enginillion Precision Drill</h3>
+              <h3 class="preset-title">7-Prompt Enginillion Precision Drill</h3>
               <p class="preset-sub">Classic 25-second rarity dive across alloys, mechanisms, sensors, and manufacturing.</p>
             </div>
             <span class="preset-action" style="color:#dc2626">Launch Drill →</span>
@@ -5773,7 +5773,7 @@ function renderTeacherDashboard() {
 
           <div class="preset-card" onclick="launchGeollionPreset('teamdrill')">
             <div>
-              <h3 class="preset-title">⚔️ Team Precision Race (Showdown)</h3>
+              <h3 class="preset-title">Team Precision Race (Showdown)</h3>
               <p class="preset-sub">Team Mechanical vs Team Electronics competing for highest cumulative precision points.</p>
             </div>
             <span class="preset-action" style="color:#dc2626">Start Match →</span>
@@ -5781,7 +5781,7 @@ function renderTeacherDashboard() {
 
           <div class="preset-card" onclick="launchQuizPreset('bellringer')">
             <div>
-              <h3 class="preset-title">⚡ 5-Min Starter Bell-Ringer</h3>
+              <h3 class="preset-title">5-Min Starter Bell-Ringer</h3>
               <p class="preset-sub">5 rapid-fire multiple-choice questions on materials, mechanisms, and workshop tools.</p>
             </div>
             <span class="preset-action">Start Quiz →</span>
@@ -5789,7 +5789,7 @@ function renderTeacherDashboard() {
 
           <div class="preset-card" onclick="launchQuizPreset('teamshowdown')">
             <div>
-              <h3 class="preset-title">🕹️ Mechanics & Electronics Showdown</h3>
+              <h3 class="preset-title">Mechanics & Electronics Showdown</h3>
               <p class="preset-sub">10-question team showdown on compound gears, stress/strain, Ohm's law, and logic circuits.</p>
             </div>
             <span class="preset-action">Launch Game →</span>
@@ -5797,7 +5797,7 @@ function renderTeacherDashboard() {
 
           <div class="preset-card" onclick="launchWorksheetPreset('starter20')">
             <div>
-              <h3 class="preset-title">📄 20-Mark Unit Check Assessment</h3>
+              <h3 class="preset-title">20-Mark Unit Check Assessment</h3>
               <p class="preset-sub">Printable assessment with ruled answer lines on Young's modulus, gears, and potential dividers.</p>
             </div>
             <span class="preset-action">Generate Test →</span>
@@ -5805,7 +5805,7 @@ function renderTeacherDashboard() {
 
           <div class="preset-card" onclick="launchWorksheetPreset('exam50')">
             <div>
-              <h3 class="preset-title">📚 Full Component Mock Paper (50 Marks)</h3>
+              <h3 class="preset-title">Full Component Mock Paper (50 Marks)</h3>
               <p class="preset-sub">Comprehensive printable past paper exam pack with cover table and official teacher mark scheme.</p>
             </div>
             <span class="preset-action">Assemble Mock →</span>
@@ -5870,7 +5870,7 @@ function launchWorksheetPreset(type) {
 const ENGINILLION_TIERS = {
   workshop: {
     name: 'Workshop Scale (±1.0 mm)',
-    icon: '📏',
+    icon: '',
     depth: 100,
     points: 100,
     color: '#64748b',
@@ -5880,7 +5880,7 @@ const ENGINILLION_TIERS = {
   },
   machining: {
     name: 'Machine Shop (±0.1 mm)',
-    icon: '⚙️',
+    icon: '',
     depth: 300,
     points: 300,
     color: '#0284c7',
@@ -5890,7 +5890,7 @@ const ENGINILLION_TIERS = {
   },
   toolroom: {
     name: 'Precision Toolroom (±0.01 mm)',
-    icon: '🔬',
+    icon: '',
     depth: 750,
     points: 750,
     color: '#16a34a',
@@ -5900,7 +5900,7 @@ const ENGINILLION_TIERS = {
   },
   aerospace: {
     name: 'High-Tolerance Aerospace (±1 µm)',
-    icon: '🚀',
+    icon: '',
     depth: 1500,
     points: 1500,
     color: '#f59e0b',
@@ -5910,7 +5910,7 @@ const ENGINILLION_TIERS = {
   },
   submicron: {
     name: 'Sub-Micron Precision (±0.1 µm)',
-    icon: '💎',
+    icon: '',
     depth: 2500,
     points: 2500,
     color: '#ea580c',
@@ -5920,7 +5920,7 @@ const ENGINILLION_TIERS = {
   },
   quantum: {
     name: 'Atomic & Nano Precision (ONE IN AN ENGINILLION!)',
-    icon: '⚡',
+    icon: '',
     depth: 5000,
     points: 5000,
     color: '#dc2626',
@@ -6030,22 +6030,22 @@ function renderGeollionSetup() {
         <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
       </div>
       <nav class="teacher-nav">
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
-        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Generator</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('enginillion')">Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">Quiz Show Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">Question & Worksheet Generator</button>
       </nav>
 
       <div class="geollion-panel">
         <div class="geollion-banner">
           <div>
-            <div class="geollion-banner-title">⚙️ ENGINILLION: The Engineering Precision Trivia Dive</div>
+            <div class="geollion-banner-title">ENGINILLION: The Engineering Precision Trivia Dive</div>
             <div class="geollion-banner-desc">
               Inspired by <i>Krillion</i> — the rarer and more advanced your engineering answer, the tighter you drill into micrometer and nanometer tolerances!
               Common workshop materials stay at the surface, while aerospace superalloys, advanced mechanisms, and nano-materials plunge straight into <b>Atomic Precision</b>.
             </div>
           </div>
-          <button type="button" class="btn-minimal" onclick="printGeollionHandout()">📄 Print Classroom Handout</button>
+          <button type="button" class="btn-minimal" onclick="printGeollionHandout()">Print Classroom Handout</button>
         </div>
 
         <div class="quiz-config-grid">
@@ -6119,7 +6119,7 @@ function renderGeollionSetup() {
 
         <div style="display:flex;justify-content:center;margin-top:10px">
           <button type="button" class="btn-gateway" style="max-width:320px;background:#dc2626;border-color:#dc2626;" onclick="startGeollion()">
-            ⚙️ Begin Enginillion Expedition →
+            Begin Enginillion Expedition →
           </button>
         </div>
       </div>
@@ -6229,13 +6229,13 @@ function renderGeollionLive() {
       <div class="quiz-scoreboard-grid" style="margin-bottom:12px">
         <div class="team-score-card ${isT1 ? 'active-team' : ''}" style="${isT1 ? 'border-color:#dc2626;background:rgba(220,38,38,0.08);' : ''}">
           <div>
-            <div class="team-name" style="${isT1 ? 'color:#dc2626;font-weight:800' : ''}">⚙️ ${geollionState.team1Name} ${isT1 ? '◀ CURRENT TURN' : ''}</div>
+            <div class="team-name" style="${isT1 ? 'color:#dc2626;font-weight:800' : ''}">${geollionState.team1Name} ${isT1 ? '◀ CURRENT TURN' : ''}</div>
             <div style="font-size:0.8rem;color:var(--muted)">Tolerance Points: ${geollionState.team1Score.toLocaleString()} pts</div>
           </div>
         </div>
         <div class="team-score-card ${!isT1 ? 'active-team' : ''}" style="${!isT1 ? 'border-color:#0284c7;background:rgba(2,132,199,0.08);' : ''}">
           <div>
-            <div class="team-name" style="${!isT1 ? 'color:#0284c7;font-weight:800' : ''}">⚡ ${geollionState.team2Name} ${!isT1 ? '◀ CURRENT TURN' : ''}</div>
+            <div class="team-name" style="${!isT1 ? 'color:#0284c7;font-weight:800' : ''}">${geollionState.team2Name} ${!isT1 ? '◀ CURRENT TURN' : ''}</div>
             <div style="font-size:0.8rem;color:var(--muted)">Tolerance Points: ${geollionState.team2Score.toLocaleString()} pts</div>
           </div>
         </div>
@@ -6257,11 +6257,11 @@ function renderGeollionLive() {
           <div style="display:flex;align-items:center;gap:12px">
             ${geollionState.timerSeconds ? `
               <div class="quiz-timer-box" id="geo-timer-box">
-                ⏱️ <span id="geo-timer-num">${geollionState.timerRemaining}s</span>
+                <span id="geo-timer-num">${geollionState.timerRemaining}s</span>
               </div>
-            ` : '<div class="quiz-timer-box">⏱️ Untimed</div>'}
-            <button type="button" class="btn-minimal" onclick="geollionState.soundEnabled=!geollionState.soundEnabled;this.textContent=geollionState.soundEnabled?'🔊 Sound':'🔇 Mute'">
-              ${geollionState.soundEnabled ? '🔊 Sound' : '🔇 Mute'}
+            ` : '<div class="quiz-timer-box">Untimed</div>'}
+            <button type="button" class="btn-minimal" onclick="geollionState.soundEnabled=!geollionState.soundEnabled;this.textContent=geollionState.soundEnabled?'Sound: On':'Sound: Off'">
+              ${geollionState.soundEnabled ? 'Sound: On' : 'Sound: Off'}
             </button>
             <button type="button" class="btn-minimal" onclick="abandonGeollion()">✕ Exit</button>
           </div>
@@ -6294,7 +6294,7 @@ function renderGeollionLive() {
         <div class="geollion-stage">
           <span class="geollion-cat-badge">${esc(p.category)}</span>
           <h2 class="geollion-prompt">${esc(p.prompt)}</h2>
-          <div class="geollion-hint">💡 Hint: ${esc(p.hint)}</div>
+          <div class="geollion-hint">Hint: ${esc(p.hint)}</div>
 
           <form class="geollion-input-wrap" onsubmit="event.preventDefault();submitGeollionAnswer(true);">
             <input type="text" id="geo-input" class="geollion-input" placeholder="Type engineering term & press Enter..." autocomplete="off" autofocus required>
@@ -6375,21 +6375,21 @@ function submitGeollionAnswer(passed) {
   if (isCorrect) {
     geollionState.lastFeedback = {
       type: 'success',
-      text: `✅ Matched "${esc(evalResult.matchedTerm)}" · +${points} pts (${tierInfo.name.split('(')[0].trim()})`,
+      text: `Matched "${esc(evalResult.matchedTerm)}" · +${points} pts (${tierInfo.name.split('(')[0].trim()})`,
       color: tierInfo.color,
       bg: tierInfo.bg
     };
   } else if (!passed || !userText) {
     geollionState.lastFeedback = {
       type: 'pass',
-      text: `⏭️ Round ${geollionState.currentIdx + 1} passed (0 pts) · Full answers at mission summary!`,
+      text: `Round ${geollionState.currentIdx + 1} passed (0 pts) · Full answers at mission summary!`,
       color: 'var(--muted)',
       bg: 'var(--surface-hover)'
     };
   } else {
     geollionState.lastFeedback = {
       type: 'miss',
-      text: `❌ "${esc(userText)}" not recognized (0 pts) · Full answers at mission summary!`,
+      text: `"${esc(userText)}" not recognized (0 pts) · Full answers at mission summary!`,
       color: '#dc2626',
       bg: '#fef2f2'
     };
@@ -6443,7 +6443,7 @@ function renderGeollionSummary() {
     teamSummaryHtml = `
       <div style="padding:16px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border);text-align:center;margin-bottom:16px">
         <h3 style="margin:0 0 4px;font-size:1.2rem;font-weight:800;color:var(--ink)">
-          ${tie ? '🤝 HONORABLE DRAW!' : (t1Win ? `🏆 ${geollionState.team1Name} WINS!` : `🏆 ${geollionState.team2Name} WINS!`)}
+          ${tie ? 'HONORABLE DRAW!' : (t1Win ? `${geollionState.team1Name} WINS!` : `${geollionState.team2Name} WINS!`)}
         </h3>
         <div style="display:flex;justify-content:center;gap:32px;margin-top:10px">
           <div>
@@ -6501,7 +6501,7 @@ function renderGeollionSummary() {
               <span class="geollion-cat-badge" style="font-size:0.72rem;padding:2px 8px">${esc(p.category)}</span>
             </div>
             <div style="font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:4px">${esc(p.prompt)}</div>
-            <div style="font-size:0.8rem;color:var(--muted)">💡 Hint: ${esc(p.hint)}</div>
+            <div style="font-size:0.8rem;color:var(--muted)">Hint: ${esc(p.hint)}</div>
           </div>
           <div style="text-align:right;min-width:130px">
             ${h.isCorrect ? `
@@ -6525,7 +6525,7 @@ function renderGeollionSummary() {
 
         <details open style="background:var(--surface-hover);border-radius:var(--radius-sm);border:1px solid var(--border);padding:8px 12px">
           <summary style="font-size:0.8rem;font-weight:700;color:var(--ink);cursor:pointer;user-select:none">
-            📖 Complete OCR Specification Answers (${Object.values(p.tiers).flat().length} valid terms)
+            Complete OCR Specification Answers (${Object.values(p.tiers).flat().length} valid terms)
           </summary>
           <div style="margin-top:8px">
             ${tiersBreakdownHtml}
@@ -6539,7 +6539,7 @@ function renderGeollionSummary() {
     <div class="teacher-hub-wrap">
       <div class="geollion-panel">
         <div class="geollion-summary-card">
-          <div style="font-size:2.8rem">🏆</div>
+          
           <h2 style="margin:0 0 4px;font-size:1.4rem;font-weight:800;color:var(--ink)">ENGINILLION EXPEDITION COMPLETE</h2>
           <p style="margin:0;font-size:0.88rem;color:var(--muted)">All prompts completed! Below is your round-by-round tolerance breakdown and official OCR specification answer guide.</p>
 
@@ -6571,7 +6571,7 @@ function renderGeollionSummary() {
 
         <div style="display:flex;justify-content:center;gap:12px;margin-top:18px">
           <button type="button" class="btn-gateway" style="max-width:240px;background:#dc2626;border-color:#dc2626;" onclick="startGeollion()">
-            🔄 Play Again
+            Play Again
           </button>
           <button type="button" class="btn-minimal" onclick="switchTeacherTab('hub')">
             ← Back to Teacher's Hub
@@ -6599,7 +6599,7 @@ function printGeollionHandout() {
         <b style="font-size:11pt">Prompt ${idx + 1}: ${esc(p.prompt)}</b>
         <span style="font-size:8.5pt;color:#666">${esc(p.category)}</span>
       </div>
-      <div style="font-size:8.5pt;color:#555;margin-bottom:6pt">💡 Hint: ${esc(p.hint)}</div>
+      <div style="font-size:8.5pt;color:#555;margin-bottom:6pt">Hint: ${esc(p.hint)}</div>
       <div style="border:1px dashed #aaa;min-height:36pt;padding:4pt;border-radius:4px;font-size:8.5pt;color:#888">
         Student Answer: __________________________________________________________________
       </div>
@@ -6662,10 +6662,10 @@ function renderQuizSetup() {
         <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
       </div>
       <nav class="teacher-nav">
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
-        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Generator</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('quiz')">Quiz Show Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('worksheet')">Question & Worksheet Generator</button>
       </nav>
 
       <div class="quiz-panel">
@@ -6737,10 +6737,10 @@ function renderQuizSetup() {
 
         <div style="display:flex;justify-content:center;gap:12px;margin-top:10px">
           <button type="button" class="btn-gateway" style="max-width:280px;" onclick="startQuiz()">
-            🚀 Start Quiz Show →
+            Start Quiz Show →
           </button>
           <button type="button" class="btn-minimal" onclick="printQuizHandout()">
-            🖨️ Print Quiz Paper
+            Print Quiz Paper
           </button>
         </div>
       </div>
@@ -6907,11 +6907,11 @@ function renderQuizLive() {
           <div style="display:flex;align-items:center;gap:12px">
             ${quizState.timerSeconds ? `
               <div class="quiz-timer-box" id="quiz-timer-box">
-                ⏱️ <span id="quiz-timer-num">${quizState.timerRemaining}</span>s
+                <span id="quiz-timer-num">${quizState.timerRemaining}</span>s
               </div>
-            ` : '<div class="quiz-timer-box">⏱️ Untimed</div>'}
-            <button type="button" class="btn-minimal" onclick="quizState.soundEnabled=!quizState.soundEnabled;this.textContent=quizState.soundEnabled?'🔊 Sound':'🔇 Mute'">
-              ${quizState.soundEnabled ? '🔊 Sound' : '🔇 Mute'}
+            ` : '<div class="quiz-timer-box">Untimed</div>'}
+            <button type="button" class="btn-minimal" onclick="quizState.soundEnabled=!quizState.soundEnabled;this.textContent=quizState.soundEnabled?'Sound: On':'Sound: Off'">
+              ${quizState.soundEnabled ? 'Sound: On' : 'Sound: Off'}
             </button>
             <button type="button" class="btn-minimal" onclick="endQuiz()">End Quiz</button>
           </div>
@@ -6930,7 +6930,7 @@ function renderQuizLive() {
           ${quizState.revealed ? `
             <div class="quiz-explanation-box">
               <div class="quiz-exp-title">
-                ${quizState.selectedChoice === q.correctIndex ? '✅ Correct Answer!' : (quizState.selectedChoice === -1 ? '⏱️ Time Expired!' : '❌ Incorrect')}
+                ${quizState.selectedChoice === q.correctIndex ? 'Correct Answer!' : (quizState.selectedChoice === -1 ? 'Time Expired!' : 'Incorrect')}
               </div>
               <div class="quiz-exp-body">${esc(q.explanation)}</div>
             </div>
@@ -6940,7 +6940,7 @@ function renderQuizLive() {
             <button type="button" class="btn-minimal" onclick="prevQuizQuestion()" ${quizState.currentIdx === 0 ? 'disabled' : ''}>← Previous</button>
             <div style="font-size:0.75rem;color:var(--muted)">Shortcuts: <b>1-4</b> or <b>A-D</b> to choose · <b>Space / Enter</b> next</div>
             <button type="button" class="quiz-next-btn" onclick="nextQuizQuestion()">
-              ${qNum < qTotal ? 'Next Question →' : 'View Results 🏆'}
+              ${qNum < qTotal ? 'Next Question →' : 'View Results →'}
             </button>
           </div>
         </div>
@@ -7033,7 +7033,7 @@ function renderQuizSummary() {
     teamResultHtml = `
       <div style="padding:16px;background:var(--surface-hover);border-radius:var(--radius);border:1px solid var(--border);text-align:center;margin-bottom:18px">
         <h3 style="margin:0 0 4px;font-size:1.3rem;font-weight:800;color:var(--ink)">
-          ${tie ? '🤝 IT’S A TIE!' : (t1Wins ? `🏆 ${esc(quizState.team1Name)} VICTORY!` : `🏆 ${esc(quizState.team2Name)} VICTORY!`)}
+          ${tie ? 'IT’S A TIE!' : (t1Wins ? `${esc(quizState.team1Name)} VICTORY!` : `${esc(quizState.team2Name)} VICTORY!`)}
         </h3>
         <div style="display:flex;justify-content:center;gap:36px;margin-top:10px">
           <div>
@@ -7064,7 +7064,7 @@ function renderQuizSummary() {
     <div class="teacher-hub-wrap">
       <div class="quiz-panel">
         <div class="quiz-summary-card">
-          <div class="quiz-sum-trophy">🏆</div>
+          
           <h2 class="quiz-sum-title">Quiz Show Finished!</h2>
           <p class="quiz-sum-sub">Fantastic active recall practice with the OCR Design Engineering curriculum bank.</p>
 
@@ -7079,7 +7079,7 @@ function renderQuizSummary() {
                 <div class="quiz-stat-lbl">ACCURACY</div>
               </div>
               <div class="quiz-stat-box">
-                <div class="quiz-stat-val">${quizState.maxStreak} 🔥</div>
+                <div class="quiz-stat-val">${quizState.maxStreak}</div>
                 <div class="quiz-stat-lbl">BEST STREAK</div>
               </div>
             </div>
@@ -7097,10 +7097,10 @@ function renderQuizSummary() {
 
         <div style="display:flex;justify-content:center;gap:12px;margin-top:24px">
           <button type="button" class="quiz-next-btn" onclick="startQuiz()">
-            🔄 Play Again
+            Play Again
           </button>
           <button type="button" class="btn-minimal" onclick="switchTeacherTab('hub')">
-            🎓 Teacher's Hub
+            Teacher's Hub
           </button>
         </div>
       </div>
@@ -7179,10 +7179,10 @@ function renderWorksheetGenerator() {
         <a href="#" onclick="event.preventDefault();state.view='strata';syncViewButtons();toHash();render();" style="color:var(--muted);text-decoration:none;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;">← Back to Revision Portal</a>
       </div>
       <nav class="teacher-nav">
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">🎓 Overview & Presets</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">⚙️ Enginillion: Precision Trivia</button>
-        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">🎮 Fun Quiz Generator</button>
-        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('worksheet')">📋 Question & Worksheet Generator</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('hub')">Overview & Presets</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('enginillion')">Enginillion: Precision Trivia</button>
+        <button type="button" class="teacher-nav-btn" onclick="switchTeacherTab('quiz')">Quiz Show Generator</button>
+        <button type="button" class="teacher-nav-btn active" onclick="switchTeacherTab('worksheet')">Question & Worksheet Generator</button>
       </nav>
 
       <div class="ws-controls-card">
@@ -7258,13 +7258,13 @@ function renderWorksheetGenerator() {
             <span>Total Marks: <b style="color:#dc2626">${totalMarks}</b> marks</span>
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <button type="button" class="btn-minimal" onclick="generateWorksheet()">🎲 Shuffle Questions</button>
-            <button type="button" class="btn-minimal" onclick="addWorksheetQuestion()">➕ Add Question</button>
+            <button type="button" class="btn-minimal" onclick="generateWorksheet()">Shuffle Questions</button>
+            <button type="button" class="btn-minimal" onclick="addWorksheetQuestion()">Add Question</button>
             <button type="button" class="btn-gateway" style="background:#dc2626;border-color:#dc2626;padding:7px 16px;width:auto;" onclick="executePrintWorksheet({isTeacherKey:false})">
-              🖨️ Print Student Worksheet
+              Print Student Worksheet
             </button>
             <button type="button" class="btn-gateway" style="background:var(--ink);border-color:var(--ink);padding:7px 16px;width:auto;" onclick="executePrintWorksheet({isTeacherKey:true})">
-              🔑 Print Teacher Mark Scheme
+              Print Teacher Mark Scheme
             </button>
           </div>
         </div>
@@ -7292,7 +7292,7 @@ function renderWorksheetGenerator() {
                 <div class="ws-q-actions">
                   <button type="button" class="ws-q-btn" onclick="moveWorksheetQuestion(${idx}, -1)" ${idx === 0 ? 'disabled' : ''} title="Move Up">↑ Up</button>
                   <button type="button" class="ws-q-btn" onclick="moveWorksheetQuestion(${idx}, 1)" ${idx === wsState.questions.length - 1 ? 'disabled' : ''} title="Move Down">↓ Down</button>
-                  <button type="button" class="ws-q-btn" onclick="swapWorksheetQuestion(${idx})" title="Swap for another question">🔄 Swap</button>
+                  <button type="button" class="ws-q-btn" onclick="swapWorksheetQuestion(${idx})" title="Swap for another question">Swap</button>
                   <button type="button" class="ws-q-btn" style="color:#dc2626" onclick="removeWorksheetQuestion(${idx})" title="Remove">✕</button>
                 </div>
               </div>

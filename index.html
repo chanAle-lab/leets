@@ -5324,7 +5324,7 @@ function renderMindmapHtml() {
       }
 
       return `
-        <div class="mindmap-subnode open" id="subnode-${s.id}">
+        <div class="mindmap-subnode" id="subnode-${s.id}">
           <div class="mindmap-subnode-header" onclick="toggleSubnode('${s.id}')">
             <h4 class="mindmap-subnode-title">${esc(s.title)}</h4>
             <span class="mindmap-subnode-caret">▶</span>
@@ -5338,7 +5338,7 @@ function renderMindmapHtml() {
     }).join('');
 
     return `
-      <article class="mindmap-branch-card open" id="branch-${b.id}">
+      <article class="mindmap-branch-card" id="branch-${b.id}">
         <div class="mindmap-branch-header" onclick="toggleBranch('${b.id}')">
           <div class="mindmap-branch-left">
             <span class="mindmap-branch-badge">Topic ${esc(b.tag)}</span>

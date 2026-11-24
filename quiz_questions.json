@@ -11,7 +11,14 @@
       "Products are manufactured using identical materials regardless of application"
     ],
     "answer": 0,
-    "explanation": "Context dependency means an engineered system cannot be evaluated in isolation\u2014it must operate reliably within its specific ambient conditions, user demographics, and economic boundaries."
+    "explanation": "Context dependency means an engineered system cannot be evaluated in isolation—it must operate reliably within its specific ambient conditions, user demographics, and economic boundaries.",
+    "choices": [
+      "A solution must satisfy the specific physical, economic, and operational environment where it is deployed",
+      "Design specifications can never be changed once customer feedback is gathered",
+      "Engineers only design for indoor factory settings with controlled climate",
+      "Products are manufactured using identical materials regardless of application"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "1.2-01",
@@ -25,7 +32,14 @@
       "25th to 75th percentile"
     ],
     "answer": 0,
-    "explanation": "Designing between the 5th percentile female and 95th percentile male accommodates approximately 90% of the target population with adjustability."
+    "explanation": "Designing between the 5th percentile female and 95th percentile male accommodates approximately 90% of the target population with adjustability.",
+    "choices": [
+      "5th to 95th percentile",
+      "50th percentile only",
+      "0th to 100th percentile",
+      "25th to 75th percentile"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "1.2-02",
@@ -39,7 +53,14 @@
       "10th percentile"
     ],
     "answer": 0,
-    "explanation": "Clearances (doorways, legroom, escape hatches) must accommodate the tallest users, so the 95th percentile (or 99th percentile) plus an extra safety clearance is required."
+    "explanation": "Clearances (doorways, legroom, escape hatches) must accommodate the tallest users, so the 95th percentile (or 99th percentile) plus an extra safety clearance is required.",
+    "choices": [
+      "95th percentile (plus clearance allowance)",
+      "5th percentile",
+      "50th percentile (average height)",
+      "10th percentile"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "1.3-01",
@@ -53,13 +74,20 @@
       "Ensuring the motor runs at maximum unloaded RPM without safety cutoffs"
     ],
     "answer": 0,
-    "explanation": "Ergonomics optimizes the human-machine interface to reduce user fatigue, musculoskeletal strain, and long-term industrial vibration disorders."
+    "explanation": "Ergonomics optimizes the human-machine interface to reduce user fatigue, musculoskeletal strain, and long-term industrial vibration disorders.",
+    "choices": [
+      "Reducing physical strain, repetitive strain injury (RSI), and vibration white finger",
+      "Maximizing the cosmetic gloss finish of the outer polymer casing",
+      "Minimizing the bill-of-materials cost by eliminating rubber overmouldings",
+      "Ensuring the motor runs at maximum unloaded RPM without safety cutoffs"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "2.2-01",
     "topic": "2.2",
     "category": "Design Movements",
-    "question": "Which famous design tenet is most strongly associated with the Bauhaus movement (1919\u20131933)?",
+    "question": "Which famous design tenet is most strongly associated with the Bauhaus movement (1919–1933)?",
     "options": [
       "Form follows function",
       "Less is a bore",
@@ -67,7 +95,14 @@
       "Design for planned obsolescence"
     ],
     "answer": 0,
-    "explanation": "The Bauhaus philosophy championed geometric simplicity, rational utility, and industrial mass-producibility under the principle 'Form follows function'."
+    "explanation": "The Bauhaus philosophy championed geometric simplicity, rational utility, and industrial mass-producibility under the principle 'Form follows function'.",
+    "choices": [
+      "Form follows function",
+      "Less is a bore",
+      "Ornamentation is the essence of structure",
+      "Design for planned obsolescence"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "2.3-01",
@@ -81,7 +116,14 @@
       "Aerodynamic teardrop streamlining in polished chrome aluminium"
     ],
     "answer": 0,
-    "explanation": "Memphis rebelled against strict modernism with playful pop-art aesthetics, bright laminate surfaces, asymmetrical silhouettes, and flamboyant motifs."
+    "explanation": "Memphis rebelled against strict modernism with playful pop-art aesthetics, bright laminate surfaces, asymmetrical silhouettes, and flamboyant motifs.",
+    "choices": [
+      "Vibrant clashing colours, bold asymmetrical geometric forms, and plastic laminates",
+      "Strict monochrome palettes and exposed raw cast iron structural ribs",
+      "Traditional handcrafted timber joints and natural unvarnished oak",
+      "Aerodynamic teardrop streamlining in polished chrome aluminium"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "3.1-01",
@@ -95,7 +137,14 @@
       "Patent filing, Trademark registration, Production setup, and Breakeven"
     ],
     "answer": 0,
-    "explanation": "An LCA quantifies environmental impacts across 'Cradle to Grave': raw material harvesting, processing/assembly, operational energy/emissions, and ultimate disposal/recycling."
+    "explanation": "An LCA quantifies environmental impacts across 'Cradle to Grave': raw material harvesting, processing/assembly, operational energy/emissions, and ultimate disposal/recycling.",
+    "choices": [
+      "Raw material extraction, Manufacture, In-service use, and End-of-life disposal",
+      "Marketing, Distribution, Retail sales, and Customer warranty",
+      "Ideation, 3D CAD modeling, Prototyping, and Mass injection moulding",
+      "Patent filing, Trademark registration, Production setup, and Breakeven"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "3.3-01",
@@ -109,7 +158,14 @@
       "Ensuring that parts can only be assembled using specialised manual hand tools"
     ],
     "answer": 0,
-    "explanation": "DFMA systematically simplifies product architectures, eliminates redundant components, incorporates self-locating snap-fits, and slashes manufacturing cycle times."
+    "explanation": "DFMA systematically simplifies product architectures, eliminates redundant components, incorporates self-locating snap-fits, and slashes manufacturing cycle times.",
+    "choices": [
+      "Minimizing part count, standardising fasteners, and streamlining assembly paths",
+      "Increasing the complexity of sub-assemblies to prevent competitor cloning",
+      "Replacing all modular plastic clips with permanent multi-part adhesive joints",
+      "Ensuring that parts can only be assembled using specialised manual hand tools"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "3.5-01",
@@ -123,7 +179,14 @@
       "Copyright"
     ],
     "answer": 0,
-    "explanation": "Patents protect new, inventive technical and functional inventions for up to 20 years. Registered designs protect visual appearance and aesthetics."
+    "explanation": "Patents protect new, inventive technical and functional inventions for up to 20 years. Registered designs protect visual appearance and aesthetics.",
+    "choices": [
+      "Patent",
+      "Registered Design",
+      "Trademark",
+      "Copyright"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "4.1-01",
@@ -137,7 +200,14 @@
       "Superimposed at a 45-degree isometric tilt"
     ],
     "answer": 0,
-    "explanation": "In 3rd angle projection (standard in engineering across the UK and US), the Plan view is placed directly above the Front Elevation, and the Right View is on the right."
+    "explanation": "In 3rd angle projection (standard in engineering across the UK and US), the Plan view is placed directly above the Front Elevation, and the Right View is on the right.",
+    "choices": [
+      "Directly above the Front Elevation",
+      "Directly below the Front Elevation",
+      "To the far right of the End Elevation",
+      "Superimposed at a 45-degree isometric tilt"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "4.2-01",
@@ -151,7 +221,14 @@
       "Optical Character Recognition (OCR)"
     ],
     "answer": 0,
-    "explanation": "FEA breaks down a continuous component geometry into a finite mesh of nodes and elements to predict von Mises stress, strain, and deformation under applied loads."
+    "explanation": "FEA breaks down a continuous component geometry into a finite mesh of nodes and elements to predict von Mises stress, strain, and deformation under applied loads.",
+    "choices": [
+      "Finite Element Analysis (FEA)",
+      "Computational Fluid Dynamics (CFD)",
+      "Rapid Prototyping Slicer (CAM)",
+      "Optical Character Recognition (OCR)"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "5.1-01",
@@ -165,7 +242,14 @@
       "Zinc (for hot-dip galvanising)"
     ],
     "answer": 0,
-    "explanation": "Chromium (>10.5%) reacts with atmospheric oxygen to form an invisible, self-healing chromium oxide (Cr2O3) layer that prevents rust in stainless steels."
+    "explanation": "Chromium (>10.5%) reacts with atmospheric oxygen to form an invisible, self-healing chromium oxide (Cr2O3) layer that prevents rust in stainless steels.",
+    "choices": [
+      "Chromium (creating Stainless Steel)",
+      "Lead (for machinability)",
+      "Silicon (for electrical laminations)",
+      "Zinc (for hot-dip galvanising)"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "5.2-01",
@@ -179,7 +263,14 @@
       "Thermoplastics are formed through condensation polymerization that reverses on reheating"
     ],
     "answer": 0,
-    "explanation": "Thermoplastic polymer chains can slide past each other when thermal energy overcomes weak intermolecular bonds. Thermosets form irreversible covalent cross-links during curing."
+    "explanation": "Thermoplastic polymer chains can slide past each other when thermal energy overcomes weak intermolecular bonds. Thermosets form irreversible covalent cross-links during curing.",
+    "choices": [
+      "Thermoplastics have linear chains held by weak van der Waals forces, while thermosets form permanent covalent cross-links",
+      "Thermoplastics contain metallic bonding while thermosets contain purely ionic lattices",
+      "Thermosets have lower molecular weights that decompose at room temperature",
+      "Thermoplastics are formed through condensation polymerization that reverses on reheating"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "5.3-01",
@@ -193,7 +284,14 @@
       "It alters its magnetic polarity when submersed in water"
     ],
     "answer": 0,
-    "explanation": "Nitinol transitions between a low-temperature ductile martensitic phase and a high-temperature rigid austenitic phase, restoring its manufactured geometry."
+    "explanation": "Nitinol transitions between a low-temperature ductile martensitic phase and a high-temperature rigid austenitic phase, restoring its manufactured geometry.",
+    "choices": [
+      "It can be deformed when cold and return to its pre-programmed shape when heated through its martensite-to-austenite transition",
+      "It changes colour irreversibly when exposed to ultraviolet radiation",
+      "It generates a high voltage pulse whenever it experiences mechanical compression",
+      "It alters its magnetic polarity when submersed in water"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "5.3-02",
@@ -207,7 +305,14 @@
       "Vickers diamond pyramid test"
     ],
     "answer": 0,
-    "explanation": "The Charpy impact test swings a weighted pendulum to strike a notched specimen, measuring the energy absorbed in Joules to quantify notch toughness."
+    "explanation": "The Charpy impact test swings a weighted pendulum to strike a notched specimen, measuring the energy absorbed in Joules to quantify notch toughness.",
+    "choices": [
+      "Charpy / Izod impact test",
+      "Brinell ball hardness test",
+      "Tensile yield test",
+      "Vickers diamond pyramid test"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.1-01",
@@ -221,7 +326,14 @@
       "Triangular trusses eliminate the need for gusset plates and welded joints"
     ],
     "answer": 0,
-    "explanation": "A triangle is the only geometric polygon whose shape is completely locked by the lengths of its three sides; it resists pin-joint distortion under coplanar loads."
+    "explanation": "A triangle is the only geometric polygon whose shape is completely locked by the lengths of its three sides; it resists pin-joint distortion under coplanar loads.",
+    "choices": [
+      "Triangles are geometrically rigid and cannot deform without changing the physical length of their members",
+      "Triangular members are cheaper to extrude than rectangular hollow sections",
+      "Triangles distribute all external forces exclusively as pure shear stress",
+      "Triangular trusses eliminate the need for gusset plates and welded joints"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.2-01",
@@ -235,7 +347,14 @@
       "1200 rpm (Gear Ratio 1:1 idler)"
     ],
     "answer": 0,
-    "explanation": "Gear Ratio = Driven / Driver = 60 / 15 = 4:1. Output Speed = Input / Ratio = 1200 / 4 = 300 rpm."
+    "explanation": "Gear Ratio = Driven / Driver = 60 / 15 = 4:1. Output Speed = Input / Ratio = 1200 / 4 = 300 rpm.",
+    "choices": [
+      "300 rpm (Gear Ratio 4:1 reduction)",
+      "4800 rpm (Gear Ratio 1:4 overdrive)",
+      "600 rpm (Gear Ratio 2:1 reduction)",
+      "1200 rpm (Gear Ratio 1:1 idler)"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.2-02",
@@ -249,21 +368,35 @@
       "Reversible overdrive capability allowing the wheel to effortlessly spin the worm"
     ],
     "answer": 0,
-    "explanation": "Worm drives offer high gear reductions (e.g. 50:1) in a single stage and cannot be back-driven by the load (self-locking), making them ideal for hoists and winches."
+    "explanation": "Worm drives offer high gear reductions (e.g. 50:1) in a single stage and cannot be back-driven by the load (self-locking), making them ideal for hoists and winches.",
+    "choices": [
+      "Massive speed reduction in a compact 90-degree axis and inherent irreversible self-locking",
+      "Near 100% mechanical efficiency with zero frictional thermal dissipation",
+      "Ability to connect two parallel shafts with zero backlash at high RPM",
+      "Reversible overdrive capability allowing the wheel to effortlessly spin the worm"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.3-01",
     "topic": "6.3",
     "category": "Calculations: Stress & Strain",
-    "question": "What is the engineering equation for tensile stress (\u03c3)?",
+    "question": "What is the engineering equation for tensile stress (σ)?",
     "options": [
-      "\u03c3 = F / A (Force divided by Cross-Sectional Area)",
-      "\u03c3 = \u0394L / L\u2080 (Extension divided by Original Length)",
-      "\u03c3 = E \u00d7 \u03b5\u00b2 (Young's Modulus times Strain squared)",
-      "\u03c3 = F \u00d7 d (Force multiplied by perpendicular distance)"
+      "σ = F / A (Force divided by Cross-Sectional Area)",
+      "σ = ΔL / L₀ (Extension divided by Original Length)",
+      "σ = E × ε² (Young's Modulus times Strain squared)",
+      "σ = F × d (Force multiplied by perpendicular distance)"
     ],
     "answer": 0,
-    "explanation": "Tensile stress \u03c3 is defined as internal resistive force per unit cross-sectional area (\u03c3 = F / A), measured in N/m\u00b2 or Pascals (Pa / MPa)."
+    "explanation": "Tensile stress σ is defined as internal resistive force per unit cross-sectional area (σ = F / A), measured in N/m² or Pascals (Pa / MPa).",
+    "choices": [
+      "σ = F / A (Force divided by Cross-Sectional Area)",
+      "σ = ΔL / L₀ (Extension divided by Original Length)",
+      "σ = E × ε² (Young's Modulus times Strain squared)",
+      "σ = F × d (Force multiplied by perpendicular distance)"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.3-02",
@@ -271,19 +404,26 @@
     "category": "Calculations: Young's Modulus",
     "question": "How is Young's Modulus (E) defined in the linear elastic region of a material stress-strain curve?",
     "options": [
-      "E = \u03c3 / \u03b5 (Tensile Stress divided by Tensile Strain)",
-      "E = F \u00d7 \u0394L (Force multiplied by Extension)",
-      "E = \u03b5 / \u03c3 (Tensile Strain divided by Tensile Stress)",
-      "E = Mass \u00d7 Acceleration due to gravity"
+      "E = σ / ε (Tensile Stress divided by Tensile Strain)",
+      "E = F × ΔL (Force multiplied by Extension)",
+      "E = ε / σ (Tensile Strain divided by Tensile Stress)",
+      "E = Mass × Acceleration due to gravity"
     ],
     "answer": 0,
-    "explanation": "Young's Modulus E = \u03c3 / \u03b5 represents the gradient of the initial linear elastic Hookean region, measuring the fundamental tensile stiffness of the material."
+    "explanation": "Young's Modulus E = σ / ε represents the gradient of the initial linear elastic Hookean region, measuring the fundamental tensile stiffness of the material.",
+    "choices": [
+      "E = σ / ε (Tensile Stress divided by Tensile Strain)",
+      "E = F × ΔL (Force multiplied by Extension)",
+      "E = ε / σ (Tensile Strain divided by Tensile Stress)",
+      "E = Mass × Acceleration due to gravity"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.4-01",
     "topic": "6.4",
     "category": "Electronics & Calculations",
-    "question": "In a potential divider with Vin = 12 V, R1 = 8 k\u03a9, and R2 = 4 k\u03a9 (where Vout is taken across R2), what is Vout?",
+    "question": "In a potential divider with Vin = 12 V, R1 = 8 kΩ, and R2 = 4 kΩ (where Vout is taken across R2), what is Vout?",
     "options": [
       "4.0 V",
       "8.0 V",
@@ -291,7 +431,14 @@
       "2.0 V"
     ],
     "answer": 0,
-    "explanation": "Vout = Vin \u00d7 [ R2 / (R1 + R2) ] = 12 \u00d7 [ 4000 / (8000 + 4000) ] = 12 \u00d7 (4 / 12) = 4.0 V."
+    "explanation": "Vout = Vin × [ R2 / (R1 + R2) ] = 12 × [ 4000 / (8000 + 4000) ] = 12 × (4 / 12) = 4.0 V.",
+    "choices": [
+      "4.0 V",
+      "8.0 V",
+      "6.0 V",
+      "2.0 V"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.4-02",
@@ -305,7 +452,14 @@
       "Resistance drops instantly to zero like a superconductor"
     ],
     "answer": 0,
-    "explanation": "An NTC thermistor's semiconductor lattice releases more charge carriers as temperature increases, causing its electrical resistance to drop."
+    "explanation": "An NTC thermistor's semiconductor lattice releases more charge carriers as temperature increases, causing its electrical resistance to drop.",
+    "choices": [
+      "Resistance decreases non-linearly",
+      "Resistance increases linearly",
+      "Resistance remains completely constant",
+      "Resistance drops instantly to zero like a superconductor"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.5-01",
@@ -319,7 +473,14 @@
       "128"
     ],
     "answer": 0,
-    "explanation": "A 10-bit ADC provides 2^10 = 1024 discrete steps (0 to 1023). An input voltage of exactly half scale (2.5 V / 5.0 V = 0.5) corresponds to 0.5 \u00d7 1023 = 511.5 (~511 or 512)."
+    "explanation": "A 10-bit ADC provides 2^10 = 1024 discrete steps (0 to 1023). An input voltage of exactly half scale (2.5 V / 5.0 V = 0.5) corresponds to 0.5 × 1023 = 511.5 (~511 or 512).",
+    "choices": [
+      "511 or 512 (half of 1023)",
+      "256",
+      "1023",
+      "128"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.5-02",
@@ -333,7 +494,14 @@
       "Reversing the polarity across the brushes at high frequency"
     ],
     "answer": 0,
-    "explanation": "PWM pulses full supply voltage at high frequency; by modulating the high-time percentage (duty cycle), the average power delivered to the motor armature is smoothly adjusted."
+    "explanation": "PWM pulses full supply voltage at high frequency; by modulating the high-time percentage (duty cycle), the average power delivered to the motor armature is smoothly adjusted.",
+    "choices": [
+      "Rapidly switching supply voltage on and off and varying the duty cycle to alter average effective voltage without torque loss",
+      "Stepping down DC voltage into pure 50 Hz sinusoidal alternating current",
+      "Mechanically shifting the gear engagement using internal solenoids",
+      "Reversing the polarity across the brushes at high frequency"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.1-01",
@@ -347,7 +515,14 @@
       "Knurling"
     ],
     "answer": 0,
-    "explanation": "Facing feeds the tool across the rotational axis, establishing a true, flat datum face perpendicular to the spindle center line."
+    "explanation": "Facing feeds the tool across the rotational axis, establishing a true, flat datum face perpendicular to the spindle center line.",
+    "choices": [
+      "Facing",
+      "Parallel turning",
+      "Parting off",
+      "Knurling"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.2-01",
@@ -361,7 +536,14 @@
       "Coolant is omitted to allow thermal softening of the swarf"
     ],
     "answer": 0,
-    "explanation": "In climb milling (down milling), the cutter enters the work at maximum chip thickness and leaves at zero, reducing tool wear, work hardening, and surface chatter on rigid CNC machines."
+    "explanation": "In climb milling (down milling), the cutter enters the work at maximum chip thickness and leaves at zero, reducing tool wear, work hardening, and surface chatter on rigid CNC machines.",
+    "choices": [
+      "The cutter rotates in the direction of table feed, producing chips of maximum thickness at tooth entry and superior surface finish",
+      "The cutter moves strictly vertically along the Z-axis without XY planar motion",
+      "The workpiece rotates against a stationary single-point HSS lathe tool",
+      "Coolant is omitted to allow thermal softening of the swarf"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.3-01",
@@ -375,7 +557,14 @@
       "To prevent internal air entrapment from causing sink marks on thick ribs"
     ],
     "answer": 0,
-    "explanation": "Draft angles (typically 1\u00b0 to 2\u00b0 per side) ensure that as soon as the mould halves separate and ejector pins fire, the part immediately breaks contact with tool walls without friction drag."
+    "explanation": "Draft angles (typically 1° to 2° per side) ensure that as soon as the mould halves separate and ejector pins fire, the part immediately breaks contact with tool walls without friction drag.",
+    "choices": [
+      "To allow the solidified plastic part to cleanly release from the mould cavity without scuffing or sticking during ejection",
+      "To facilitate maximum turbulence during molten polymer injection",
+      "To reduce the clamping tonnage required by the hydraulic mould press",
+      "To prevent internal air entrapment from causing sink marks on thick ribs"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.3-02",
@@ -389,7 +578,14 @@
       "Slip Casting"
     ],
     "answer": 0,
-    "explanation": "Die casting injects molten alloys (zinc, aluminium, magnesium) at pressures up to 100 MPa into precision steel tooling, yielding high dimensional accuracy and thin wall sections."
+    "explanation": "Die casting injects molten alloys (zinc, aluminium, magnesium) at pressures up to 100 MPa into precision steel tooling, yielding high dimensional accuracy and thin wall sections.",
+    "choices": [
+      "High-Pressure Die Casting",
+      "Sand Casting",
+      "Investment (lost-wax) Casting",
+      "Slip Casting"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.3-03",
@@ -403,7 +599,14 @@
       "Vacuum Casting"
     ],
     "answer": 0,
-    "explanation": "SLS uses a CO2 laser to fuse powder particles. The surrounding unsintered loose powder bed supports overhangs and complex internal channels without disposable support geometry."
+    "explanation": "SLS uses a CO2 laser to fuse powder particles. The surrounding unsintered loose powder bed supports overhangs and complex internal channels without disposable support geometry.",
+    "choices": [
+      "Selective Laser Sintering (SLS)",
+      "Fused Deposition Modeling (FDM)",
+      "Stereolithography (SLA)",
+      "Vacuum Casting"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.4-01",
@@ -417,7 +620,14 @@
       "MIG can only join thermoplastics while TIG can only join cast iron"
     ],
     "answer": 0,
-    "explanation": "TIG employs a non-consumable tungsten electrode under argon gas for precise, clean welds on aluminium and stainless steel. MIG feeds consumable filler wire on a motorized spool for rapid production."
+    "explanation": "TIG employs a non-consumable tungsten electrode under argon gas for precise, clean welds on aluminium and stainless steel. MIG feeds consumable filler wire on a motorized spool for rapid production.",
+    "choices": [
+      "TIG uses a non-consumable tungsten electrode and manual filler rod; MIG uses a continuous automatically fed consumable wire electrode",
+      "TIG requires no shielding gas, while MIG requires pure acetylene gas",
+      "TIG operates exclusively on alternating current for mild steel only",
+      "MIG can only join thermoplastics while TIG can only join cast iron"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.5-01",
@@ -431,7 +641,14 @@
       "QC is performed solely by robots while QA is performed solely by manual line operators"
     ],
     "answer": 0,
-    "explanation": "Quality Control (QC) inspects and tests products at the end of the line to catch non-conformances. Quality Assurance (QA) establishes standardized procedures, calibration, and audits to prevent defects from occurring."
+    "explanation": "Quality Control (QC) inspects and tests products at the end of the line to catch non-conformances. Quality Assurance (QA) establishes standardized procedures, calibration, and audits to prevent defects from occurring.",
+    "choices": [
+      "QC is product-oriented (inspecting finished goods for defects); QA is process-oriented (preventing defects through systemic protocols)",
+      "QC is governed by ISO 9001 while QA is an unregulated internal company guideline",
+      "QC eliminates manufacturing waste; QA only measures financial accounting overheads",
+      "QC is performed solely by robots while QA is performed solely by manual line operators"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "7.5-02",
@@ -445,7 +662,14 @@
       "Finished goods are discounted immediately to clear factory floor space"
     ],
     "answer": 0,
-    "explanation": "JIT is a demand-pull manufacturing system that eliminates the waste (muda) of excess inventory, work-in-progress holding costs, and warehouse footprint."
+    "explanation": "JIT is a demand-pull manufacturing system that eliminates the waste (muda) of excess inventory, work-in-progress holding costs, and warehouse footprint.",
+    "choices": [
+      "Components and materials are pulled into the production line only when required by downstream demand, minimizing inventory holding costs",
+      "Warehouses are stocked with massive buffer inventory batches to hedge against all supplier delays",
+      "Production machinery operates continuously at 100% capacity irrespective of customer orders",
+      "Finished goods are discounted immediately to clear factory floor space"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "8.1-01",
@@ -459,7 +683,14 @@
       "NDT permanently work-hardens the surface of the component being inspected"
     ],
     "answer": 0,
-    "explanation": "Destructive testing destroys the test specimen (coupon testing). NDT (ultrasonic, eddy current, X-ray) allows the actual production parts to be safely tested and then placed into service."
+    "explanation": "Destructive testing destroys the test specimen (coupon testing). NDT (ultrasonic, eddy current, X-ray) allows the actual production parts to be safely tested and then placed into service.",
+    "choices": [
+      "NDT inspects 100% of flight-critical production parts for hidden flaws without damaging their functional integrity",
+      "NDT is guaranteed to take less than one second per test cycle",
+      "NDT eliminates the need for trained quality engineers and optical sensors",
+      "NDT permanently work-hardens the surface of the component being inspected"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "8.2-01",
@@ -473,21 +704,35 @@
       "Brinell optical ball test"
     ],
     "answer": 0,
-    "explanation": "Ultrasonic testing transmits transducer pulses into the material; echo reflections from internal flaws or the back wall indicate exact defect depth and size."
+    "explanation": "Ultrasonic testing transmits transducer pulses into the material; echo reflections from internal flaws or the back wall indicate exact defect depth and size.",
+    "choices": [
+      "Ultrasonic flaw detection",
+      "Dye penetrant inspection",
+      "Vickers micro-hardness indentation",
+      "Brinell optical ball test"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "8.3-01",
     "topic": "8.3",
     "category": "Viability & Economics",
-    "question": "If high-pressure injection moulding tooling costs \u00a360,000 to manufacture and the variable cost per plastic casing is \u00a32.00, what is the unit production cost at 120,000 units?",
+    "question": "If high-pressure injection moulding tooling costs £60,000 to manufacture and the variable cost per plastic casing is £2.00, what is the unit production cost at 120,000 units?",
     "options": [
-      "\u00a32.50 per unit",
-      "\u00a30.50 per unit",
-      "\u00a33.00 per unit",
-      "\u00a31.50 per unit"
+      "£2.50 per unit",
+      "£0.50 per unit",
+      "£3.00 per unit",
+      "£1.50 per unit"
     ],
     "answer": 0,
-    "explanation": "Tooling amortization per unit = \u00a360,000 / 120,000 = \u00a30.50. Total unit cost = Variable cost + Amortized tooling = \u00a32.00 + \u00a30.50 = \u00a32.50."
+    "explanation": "Tooling amortization per unit = £60,000 / 120,000 = £0.50. Total unit cost = Variable cost + Amortized tooling = £2.00 + £0.50 = £2.50.",
+    "choices": [
+      "£2.50 per unit",
+      "£0.50 per unit",
+      "£3.00 per unit",
+      "£1.50 per unit"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "9.1-01",
@@ -501,7 +746,14 @@
       "Engineering controls (e.g. interlocking acoustic guards)"
     ],
     "answer": 0,
-    "explanation": "The hierarchy ranks: 1. Elimination (most effective), 2. Substitution, 3. Engineering controls, 4. Administrative controls, 5. PPE (least reliable, last line of defense)."
+    "explanation": "The hierarchy ranks: 1. Elimination (most effective), 2. Substitution, 3. Engineering controls, 4. Administrative controls, 5. PPE (least reliable, last line of defense).",
+    "choices": [
+      "Elimination (physically removing the hazard at source)",
+      "Personal Protective Equipment (PPE) (e.g. safety goggles)",
+      "Administrative controls (e.g. warning signs and manuals)",
+      "Engineering controls (e.g. interlocking acoustic guards)"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "9.2-01",
@@ -515,7 +767,14 @@
       "Standardising the metric thread pitch of machine screws across European suppliers"
     ],
     "answer": 0,
-    "explanation": "Control of Substances Hazardous to Health (COSHH) mandates risk assessment, storage protocols, extraction ventilation (LEV), and exposure limits for hazardous chemicals, resins, and dusts."
+    "explanation": "Control of Substances Hazardous to Health (COSHH) mandates risk assessment, storage protocols, extraction ventilation (LEV), and exposure limits for hazardous chemicals, resins, and dusts.",
+    "choices": [
+      "Protecting workers and students against health risks arising from exposure to hazardous chemicals, fumes, dusts, and solvents",
+      "Regulating the minimum speed of cutting tools on manual lathe spindles",
+      "Enforcing copyright compliance for 3D CAD parametric software licenses",
+      "Standardising the metric thread pitch of machine screws across European suppliers"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.1-03",
@@ -523,13 +782,20 @@
     "category": "Triangulation & Geometry",
     "question": "A support tie on a prosthetic arm is attached 120 mm above an elbow joint and 70 mm along a perpendicular forearm. What is the angle C formed between the tie and forearm?",
     "options": [
-      "59.7\u00b0 (\u2248 60\u00b0)",
-      "30.3\u00b0",
-      "45.0\u00b0",
-      "72.5\u00b0"
+      "59.7° (≈ 60°)",
+      "30.3°",
+      "45.0°",
+      "72.5°"
     ],
     "answer": 0,
-    "explanation": "tan(C) = Opposite / Adjacent = 120 / 70 = 1.714. Angle C = arctan(1.714) = 59.68\u00b0 \u2248 60\u00b0."
+    "explanation": "tan(C) = Opposite / Adjacent = 120 / 70 = 1.714. Angle C = arctan(1.714) = 59.68° ≈ 60°.",
+    "choices": [
+      "59.7° (≈ 60°)",
+      "30.3°",
+      "45.0°",
+      "72.5°"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.1-04",
@@ -543,7 +809,14 @@
       "190 mm"
     ],
     "answer": 0,
-    "explanation": "By Pythagoras: y = \u221a(120\u00b2 + 70\u00b2) = \u221a(14400 + 4900) = \u221a19300 = 138.92 mm \u2248 139 mm."
+    "explanation": "By Pythagoras: y = √(120² + 70²) = √(14400 + 4900) = √19300 = 138.92 mm ≈ 139 mm.",
+    "choices": [
+      "139 mm",
+      "95 mm",
+      "165 mm",
+      "190 mm"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "6.2-03",
@@ -557,7 +830,14 @@
       "5:1 movement amplification"
     ],
     "answer": 0,
-    "explanation": "Amplification ratio = Output motion / Input stroke = 15 mm / 5 mm = 3:1."
+    "explanation": "Amplification ratio = Output motion / Input stroke = 15 mm / 5 mm = 3:1.",
+    "choices": [
+      "3:1 movement amplification",
+      "1:3 movement reduction",
+      "2:1 movement amplification",
+      "5:1 movement amplification"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "2.2-03",
@@ -571,20 +851,34 @@
       "Replaces all medical instruments with disposable single-use plastic needles"
     ],
     "answer": 0,
-    "explanation": "Miniaturised keyhole robotic arms enter through small ports rather than large incisions, drastically cutting blood loss, post-operative pain, and hospital stay duration."
+    "explanation": "Miniaturised keyhole robotic arms enter through small ports rather than large incisions, drastically cutting blood loss, post-operative pain, and hospital stay duration.",
+    "choices": [
+      "Minimally invasive incisions, reduced tissue trauma, lower infection risk, and faster recovery times",
+      "Completely eliminates the need for any trained surgeons in the operating theatre",
+      "Allows surgical operations to proceed without electrical power or backup generators",
+      "Replaces all medical instruments with disposable single-use plastic needles"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-p1-stress",
     "topic": "1.2",
-    "question": "What is the formula used to calculate direct mechanical stress (\u03c3) in a loaded component?",
+    "question": "What is the formula used to calculate direct mechanical stress (σ) in a loaded component?",
     "options": [
       "Stress = Force / Cross-sectional Area",
-      "Stress = Force \u00d7 Distance",
+      "Stress = Force × Distance",
       "Stress = Strain / Original Length",
-      "Stress = Mass \u00d7 Acceleration"
+      "Stress = Mass × Acceleration"
     ],
     "answer": 0,
-    "explanation": "Direct stress is defined as force per unit cross-sectional area: \u03c3 = F / A (measured in N/m\u00b2 or Pa)."
+    "explanation": "Direct stress is defined as force per unit cross-sectional area: σ = F / A (measured in N/m² or Pa).",
+    "choices": [
+      "Stress = Force / Cross-sectional Area",
+      "Stress = Force × Distance",
+      "Stress = Strain / Original Length",
+      "Stress = Mass × Acceleration"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-p1-plastic-marking",
@@ -597,7 +891,14 @@
       "Polystyrene"
     ],
     "answer": 0,
-    "explanation": "PP stands for Polypropylene, a flexible, fatigue-resistant thermo softening polymer widely used in garden equipment and living hinges."
+    "explanation": "PP stands for Polypropylene, a flexible, fatigue-resistant thermo softening polymer widely used in garden equipment and living hinges.",
+    "choices": [
+      "Polypropylene",
+      "Polyethylene",
+      "Polycarbonate",
+      "Polystyrene"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-p1-vernier",
@@ -610,7 +911,14 @@
       "Feeler Gauge"
     ],
     "answer": 0,
-    "explanation": "A standard vernier or digital caliper offers external jaw resolution down to 0.02 mm (or 0.01 mm for digital displays)."
+    "explanation": "A standard vernier or digital caliper offers external jaw resolution down to 0.02 mm (or 0.01 mm for digital displays).",
+    "choices": [
+      "Vernier / Digital Caliper",
+      "Steel Rule",
+      "Dial Test Indicator (DTI)",
+      "Feeler Gauge"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-p1-ribbing",
@@ -623,7 +931,14 @@
       "To decrease thermal conductivity through the polymer"
     ],
     "answer": 0,
-    "explanation": "Ribs increase the section modulus and second moment of area, delivering high torsional and bending stiffness while preventing sink marks that occur with thick walls."
+    "explanation": "Ribs increase the section modulus and second moment of area, delivering high torsional and bending stiffness while preventing sink marks that occur with thick walls.",
+    "choices": [
+      "To increase structural rigidity without increasing wall thickness",
+      "To speed up raw molten plastic flow into the mould cavity",
+      "To act as internal conduit channels for electrical wiring",
+      "To decrease thermal conductivity through the polymer"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-as-pulley-ratio",
@@ -636,20 +951,34 @@
       "3.5 : 1"
     ],
     "answer": 0,
-    "explanation": "Velocity ratio is Driven Diameter / Driver Diameter = 350 / 50 = 7. The drum rotates at 1/7th the speed of the motor."
+    "explanation": "Velocity ratio is Driven Diameter / Driver Diameter = 350 / 50 = 7. The drum rotates at 1/7th the speed of the motor.",
+    "choices": [
+      "7 : 1 (reduction)",
+      "1 : 7 (speed increase)",
+      "14 : 1",
+      "3.5 : 1"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-as-youngs-modulus",
     "topic": "4.1",
     "question": "What is the standard engineering unit for Young's Modulus of elasticity (E)?",
     "options": [
-      "GPa (or N/m\u00b2 / Pa)",
+      "GPa (or N/m² / Pa)",
       "N m",
       "J / kg",
       "Dimensionless ratio"
     ],
     "answer": 0,
-    "explanation": "Young's Modulus is stress / strain. Since strain is dimensionless, E has units of pressure / stress: Pa (Pascals), typically expressed in GPa for metals."
+    "explanation": "Young's Modulus is stress / strain. Since strain is dimensionless, E has units of pressure / stress: Pa (Pascals), typically expressed in GPa for metals.",
+    "choices": [
+      "GPa (or N/m² / Pa)",
+      "N m",
+      "J / kg",
+      "Dimensionless ratio"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-as-flyback-diode",
@@ -662,7 +991,14 @@
       "To indicate with light when the coil is energised"
     ],
     "answer": 0,
-    "explanation": "When an inductor's current is abruptly cut off, the collapsing magnetic field induces a large reverse back-EMF spike that can destroy the driver transistor. A flyback diode safely clamps this spike."
+    "explanation": "When an inductor's current is abruptly cut off, the collapsing magnetic field induces a large reverse back-EMF spike that can destroy the driver transistor. A flyback diode safely clamps this spike.",
+    "choices": [
+      "To suppress high-voltage back-EMF spikes when the relay switches off",
+      "To rectify AC supply voltage into pure DC",
+      "To increase the current gain of the transistor",
+      "To indicate with light when the coil is energised"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-as-pwm-speed",
@@ -675,7 +1011,14 @@
       "By converting the DC supply into variable three-phase AC"
     ],
     "answer": 0,
-    "explanation": "PWM rapidly switches the full supply voltage ON and OFF; varying the pulse duty cycle adjusts the average voltage and rotational speed while keeping low power losses in the switching transistor."
+    "explanation": "PWM rapidly switches the full supply voltage ON and OFF; varying the pulse duty cycle adjusts the average voltage and rotational speed while keeping low power losses in the switching transistor.",
+    "choices": [
+      "By varying the duty cycle (ratio of ON to OFF time) at a fixed frequency",
+      "By inserting variable power resistors in series with the motor",
+      "By altering the chemical composition of the motor brushes",
+      "By converting the DC supply into variable three-phase AC"
+    ],
+    "correctIndex": 0
   },
   {
     "id": "quiz-2019-s02-q1",
@@ -688,11 +1031,18 @@
     ],
     "correctIndex": 2,
     "explanation": "Gross cylinder volume is 2.365 L and piston rod displacement is 0.30 L, leaving a net delivery of ~2.065 L per stroke. 20 L / 2.065 L = 9.68 strokes, which rounds up to 10 complete cycles.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "7 cycles",
+      "8 cycles",
+      "10 cycles",
+      "14 cycles"
+    ],
+    "answer": 2
   },
   {
     "id": "quiz-2019-s02-q2",
-    "question": "Using the solar equation E = A \u00d7 r \u00d7 H \u00d7 PR, how many 1000 \u00d7 500 mm photovoltaic panels (r = 0.15, PR = 0.75, H = 2100 kWh/m\u00b2) are required to produce 1890 kWh annually?",
+    "question": "Using the solar equation E = A × r × H × PR, how many 1000 × 500 mm photovoltaic panels (r = 0.15, PR = 0.75, H = 2100 kWh/m²) are required to produce 1890 kWh annually?",
     "choices": [
       "8 panels",
       "12 panels",
@@ -700,21 +1050,35 @@
       "24 panels"
     ],
     "correctIndex": 2,
-    "explanation": "Required array area A = 1890 / (0.15 \u00d7 2100 \u00d7 0.75) = 8.0 m\u00b2. Each 1000 \u00d7 500 mm panel has an area of 0.5 m\u00b2. Total panels = 8.0 / 0.5 = 16 panels.",
-    "topic": "4"
+    "explanation": "Required array area A = 1890 / (0.15 × 2100 × 0.75) = 8.0 m². Each 1000 × 500 mm panel has an area of 0.5 m². Total panels = 8.0 / 0.5 = 16 panels.",
+    "topic": "4",
+    "options": [
+      "8 panels",
+      "12 panels",
+      "16 panels",
+      "24 panels"
+    ],
+    "answer": 2
   },
   {
     "id": "quiz-2019-s02-q3",
     "question": "Which compound gear arrangement produces a 32:1 gear reduction using available spur gears (20t, 80t, 160t)?",
     "choices": [
-      "(80t / 20t) \u00d7 (160t / 20t)",
-      "(160t / 40t) \u00d7 (80t / 40t)",
-      "(160t / 20t) \u00d7 (40t / 20t)",
-      "(160t / 80t) \u00d7 (80t / 20t)"
+      "(80t / 20t) × (160t / 20t)",
+      "(160t / 40t) × (80t / 40t)",
+      "(160t / 20t) × (40t / 20t)",
+      "(160t / 80t) × (80t / 20t)"
     ],
     "correctIndex": 0,
-    "explanation": "(80t / 20t) gives a 4:1 reduction and (160t / 20t) gives an 8:1 reduction. Compounding them yields 4 \u00d7 8 = 32:1.",
-    "topic": "6"
+    "explanation": "(80t / 20t) gives a 4:1 reduction and (160t / 20t) gives an 8:1 reduction. Compounding them yields 4 × 8 = 32:1.",
+    "topic": "6",
+    "options": [
+      "(80t / 20t) × (160t / 20t)",
+      "(160t / 40t) × (80t / 40t)",
+      "(160t / 20t) × (40t / 20t)",
+      "(160t / 80t) × (80t / 20t)"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2019-s02-q4",
@@ -727,7 +1091,14 @@
     ],
     "correctIndex": 1,
     "explanation": "Small 150 mm solid wheels struggle in mud and sand with zero shock absorption, and the 380 mm wide bed forces vertical stacking which raises the centre of gravity dangerously.",
-    "topic": "1"
+    "topic": "1",
+    "options": [
+      "Max load capacity is exceeded by the containers",
+      "150 mm solid wheels cause excessive jarring and bed is too narrow for two containers side-by-side",
+      "Aluminium frame is too heavy for women and children",
+      "Telescopic handle cannot adjust to adult human height"
+    ],
+    "answer": 1
   },
   {
     "id": "quiz-2020-a02-q1",
@@ -740,7 +1111,14 @@
     ],
     "correctIndex": 2,
     "explanation": "Velocity ratio = 600/1500 = 0.4, so driver = 50 / 0.4 = 125 mm.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "20 mm",
+      "75 mm",
+      "125 mm",
+      "250 mm"
+    ],
+    "answer": 2
   },
   {
     "id": "quiz-2020-a02-q2",
@@ -752,8 +1130,15 @@
       "1050 mm"
     ],
     "correctIndex": 1,
-    "explanation": "\u221a(300\u00b2 + 750\u00b2) = \u221a652 500 \u2248 808 mm.",
-    "topic": "6"
+    "explanation": "√(300² + 750²) = √652 500 ≈ 808 mm.",
+    "topic": "6",
+    "options": [
+      "750 mm",
+      "808 mm",
+      "850 mm",
+      "1050 mm"
+    ],
+    "answer": 1
   },
   {
     "id": "quiz-2020-a02-q3",
@@ -765,8 +1150,15 @@
       "It is only needed on the outstroke"
     ],
     "correctIndex": 0,
-    "explanation": "On the instroke the rod occupies part of the piston face, so the effective area is \u03c0/4 (D\u00b2 \u2212 d\u00b2).",
-    "topic": "6"
+    "explanation": "On the instroke the rod occupies part of the piston face, so the effective area is π/4 (D² − d²).",
+    "topic": "6",
+    "options": [
+      "Air only acts on the annular area around the rod on the instroke",
+      "The rod increases air pressure",
+      "The rod adds friction equal to its area",
+      "It is only needed on the outstroke"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2020-a02-q4",
@@ -779,7 +1171,14 @@
     ],
     "correctIndex": 1,
     "explanation": "The slotted disc breaks the opto-switch beam, producing pulses whose interval the microcontroller can time.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "LDR and fixed resistor",
+      "Slotted opto-switch with a slotted disc",
+      "Thermistor on the bearing",
+      "Strain gauge on the belt"
+    ],
+    "answer": 1
   },
   {
     "id": "quiz-2021-a01-q1",
@@ -791,8 +1190,15 @@
       "343:1"
     ],
     "correctIndex": 0,
-    "explanation": "Compound gear ratio multiplies each consecutive stage ratio: 7 \u00d7 7 = 49:1.",
-    "topic": "6"
+    "explanation": "Compound gear ratio multiplies each consecutive stage ratio: 7 × 7 = 49:1.",
+    "topic": "6",
+    "options": [
+      "49:1",
+      "14:1",
+      "7:1",
+      "343:1"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2021-a01-q2",
@@ -805,7 +1211,14 @@
     ],
     "correctIndex": 0,
     "explanation": "Epicyclic gearboxes keep input and output inline and distribute tooth stress across multiple planet gears in a compact envelope.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "Co-linear input and output shafts allow a slim cylindrical body, with multiple planet gears sharing high torque loads",
+      "They are cheaper to produce than simple spur gear pairs",
+      "They eliminate the need for lubrication or ball bearings",
+      "They can only operate in one rotational direction"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2021-a01-q3",
@@ -818,7 +1231,14 @@
     ],
     "correctIndex": 0,
     "explanation": "Decoupling capacitors store charge to suppress rapid voltage dips and filter high-frequency brush commutation noise.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "It filters motor brush electrical noise and stabilises supply voltage during transient current spikes",
+      "It converts DC voltage into AC voltage",
+      "It amplifies current delivered to the motor",
+      "It increases the motor armature resistance"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2021-a02-q1",
@@ -831,7 +1251,14 @@
     ],
     "correctIndex": 0,
     "explanation": "The Brinell test presses a 10 mm spherical ball into the specimen under load F and measures the optical indentation diameter Di.",
-    "topic": "3"
+    "topic": "3",
+    "options": [
+      "The diameter of the surface indentation left by a spherical ball under a specified static load",
+      "The rebound height of a dropped diamond hammer",
+      "The depth of penetration of a conical diamond under alternating loads",
+      "The scratch width produced by a hardened steel stylus"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2021-a02-q2",
@@ -844,20 +1271,34 @@
     ],
     "correctIndex": 0,
     "explanation": "Wave motion is typically 0.1 to 0.5 Hz; a 3:1 speed multiplier triples rotational frequency per reciprocation for greater generator EMF.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "Ocean swell waves oscillate at very low frequency, so gearing is required to spin the generator at efficient speeds",
+      "To reduce mechanical wear on the pushrod seals",
+      "To prevent the generator from overheating",
+      "To convert rotational motion into linear oscillation"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2021-a02-q3",
-    "question": "How is the elastic extension of a 20 m polymer tether rope calculated from stress \u03c3 and Young's modulus E?",
+    "question": "How is the elastic extension of a 20 m polymer tether rope calculated from stress σ and Young's modulus E?",
     "choices": [
-      "Extension = (\u03c3 / E) \u00d7 original length",
-      "Extension = (\u03c3 \u00d7 E) / original length",
-      "Extension = E / (\u03c3 \u00d7 original length)",
-      "Extension = \u03c3 \u00d7 original length"
+      "Extension = (σ / E) × original length",
+      "Extension = (σ × E) / original length",
+      "Extension = E / (σ × original length)",
+      "Extension = σ × original length"
     ],
     "correctIndex": 0,
-    "explanation": "Strain \u03b5 = Stress / Young's Modulus (\u03c3 / E), and total extension \u0394L = \u03b5 \u00d7 L0.",
-    "topic": "6"
+    "explanation": "Strain ε = Stress / Young's Modulus (σ / E), and total extension ΔL = ε × L0.",
+    "topic": "6",
+    "options": [
+      "Extension = (σ / E) × original length",
+      "Extension = (σ × E) / original length",
+      "Extension = E / (σ × original length)",
+      "Extension = σ × original length"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2022-s01-q1",
@@ -869,8 +1310,15 @@
       "3.6 V"
     ],
     "correctIndex": 0,
-    "explanation": "Cells in series sum voltages (10 \u00d7 3.6 V = 36 V). Parallel branches maintain the same terminal voltage while tripling charge capacity.",
-    "topic": "6"
+    "explanation": "Cells in series sum voltages (10 × 3.6 V = 36 V). Parallel branches maintain the same terminal voltage while tripling charge capacity.",
+    "topic": "6",
+    "options": [
+      "36 V",
+      "108 V",
+      "12 V",
+      "3.6 V"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2022-s01-q2",
@@ -882,8 +1330,15 @@
       "It decreases by half"
     ],
     "correctIndex": 0,
-    "explanation": "Resistance R = \u03c1L/A. Doubling L and halving A gives (2)/(0.5) = 4\u00d7 the original resistance.",
-    "topic": "6"
+    "explanation": "Resistance R = ρL/A. Doubling L and halving A gives (2)/(0.5) = 4× the original resistance.",
+    "topic": "6",
+    "options": [
+      "It increases by a factor of 4",
+      "It remains unchanged",
+      "It doubles",
+      "It decreases by half"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2022-s01-q3",
@@ -896,7 +1351,14 @@
     ],
     "correctIndex": 0,
     "explanation": "18 mm / 2 mm per tooth = 9 teeth moved on the rack. 9 teeth / 12 teeth per pinion rev = 0.75 revolutions.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "0.75 revolutions",
+      "1.5 revolutions",
+      "9 revolutions",
+      "0.67 revolutions"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2022-s02-q1",
@@ -908,8 +1370,15 @@
       "The volume of the object must be exactly twice its mass"
     ],
     "correctIndex": 0,
-    "explanation": "Archimedes principle states that upward buoyant force B = \u03c1Vg equals the weight of displaced fluid, balancing the total downward gravitational weight.",
-    "topic": "6"
+    "explanation": "Archimedes principle states that upward buoyant force B = ρVg equals the weight of displaced fluid, balancing the total downward gravitational weight.",
+    "topic": "6",
+    "options": [
+      "The weight of the displaced fluid must equal the total weight of the object and its load",
+      "The object must have greater surface area than depth",
+      "The air pressure inside the object must exceed atmospheric pressure",
+      "The volume of the object must be exactly twice its mass"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2022-s02-q2",
@@ -922,7 +1391,14 @@
     ],
     "correctIndex": 0,
     "explanation": "An efficient paddle should be approximately 20 cm taller than the user's standing height to allow full reach without bending the back excessively.",
-    "topic": "1"
+    "topic": "1",
+    "options": [
+      "Around 20 cm taller than the rider's standing height",
+      "Equal to the rider's eye level height",
+      "Twice the rider's waist height",
+      "Equal to the rider's fingertip height"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2022-s02-q3",
@@ -935,7 +1411,14 @@
     ],
     "correctIndex": 0,
     "explanation": "LEDs have very low internal forward resistance once conducting; series resistors drop excess voltage and limit current to safe levels (e.g. 10-20 mA).",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "To limit forward current and prevent thermal runaway or burn-out of the LED and microcontroller I/O transistors",
+      "To step up the microcontroller voltage to the LED operating voltage",
+      "To convert digital output signals into analogue voltages",
+      "To discharge internal capacitance when the LED turns off"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2023-s01-q1",
@@ -948,7 +1431,14 @@
     ],
     "correctIndex": 0,
     "explanation": "When an inductive coil like a motor winding is rapidly switched off, collapsing magnetic flux induces a large reverse voltage spike (back EMF). A flyback diode provides a safe conduction loop to circulate and dissipate this energy.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "To dissipate inductive kickback voltage (back EMF) and prevent avalanche breakdown of the MOSFET",
+      "To boost the motor starting torque during initial acceleration",
+      "To convert AC motor noise into a regulated DC power supply",
+      "To act as a current-limiting resistor when the motor stalls"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2023-s01-q2",
@@ -961,20 +1451,34 @@
     ],
     "correctIndex": 0,
     "explanation": "A variable resistor controls speed by dropping voltage and dissipating power as pure waste heat ($P = I^2 R$). PWM switches the motor rapidly between fully on and fully off, achieving variable average power with negligible internal transistor heat loss.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "The switching transistor operates fully ON (near zero resistance) or fully OFF (zero current), minimizing thermal dissipation ($P = I^2 R \\approx 0$)",
+      "PWM steps up the supply voltage so less current is required from the power source",
+      "PWM cancels mechanical friction inside the motor bearings",
+      "A variable resistor increases battery capacity during motor braking"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2023-s01-q3",
     "question": "How do quadrature incremental rotary encoders detect both rotational speed and direction?",
     "choices": [
-      "Two square-wave channel signals are offset by 90\u00b0 phase shift; the leading channel indicates direction while pulse frequency indicates speed",
+      "Two square-wave channel signals are offset by 90° phase shift; the leading channel indicates direction while pulse frequency indicates speed",
       "Channel A measures velocity while Channel B measures magnetic compass heading",
       "Channel A provides an analogue voltage and Channel B provides a digital clock",
       "The encoder changes internal resistance depending on clockwise or anticlockwise torque"
     ],
     "correctIndex": 0,
-    "explanation": "In a quadrature encoder, channels A and B are mechanically phased 90\u00b0 apart. When rotated clockwise, channel A transitions before B; when rotated anticlockwise, channel B leads. The frequency of transitions reflects rotational speed.",
-    "topic": "6"
+    "explanation": "In a quadrature encoder, channels A and B are mechanically phased 90° apart. When rotated clockwise, channel A transitions before B; when rotated anticlockwise, channel B leads. The frequency of transitions reflects rotational speed.",
+    "topic": "6",
+    "options": [
+      "Two square-wave channel signals are offset by 90° phase shift; the leading channel indicates direction while pulse frequency indicates speed",
+      "Channel A measures velocity while Channel B measures magnetic compass heading",
+      "Channel A provides an analogue voltage and Channel B provides a digital clock",
+      "The encoder changes internal resistance depending on clockwise or anticlockwise torque"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2023-s01-q4",
@@ -987,7 +1491,14 @@
     ],
     "correctIndex": 0,
     "explanation": "A single-start worm advances the gear by one tooth per revolution. For a 60-tooth wheel, 60 worm rotations produce 1 wheel rotation (60:1 reduction), which naturally locks against reverse back-driving.",
-    "topic": "5"
+    "topic": "5",
+    "options": [
+      "60:1 gear reduction ratio, providing large torque multiplication and resistance to back-driving",
+      "1:60 ratio, multiplying output speed sixty-fold",
+      "30:1 ratio, operating with high mechanical back-drivability",
+      "120:1 ratio, doubling torque only when driven in reverse"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2023-s02-q1",
@@ -1000,7 +1511,14 @@
     ],
     "correctIndex": 0,
     "explanation": "Catchment volume is directly proportional to aperture area $A = \\pi r^2 = \\frac{\\pi D^2}{4}$. Doubling the diameter multiplies the area and catchment volume by $2^2 = 4$.",
-    "topic": "3"
+    "topic": "3",
+    "options": [
+      "4 times (quadrupled)",
+      "2 times (doubled)",
+      "8 times (octupled)",
+      "Remains unchanged"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2023-s02-q2",
@@ -1013,7 +1531,14 @@
     ],
     "correctIndex": 0,
     "explanation": "RF transmitters draw sudden burst currents when pulsing signals into the antenna. Local decoupling capacitors provide low-impedance instantaneous current and bypass high-frequency electrical noise to 0V ground, preventing microcontroller resets.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "To filter high-frequency switching noise and supply transient surge currents during RF transmission",
+      "To store sufficient power to run the transmitter for several hours without a battery",
+      "To adjust the transmission carrier frequency to match antenna length",
+      "To convert analogue sensor inputs into serial digital packets"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2024-s01-q1",
@@ -1026,7 +1551,14 @@
     ],
     "correctIndex": 0,
     "explanation": "Mechanical power P = T * omega. In an ideal gear reduction where velocity ratio VR = omega_in / omega_out = 9:1, speed is reduced by 9x and torque is amplified by 9x.",
-    "topic": "5"
+    "topic": "5",
+    "options": [
+      "Output speed is 1/9 of input speed, and output torque is 9 times input torque",
+      "Output speed is 9 times input speed, and output torque is 1/9 of input torque",
+      "Output speed and torque are both reduced by a factor of 9",
+      "Output speed is 1/3 of input speed, and output torque is 3 times input torque"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2024-s01-q2",
@@ -1039,7 +1571,14 @@
     ],
     "correctIndex": 0,
     "explanation": "Instantaneous power during the ON time is P_peak = V^2 / R, and 0 during OFF time. The average power over time period T is P_avg = (t_on / T) * P_peak = Duty Cycle * (V^2 / R) = 0.40 * (V^2 / R).",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "40% of continuous DC power (P_avg = 0.40 * V^2 / R)",
+      "16% of continuous DC power (P_avg = 0.40^2 * V^2 / R)",
+      "63.2% of continuous DC power due to thermal capacitance",
+      "100% because peak voltage V is unchanged during ON pulses"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2024-s01-q3",
@@ -1052,7 +1591,14 @@
     ],
     "correctIndex": 0,
     "explanation": "Planned obsolescence limits functional lifespan to force repeat purchasing. In contrast, Total Quality Management (TQM) is an organization-wide philosophy pursuing Kaizen (continuous improvement), defect prevention, and robust long-term customer satisfaction.",
-    "topic": "1"
+    "topic": "1",
+    "options": [
+      "Planned obsolescence deliberately designs products with a limited lifespan to stimulate replacement sales, whereas TQM focuses on continuous improvement and zero defects to maximise quality and durability",
+      "Planned obsolescence focuses on minimizing manufacturing scrap, whereas TQM designs products to fail predictably at the warranty boundary",
+      "Planned obsolescence uses standardized metric fasteners, whereas TQM uses proprietary anti-tamper security screws",
+      "Planned obsolescence is required by ISO 9001 quality audits, whereas TQM is optional commercial branding"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2024-s02-q1",
@@ -1065,7 +1611,14 @@
     ],
     "correctIndex": 0,
     "explanation": "Stress sigma = F / A = 382.6 / (1.13 x 10^-4) = 3.386 MPa. Strain epsilon = sigma / E = 3.386 / 480 = 0.007054. Extension delta L = epsilon * L0 = 0.007054 * 1510 mm = 10.65 mm (10.7 mm).",
-    "topic": "4"
+    "topic": "4",
+    "options": [
+      "Approximately 10.7 mm",
+      "Approximately 1.07 mm",
+      "Approximately 34.2 mm",
+      "Approximately 107 mm"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2024-s02-q2",
@@ -1078,7 +1631,14 @@
     ],
     "correctIndex": 0,
     "explanation": "With the LDR between the sensing node and 0V and fixed resistor R connected to V+, V_out = V+ * (R_ldr / (R + R_ldr)). As darkness causes R_ldr to become very large (R_ldr >> R), V_out approaches V+.",
-    "topic": "6"
+    "topic": "6",
+    "options": [
+      "Output voltage rises towards supply voltage V+",
+      "Output voltage falls close to 0V ground",
+      "Output voltage oscillates at high frequency",
+      "Output voltage remains locked at exactly V+ / 2"
+    ],
+    "answer": 0
   },
   {
     "id": "quiz-2024-s02-q3",
@@ -1091,6 +1651,13 @@
     ],
     "correctIndex": 0,
     "explanation": "To magnify movement from 15 mm to 45 mm (3x stroke amplification), the output arm must be 3 times longer than the input effort arm from the fulcrum. Velocity ratio VR = effort movement / load movement = 15 / 45 = 1/3.",
-    "topic": "5"
+    "topic": "5",
+    "options": [
+      "Input applied at 1/3 distance from the pivot compared to the output pin (Velocity Ratio VR = 1/3, stroke ratio 1:3)",
+      "Input applied at 3 times the distance from the pivot compared to the output pin (Mechanical Advantage = 3)",
+      "A symmetrical 1:1 first-class lever with a compound gear reducer",
+      "A rack and pinion mechanism with equal pitch circle diameter"
+    ],
+    "answer": 0
   }
 ]

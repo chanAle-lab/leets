@@ -2916,6 +2916,11 @@ const colorOf = id => BASE[id] || BASE[String(id).split('.')[0]] || '#475569';
 let D, T = {}, S = {}, CHEATS = null, FLASHCARDS = [];
 let sheetMastered = new Set(JSON.parse(localStorage.getItem('leets_sheet_mastered') || '[]'));
 let sheetStarred = new Set(JSON.parse(localStorage.getItem('leets_sheet_starred') || '[]'));
+let NOTES_FLASHCARDS = [{"id": "note-card-001", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Ferrous Metals & Steels", "question": "What defines a ferrous metal, and what are its key properties and vulnerabilities?", "answer": "Ferrous metals are composed primarily of iron. They offer high tensile strength, exceptional durability, magnetic properties, and high temperature resistance, but are susceptible to rust and corrosion when exposed to moisture and oxygen."}, {"id": "note-card-002", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Carbon Steels", "question": "State the carbon content range and typical engineering characteristics of Mild Steel.", "answer": "Mild Steel contains 0.15% to 0.30% carbon. It is ductile, malleable, easily welded and machined, and suitable for general structural fabrications, car body panels, and fasteners."}, {"id": "note-card-003", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Carbon Steels", "question": "State the carbon content range and engineering characteristics of Medium Carbon Steel.", "answer": "Medium Carbon Steel contains 0.30% to 0.75% carbon. It balances strength, hardness, and wear resistance with moderate ductility, commonly used for railway tracks, axles, gears, and structural shafts."}, {"id": "note-card-004", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Carbon Steels", "question": "State the carbon content range and characteristics of High Carbon (Tool) Steel.", "answer": "High Carbon Steel contains 0.75% to 1.50% carbon. It is extremely hard, maintains sharp cutting edges, and has high wear resistance, but is brittle if untempered. Used for cutting tools, chisels, drills, and blades."}, {"id": "note-card-005", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Corrosion Protection", "question": "What minimum percentage of chromium is required in steel to form stainless steel, and how does it prevent corrosion?", "answer": "A minimum of 10.5% chromium is required. Chromium reacts with atmospheric oxygen to form a passive, microscopic chromium oxide surface layer that self-repairs and seals the underlying iron against moisture and corrosion."}, {"id": "note-card-006", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Corrosion Protection", "question": "Explain the difference between galvanising and tin-plating as corrosion protection methods.", "answer": "Galvanising coats steel in molten zinc, providing sacrificial cathodic protection even if scratched. Tin-plating coats steel with a thin barrier layer of non-toxic tin, used extensively for food packaging (tins/cans)."}, {"id": "note-card-007", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Non-Ferrous Metals", "question": "What properties define non-ferrous metals, and why is Duralumin used in engineering?", "answer": "Non-ferrous metals contain no iron, are non-magnetic, highly malleable, and possess superior corrosion resistance. Duralumin (alloy of aluminium, copper, and magnesium) offers high strength-to-weight ratio and heat resistance for aerospace and automotive parts."}, {"id": "note-card-008", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Non-Ferrous Metals", "question": "What are the engineering advantages and applications of Titanium?", "answer": "Titanium has an exceptional strength-to-weight ratio, low density, high tensile strength, and outstanding corrosion resistance due to a stable protective oxide layer. Extensively used in aircraft airframes, jet engines, and medical implants."}, {"id": "note-card-009", "topicId": "metals", "topicTitle": "Metals & Alloys", "category": "Copper Alloys", "question": "State the constituent metals and typical uses of Brass and Bronze.", "answer": "Brass is an alloy of Copper and Zinc (corrosion-resistant, low friction, acoustic; used for plumbing fittings, musical instruments). Bronze is an alloy of Copper and Tin (hard, tough, low friction; used for bearings, marine propellers, and statuary)."}, {"id": "note-card-010", "topicId": "polymers", "topicTitle": "Polymers & Plastics", "category": "Thermoplastics", "question": "Describe the molecular structure of thermoplastics (thermoforming polymers) and how it affects reshaping.", "answer": "Thermoplastics consist of long, separate polymer chains held together by weak intermolecular van der Waals forces without permanent cross-links. When heated, the chains slide past each other, allowing repeated softening, reshaping, and recycling."}, {"id": "note-card-011", "topicId": "polymers", "topicTitle": "Polymers & Plastics", "category": "Thermoplastics", "question": "What are the key engineering properties and uses of Acrylic (PMMA) and ABS?", "answer": "Acrylic (PMMA) provides high optical clarity, light weight, and weather resistance (signs, aircraft windows). ABS offers outstanding impact resistance, toughness, rigidity, and dimensional stability (car bumpers, power tool housings, Lego)."}, {"id": "note-card-012", "topicId": "polymers", "topicTitle": "Polymers & Plastics", "category": "Thermoplastics", "question": "Compare the properties and applications of HDPE and LDPE.", "answer": "HDPE has a tightly packed linear chain structure, making it stiff, rigid at low temperatures, and chemically resistant (milk bottles, pipes, crates). LDPE has branched chains, making it flexible, soft at low temperatures, and ductile (plastic bags, films, squeeze bottles)."}, {"id": "note-card-013", "topicId": "polymers", "topicTitle": "Polymers & Plastics", "category": "Thermosetting Polymers", "question": "Explain cross-linking in thermosetting polymers and why they cannot be remelted.", "answer": "Thermosets undergo curing where strong, permanent covalent bonds cross-link polymer chains into a rigid 3D lattice network. Heating does not break these covalent bonds; further heat causes thermal decomposition and burning rather than melting."}, {"id": "note-card-014", "topicId": "polymers", "topicTitle": "Polymers & Plastics", "category": "Thermosetting Polymers", "question": "State the properties and applications of Epoxy Resin, Urea Formaldehyde (UF), and Melamine Formaldehyde (MF).", "answer": "Epoxy Resin: Two-part chemical adhesive/matrix with high bond strength and chemical resistance (CFRP matrix, adhesives). UF: High surface hardness, heat resistance, and electrical insulation (plug sockets, switchgear). MF: Scratch-resistant, food-safe, durable (laminate countertops, picnic tableware)."}, {"id": "note-card-015", "topicId": "woods", "topicTitle": "Woods & Boards", "category": "Hardwoods & Softwoods", "question": "Contrast hardwoods and softwoods by botanical origin, growth rate, density, and common uses.", "answer": "Hardwoods come from broad-leaved deciduous trees (oak, beech), grow slowly, are denser, harder, and expensive (quality furniture, flooring). Softwoods come from coniferous needle-bearing trees (pine, spruce), grow fast, are cheaper, lighter, and used in construction framing and paper."}, {"id": "note-card-016", "topicId": "woods", "topicTitle": "Woods & Boards", "category": "Engineered Boards", "question": "Explain how Plywood is constructed and why this grain orientation provides structural advantages.", "answer": "Plywood is constructed from thin timber veneers/plies stacked with their wood grain directions perpendicular (at 90°) to adjacent layers and glued under pressure. This alternating grain eliminates directional weakness, resists warping, and distributes strength equally across both axes."}, {"id": "note-card-017", "topicId": "woods", "topicTitle": "Woods & Boards", "category": "Engineered Boards", "question": "What are the structural differences between MDF and Chipboard?", "answer": "MDF is made from fine wood fibres compressed with resin under heat, giving a uniform grain-free density with ultra-smooth edges ideal for CNC routing. Chipboard is made from larger wood chips and shavings, cheaper and less dense, requiring edge-banding for flat-pack furniture."}, {"id": "note-card-018", "topicId": "composites", "topicTitle": "Composites & Advanced Materials", "category": "Composite Structure", "question": "What is a composite material, and how are CFRP components manufactured?", "answer": "A composite combines two or more distinct constituent materials (reinforcement + matrix) that remain unbonded chemically to provide superior tailored properties. CFRP weaves carbon fibres into cloth, impregnates them with epoxy resin in a mould, and cures them under heat/steam in an autoclave."}, {"id": "note-card-019", "topicId": "composites", "topicTitle": "Composites & Advanced Materials", "category": "Geotextiles & Sandwich Panels", "question": "What are Geotextiles, and what are the structural features of Sandwich Panels?", "answer": "Geotextiles are permeable polymer fabrics (woven, needle-punched, or heat-bonded) used with soil for separation, filtration, drainage, and ground reinforcement. Sandwich panels bond a lightweight low-density core (PIR, XPS, mineral wool) between two thin rigid skin sheets for high flexural rigidity and low weight."}, {"id": "note-card-020", "topicId": "composites", "topicTitle": "Composites & Advanced Materials", "category": "High-Tech Materials", "question": "Explain Quantum Tunnelling Composite (QTC) and how its electrical resistance changes with force.", "answer": "QTC consists of metal particles suspended in an elastomer matrix. In a relaxed state, the particles are separated and it acts as an electrical insulator. When squeezed or pressed, the metal particles move closer, allowing electrons to tunnel through, transforming it into an electric conductor proportional to pressure."}, {"id": "note-card-021", "topicId": "composites", "topicTitle": "Composites & Advanced Materials", "category": "High-Tech Materials", "question": "What is Precious Metal Clay (PMC) and how does it convert into solid metal?", "answer": "PMC contains 99.9% microscopic precious metal particles (silver/gold) blended with an organic binder and water. It is shaped like modeling clay, dried, and fired in a kiln at ~800°C; the binder burns off completely, and the metal particles sinter together into solid pure metal."}, {"id": "note-card-022", "topicId": "composites", "topicTitle": "Composites & Advanced Materials", "category": "Specialist Materials", "question": "Explain the structure of Gore-Tex and why it is waterproof yet breathable.", "answer": "Gore-Tex is an expanded polytetrafluoroethylene (PTFE) membrane with billions of microscopic pores per square inch. Each pore is 20,000 times smaller than a water droplet (blocking liquid rain) but 700 times larger than a water vapour molecule (allowing body perspiration to escape)."}, {"id": "note-card-023", "topicId": "composites", "topicTitle": "Composites & Advanced Materials", "category": "Smart & Modern Materials", "question": "What is Polymorph (Polycaprolactone - PCL) and why is it useful in design prototyping?", "answer": "Polymorph is a biodegradable thermoplastic with a low melting point (~60°C). When placed in hot water, it becomes pliable and can be shaped freely by hand like plasticine, solidifying into a tough, nylon-like functional plastic upon cooling for rapid ergonomic modelling."}, {"id": "note-card-024", "topicId": "composites", "topicTitle": "Composites & Advanced Materials", "category": "Advanced Alloys & Magnets", "question": "What are Super-alloys and Rare-earth Magnets, and what are their defining performance metrics?", "answer": "Super-alloys operate at high fractions of their melting point, resisting creep deformation, oxidation, and mechanical stress in jet turbines. Rare-earth magnets (Neodymium NdFeB) produce permanent magnetic fields exceeding 1.4 Tesla (vs 0.5–1.0 T for ferrite/ceramic magnets)."}, {"id": "note-card-025", "topicId": "smart", "topicTitle": "Smart Materials", "category": "Smart Material Fundamentals", "question": "Define a Smart Material and give two examples of stimuli they respond to.", "answer": "A smart material is a material whose physical properties change reversibly in response to an external environmental stimulus, such as changes in temperature (heat), light levels, electrical voltage, or magnetic fields."}, {"id": "note-card-026", "topicId": "smart", "topicTitle": "Smart Materials", "category": "Colour-Changing Materials", "question": "Distinguish between Thermochromic and Photochromic materials.", "answer": "Thermochromic materials change colour reversibly in response to temperature variations (used in baby spoons, fever strips, electric kettles). Photochromic materials change optical darkness reversibly in response to UV light intensity (used in transition lenses, safety visors)."}, {"id": "note-card-027", "topicId": "smart", "topicTitle": "Smart Materials", "category": "Electromechanical & Shape Memory", "question": "Explain the dual operation of Piezo-electric materials.", "answer": "Piezo-electric materials generate an electrical voltage when subjected to mechanical stress/compression (sensors, lighters, energy-harvesting shoes) and conversely change physical shape/dimensions when an electric voltage is applied across them (ultrasonic transducers, micro-actuators)."}, {"id": "note-card-028", "topicId": "smart", "topicTitle": "Smart Materials", "category": "Shape Memory Alloys", "question": "What is Nitinol, how does it respond to an electric current, and where is it applied?", "answer": "Nitinol is a Shape Memory Alloy (SMA) of Nickel and Titanium. When heated by an electric current, it contracts by ~5% and returns to its pre-programmed memorised shape. Used in heart stents to open blood vessels, dental braces, and super-elastic spectacle frames."}, {"id": "note-card-029", "topicId": "smart", "topicTitle": "Smart Materials", "category": "Light Emitting & Responsive", "question": "Differentiate between Electroluminescent, Fluorescent, and Phosphorescent materials.", "answer": "Electroluminescent: Emits brilliant cold light with zero heat when AC current passes through phosphors (flat displays). Fluorescent: Emits visible light only whilst exposed to UV rays, stopping instantly when UV ceases. Phosphorescent: Absorbs and stores light photons, slowly emitting a sustained glow in the dark (safety exit signs)."}, {"id": "note-card-030", "topicId": "smart", "topicTitle": "Smart Materials", "category": "Fluid & Thermal Systems", "question": "How do Magneto-rheological (MR) fluids and Thermoelectric materials operate?", "answer": "MR fluids contain magnetic particles in oil that align into a semi-solid state within milliseconds of entering a magnetic field (dynamic active vehicle dampers in sports cars). Thermoelectric materials convert temperature differentials (e.g. human body heat) into electrical current (Seiko Thermic wristwatch)."}, {"id": "note-card-031", "topicId": "smart", "topicTitle": "Smart Materials", "category": "Sustainable Polymers", "question": "What are starch-based polymers and what are the advantages of products like PAPCORN and Spud forks?", "answer": "Starch-based polymers are derived from renewable agricultural crops (corn, potato, wheat starch). Spud forks (80% potato starch, 20% soya oil) are dishwasher-safe and biodegrade fully within 180 days, avoiding persistent landfill waste and toxic combustion fumes associated with petrochemical plastics."}, {"id": "note-card-032", "topicId": "design", "topicTitle": "Design Context & Methodology", "category": "Context & UCD", "question": "What is User-Centred Design (UCD) and at what stages of a project are users consulted?", "answer": "UCD is an iterative design methodology focusing on end-user needs, behaviours, and ergonomics throughout the entire product lifecycle: project start (research/personas), concept design (ideation), detailed design (prototyping/testing), and post-launch evaluation."}, {"id": "note-card-033", "topicId": "design", "topicTitle": "Design Context & Methodology", "category": "Research Tools", "question": "What is a Focus Group, and what are its key advantages in product development?", "answer": "A focus group is a guided qualitative discussion with a representative demographic sample of target users. Advantages include gathering rich qualitative attitudes, discovering unexpected user pain points, observing interpersonal interactions, and comparing direct user experiences quickly."}, {"id": "note-card-034", "topicId": "design", "topicTitle": "Design Context & Methodology", "category": "Usability", "question": "Name the key factors that determine product usability.", "answer": "Usability is determined by: Effectiveness (completing goals accurately), Efficiency (speed and effort required), Learnability (ease of initial use), Memorability (retention over time), Error tolerance (prevention and recovery), and User Satisfaction."}, {"id": "note-card-035", "topicId": "design", "topicTitle": "Design Context & Methodology", "category": "Ergonomics & Anthropometrics", "question": "Distinguish between Physical Ergonomics, Cognitive Ergonomics, and Anthropometrics.", "answer": "Physical Ergonomics fits products to human body geometry, reach, grip strength, and posture. Cognitive Ergonomics aligns information load, feedback, and mental models to human psychology. Anthropometrics is the statistical measurement of human physical body dimensions (e.g. 5th to 95th percentiles)."}, {"id": "note-card-036", "topicId": "design", "topicTitle": "Design Context & Methodology", "category": "Interface Design", "question": "Explain Natural Mapping, Feedback, and Visual Hierarchy in interface design.", "answer": "Natural Mapping arranges controls so their physical movement mirrors their real-world outcome (e.g. stove knobs arranged like burners). Feedback gives immediate sensory confirmation of actions (clicks, lights). Visual Hierarchy uses contrast, scale, and positioning to direct user attention to vital functions first."}, {"id": "note-card-037", "topicId": "ip", "topicTitle": "Intellectual Property", "category": "Patents", "question": "What are the three legal criteria for an invention to be granted a Patent, and how long does it last?", "answer": "A patent requires an invention to be: (1) Novel (brand new globally), (2) Involve an Inventive Step (not obvious to a person skilled in the art), and (3) Industrially Applicable. Once granted, a patent provides exclusive monopoly rights for up to 20 years."}, {"id": "note-card-038", "topicId": "ip", "topicTitle": "Intellectual Property", "category": "Patents", "question": "What happens if an invention is sold or publicly demonstrated before filing a patent application?", "answer": "Public disclosure or marketing destroys the novelty requirement. The invention enters the public domain immediately, invalidating any subsequent patent application and allowing competitors to freely copy the technology."}, {"id": "note-card-039", "topicId": "ip", "topicTitle": "Intellectual Property", "category": "Copyright & Trademarks", "question": "Contrast Copyright and Trademarks regarding what they protect, registration, and duration.", "answer": "Copyright automatically protects original artistic, literary, and technical works (drawings, manuals, software code) for author's life + 70 years without registration. Trademarks protect brand identifiers (names, logos, slogans); they must be registered and can last indefinitely if renewed every 10 years."}, {"id": "note-card-040", "topicId": "ip", "topicTitle": "Intellectual Property", "category": "Design Rights", "question": "Compare Unregistered Design Rights with Registered Design Rights.", "answer": "Unregistered Design Rights automatically protect the 3D shape and configuration of functional products for 10–15 years. Registered Design Rights provide legal monopoly protection for the visual appearance, ornamentation, lines, and GUIs of a product for up to 25 years (renewed 5-yearly)."}, {"id": "note-card-041", "topicId": "quality", "topicTitle": "Quality, TQM & Standards", "category": "QA vs QC", "question": "Explain the fundamental difference between Quality Assurance (QA) and Quality Control (QC).", "answer": "Quality Assurance (QA) is proactive and process-driven, auditing procedures, training, and materials to ensure 'right first time' and 'fitness for purpose'. Quality Control (QC) is reactive and product-driven, inspecting and testing finished goods against dimensional tolerances and specifications."}, {"id": "note-card-042", "topicId": "quality", "topicTitle": "Quality, TQM & Standards", "category": "TQM & Quality Circles", "question": "What is Total Quality Management (TQM) and how do Quality Circles operate?", "answer": "TQM makes every worker in the organization responsible for quality, treating the next stage of production as an internal customer. Quality Circles are small voluntary groups of workers meeting weekly on company time to analyse, identify, and solve shop-floor quality and safety problems."}, {"id": "note-card-043", "topicId": "quality", "topicTitle": "Quality, TQM & Standards", "category": "Tolerances", "question": "Define engineering Tolerance and explain why Zero Fault manufacturing depends on tolerance analysis.", "answer": "Tolerance is the permissible limit of variation in physical dimensions (+/-) from a nominal design value (e.g. 100mm ±0.05mm). Tracking dimensional drift within tolerance limits provides predictive maintenance warnings before tooling fails, enabling Zero Fault manufacturing."}, {"id": "note-card-044", "topicId": "quality", "topicTitle": "Quality, TQM & Standards", "category": "Certification Standards", "question": "Explain the significance of ISO 9000, the BSI Kitemark, CE marking, and the UKCA mark.", "answer": "ISO 9000 certifies that a company's quality management systems adhere to international operational standards. The BSI Kitemark proves independent third-party physical testing and safety. CE marking declares compliance with EU directives for sale in Europe. UKCA is the UK regulatory conformity mark post-Brexit."}, {"id": "note-card-045", "topicId": "innovation", "topicTitle": "Innovation & Manufacturing Strategy", "category": "Innovation Models", "question": "Compare Incremental Innovation with Blue-Sky Innovation using engineering examples.", "answer": "Incremental Innovation involves small, continuous refinements to an established design (e.g. annual smartphone battery and camera updates). Blue-Sky Innovation involves radical, leap-ahead ideas not restricted by existing conventions (e.g. Ford's moving assembly line or Dyson's bagless cyclonic separation)."}, {"id": "note-card-046", "topicId": "innovation", "topicTitle": "Innovation & Manufacturing Strategy", "category": "Market Forces", "question": "Explain Technology Push versus Market Pull.", "answer": "Technology Push occurs when scientific breakthroughs or material discoveries initiate new product types before consumers demand them (e.g. touchscreen tech, Kevlar). Market Pull occurs when consumer desires, social trends, or ecological concerns demand solutions that engineers develop (e.g. electric vehicles, reusable packaging)."}, {"id": "note-card-047", "topicId": "innovation", "topicTitle": "Innovation & Manufacturing Strategy", "category": "Scales of Production", "question": "Summarise the differences between One-off, Batch, Mass, and Continuous production.", "answer": "One-off: Bespoke custom unit, highly skilled labour, high unit cost (prototypes). Batch: Set quantity of identical products, uses jigs/moulds, flexible machinery (alloy wheels). Mass: Automated lines, high volume, expensive tooling, low unit cost (cars). Continuous: 24/7 dedicated flow, minimal labour, lowest unit cost (screws, paperclips)."}, {"id": "note-card-048", "topicId": "innovation", "topicTitle": "Innovation & Manufacturing Strategy", "category": "Design for Manufacture", "question": "What is Design for Manufacture (DFM) and how do Standard Components contribute to it?", "answer": "DFM optimizes part geometry to make manufacturing easy, fast, and cost-effective with minimal waste. Standard Components (screws, bearings, resistors) reduce tooling costs, eliminate custom manufacturing, lower inventory expenses, and simplify maintenance and replacement."}, {"id": "note-card-049", "topicId": "innovation", "topicTitle": "Innovation & Manufacturing Strategy", "category": "Product Lifecycle", "question": "Name the four primary stages of the Product Lifecycle and explain Planned Obsolescence.", "answer": "The stages are: Introduction, Growth, Maturity, and Decline. Planned Obsolescence deliberately engineers a limited lifespan into a product (through physical wear, non-replaceable batteries, software incompatibility, or styling updates) to stimulate repeat purchases."}, {"id": "note-card-050", "topicId": "innovation", "topicTitle": "Innovation & Manufacturing Strategy", "category": "Circular Economy & LCA", "question": "What is the Circular Economy model, and what does Life Cycle Assessment (LCA) evaluate?", "answer": "The Circular Economy is a closed-loop system where products are designed for modular disassembly, repair, and material recycling to eliminate landfill waste. LCA evaluates the complete environmental impact 'cradle-to-grave' across raw material extraction, processing, manufacture, transport, use, and disposal."}, {"id": "note-card-051", "topicId": "electronics", "topicTitle": "Electronics & Circuits", "category": "Electrical Formulas", "question": "State the formulas for Ohm's Law, Electrical Power, and Potential Dividers.", "answer": "Ohm's Law: V = I × R (Voltage = Current × Resistance). Power: P = V × I = Energy / Time (Watts = Joules/second). Potential Divider output: Vout = Vin × [R2 / (R1 + R2)]."}, {"id": "note-card-052", "topicId": "electronics", "topicTitle": "Electronics & Circuits", "category": "Transistors", "question": "How does a transistor act as a switch, and what is the difference between a BJT and a MOSFET?", "answer": "A small voltage/current applied to the base/gate switches on current flow between the collector/drain and emitter/source. BJTs are current-driven and suited for lower power circuits; MOSFETs are voltage-driven, highly efficient, and switch heavy currents for motors and bulbs."}, {"id": "note-card-053", "topicId": "electronics", "topicTitle": "Electronics & Circuits", "category": "Transistors & Protection", "question": "What is a Darlington Pair and why is a Flyback Diode placed across a motor?", "answer": "A Darlington Pair connects two bipolar transistors to deliver an extremely high compound current gain, allowing tiny microcontroller signals to drive heavy loads. A Flyback Diode absorbs destructive high-voltage inductive back-EMF spikes when motor coils are suddenly switched off."}, {"id": "note-card-054", "topicId": "electronics", "topicTitle": "Electronics & Circuits", "category": "Electric Motors", "question": "Compare Brushed Motors, Stepper Motors, and Brushless DC Motors.", "answer": "Brushed: Cheap, simple DC connection, speeds vary with voltage, carbon brushes wear out. Stepper: Rotates in precise angular increments via microcontroller pulses (3D printers). Brushless: High efficiency, high RPM, frictionless, requires electronic speed control (ESC) but offers long lifespan."}, {"id": "note-card-055", "topicId": "electronics", "topicTitle": "Electronics & Circuits", "category": "Surface Mount Technology", "question": "Describe the three core steps in Surface Mount Technology (SMT) automated PCB assembly.", "answer": "(1) Solder Paste Printing: Solder paste is squeegeed across a metal stencil onto PCB pads. (2) Pick-and-Place: High-speed robotic vacuum nozzles place components onto the paste. (3) Reflow Soldering: The board passes through a multi-zone oven, melting the solder paste into permanent joints."}, {"id": "note-card-056", "topicId": "legislation", "topicTitle": "Environmental Legislation", "category": "EU & UK Directives", "question": "What are the mandates of the Energy Labelling Directive and the PPWR (Packaging Regulation)?", "answer": "Energy Labelling rates electrical appliances from A to G for consumer transparency and bans inefficient products. PPWR standardises resin recycling codes (1 PET through 7 Other) and legally requires all plastic components over 200g to be moulded with identification symbols to assist recycling."}, {"id": "note-card-057", "topicId": "legislation", "topicTitle": "Environmental Legislation", "category": "EU & UK Directives", "question": "State the key requirements of the ELVD, RoHS, and WEEE directives.", "answer": "ELVD: Requires vehicle take-back and minimum 85% vehicle recycling by weight. RoHS (2006): Prohibits hazardous substances (Lead, Mercury, Cadmium) in electronics to safeguard health. WEEE (2006): Mandates manufacturer-funded collection and recycling of waste electrical and electronic equipment."}, {"id": "note-card-058", "topicId": "mechanisms", "topicTitle": "Mechanisms & Gears", "category": "Levers & Linkages", "question": "Distinguish between Class 1, Class 2, and Class 3 levers.", "answer": "Class 1: Fulcrum in the middle between Effort and Load (crowbar, scissors, seesaw). Class 2: Load in the middle between Fulcrum and Effort (wheelbarrow, nutcracker). Class 3: Effort in the middle between Fulcrum and Load (tweezers, fishing rod, human forearm)."}, {"id": "note-card-059", "topicId": "mechanisms", "topicTitle": "Mechanisms & Gears", "category": "Gear Systems", "question": "Explain the role of an Idler Gear and how to calculate gear ratio on a compound gear train.", "answer": "An Idler gear reverses the direction of rotation between driver and driven gears without changing the overall velocity ratio. For a compound train, multiply the velocity ratios of each individual meshed pair together, ignoring gears sharing a common shaft."}, {"id": "note-card-060", "topicId": "mechanisms", "topicTitle": "Mechanisms & Gears", "category": "Specialist Gears", "question": "Describe the function of Bevel gears, Helical gears, Worm gears, and Ratchet & Pawl mechanisms.", "answer": "Bevel: Transmits rotary motion between shafts at 90°. Helical: Angled teeth provide continuous tooth engagement for high torque and quiet operation. Worm & Wheel: Single-tooth shaft drives gear, delivering massive reduction and non-reversible locking. Ratchet & Pawl: Permits rotation in one direction only."}, {"id": "note-card-061", "topicId": "mechanisms", "topicTitle": "Mechanisms & Gears", "category": "Planetary Gearbox", "question": "What is an Epicyclic (Planetary) Gear System and what are its mechanical advantages?", "answer": "A planetary system consists of a central Sun gear, surrounding Planet gears on a carrier, and an outer Ring (annulus) gear. Advantages include compact concentric inline shafts, ability to handle extreme torque distribution across multiple teeth, and versatile gear reduction."}, {"id": "note-card-062", "topicId": "stress", "topicTitle": "Forces & Calculations", "category": "Structural Forces", "question": "Differentiate between a Tie and a Strut, and explain the stress distribution in a bent beam.", "answer": "A Tie is a structural member in tension (pulled). A Strut is a structural member in compression (pushed). In a bending beam, the convex side is in tension, the concave side is in compression, and the central neutral axis experiences zero stress (hence the efficiency of I-beams)."}, {"id": "note-card-063", "topicId": "stress", "topicTitle": "Forces & Calculations", "category": "Formulas", "question": "State the definitions, formulas, and units for Stress, Strain, and Young's Modulus.", "answer": "Stress (σ) = Force / Area (N/m² or Pa). Strain (ε) = Extension / Original Length (dimensionless ratio). Young's Modulus (E) = Stress / Strain (N/m² or Pa), which measures the fundamental elastic stiffness of a material."}, {"id": "note-card-064", "topicId": "manufacturing", "topicTitle": "Manufacturing Processes", "category": "Metal Presswork & Casting", "question": "Distinguish between Punching and Blanking in sheet metal presswork.", "answer": "Punching cuts and removes material as scrap to leave a hole in the workpiece. Blanking cuts out the desired exterior shape from the sheet metal stock, where the piece stamped out is the finished component."}, {"id": "note-card-065", "topicId": "manufacturing", "topicTitle": "Manufacturing Processes", "category": "Casting Methods", "question": "Compare Sand Casting, Gravity Die Casting, and High Pressure Die Casting.", "answer": "Sand Casting uses expendable sand moulds for large, complex, low-volume castings. Gravity Die Casting pours molten metal under gravity into reusable steel/iron dies for moderate accuracy. High Pressure Die Casting forces molten metal at 100–3000 tons into hardened steel dies for mass production of thin, precise parts."}, {"id": "note-card-066", "topicId": "manufacturing", "topicTitle": "Manufacturing Processes", "category": "Investment Casting", "question": "Describe the Lost Wax (Investment Casting) process and its primary advantages.", "answer": "Wax patterns are assembled onto a tree, coated with refractory ceramic slurry to build a shell, dewaxed in an oven, and filled with molten metal. It produces intricate, highly accurate components with fine surface finishes and minimal subsequent machining (e.g. turbine blades, jewellery)."}, {"id": "note-card-067", "topicId": "manufacturing", "topicTitle": "Manufacturing Processes", "category": "Metal Forming", "question": "How does Metal Spinning work, and how does CNC Milling differ from CNC Turning (Lathe)?", "answer": "Metal spinning shapes a revolving circular sheet disc over a shaped mandrel using a roller tool without removing metal. CNC Turning rotates the workpiece against a stationary cutting tool (cylindrical parts); CNC Milling clamps the workpiece stationary while cutting tools rotate and traverse multi-axis."}, {"id": "note-card-068", "topicId": "manufacturing", "topicTitle": "Manufacturing Processes", "category": "Plastic Moulding", "question": "Explain Extrusion, Injection Moulding, and Blow Moulding.", "answer": "Extrusion: Polymer granules heated in a barrel are pushed by a rotating screw through a shaped die to make continuous profiles (pipes, trim). Injection Moulding: Molten polymer is rammed into a clamped steel die (housings, Lego). Blow Moulding: Extruded hollow tube (parison) is inflated with air inside a mould (bottles, containers)."}, {"id": "note-card-069", "topicId": "manufacturing", "topicTitle": "Manufacturing Processes", "category": "Plastic Forming", "question": "Compare Vacuum Forming with Rotational Moulding.", "answer": "Vacuum Forming clamps a heated thermoplastic sheet over a mould and applies suction to pull it down (trays, packaging). Rotational Moulding places polymer powder in a hollow mould rotated biaxially inside an oven without pressure, creating thick, stress-free hollow products (tanks, road cones)."}, {"id": "note-card-070", "topicId": "manufacturing", "topicTitle": "Manufacturing Processes", "category": "Modern Production Systems", "question": "Explain Lean Manufacturing, Just-in-Time (JIT), and Cellular Manufacturing.", "answer": "Lean: Eliminating all forms of non-value-adding waste to maximize efficiency. JIT: Producing and ordering parts only when needed to eliminate warehouse inventory costs. Cellular Manufacturing: Arranging machines into dedicated self-contained 'U-shaped' team cells to streamline product flow."}, {"id": "note-card-071", "topicId": "testing", "topicTitle": "Material Testing", "category": "Hardness Testing", "question": "Compare the Brinell, Vickers, and Rockwell hardness testing methods.", "answer": "Brinell presses a hardened steel ball into the surface and measures indent diameter. Vickers indents with a diamond pyramid and measures microscopic diagonals. Rockwell presses an indenter under major load and reads penetration depth directly from a dial gauge for rapid factory QC."}, {"id": "note-card-072", "topicId": "testing", "topicTitle": "Material Testing", "category": "Tensile Testing", "question": "Describe how a tensile test is performed and what properties are determined.", "answer": "A standard dumbbell test piece is clamped between a fixed jaw and motor-driven moving jaw. A load cell and extensometer record the force and elongation, plotting a curve that determines elastic limit, yield point, ultimate tensile strength (UTS), ductility, and necking."}, {"id": "note-card-073", "topicId": "testing", "topicTitle": "Material Testing", "category": "Impact & Fatigue Testing", "question": "Distinguish between Izod and Charpy impact tests, and describe fatigue testing.", "answer": "Impact testing measures toughness using a swinging pendulum hammer: Izod holds the notched specimen vertically in a vice; Charpy supports it horizontally against an anvil. Fatigue testing subjects a specimen to thousands of cyclic, fluctuating stresses or rotations until mechanical failure occurs."}, {"id": "note-card-074", "topicId": "testing", "topicTitle": "Material Testing", "category": "Non-Destructive Testing (NDT)", "question": "Explain how Ultrasonic Testing, X-ray Testing, and Gamma-ray Testing detect internal defects.", "answer": "Ultrasonic: Sends high-frequency sound waves (500kHz–100MHz) through the part; internal cracks reflect waves back early as signal blips on a monitor. X-rays: Penetrate thin materials (tyres, welds); cavities show up darker on photographic film. Gamma-rays: High-energy radiation penetrating thick, dense steel castings to reveal voids."}, {"id": "note-card-075", "topicId": "testing", "topicTitle": "Material Testing", "category": "Surface NDT", "question": "Describe the Liquid Penetrant and Magnetic Particle surface crack detection methods.", "answer": "Liquid Penetrant: Fluorescent coloured dye is sprayed on, soaks into cracks, surface is wiped, and chalk developer draws dye out into high-contrast visible lines. Magnetic Particle: The ferrous component is magnetised; iron powder sprinkled on the surface clusters along magnetic flux leaks caused by cracks."}];
+let notesMastered = new Set(JSON.parse(localStorage.getItem('leets_notes_mastered') || '[]'));
+let notesStarred = new Set(JSON.parse(localStorage.getItem('leets_notes_starred') || '[]'));
+let lastActiveDeck = 'cheatsheet';
+let notesPracticeState = { topic: '', status: '', idx: 0, revealed: false, cardsOpen: false, mode: 'medium', easyCache: null, easySelected: null, hardInput: '', hardResult: null };
 let practiceState = { topic: '', status: '', idx: 0, revealed: false, cardsOpen: false, mode: 'medium', easyCache: null, easySelected: null, hardInput: '', hardResult: null };
 let diagQuizState = { screen: 'intro', questions: [], idx: 0, selected: null, revealed: false, results: [] };
 let activeSheetTopic = '1.1';
@@ -2964,6 +2969,7 @@ function loadQuestionBank() {
   fetch('quiz_questions.json').then(r => r.json()).then(q => { if (q && q.length) QUIZ_BANK = q; }).catch(() => {});
   fetch('cheatsheets.json').then(r => r.json()).then(c => { CHEATS = c; buildFlashcards(); }).catch(() => {});
   fetch('flashcards.json').then(r => r.json()).then(fc => { FLASHCARDS = fc; }).catch(() => {});
+  fetch('notes_flashcards.json').then(r => r.json()).then(nfc => { if (nfc && nfc.length) NOTES_FLASHCARDS = nfc; }).catch(() => {});
   fetch('questions.json')
     .then(r => { if (!r.ok) throw 0; return r.json(); })
     .then(d => {
@@ -4117,6 +4123,165 @@ function submitHardCardAnswer(skip) {
   renderFlashcardPractice();
 }
 
+
+const NOTES_COLORS = {
+  metals: '#ef4444',
+  polymers: '#3b82f6',
+  woods: '#84cc16',
+  composites: '#8b5cf6',
+  smart: '#06b6d4',
+  design: '#f59e0b',
+  ip: '#10b981',
+  quality: '#6366f1',
+  innovation: '#ec4899',
+  electronics: '#eab308',
+  legislation: '#14b8a6',
+  mechanisms: '#f97316',
+  stress: '#dc2626',
+  manufacturing: '#2563eb',
+  testing: '#059669'
+};
+const colorOfNote = tid => NOTES_COLORS[tid] || '#475569';
+
+function toggleNotesFlashcards() {
+  notesPracticeState.cardsOpen = !notesPracticeState.cardsOpen;
+  lastActiveDeck = 'notes';
+  renderFlashcardPractice();
+}
+
+function resetNotesCardTurnState() {
+  notesPracticeState.revealed = false;
+  notesPracticeState.easyCache = null;
+  notesPracticeState.easySelected = null;
+  notesPracticeState.hardInput = '';
+  notesPracticeState.hardResult = null;
+}
+
+function setNotesFlashcardMode(mode) {
+  notesPracticeState.mode = mode;
+  lastActiveDeck = 'notes';
+  resetNotesCardTurnState();
+  renderFlashcardPractice();
+}
+
+function getNotesPracticeCards() {
+  return (NOTES_FLASHCARDS || []).filter(c => {
+    if (notesPracticeState.topic && c.topicId !== notesPracticeState.topic) return false;
+    if (notesPracticeState.status === 'unmastered' && notesMastered.has(c.id)) return false;
+    if (notesPracticeState.status === 'mastered' && !notesMastered.has(c.id)) return false;
+    if (notesPracticeState.status === 'starred' && !notesStarred.has(c.id)) return false;
+    return true;
+  });
+}
+
+function getEasyChoicesForNotesCard(card) {
+  if (notesPracticeState.easyCache && notesPracticeState.easyCache.cardId === card.id) {
+    return notesPracticeState.easyCache;
+  }
+  const all = NOTES_FLASHCARDS || [];
+  const correctClean = stripHtmlTags(card.answer);
+  const sameTopic = all.filter(c => c.id !== card.id && c.topicId === card.topicId);
+  const otherTopics = all.filter(c => c.id !== card.id && c.topicId !== card.topicId);
+  shuffle(sameTopic);
+  shuffle(otherTopics);
+
+  const distractors = [];
+  const seen = new Set([correctClean.toLowerCase()]);
+  for (const c of [...sameTopic, ...otherTopics]) {
+    const clean = stripHtmlTags(c.answer);
+    if (clean && !seen.has(clean.toLowerCase())) {
+      seen.add(clean.toLowerCase());
+      distractors.push(clean);
+      if (distractors.length === 3) break;
+    }
+  }
+  while (distractors.length < 3) {
+    distractors.push('None of the above');
+  }
+
+  const choices = [correctClean, ...distractors];
+  shuffle(choices);
+  const cache = {
+    cardId: card.id,
+    choices,
+    correctIndex: choices.indexOf(correctClean)
+  };
+  notesPracticeState.easyCache = cache;
+  return cache;
+}
+
+function selectEasyNotesCardChoice(idx) {
+  if (notesPracticeState.revealed) return;
+  notesPracticeState.easySelected = idx;
+  notesPracticeState.revealed = true;
+  lastActiveDeck = 'notes';
+  renderFlashcardPractice();
+}
+
+function submitHardNotesCardAnswer(skip) {
+  const cards = getNotesPracticeCards();
+  const card = cards[notesPracticeState.idx];
+  if (!card) return;
+
+  const ta = $('#hard-notes-card-input');
+  const typed = skip ? '' : (ta ? ta.value.trim() : notesPracticeState.hardInput.trim());
+  notesPracticeState.hardInput = typed;
+  lastActiveDeck = 'notes';
+
+  if (!skip && !typed) {
+    showToast('Type your answer first, or click Reveal Answer.');
+    if (ta) ta.focus();
+    return;
+  }
+
+  const stopWords = new Set(['with','that','from','this','into','more','than','have','been','they','when','where','which','their','there','about','under','other','these','those','only','some','such','very','also','both','each','high','most']);
+  const extractTerms = txt => {
+    const clean = stripHtmlTags(txt).toLowerCase().replace(/[^a-z0-9.+%\-°/\s]/g, ' ');
+    return [...new Set(clean.split(/\s+/).filter(w => (w.length >= 4 || /\d/.test(w)) && !stopWords.has(w)))];
+  };
+
+  const targetTerms = extractTerms(card.answer);
+  const typedLower = typed.toLowerCase();
+  const matched = targetTerms.filter(t => typedLower.includes(t));
+  const pct = targetTerms.length ? Math.round((matched.length / targetTerms.length) * 100) : 0;
+
+  notesPracticeState.hardResult = {
+    skipped: !!skip,
+    typed,
+    matchedCount: matched.length,
+    totalTerms: targetTerms.length,
+    pct
+  };
+  notesPracticeState.revealed = true;
+  renderFlashcardPractice();
+}
+
+function buildNotesPracticeTopicOpts() {
+  const topics = [
+    ['metals', 'Metals & Steels'],
+    ['polymers', 'Polymers & Plastics'],
+    ['woods', 'Woods & Boards'],
+    ['composites', 'Composites & Advanced Materials'],
+    ['smart', 'Smart Materials'],
+    ['design', 'Design Context & Methodology'],
+    ['ip', 'Intellectual Property'],
+    ['quality', 'Quality, TQM & Standards'],
+    ['innovation', 'Innovation & Manufacturing Strategy'],
+    ['electronics', 'Electronics & Circuits'],
+    ['legislation', 'Environmental Legislation'],
+    ['mechanisms', 'Mechanisms & Gears'],
+    ['stress', 'Forces & Calculations'],
+    ['manufacturing', 'Manufacturing Processes'],
+    ['testing', 'Material Testing (Destructive & NDT)']
+  ];
+  let html = `<option value="">All Topics (${NOTES_FLASHCARDS ? NOTES_FLASHCARDS.length : 75} cards)</option>`;
+  topics.forEach(([tid, title]) => {
+    const isSel = notesPracticeState.topic === tid ? 'selected' : '';
+    html += `<option value="${tid}" ${isSel}>${esc(title)}</option>`;
+  });
+  return html;
+}
+
 function renderFlashcardPractice() {
   const cards = getPracticeCards();
   const totalInBank = FLASHCARDS ? FLASHCARDS.length : 219;
@@ -4330,6 +4495,213 @@ function renderFlashcardPractice() {
     `;
   }
 
+  // --- SECOND DECK: COURSE NOTES FLASHCARDS ---
+  const notesCards = getNotesPracticeCards();
+  const notesTotalInBank = NOTES_FLASHCARDS ? NOTES_FLASHCARDS.length : 75;
+  const notesMasteredCount = notesMastered.size;
+
+  let notesFlashcardsBodyHtml = '';
+  let notesCard = null;
+
+  const notesModeSwitcherHtml = `
+    <div class="flashcard-mode-group" role="group" aria-label="Notes flashcard difficulty mode">
+      <button type="button" class="flashcard-mode-btn ${notesPracticeState.mode==='easy'?'active':''}" onclick="setNotesFlashcardMode('easy')">Easy</button>
+      <button type="button" class="flashcard-mode-btn ${notesPracticeState.mode==='medium'?'active':''}" onclick="setNotesFlashcardMode('medium')">Medium</button>
+      <button type="button" class="flashcard-mode-btn ${notesPracticeState.mode==='hard'?'active':''}" onclick="setNotesFlashcardMode('hard')">Hard</button>
+    </div>
+  `;
+
+  if (!notesCards.length) {
+    notesFlashcardsBodyHtml = `
+      <div class="flashcard-wrap">
+        <div class="flashcard-toolbar">
+          <div class="flashcard-filters">
+            <select class="select-minimal" onchange="notesPracticeState.topic=this.value;notesPracticeState.idx=0;resetNotesCardTurnState();renderFlashcardPractice();">
+              ${buildNotesPracticeTopicOpts()}
+            </select>
+            <select class="select-minimal" onchange="notesPracticeState.status=this.value;notesPracticeState.idx=0;resetNotesCardTurnState();renderFlashcardPractice();">
+              <option value="" ${notesPracticeState.status===''?'selected':''}>All Cards</option>
+              <option value="unmastered" ${notesPracticeState.status==='unmastered'?'selected':''}>Needs Work</option>
+              <option value="starred" ${notesPracticeState.status==='starred'?'selected':''}>Starred</option>
+              <option value="mastered" ${notesPracticeState.status==='mastered'?'selected':''}>Mastered</option>
+            </select>
+            ${notesModeSwitcherHtml}
+          </div>
+          <div class="flashcard-stats">Mastered: <b>${notesMasteredCount}</b> / ${notesTotalInBank} cards</div>
+        </div>
+        <div style="text-align:center;padding:48px 0;color:var(--muted)">
+          <p>No cards match the selected filter in Course Notes.</p>
+          <button type="button" class="btn-minimal" onclick="notesPracticeState.topic='';notesPracticeState.status='';notesPracticeState.idx=0;resetNotesCardTurnState();renderFlashcardPractice();">Reset Filter</button>
+        </div>
+      </div>
+    `;
+  } else {
+    if (notesPracticeState.idx >= notesCards.length) notesPracticeState.idx = 0;
+    if (notesPracticeState.idx < 0) notesPracticeState.idx = notesCards.length - 1;
+
+    notesCard = notesCards[notesPracticeState.idx];
+    const isMastered = notesMastered.has(notesCard.id);
+    const isStarred = notesStarred.has(notesCard.id);
+    const nColor = colorOfNote(notesCard.topicId);
+    const mode = notesPracticeState.mode || 'medium';
+
+    let notesInteractionHtml = '';
+
+    if (mode === 'easy') {
+      const easyData = getEasyChoicesForNotesCard(notesCard);
+      const letters = ['A', 'B', 'C', 'D'];
+      const isRight = notesPracticeState.revealed && notesPracticeState.easySelected === easyData.correctIndex;
+
+      notesInteractionHtml = `
+        <div class="quiz-mc-grid" style="margin-bottom:14px">
+          ${easyData.choices.map((ch, i) => {
+            let cls = '';
+            if (notesPracticeState.revealed) {
+              if (i === easyData.correctIndex) cls = 'correct';
+              else if (i === notesPracticeState.easySelected) cls = 'wrong';
+            }
+            return `
+              <button type="button" class="quiz-mc-btn ${cls}" ${notesPracticeState.revealed ? 'disabled' : ''} onclick="selectEasyNotesCardChoice(${i})">
+                <span class="mc-letter">${letters[i]}</span>
+                <span style="font-size:0.86rem;line-height:1.4">${esc(ch)}</span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+        ${notesPracticeState.revealed ? `
+          <div class="flashcard-answer-box">
+            <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:${isRight ? '#15803d' : '#dc2626'};margin-bottom:6px">
+              ${isRight ? 'Correct Match' : 'Incorrect — Review Answer'}
+            </div>
+            <div class="flashcard-answer-text">${notesCard.answer}</div>
+            <div class="flashcard-eval-bar">
+              <button type="button" class="btn-eval-review" id="eval-notes-card-review">
+                Needs Review (1)
+              </button>
+              <button type="button" class="btn-eval-mastered" id="eval-notes-card-mastered">
+                ${isMastered ? 'Mastered ✓' : 'Mark Mastered (2) ✓'}
+              </button>
+            </div>
+          </div>
+        ` : ''}
+      `;
+    } else if (mode === 'hard') {
+      if (!notesPracticeState.revealed) {
+        notesInteractionHtml = `
+          <div class="hard-recall-wrap">
+            <textarea id="hard-notes-card-input" class="hard-recall-textarea" placeholder="Type your answer from memory (key terms, properties, formulas)...">${esc(notesPracticeState.hardInput || '')}</textarea>
+            <div class="hard-recall-actions">
+              <button type="button" class="btn-minimal" onclick="submitHardNotesCardAnswer(true)">Reveal Answer</button>
+              <button type="button" class="btn-print-primary" onclick="submitHardNotesCardAnswer(false)">Check Answer</button>
+            </div>
+          </div>
+        `;
+      } else {
+        const hr = notesPracticeState.hardResult || { skipped: true, typed: '', pct: 0, matchedCount: 0, totalTerms: 0 };
+        let pillStyle = 'background:rgba(100,116,139,0.12);color:var(--muted);border:1px solid var(--border);';
+        let pillText = 'Answer Revealed';
+        if (!hr.skipped) {
+          if (hr.pct >= 65) {
+            pillStyle = 'background:rgba(22,163,74,0.12);color:#15803d;border:1px solid rgba(22,163,74,0.3);';
+            pillText = `Strong Recall · ${hr.pct}% key terms matched (${hr.matchedCount}/${hr.totalTerms})`;
+          } else if (hr.pct >= 35) {
+            pillStyle = 'background:rgba(217,119,6,0.12);color:#b45309;border:1px solid rgba(217,119,6,0.3);';
+            pillText = `Partial Recall · ${hr.pct}% key terms matched (${hr.matchedCount}/${hr.totalTerms})`;
+          } else {
+            pillStyle = 'background:rgba(220,38,38,0.12);color:#dc2626;border:1px solid rgba(220,38,38,0.3);';
+            pillText = `Needs Review · ${hr.pct}% key terms matched (${hr.matchedCount}/${hr.totalTerms})`;
+          }
+        }
+        notesInteractionHtml = `
+          <div class="flashcard-answer-box">
+            <span class="hard-score-pill" style="${pillStyle}">${pillText}</span>
+            ${hr.typed ? `<div style="font-size:0.84rem;color:var(--muted);margin-bottom:10px;padding-bottom:8px;border-bottom:1px dashed var(--border)"><b>Your answer:</b> ${esc(hr.typed)}</div>` : ''}
+            <div class="flashcard-answer-text">${notesCard.answer}</div>
+            <div class="flashcard-eval-bar">
+              <button type="button" class="btn-eval-review" id="eval-notes-card-review">
+                Needs Review (1)
+              </button>
+              <button type="button" class="btn-eval-mastered" id="eval-notes-card-mastered">
+                ${isMastered ? 'Mastered ✓' : 'Mark Mastered (2) ✓'}
+              </button>
+            </div>
+          </div>
+        `;
+      }
+    } else {
+      notesInteractionHtml = !notesPracticeState.revealed ? `
+        <button type="button" class="flashcard-reveal-btn" id="btn-reveal-notes-card">
+          Reveal Answer (Press Space)
+        </button>
+      ` : `
+        <div class="flashcard-answer-box">
+          <div class="flashcard-answer-text">${notesCard.answer}</div>
+          <div class="flashcard-eval-bar">
+            <button type="button" class="btn-eval-review" id="eval-notes-card-review">
+              Needs Review (1)
+            </button>
+            <button type="button" class="btn-eval-mastered" id="eval-notes-card-mastered">
+              ${isMastered ? 'Mastered ✓' : 'Mark Mastered (2) ✓'}
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    notesFlashcardsBodyHtml = `
+      <div class="flashcard-wrap">
+        <div class="flashcard-toolbar">
+          <div class="flashcard-filters">
+            <select class="select-minimal" id="notes-topic-sel">
+              ${buildNotesPracticeTopicOpts()}
+            </select>
+            <select class="select-minimal" id="notes-status-sel">
+              <option value="" ${notesPracticeState.status===''?'selected':''}>All Cards</option>
+              <option value="unmastered" ${notesPracticeState.status==='unmastered'?'selected':''}>Needs Work</option>
+              <option value="starred" ${notesPracticeState.status==='starred'?'selected':''}>Starred</option>
+              <option value="mastered" ${notesPracticeState.status==='mastered'?'selected':''}>Mastered</option>
+            </select>
+            ${notesModeSwitcherHtml}
+            <button type="button" class="btn-minimal" id="btn-shuffle-notes-cards" title="Shuffle deck">Shuffle</button>
+          </div>
+          <div class="flashcard-stats">
+            <span>Card <b>${notesPracticeState.idx + 1}</b> of ${notesCards.length}</span> · 
+            <span>Mastered: <b>${notesMasteredCount}</b> / ${notesTotalInBank}</span>
+          </div>
+        </div>
+
+        <div style="font-size:0.78rem;color:var(--muted);margin-bottom:10px">${modeDescriptions[mode]}</div>
+
+        <div class="flashcard-box">
+          <div>
+            <div class="flashcard-top">
+              <div class="flashcard-topic-tag">
+                <span class="flashcard-indicator" style="--c:${nColor}"></span>
+                <span>${esc(notesCard.topicTitle)} · ${esc(notesCard.category)}</span>
+              </div>
+              <button type="button" class="btn-minimal ${isStarred ? 'active-star' : ''}" id="btn-star-notes-card" style="${isStarred?'color:#d97706;border-color:#d97706':''}">
+                ${isStarred ? '★ Starred' : '☆ Star'}
+              </button>
+            </div>
+
+            <h2 class="flashcard-question-text">${esc(notesCard.question)}</h2>
+
+            ${notesInteractionHtml}
+          </div>
+
+          <div>
+            <div class="flashcard-footer-nav">
+              <button type="button" class="btn-minimal" id="notes-card-prev">← Prev</button>
+              <span style="font-size:0.8rem;color:var(--muted)">Alexander Chang Revision Notes</span>
+              <button type="button" class="btn-minimal" id="notes-card-next">Next →</button>
+            </div>
+            <div class="flashcard-shortcuts-tip">Shortcuts: ${mode === 'medium' ? 'Space to reveal · ' : ''}1 Needs Review · 2 Mastered · ← / → Navigate</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   $('#app-view').innerHTML = `
     <div class="practice-page-wrap">
       ${renderDiagQuizHtml()}
@@ -4338,7 +4710,7 @@ function renderFlashcardPractice() {
         <button type="button" class="practice-dropdown-toggle" onclick="togglePracticeFlashcards()" aria-expanded="${practiceState.cardsOpen ? 'true' : 'false'}">
           <div>
             <div class="practice-dropdown-title">Cheatsheet Flashcards</div>
-            <div class="diag-subtitle" style="font-size:0.8rem">Self-test key definitions, processes, and comparisons by topic (Easy / Medium / Hard)</div>
+            <div class="diag-subtitle" style="font-size:0.8rem">Self-test key definitions, processes, and comparisons by syllabus topic (Easy / Medium / Hard)</div>
           </div>
           <div class="practice-dropdown-meta">
             <span><b>${totalMasteredCount}</b> / ${totalInBank} mastered</span>
@@ -4347,91 +4719,244 @@ function renderFlashcardPractice() {
         </button>
         ${practiceState.cardsOpen ? `<div class="practice-dropdown-body">${flashcardsBodyHtml}</div>` : ''}
       </div>
+
+      <div class="practice-dropdown" id="practice-notes-dropdown">
+        <button type="button" class="practice-dropdown-toggle" onclick="toggleNotesFlashcards()" aria-expanded="${notesPracticeState.cardsOpen ? 'true' : 'false'}">
+          <div>
+            <div class="practice-dropdown-title">Core Notes Flashcards</div>
+            <div class="diag-subtitle" style="font-size:0.8rem">Self-test metals, polymers, woods, smart materials, testing, design context & manufacturing from class notes (Easy / Medium / Hard)</div>
+          </div>
+          <div class="practice-dropdown-meta">
+            <span><b>${notesMasteredCount}</b> / ${notesTotalInBank} mastered</span>
+            <span style="font-size:0.95rem">${notesPracticeState.cardsOpen ? '▾' : '▸'}</span>
+          </div>
+        </button>
+        ${notesPracticeState.cardsOpen ? `<div class="practice-dropdown-body">${notesFlashcardsBodyHtml}</div>` : ''}
+      </div>
     </div>
   `;
 
-  if (!practiceState.cardsOpen || !card) return;
-
-  $('#practice-topic-sel').onchange = e => {
-    practiceState.topic = e.target.value;
-    practiceState.idx = 0;
-    resetCardTurnState();
-    renderFlashcardPractice();
-  };
-
-  $('#practice-status-sel').onchange = e => {
-    practiceState.status = e.target.value;
-    practiceState.idx = 0;
-    resetCardTurnState();
-    renderFlashcardPractice();
-  };
-
-  $('#btn-shuffle-cards').onclick = () => {
-    shuffle(FLASHCARDS);
-    practiceState.idx = 0;
-    resetCardTurnState();
-    renderFlashcardPractice();
-    showToast('Deck shuffled');
-  };
-
-  $('#btn-star-card').onclick = () => {
-    const ta = $('#hard-card-input');
-    if (ta) practiceState.hardInput = ta.value;
-    if (sheetStarred.has(card.id)) {
-      sheetStarred.delete(card.id);
-      showToast('Unstarred card');
-    } else {
-      sheetStarred.add(card.id);
-      showToast('Starred card');
+  // Attach event handlers for Cheatsheet deck
+  if (practiceState.cardsOpen && card) {
+    const topicSel = $('#practice-topic-sel');
+    if (topicSel) {
+      topicSel.onchange = e => {
+        practiceState.topic = e.target.value;
+        practiceState.idx = 0;
+        resetCardTurnState();
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+      };
     }
-    localStorage.setItem('leets_sheet_starred', JSON.stringify([...sheetStarred]));
-    renderFlashcardPractice();
-  };
 
-  const revealBtn = $('#btn-reveal-card');
-  if (revealBtn) {
-    revealBtn.onclick = () => {
-      practiceState.revealed = true;
-      renderFlashcardPractice();
-    };
-  }
+    const statusSel = $('#practice-status-sel');
+    if (statusSel) {
+      statusSel.onchange = e => {
+        practiceState.status = e.target.value;
+        practiceState.idx = 0;
+        resetCardTurnState();
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+      };
+    }
 
-  const evalReview = $('#eval-card-review');
-  if (evalReview) {
-    evalReview.onclick = () => {
-      if (sheetMastered.has(card.id)) {
-        sheetMastered.delete(card.id);
+    const shuffleBtn = $('#btn-shuffle-cards');
+    if (shuffleBtn) {
+      shuffleBtn.onclick = () => {
+        shuffle(FLASHCARDS);
+        practiceState.idx = 0;
+        resetCardTurnState();
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+        showToast('Cheatsheet deck shuffled');
+      };
+    }
+
+    const starBtn = $('#btn-star-card');
+    if (starBtn) {
+      starBtn.onclick = () => {
+        const ta = $('#hard-card-input');
+        if (ta) practiceState.hardInput = ta.value;
+        lastActiveDeck = 'cheatsheet';
+        if (sheetStarred.has(card.id)) {
+          sheetStarred.delete(card.id);
+          showToast('Unstarred card');
+        } else {
+          sheetStarred.add(card.id);
+          showToast('Starred card');
+        }
+        localStorage.setItem('leets_sheet_starred', JSON.stringify([...sheetStarred]));
+        renderFlashcardPractice();
+      };
+    }
+
+    const revealBtn = $('#btn-reveal-card');
+    if (revealBtn) {
+      revealBtn.onclick = () => {
+        practiceState.revealed = true;
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+      };
+    }
+
+    const evalReview = $('#eval-card-review');
+    if (evalReview) {
+      evalReview.onclick = () => {
+        if (sheetMastered.has(card.id)) {
+          sheetMastered.delete(card.id);
+          localStorage.setItem('leets_sheet_mastered', JSON.stringify([...sheetMastered]));
+        }
+        practiceState.idx++;
+        resetCardTurnState();
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+      };
+    }
+
+    const evalMastered = $('#eval-card-mastered');
+    if (evalMastered) {
+      evalMastered.onclick = () => {
+        sheetMastered.add(card.id);
         localStorage.setItem('leets_sheet_mastered', JSON.stringify([...sheetMastered]));
-      }
-      practiceState.idx++;
-      resetCardTurnState();
-      renderFlashcardPractice();
-    };
+        practiceState.idx++;
+        resetCardTurnState();
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+        showToast('Card mastered! ✓');
+      };
+    }
+
+    const prevBtn = $('#card-prev');
+    if (prevBtn) {
+      prevBtn.onclick = () => {
+        practiceState.idx--;
+        resetCardTurnState();
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+      };
+    }
+
+    const nextBtn = $('#card-next');
+    if (nextBtn) {
+      nextBtn.onclick = () => {
+        practiceState.idx++;
+        resetCardTurnState();
+        lastActiveDeck = 'cheatsheet';
+        renderFlashcardPractice();
+      };
+    }
   }
 
-  const evalMastered = $('#eval-card-mastered');
-  if (evalMastered) {
-    evalMastered.onclick = () => {
-      sheetMastered.add(card.id);
-      localStorage.setItem('leets_sheet_mastered', JSON.stringify([...sheetMastered]));
-      practiceState.idx++;
-      resetCardTurnState();
-      renderFlashcardPractice();
-      showToast('Card mastered! ✓');
-    };
+  // Attach event handlers for Notes deck
+  if (notesPracticeState.cardsOpen && notesCard) {
+    const nTopicSel = $('#notes-topic-sel');
+    if (nTopicSel) {
+      nTopicSel.onchange = e => {
+        notesPracticeState.topic = e.target.value;
+        notesPracticeState.idx = 0;
+        resetNotesCardTurnState();
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+      };
+    }
+
+    const nStatusSel = $('#notes-status-sel');
+    if (nStatusSel) {
+      nStatusSel.onchange = e => {
+        notesPracticeState.status = e.target.value;
+        notesPracticeState.idx = 0;
+        resetNotesCardTurnState();
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+      };
+    }
+
+    const nShuffleBtn = $('#btn-shuffle-notes-cards');
+    if (nShuffleBtn) {
+      nShuffleBtn.onclick = () => {
+        shuffle(NOTES_FLASHCARDS);
+        notesPracticeState.idx = 0;
+        resetNotesCardTurnState();
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+        showToast('Notes deck shuffled');
+      };
+    }
+
+    const nStarBtn = $('#btn-star-notes-card');
+    if (nStarBtn) {
+      nStarBtn.onclick = () => {
+        const ta = $('#hard-notes-card-input');
+        if (ta) notesPracticeState.hardInput = ta.value;
+        lastActiveDeck = 'notes';
+        if (notesStarred.has(notesCard.id)) {
+          notesStarred.delete(notesCard.id);
+          showToast('Unstarred card');
+        } else {
+          notesStarred.add(notesCard.id);
+          showToast('Starred card');
+        }
+        localStorage.setItem('leets_notes_starred', JSON.stringify([...notesStarred]));
+        renderFlashcardPractice();
+      };
+    }
+
+    const nRevealBtn = $('#btn-reveal-notes-card');
+    if (nRevealBtn) {
+      nRevealBtn.onclick = () => {
+        notesPracticeState.revealed = true;
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+      };
+    }
+
+    const nEvalReview = $('#eval-notes-card-review');
+    if (nEvalReview) {
+      nEvalReview.onclick = () => {
+        if (notesMastered.has(notesCard.id)) {
+          notesMastered.delete(notesCard.id);
+          localStorage.setItem('leets_notes_mastered', JSON.stringify([...notesMastered]));
+        }
+        notesPracticeState.idx++;
+        resetNotesCardTurnState();
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+      };
+    }
+
+    const nEvalMastered = $('#eval-notes-card-mastered');
+    if (nEvalMastered) {
+      nEvalMastered.onclick = () => {
+        notesMastered.add(notesCard.id);
+        localStorage.setItem('leets_notes_mastered', JSON.stringify([...notesMastered]));
+        notesPracticeState.idx++;
+        resetNotesCardTurnState();
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+        showToast('Card mastered! ✓');
+      };
+    }
+
+    const nPrevBtn = $('#notes-card-prev');
+    if (nPrevBtn) {
+      nPrevBtn.onclick = () => {
+        notesPracticeState.idx--;
+        resetNotesCardTurnState();
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+      };
+    }
+
+    const nNextBtn = $('#notes-card-next');
+    if (nNextBtn) {
+      nNextBtn.onclick = () => {
+        notesPracticeState.idx++;
+        resetNotesCardTurnState();
+        lastActiveDeck = 'notes';
+        renderFlashcardPractice();
+      };
+    }
   }
-
-  $('#card-prev').onclick = () => {
-    practiceState.idx--;
-    resetCardTurnState();
-    renderFlashcardPractice();
-  };
-
-  $('#card-next').onclick = () => {
-    practiceState.idx++;
-    resetCardTurnState();
-    renderFlashcardPractice();
-  };
 }
 
 function buildPracticeTopicOpts() {
@@ -4453,37 +4978,73 @@ function shuffle(arr) {
 }
 
 window.addEventListener('keydown', e => {
-  if (state.view !== 'practice' || !practiceState.cardsOpen) return;
+  if (state.view !== 'practice') return;
   const tag = document.activeElement ? document.activeElement.tagName : '';
   if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return;
 
-  if (e.key === 'ArrowLeft') {
-    e.preventDefault();
-    practiceState.idx--;
-    resetCardTurnState();
-    renderFlashcardPractice();
-  } else if (e.key === 'ArrowRight') {
-    e.preventDefault();
-    practiceState.idx++;
-    resetCardTurnState();
-    renderFlashcardPractice();
-  } else if (e.key === ' ' || e.code === 'Space') {
-    if (practiceState.mode === 'medium') {
+  const isNotesActive = notesPracticeState.cardsOpen && (!practiceState.cardsOpen || lastActiveDeck === 'notes');
+  const isCheatsheetActive = practiceState.cardsOpen && (!notesPracticeState.cardsOpen || lastActiveDeck === 'cheatsheet');
+
+  if (!isNotesActive && !isCheatsheetActive) return;
+
+  if (isNotesActive) {
+    if (e.key === 'ArrowLeft') {
       e.preventDefault();
-      practiceState.revealed = !practiceState.revealed;
+      notesPracticeState.idx--;
+      resetNotesCardTurnState();
       renderFlashcardPractice();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      notesPracticeState.idx++;
+      resetNotesCardTurnState();
+      renderFlashcardPractice();
+    } else if (e.key === ' ' || e.code === 'Space') {
+      if (notesPracticeState.mode === 'medium') {
+        e.preventDefault();
+        notesPracticeState.revealed = !notesPracticeState.revealed;
+        renderFlashcardPractice();
+      }
+    } else if (e.key === '1' && notesPracticeState.revealed) {
+      e.preventDefault();
+      const btn = $('#eval-notes-card-review');
+      if (btn) btn.click();
+    } else if (e.key === '2' && notesPracticeState.revealed) {
+      e.preventDefault();
+      const btn = $('#eval-notes-card-mastered');
+      if (btn) btn.click();
+    } else if (e.key === 's' || e.key === 'S') {
+      const btn = $('#btn-star-notes-card');
+      if (btn) btn.click();
     }
-  } else if (e.key === '1' && practiceState.revealed) {
-    e.preventDefault();
-    const btn = $('#eval-card-review');
-    if (btn) btn.click();
-  } else if (e.key === '2' && practiceState.revealed) {
-    e.preventDefault();
-    const btn = $('#eval-card-mastered');
-    if (btn) btn.click();
-  } else if (e.key === 's' || e.key === 'S') {
-    const btn = $('#btn-star-card');
-    if (btn) btn.click();
+  } else {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      practiceState.idx--;
+      resetCardTurnState();
+      renderFlashcardPractice();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      practiceState.idx++;
+      resetCardTurnState();
+      renderFlashcardPractice();
+    } else if (e.key === ' ' || e.code === 'Space') {
+      if (practiceState.mode === 'medium') {
+        e.preventDefault();
+        practiceState.revealed = !practiceState.revealed;
+        renderFlashcardPractice();
+      }
+    } else if (e.key === '1' && practiceState.revealed) {
+      e.preventDefault();
+      const btn = $('#eval-card-review');
+      if (btn) btn.click();
+    } else if (e.key === '2' && practiceState.revealed) {
+      e.preventDefault();
+      const btn = $('#eval-card-mastered');
+      if (btn) btn.click();
+    } else if (e.key === 's' || e.key === 'S') {
+      const btn = $('#btn-star-card');
+      if (btn) btn.click();
+    }
   }
 });
 
